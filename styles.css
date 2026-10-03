@@ -343,6 +343,7 @@ body {
   color: var(--pv-text-dark);
   line-height: 1.55;
   margin-bottom: 10px;
+  white-space: pre-line;
 }
 
 .question-instructions {
