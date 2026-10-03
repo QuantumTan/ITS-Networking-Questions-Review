@@ -1,0 +1,21 @@
+{
+  "name": "its-networking-98-366-cbt",
+  "version": "1.0.0",
+  "description": "Pearson VUE / Certiport IT Specialist: Networking Fundamentals (98-366) Authentic CBT Exam Reviewer",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "bundle": "node bundle.js",
+    "test": "node bundle.js"
+  },
+  "keywords": [
+    "networking",
+    "pearson-vue",
+    "certiport",
+    "mta-98-366",
+    "cbt-exam-engine"
+  ],
+  "author": "Antigravity Assessment Engineering",
+  "license": "MIT"
+}

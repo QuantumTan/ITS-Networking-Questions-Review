@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-font="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Microsoft / Certiport IT Specialist: Networking Fundamentals (98-366) Exam Reviewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP CONTROL BAR (PEARSON VUE CBT HEADER)
+       ========================================================================== -->
+  <header class="cbt-header" role="banner">
+    <div class="cbt-header-main">
+      <div class="cbt-branding">
+        <span class="cert-logo-badge">Certiport / ITS</span>
+        <h1 class="exam-title-text">Networking Fundamentals (98-366) CBT Exam Engine</h1>
+      </div>
+
+      <div class="cbt-status-indicators">
+        <div class="indicator-badge" id="questionIndicator" aria-live="polite">Question 1 of 176</div>
+        <div class="indicator-badge timer-badge" id="timerBadge">
+          <span id="timerLabel">Elapsed Time:</span>
+          <span id="timerDisplay">00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Action Toolbar -->
+    <div class="cbt-header-toolbar">
+      <div class="toolbar-group">
+        <button class="cbt-btn-tool" id="btnMarkReview" title="Bookmark this question to review later (M)">
+          &#9872; Mark for Review
+        </button>
+        <button class="cbt-btn-tool" id="btnModeToggle" title="Toggle between Instant Feedback Practice Mode and Timed Simulated Exam Mode">
+          Mode: Practice
+        </button>
+        <button class="cbt-btn-tool" id="btnExhibitToggle" title="Show or hide the technical exhibit pane">
+          &#128065; Technical Exhibit
+        </button>
+        
+        <!-- Objective / Question Filter -->
+        <select class="cbt-btn-tool" id="filterSelect" style="cursor: pointer; outline: none; background: rgba(255,255,255,0.12); color: #fff;" title="Filter questions by domain or interaction type">
+          <option value="all" style="color:#000;">All Questions (176 Questions)</option>
+          <option value="domain-1" style="color:#000;">Domain 1: Network Infrastructures</option>
+          <option value="domain-2" style="color:#000;">Domain 2: Network Hardware</option>
+          <option value="domain-3" style="color:#000;">Domain 3: Protocols & Services</option>
+          <option value="domain-4" style="color:#000;">Domain 4: Network Security</option>
+          <option value="domain-5" style="color:#000;">Domain 5: Troubleshooting & Utilities</option>
+          <option value="type-dnd" style="color:#000;">Interactive: Drag & Drop Matching</option>
+          <option value="type-matrix" style="color:#000;">Interactive: Matrix (Yes / No)</option>
+          <option value="type-dropdown" style="color:#000;">Interactive: Dropdown Exhibits</option>
+          <option value="type-exhibit" style="color:#000;">Questions with Exhibits</option>
+          <option value="marked" style="color:#000;">Marked for Review Only</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group">
+        <button class="cbt-btn-tool" id="btnCalcToggle" title="Open on-screen CBT calculator">
+          &#128425; Calculator
+        </button>
+        <button class="cbt-btn-tool" id="btnFontToggle" title="Adjust text font size">
+          A&#177; Font Size
+        </button>
+        <button class="cbt-btn-tool" id="btnThemeToggle" title="Toggle Light/Dark High-Contrast Theme">
+          &#9681; Theme
+        </button>
+        <button class="cbt-btn-tool" id="btnResetExam" title="Clear all stored answers and reset exam">
+          &#8634; Reset All
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN WORK AREA: DUAL EXHIBIT & ASSESSMENT SPLIT
+       ========================================================================== -->
+  <main class="cbt-workspace" id="cbtWorkspace">
+    <!-- Left Panel: Interactive Technical Exhibit (CLI Prompt / Win Dialog / SVG Schematic) -->
+    <section class="cbt-exhibit-pane" id="cbtExhibitPane" aria-label="Exhibit Viewer">
+      <div class="pane-header-bar">
+        <div class="pane-title">
+          <span>&#9881;</span>
+          <span id="exhibitTitle">Technical Exhibit</span>
+        </div>
+        <span class="pane-badge">Vector / Monospace Scalable</span>
+      </div>
+      <div class="pane-body" id="exhibitBody">
+        <!-- Exhibit dynamically injected here -->
+      </div>
+    </section>
+
+    <!-- Right Panel: Assessment & Interactive Response Engine -->
+    <section class="cbt-assessment-pane" id="cbtAssessmentPane" aria-label="Question Assessment">
+      <div class="assessment-header-bar">
+        <span class="pane-badge" id="questionDomainBadge">Domain: Network Infrastructures</span>
+        <span class="item-type-badge" id="questionTypeBadge">Single Choice</span>
+      </div>
+
+      <div class="assessment-body">
+        <div class="question-prompt-box">
+          <h2 class="question-stem" id="questionStem">Loading question...</h2>
+          <span class="question-instructions" id="questionInstructions">Select the best option.</span>
+        </div>
+
+        <!-- Dynamic Input Component (Options, Drag & Drop, Matrix, Dropdowns) -->
+        <div id="interactiveContainer"></div>
+
+        <!-- Explanation & Technical Rationale Drawer (Practice Mode) -->
+        <div id="explanationDrawer" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       BOTTOM NAVIGATION FOOTER (PEARSON VUE CBT BAR)
+       ========================================================================== -->
+  <footer class="cbt-footer" role="contentinfo">
+    <div class="cbt-footer-content">
+      <div class="footer-nav-left">
+        <button class="cbt-btn-nav" id="btnPrev" title="Go to previous question (Alt+P or Left Arrow)">
+          &larr; Previous
+        </button>
+        <button class="cbt-btn-nav cbt-btn-primary" id="btnNext" title="Go to next question (Alt+N or Right Arrow)">
+          Next &rarr;
+        </button>
+        <button class="cbt-btn-nav" id="btnResetAnswer" title="Reset your answer for this question">
+          &#8635; Reset Answer
+        </button>
+      </div>
+
+      <div class="footer-nav-right">
+        <button class="cbt-btn-nav cbt-btn-check" id="btnCheckAnswer" title="Check answer and view explanation">
+          &#10003; Check Answer
+        </button>
+        <button class="cbt-btn-nav" id="btnReviewScreen" title="Open question review status screen">
+          &#9776; Review Screen
+        </button>
+        <button class="cbt-btn-nav cbt-btn-finish" id="btnFinishExam" title="Submit exam and view score breakdown">
+          Finish Exam & Score
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: PEARSON VUE REVIEW SCREEN
+       ========================================================================== -->
+  <div class="cbt-modal-backdrop hidden-modal" id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="reviewModalTitle">
+    <div class="cbt-modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="reviewModalTitle">&#9776; Question Review Screen</h3>
+        <button class="modal-close-btn" id="closeReviewModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="review-stats-bar">
+          <div class="stat-chip" id="statAnswered">0 Answered</div>
+          <div class="stat-chip" id="statUnanswered">0 Incomplete</div>
+          <div class="stat-chip" id="statMarked">0 Marked for Review</div>
+        </div>
+
+        <p style="font-size: 13px; color: var(--pv-text-muted); margin-bottom: 12px;">
+          Click on any question below to immediately navigate to it.
+        </p>
+
+        <div class="review-table-wrapper">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Marked</th>
+                <th>Status</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody id="reviewTableBody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="cbt-btn-nav" onclick="document.getElementById('reviewModal').classList.add('hidden-modal')">
+          Return to Exam
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CANDIDATE SCORE SUMMARY REPORT
+       ========================================================================== -->
+  <div class="cbt-modal-backdrop hidden-modal" id="scoreModal" role="dialog" aria-modal="true" aria-labelledby="scoreModalTitle">
+    <div class="cbt-modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="scoreModalTitle">Score Report: Networking Fundamentals (98-366)</h3>
+        <button class="modal-close-btn" id="closeScoreModal" aria-label="Close score report">&times;</button>
+      </div>
+      <div class="modal-body" id="scoreResultsContainer">
+        <!-- Dynamically injected results -->
+      </div>
+      <div class="modal-footer">
+        <button class="cbt-btn-nav cbt-btn-primary" onclick="document.getElementById('scoreModal').classList.add('hidden-modal')">
+          Review Answers
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: POPUP CBT CALCULATOR
+       ========================================================================== -->
+  <div class="cbt-modal-backdrop hidden-modal" id="calcModal" role="dialog" aria-modal="true" aria-labelledby="calcModalTitle">
+    <div class="cbt-modal-card calc-modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="calcModalTitle">CBT Calculator</h3>
+        <button class="modal-close-btn" id="closeCalcModal" aria-label="Close calculator">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 14px;">
+        <div class="calc-screen" id="calcScreen">0</div>
+        <div class="calc-grid">
+          <button class="calc-btn action" data-act="clear">C</button>
+          <button class="calc-btn action" data-act="back">&#9003;</button>
+          <button class="calc-btn op" data-val="/">&divide;</button>
+          <button class="calc-btn op" data-val="*">&times;</button>
+
+          <button class="calc-btn" data-val="7">7</button>
+          <button class="calc-btn" data-val="8">8</button>
+          <button class="calc-btn" data-val="9">9</button>
+          <button class="calc-btn op" data-val="-">-</button>
+
+          <button class="calc-btn" data-val="4">4</button>
+          <button class="calc-btn" data-val="5">5</button>
+          <button class="calc-btn" data-val="6">6</button>
+          <button class="calc-btn op" data-val="+">+</button>
+
+          <button class="calc-btn" data-val="1">1</button>
+          <button class="calc-btn" data-val="2">2</button>
+          <button class="calc-btn" data-val="3">3</button>
+          <button class="calc-btn op" data-val=".">.</button>
+
+          <button class="calc-btn" data-val="0" style="grid-column: span 2;">0</button>
+          <button class="calc-btn equals" data-act="calc">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Module Entry -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

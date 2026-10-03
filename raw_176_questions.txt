@@ -1,0 +1,2214 @@
+
+=== PAGE 60 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       1 
+ 
+ 
+Exam 98-366 
+Title Networking Fundamentals 
+Updated Version: 10.0 
+Product 
+Type 176 Q&A 
+ 
+=== PAGE 61 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       2 
+ 
+ 
+QUESTION 1 
+One advantage of dynamic routing is that it: 
+ 
+A. Automatically maintains routing tables.  
+B. Limits traffic derived from routing protocols.  
+C. Reduces broadcast traffic.  
+D. Automatically enables DHCP.  
+ 
+Answer: A 
+ 
+QUESTION 2 
+Which of the following represents a Media Access Control (MAC) address? 
+ 
+A. GV:ZC:KK:DK:FZ:CA  
+B. 255.255.255.0  
+C. 05:35:AB:6E:Al:25  
+D. 127.0.0.1  
+ 
+Answer: C 
+ 
+QUESTION 3 
+Connecting to a private network address from a public network requires: 
+ 
+A. Network address translation (NAT).  
+B. Dynamic Host Configuration Protocol (DHCP).  
+C. Network Access Protection (NAP).  
+D. Dynamic domain name system (DDNS).  
+ 
+Answer: A 
+ 
+QUESTION 4 
+A network device that associates a Media Access Control (MAC) address with a port is a: 
+ 
+A. DSL modem  
+B. Hub  
+C. Router  
+D. Switch  
+ 
+Answer: D 
+ 
+QUESTION 5 
+A Layer 2 device that connects multiple computers within a network is a: 
+ 
+A. Repeater  
+B. Switch  
+C. Router  
+D. Packet  
+=== PAGE 62 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       3 
+ 
+ 
+Answer: B 
+ 
+QUESTION 6 
+A cable that meets the l000BaseT standard has a maximum length of: 
+ 
+A. 100 m  
+B. 250 m  
+C. 500 m  
+D. 1,000 m  
+ 
+Answer: A 
+ 
+QUESTION 7 
+A router's static route is set by the: 
+ 
+A. Adjacent network  
+B. Next upstream router  
+C. Network administrator  
+D. Routing protocol  
+ 
+Answer: C 
+ 
+QUESTION 8 
+Which setting is used to determine the Domain Name System (DNS) settings on a client computer? 
+ 
+A. TELNET  
+B. NSLOOKUP  
+C. PATHPING  
+D. NETSTAT  
+ 
+Answer: B 
+ 
+QUESTION 9 
+The default subnet mask for a Class B network is: 
+ 
+A. 0.0.0.255  
+B. 0.0.255.255  
+C. 255.0.0.0  
+D. 255.255.0.0  
+ 
+Answer: D 
+ 
+QUESTION 10 
+The default port used for SMTP is: 
+ 
+A. 23  
+B. 25  
+=== PAGE 63 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       4 
+ 
+C. 80  
+D. 8080  
+ 
+Answer: B 
+ 
+QUESTION 11 
+The ping tool is used to: (Choose two.) 
+ 
+A. Determine the network portion of a host address.  
+B. Self-test a host's own network interface.  
+C. Determine whether a host is reachable.  
+D. Manage a host's session when UDP is used.  
+ 
+Answer: B,C 
+ 
+QUESTION 12 
+Which of the following are features of DHCP? (Choose two.) 
+ 
+A. IP address resolution to canonical names  
+B. Secure shell connections  
+C. Address reservation  
+D. Network file transfer  
+E. IP address exclusion  
+ 
+Answer: C,E 
+ 
+QUESTION 13 
+The command-line tool used to list a host's active incoming connections is: 
+ 
+A. NETSTAT  
+B. IPCONFIG  
+C. NSLOOKUP  
+D. PING  
+ 
+Answer: A 
+ 
+QUESTION 14 
+A computer that has an IP address of 169.254.0.1 cannot access the network. 
+Which of the following services should you confirm is available? 
+ 
+A. WINS  
+B. DNS  
+C. DHCP  
+D. TFTP  
+ 
+Answer: C 
+ 
+=== PAGE 64 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       5 
+ 
+QUESTION 15 
+Which network does the IP address 220.100.100.100 belong to? 
+ 
+A. 220.100.100.0/24  
+B. 220.100.100.1/24  
+C. 255.255.255.0/24  
+D. 255.255.255.1/24  
+ 
+Answer: A 
+ 
+QUESTION 16 
+Which subnet mask is valid? 
+ 
+A. 255.255.255.240  
+B. 255.255.255.228  
+C. 255.255.255.164  
+D. 255.255.255.245  
+ 
+Answer: A 
+ 
+QUESTION 17 
+A service that resolves NetBIOS names to IP addresses is: 
+ 
+A. Domain Name Service (DNS).  
+B. Internet Service Provider (ISP).  
+C. Address Resolution Protocol (ARP).  
+D. Windows Internet Name Service (WINS).  
+ 
+Answer: D 
+ 
+QUESTION 18 
+What type of DNS record maps host names to addresses? 
+ 
+A. Mail Exchanger (MX) DNS record  
+B. Service (SRV) DNS record  
+C. Host (A) DNS record  
+D. Canonical (CNAME) DNS record  
+ 
+Answer: C 
+ 
+QUESTION 19 
+Teredo tunneling is a protocol that: 
+ 
+A. Translates Internet Protocol version 4 (IPv4) to Internet Protocol version 6 (IPv6).  
+B. Allows IPv6 connectivity through IPv4 devices.  
+C. Provides VPN security.  
+D. Dynamically allocates IPv6 addresses.  
+=== PAGE 65 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       6 
+ 
+ 
+Answer: B 
+ 
+QUESTION 20 
+What is the default subnet mask for a Class C Internet network? 
+ 
+A. 255.255.255.252  
+B. 255.255.255.240  
+C. 255.255.255.192  
+D. 255.255.255.0  
+ 
+Answer: D 
+ 
+QUESTION 21 
+The default port used for telnet is: 
+ 
+A. 23  
+B. 25  
+C. 80  
+D. 8080  
+ 
+Answer: A 
+ 
+QUESTION 22 
+When a client's DHCP-issued address expires, the client will: 
+ 
+A. Select a new address and request approval from the DHCP server.  
+B. Require manual configuration with a static IP address.  
+C. Attempt to obtain a new address by broadcasting.  
+D. Continue to use the address until it is notified to stop.  
+ 
+Answer: C 
+ 
+QUESTION 23 
+You ping a server by using fully qualified domain name (FQDN) and do not receive a response. You then ping 
+the same server by using its IP address and receive a response. 
+Why do you receive a response on the second attempt but not on the first attempt? 
+ 
+A. PING is improperly configured.  
+B. The DNS is not resolving.  
+C. The DHCP server is offline.  
+D. NSLOOKUP is stopped.  
+ 
+Answer: B 
+ 
+QUESTION 24 
+A Media Access Control (MAC) address identifies a/an: 
+ 
+=== PAGE 66 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       7 
+ 
+A. UPnP device.  
+B. Local broadcast domain.  
+C. Network interface card (NIC).  
+D. Local area network (LAN).  
+ 
+Answer: C 
+ 
+QUESTION 25 
+Two companies want to share data by using the Internet. 
+Which type of network provides the solution? 
+ 
+A. Ethernet  
+B. Intranet  
+C. Extranet  
+D. Perimeter  
+ 
+Answer: C 
+ 
+QUESTION 26 
+VPNs are implemented to provide: 
+ 
+A. A secure connection within a private network.  
+B. A secure connection through public networks.  
+C. Additional encryption by using IPSec.  
+D. Additional security for selected computers.  
+ 
+Answer: B 
+ 
+QUESTION 27 
+If an 802.llg Internet connection has connectivity problems, what may be the cause? 
+ 
+A. A cordless phone  
+B. A cellular phone  
+C. Incandescent lights  
+D. Electromagnetic interference (EMI)  
+ 
+Answer: D 
+ 
+QUESTION 28 
+Which of these factors has the biggest impact on data transmission speed in a wireless network? 
+ 
+A. The access method used for the network  
+B. The transmission standard of the equipment used  
+C. The use of strong encryption for transmissions  
+D. The transmission wattage rating used on the NIC  
+ 
+Answer: B 
+ 
+=== PAGE 67 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       8 
+ 
+QUESTION 29 
+Which of the following uses a tunneling protocol? 
+ 
+A. Internet  
+B. VPN  
+C. Extranet  
+D. VLAN  
+ 
+Answer: B 
+ 
+QUESTION 30 
+A network that separates an organization's private network from a public network is a/an: 
+ 
+A. Firewall  
+B. Extranet  
+C. Perimeter  
+D. Internet  
+ 
+Answer: C 
+ 
+QUESTION 31 
+Which type of network is most vulnerable to intrusion? 
+ 
+A. Dial-up  
+B. Wireless  
+C. Broadband  
+D. Leased line  
+ 
+Answer: B 
+ 
+QUESTION 32 
+Attenuation in a wireless network signal is a result of: 
+ 
+A. Number of wireless nodes connected.  
+B. Distance from the access point.  
+C. Interference from cellular phones.  
+D. Encryption of the signal.  
+ 
+Answer: B 
+ 
+QUESTION 33 
+Which type of network covers the broadest area? 
+ 
+A. WAN  
+B. CAN  
+C. LAN  
+D. PAN  
+=== PAGE 68 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       9 
+ 
+ 
+Answer: A 
+ 
+QUESTION 34 
+In local area network (LAN) topologies, the primary media access methods are: (Choose two.) 
+ 
+A. Contention  
+B. Negotiation  
+C. Kerberos  
+D. Token passing  
+ 
+Answer: A,D 
+ 
+QUESTION 35 
+In a physical star topology, the central device is referred to as a: 
+ 
+A. Bridge  
+B. Server  
+C. segmenter  
+D. Hub  
+ 
+Answer: D 
+ 
+QUESTION 36 
+Which technology can you use to extend an internal network across shared or public networks? 
+ 
+A. VLAN  
+B. Microsoft ASP-NET  
+C. Microsoft .NET Framework  
+D. VPN  
+ 
+Answer: D 
+ 
+QUESTION 37 
+Which two are published IEEE 802.11 wireless transmission standards? (Choose two.) 
+ 
+A. 802.1 If  
+B. 802.11g  
+C. 802.11k  
+D. 802.11m  
+E. 802.11n  
+ 
+Answer: B,E 
+ 
+QUESTION 38 
+What happens when an 802.11b node starts broadcasting within the range of an 802.llg access point? 
+ 
+A. The access point will transmit, but the node will be unable to receive.  
+=== PAGE 69 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       10 
+ 
+B. A connection will be established,  
+C. Both the node and the access point will be unable to transmit.  
+D. The node will transmit, but the access point will be unable to receive.  
+ 
+Answer: B 
+ 
+QUESTION 39 
+Which technology provides the highest bit rate? 
+ 
+A. T1  
+B. El  
+C. DS3  
+D. ISDN  
+ 
+Answer: C 
+ 
+QUESTION 40 
+A VPN is a/an: 
+ 
+A. Encrypted connection across the Internet.  
+B. Virtual network within your local area network (LAN).  
+C. Communication tunnel between VLANs.  
+D. Personal network for your use only.  
+ 
+Answer: A 
+ 
+QUESTION 41 
+Which of the following determines the media access method that is used in a network? 
+ 
+A. Number of hosts connected to the network  
+B. Number of domain servers on the segment  
+C. Maximum speed of the media  
+D. Topology and protocols  
+ 
+Answer: D 
+ 
+QUESTION 42 
+Which wireless authentication method provides the highest level of security? 
+ 
+A. Wired Equivalency Privacy (WEP)  
+B. IEEE 802.lln  
+C. WI-FI Protected Access (WPA)  
+D. IEEE 802.11a  
+ 
+Answer: C 
+ 
+QUESTION 43 
+The topology of a local area network (LAN) is defined by the: 
+=== PAGE 70 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       11 
+ 
+ 
+A. Number of devices to connect.  
+B. Physical and logical characteristics.  
+C. Distance between workstations.  
+D. Type of cable being used.  
+ 
+Answer: B 
+ 
+QUESTION 44 
+The maximum throughput of an 802.llg network is: 
+ 
+A. 2.4 GHz.  
+B. 54 GHz.  
+C. 2.4 Mbps  
+D. 54 Mbps.  
+ 
+Answer: D 
+ 
+QUESTION 45 
+A node within a local area network (LAN) must have a network interface device and a: 
+ 
+A. Network account  
+B. Table of all network nodes  
+C. Host address  
+D. Resource to share  
+ 
+Answer: C 
+ 
+QUESTION 46 
+Which of the following is a Layer 2 WAN protocol? 
+ 
+A. Point-to-Point Protocol (PPP)  
+B. Simple Network Management Protocol (SNMP)  
+C. Transmission Control Protocol (TCP)  
+D. Internet Protocol (IP)  
+ 
+Answer: A 
+ 
+QUESTION 47 
+Which type of port is used to support VLAN traffic between two switches? 
+ 
+A. Virtual port  
+B. WAN port  
+C. Trunk port  
+D. LAN port  
+ 
+Answer: C 
+ 
+=== PAGE 71 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       12 
+ 
+QUESTION 48 
+The protocol that maps IP addresses to a Media Access Control (MAC) address is: 
+ 
+A. Internet Message Access Protocol (IMAP).  
+B. Dynamic Host Configuration Protocol (DHCP).  
+C. Routing Information Protocol (RIP).  
+D. User Datagram Protocol (UDP).  
+E. Address Resolution Protocol (ARP).  
+ 
+Answer: E 
+ 
+QUESTION 49 
+A user reports that she cannot connect to network resources from a computer on the company network. The user 
+was able to connect to the network resources yesterday. 
+You verify that the user's computer is properly physically connected to the network. You discover that the 
+computer's IP address is 169.254.48.97. 
+You need to restore access to network resources. 
+What should you do next? 
+ 
+A. Flush the cache on the DNS server.  
+B. Reset the user's password on the server.  
+C. Check your router's current routing tables.  
+D. Verify that the DHCP service is available.  
+ 
+Answer: D 
+ 
+QUESTION 50 
+The host name of the fully qualified domain name (FQDN) mail.exchange.corp.nwtraders.com is: 
+ 
+A. corp  
+B. com  
+C. nwtraders  
+D. exchange  
+E. mail  
+ 
+Answer: E 
+ 
+QUESTION 51 
+To which IP configuration does the CIDR notation 192.168.1.1/25 refer? 
+ 
+A. 192.168.1.1 255.255.255.64  
+B. 192.168.1.1 255.255.255.1  
+C. 192.168.1.1 255.255.255.32  
+D. 192.168.1.1 255.255.255.256  
+E. 192.168.1.1 255.255.255.128  
+ 
+Answer: E 
+ 
+=== PAGE 72 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       13 
+ 
+QUESTION 52 
+Which command is used to verify that a server is connected to the network? 
+ 
+A. IPCONFIG  
+B. ROUTE  
+C. PING  
+D. CHECK  
+ 
+Answer: C 
+ 
+QUESTION 53 
+Which of these represents the Internet Protocol version 6 (IPv6) loopback address? 
+ 
+A. 127.0.0.1  
+B. 192.168.0.1  
+C. FEC0:A8C0::AA01  
+D. ::1  
+ 
+Answer: D 
+ 
+QUESTION 54 
+Which of these addresses is a multicast address? 
+ 
+A. 127.0.0.1  
+B. 169.254.0.1  
+C. 192.168.0.1  
+D. 224.0.0.1  
+ 
+Answer: D 
+ 
+QUESTION 55 
+Which of the following uses pointer records and A records? 
+ 
+A. IDS  
+B. DNS Server  
+C. NAT Server  
+D. IPS  
+ 
+Answer: B 
+ 
+QUESTION 56 
+The ipconfig command will: 
+ 
+A. Configure routers  
+B. Display a client's address  
+C. Display a client's broadcast mode  
+D. Configure DHCP clients  
+=== PAGE 73 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       14 
+ 
+ 
+Answer: B 
+ 
+QUESTION 57 
+One reason to incorporate VLANs in a network is to: 
+ 
+A. Increase the number of available IP addresses.  
+B. Increase the number of available Media Access Control (MAC) addresses.  
+C. Reduce the number of broadcast domains.  
+D. Reduce the number of nodes in a broadcast domain.  
+ 
+Answer: D 
+ 
+QUESTION 58 
+Which of these is an application layer protocol? 
+ 
+A. TCP  
+B. FTP  
+C. IP  
+D. UDP  
+ 
+Answer: B 
+ 
+QUESTION 59 
+The top-level domain ofwww.adventureworks.com is: 
+ 
+A. www  
+B. adventureworks  
+C. adventureworks.com  
+D. com  
+ 
+Answer: D 
+ 
+QUESTION 60 
+At what layer in the OSI model are hardware addresses referenced? 
+ 
+A. Network  
+B. Application  
+C. Data link  
+D. Physical  
+ 
+Answer: C 
+ 
+QUESTION 61 
+You need to divide a network into three subnets. 
+Which device should you use? 
+ 
+A. Hub  
+=== PAGE 74 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       15 
+ 
+B. Bridge  
+C. Router  
+D. Segmenter  
+ 
+Answer: C 
+ 
+QUESTION 62 
+The type of connector used on a 100BaseT Ethernet cable is: 
+ 
+A. RJ-11  
+B. RJ-45.  
+C. TNC.  
+D. BNC.  
+ 
+Answer: B 
+ 
+QUESTION 63 
+In addition to switching, multilayer switches also: 
+ 
+A. Provide Layer 3 routing functions.  
+B. Interface with CAT3, CATS, CAT5e, and fiber optics.  
+C. Support 10 MB, 100 MB, and 1 GB local area network (LAN) ports.  
+D. Operate by using only Layer 1 and 2 protocols.  
+ 
+Answer: A 
+ 
+QUESTION 64 
+One reason to replace an unmanaged switch with a managed switch is to: 
+ 
+A. Manage the routing tables.  
+B. Support multiple VLANS.  
+C. Reduce collision domains.  
+D. Route between networks,  
+ 
+Answer: B 
+ 
+QUESTION 65 
+To directly connect the Ethernet network interface cards (NICs) of two computers, you should use a: 
+ 
+A. Crossover cable  
+B. Straight cable  
+C. Rollover cable  
+D. Coaxial cable  
+ 
+Answer: A 
+ 
+QUESTION 66 
+The function of a router is to: 
+=== PAGE 75 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       16 
+ 
+ 
+A. Provide IP subnet masks for hosts.  
+B. Forward traffic to other networks.  
+C. Broadcast routing tables to clients.  
+D. Store tables for name resolution.  
+ 
+Answer: B 
+ 
+QUESTION 67 
+If a router cannot determine the next hop for a packet, the router will: 
+ 
+A. Forward the packet to the default route.  
+B. Send the packet back to the packet's source.  
+C. Broadcast the packet.  
+D. Store the packet in the memory buffer.  
+ 
+Answer: A 
+ 
+QUESTION 68 
+In which physical network topology is each computer connected to a central point? 
+ 
+A. Star  
+B. Mesh  
+C. Ring  
+D. Bus  
+ 
+Answer: A 
+ 
+QUESTION 69 
+Which two of the following are connectivity options for wide area networks (WANs)? (Choose two.) 
+ 
+A. Token ring  
+B. Ethernet  
+C. Dial-up  
+D. Leased line  
+ 
+Answer: C,D 
+ 
+QUESTION 70 
+A private network that allows members of an organization to exchange data is an: 
+ 
+A. Extranet  
+B. Ethernet  
+C. Intranet  
+D. Internet  
+ 
+Answer: C 
+ 
+=== PAGE 76 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       17 
+ 
+QUESTION 71 
+Security is a concern on wireless networks due to: 
+ 
+A. The radio broadcast access method.  
+B. Spread spectrum issues.  
+C. Frequency modulation issues.  
+D. The potential for cross-talk.  
+ 
+Answer: A 
+ 
+QUESTION 72 
+A characteristic of the mesh topology is that it: 
+ 
+A. Uses a central hub.  
+B. Cannot use wired connections.  
+C. Uses redundant paths.  
+D. Cannot use wireless connections.  
+ 
+Answer: C 
+ 
+QUESTION 73 
+To protect a network when it is connected to the Internet, you should use a: 
+ 
+A. Bridge  
+B. Firewall  
+C. Switch  
+D. Router  
+ 
+Answer: B 
+ 
+QUESTION 74 
+One purpose of a perimeter network is to: 
+ 
+A. Make resources available to the intranet.  
+B. Link campus area networks (CANs).  
+C. Link local area networks (LANs).  
+D. Make resources available to the Internet.  
+ 
+Answer: D 
+ 
+QUESTION 75 
+Which protocol can be used to encrypt packets on the Internet? 
+ 
+A. SNMP  
+B. HTTPS  
+C. TFTP  
+D. HTTP  
+=== PAGE 77 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       18 
+ 
+ 
+Answer: B 
+ 
+QUESTION 76 
+The service that resolves fully qualified domain names (FQDN) to IP addresses is: 
+ 
+A. Windows Internet Name Service (WINS).  
+B. Domain Name Service (DNS).  
+C. Internet Service Provider (ISP).  
+D. Address Resolution Protocol (ARP).  
+ 
+Answer: B 
+ 
+QUESTION 77 
+Order the layers of the OSI model: 
+ 
+ 
+Answer: 
+=== PAGE 78 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       19 
+ 
+ 
+ 
+QUESTION 78 
+If a router is installed so that it separates a DHCP server from its clients, the clients will: 
+ 
+A. Immediately lose connectivity to all segments.  
+B. Be unable to obtain their leases from the server.  
+C. Immediately lose connectivity to the local segment.  
+D. Receive an immediate renewal of their lease.  
+ 
+Answer: B 
+ 
+QUESTION 79 
+Which of the following services masks internal IP addresses from outside the network? 
+ 
+A. DHCP  
+B. WINS  
+C. NAT  
+D. DNS  
+ 
+Answer: C 
+ 
+QUESTION 80 
+The query protocol used to locate resources on a network is: 
+ 
+A. User Datagram Protocol (UDP).  
+B. Lightweight Directory Access Protocol (LDAP),  
+C. Tracert  
+=== PAGE 79 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       20 
+ 
+D. Telnet.  
+ 
+Answer: B 
+ 
+QUESTION 81 
+Tracert is used to: 
+ 
+A. Manage routing tables dynamically.  
+B. Manage session-oriented connections between nodes.  
+C. Report the route taken by packets across an IP network.  
+D. Report the shortest route between different networks.  
+ 
+Answer: C 
+ 
+QUESTION 82 
+In which OSI layer does routing occur? 
+ 
+A. Transport  
+B. Network  
+C. Data Link  
+D. Physical  
+ 
+Answer: B 
+ 
+QUESTION 83 
+What type of record does DNS use to find a mail service? 
+ 
+A. Service (SRV) DNS record  
+B. Canonical (CNAME) DNS record  
+C. Mail Exchanger (MX) DNS record  
+D. Host (A) DNS record  
+ 
+Answer: C 
+ 
+QUESTION 84 
+The default gateway address identifies the: 
+ 
+A. Device that will connect the computer to the local network.  
+B. Device that will connect the computer to a remote network.  
+C. Server that will provide name services for the computer.  
+D. Server that will authenticate the user of the computer.  
+ 
+Answer: B 
+ 
+QUESTION 85 
+How many bits are there in an Internet Protocol version 6 (IPv6) address? 
+ 
+A. 32  
+=== PAGE 80 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       21 
+ 
+B. 64  
+C. 128  
+D. 256  
+ 
+Answer: C 
+ 
+QUESTION 86 
+Which of the following is a public IP address? 
+ 
+A. 10.156.89.1  
+B. 68.24.78.221  
+C. 172.16.152.48  
+D. 192.168.25.101  
+ 
+Answer: B 
+ 
+QUESTION 87 
+What is the minimum cabling requirement for a 100BaseTX network? 
+ 
+A. Category 3 UTP cable  
+B. Category 5 UTP cable  
+C. Category 6 UTP cable  
+D. Multimode fiber cable  
+ 
+Answer: A 
+ 
+Explanation:  
+New Questions 
+ 
+QUESTION 88 
+Internet Key Exchange (IKE) is responsible for which two functions? (Choose two.) 
+ 
+A. Establishing network speed parameters  
+B. Verifying the client's patch level  
+C. Negotiating algorithms to use  
+D. Exchanging key information  
+ 
+Answer: A,B 
+ 
+QUESTION 89 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+=== PAGE 81 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       22 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 90 
+You are trying to access a music sharing service on the Internet. The service is located at the IP address 
+173.194.75.105. You are experiencing problems connecting. 
+You run a trace route to the server and receive the output shown in the following image: 
+=== PAGE 82 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       23 
+ 
+ 
+ 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 91 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+=== PAGE 83 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       24 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 92 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+The process of replicating a zone file to multiple DNS servers is called zone replication, 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Zone transfer  
+B. Zone synchronization  
+C. Start of authority  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 93 
+Match each IP address to its corresponding IPv4 address class. 
+To answer, drag the appropriate IP address from the column on the left to its IPv4 address class on the right. 
+Each IP address may be used once, more than once, or not at all. Each correct match is worth one point. 
+=== PAGE 84 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       25 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 94 
+Which DNS record type specifies the host that is the authority for a given domain? 
+ 
+A. NS  
+B. MX  
+C. CNAME  
+D. SOA  
+=== PAGE 85 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       26 
+ 
+ 
+Answer: B 
+ 
+QUESTION 95 
+Match each protocol to its description. 
+To answer, drag the appropriate protocol from the column on the left to its description on the right. Each 
+protocol may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 86 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       27 
+ 
+ 
+ 
+QUESTION 96 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 87 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       28 
+ 
+ 
+ 
+QUESTION 97 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+All session data is encrypted between all machines while using telnet. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Not encrypted  
+B. Encrypted between any Windows machines  
+C. Encrypted only to any non-Windows machines  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 98 
+Which protocol is a transport layer protocol? 
+ 
+A. FTP  
+B. IP  
+C. UDP  
+D. ASCII  
+ 
+Answer: D 
+ 
+QUESTION 99 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+IPv4 multicast addresses range from 192.168.0.0 to 192.168.255.255. 
+Select the correct answer if the underlined text does not make the statement correct. Select "No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. 127.0.0.0 to 127.255.255.255  
+B. 172.16.0.0 to 172.31.255.255  
+C. 224.0.0.0 to 239.255.255.255  
+=== PAGE 88 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       29 
+ 
+D. No change is needed  
+ 
+Answer: C 
+ 
+QUESTION 100 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+The four IEEE standards, 802.11a, b, g, and n, are collectively known as mobile ad hoc networks. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. WiMAX  
+B. Bluetooth  
+C. WiFi  
+D. No change is needed  
+ 
+Answer: C 
+ 
+QUESTION 101 
+A university has network links between various locations. Where would a T3 connection be appropriate? 
+ 
+A. Server to network in the main campus server room  
+B. Main campus to a large satellite campus  
+C. Computer lab PC to lab printer  
+D. Library laptop PC to Internet  
+ 
+Answer: A 
+ 
+QUESTION 102 
+You cannot get to any site on the Internet or on the school's intranet. Your school uses DHCP. 
+You check your network settings, which are configured as shown in the following image: 
+=== PAGE 89 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       30 
+ 
+ 
+ 
+You need to change the settings to access websites. 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 90 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       31 
+ 
+ 
+ 
+QUESTION 103 
+Match each network type to its corresponding definition. 
+To answer, drag the appropriate network type from the column on the left to its definition on the right. Each 
+network type may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 91 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       32 
+ 
+ 
+ 
+QUESTION 104 
+Match the VPN connection type to the corresponding definition. 
+To answer, drag the appropriate VPN term from the column on the left to its definition on the right. Each term 
+may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 92 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       33 
+ 
+ 
+ 
+QUESTION 105 
+Match each set of characteristics to the corresponding 802.11 standard. 
+To answer, drag the appropriate set of characteristics from the column on the left to its 802.11 standard on the 
+right. Each set may be used once, more than once, or not at all. Each correct match is worth one point. 
+=== PAGE 93 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       34 
+ 
+ 
+ 
+Answer: 
+=== PAGE 94 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       35 
+ 
+ 
+ 
+QUESTION 106 
+You work at a coffee shop. Your supervisor asks you to help set up a computer network. 
+The network needs to have the following items: 
+? A public facing web server  
+? A Wi-Fi network for customers  
+? A private network for the point of sale terminals  
+? An office PC  
+? A file/print server  
+? A network printer  
+You need to set up a perimeter network to protect the network. 
+Which two items should you include in the perimeter network? (Choose two.) 
+ 
+A. Network printer  
+B. Web server  
+C. File server  
+D. Wi-Fi network  
+E. Point of sale terminals  
+ 
+Answer: A,B 
+ 
+QUESTION 107 
+Match the networking topologies to their corresponding characteristics. 
+=== PAGE 95 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       36 
+ 
+To answer, drag the appropriate topology from the column on the left to its characteristic on the right. Each 
+topology may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 96 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       37 
+ 
+ 
+ 
+QUESTION 108 
+Which two features of a Windows Server 2008 R2 server should you install to use that server as a software 
+router? (Choose two.) 
+ 
+A. Network Policy and Access Services  
+B. Routing and Remote Access Services  
+C. Remote Administration  
+D. DirectAccess  
+ 
+Answer: A,B 
+ 
+QUESTION 109 
+What are two characteristics of fiber optic cable? (Choose two.) 
+ 
+A. Conducts electricity  
+B. Requires metal conduit  
+C. Supports splicing  
+D. Requires a polish for end connectors  
+ 
+Answer: A,C 
+ 
+QUESTION 110 
+Identify the network cable type and connector in the following graphic: 
+=== PAGE 97 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       38 
+ 
+ 
+ 
+Use the drop-down menus to select the answer choice that answers each question. Each correct selection is 
+worth one point. 
+ 
+ 
+Answer: 
+  
+=== PAGE 98 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       39 
+ 
+ 
+ 
+QUESTION 111 
+Which Microsoft network service can you use to establish a connection to a corporate LAN without any user 
+action? 
+ 
+A. VPN  
+B. Remote Desktop  
+C. DirectAccess  
+D. Nap  
+ 
+Answer: A 
+ 
+QUESTION 112 
+For each of the following statements, select Yes if the statement is true. Otherwise, select 
+No. Each correct selection is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 99 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       40 
+ 
+ 
+ 
+QUESTION 113 
+Match the IPv4 address type to the corresponding definition. 
+To answer, drag the appropriate definition from the column on the left to the address type on the right. Each 
+definition may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 100 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       41 
+ 
+ 
+ 
+QUESTION 114 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+A secondary zone is the first DNS zone to which all updates for the records that belong to that zone are written. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Primary zone  
+B. Stub zone  
+C. Conditional forwarding zone  
+D. No change is needed.  
+ 
+Answer: A 
+ 
+QUESTION 115 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+=== PAGE 101 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       42 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 116 
+You are setting up a network computer game. 
+You need to open up ports on your firewall so your friends can join the network. 
+Which command displays the ports that your computer is listening for? 
+ 
+A. nslookup  
+B. nbtstat  
+C. ping  
+D. netstat  
+ 
+Answer: A 
+ 
+QUESTION 117 
+Match the TCP ports to the corresponding service. 
+=== PAGE 102 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       43 
+ 
+To answer, drag the appropriate port number from the column on the left to its service on the right. Each port 
+number may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+ 
+=== PAGE 103 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       44 
+ 
+ 
+QUESTION 118 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 119 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+When a client computer is unable to reach a DHCP server, it will automatically assign an IP address in the 
+10.0.0.0 -10.0.0.255 range. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. 127.0.0.0-127.0.0.255  
+B. 169.254.0.0-169.254.255.255  
+C. 192168.100.0 -192.168.100.255  
+D. No change is needed  
+ 
+Answer: B 
+=== PAGE 104 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       45 
+ 
+ 
+QUESTION 120 
+A node within a local area network (LAN) must have which two of the following? (Choose two.) 
+ 
+A. Username and password  
+B. Share name  
+C. NIC  
+D. IP address  
+E. Table of all network nodes  
+ 
+Answer: B,E 
+ 
+QUESTION 121 
+You are configuring a wireless network with the Wireless Network Properties that are shown in the following 
+image: 
+ 
+ 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+=== PAGE 105 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       46 
+ 
+ 
+ 
+Answer: 
+ 
+  
+ 
+QUESTION 122 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+A/anvirtual private network (VPN) protects a network's perimeter by monitoring traffic as it enters and leaves. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Extranet  
+B. Firewall  
+C. Intranet  
+D. No change is needed  
+ 
+Answer: B 
+ 
+QUESTION 123 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+The loopback address of your computer is 127.0.0.1. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. 10.0.1.1  
+B. 169.254.0.5  
+C. 192168.1.1  
+D. No change is needed  
+ 
+Answer: D 
+=== PAGE 106 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       47 
+ 
+ 
+QUESTION 124 
+You run the ipconfig command. The output is shown in the following image: 
+ 
+ 
+From these settings, you can tell that the computer: 
+ 
+A. Will have limited Internet access  
+B. Will have full Internet access  
+C. Will not be able to access the Internet  
+D. Will not be able to access the local network  
+ 
+Answer: A 
+ 
+QUESTION 125 
+Which IEEE 802.11 Wi-Fi networking standard requires dual antennas so it can run in all of its supported 
+frequencies? 
+ 
+A. 802.11a  
+B. 802.11b  
+C. 802.11g  
+D. 802.11n  
+ 
+Answer: D 
+ 
+QUESTION 126 
+What is the bit rate for a North American T3 circuit? 
+ 
+A. 6.312 Mbit/s  
+B. 44.736 Mbit/s  
+C. 274.176 Mbit/s  
+D. 400.352 Mbit/s  
+ 
+Answer: B 
+ 
+=== PAGE 107 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       48 
+ 
+QUESTION 127 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 128 
+Which feature of Category 5e STP cable reduces external interference? 
+ 
+A. Crosstalk  
+B. Shielding  
+C. Length  
+D. Twisting  
+ 
+Answer: C 
+ 
+=== PAGE 108 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       49 
+ 
+QUESTION 129 
+What are three advantages of VLANs? (Choose three.) 
+ 
+A. They can logically address packets by using IP.  
+B. They require a router to connect to VLANs on another switch.  
+C. They compartmentalize a network and isolate traffic.  
+D. They are efficient because a single switch can implement only a single VLAN.  
+E. They act as though they are on the same LAN regardless of physical location.  
+ 
+Answer: C,D,E 
+ 
+QUESTION 130 
+Match the OSI layer to its corresponding description. 
+To answer, drag the appropriate OSI layer from the column on the left to its description on the right. Each OSI 
+layer may be used once, more than once, or not at all. Each correct match is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 109 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       50 
+ 
+ 
+ 
+QUESTION 131 
+You receive a call from a family member who is unable to connect to a game server. 
+You learn that the server's IP is 172.16.2.11. 
+To help, you ping the server and receive the information shown in the following image: 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+ 
+=== PAGE 110 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       51 
+ 
+ 
+ 
+Answer: 
+  
+ 
+ 
+QUESTION 132 
+Match each address type to its appropriate range. 
+To answer, drag the appropriate address type from the column on the left to its range on the right. Each address 
+type may be used once, more than once, or not at all. Each correct match is worth one point. 
+=== PAGE 111 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       52 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 133 
+For which two reasons should you use IPsec between computers? (Choose two.) 
+ 
+A. Data compression  
+B. Data integrity  
+C. Data redundancy  
+D. Data confidentiality  
+ 
+Answer: A,B 
+ 
+=== PAGE 112 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       53 
+ 
+QUESTION 134 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+Every router today is TCP/IP enabled, which is an industry-standard protocol that you use on the Internet and 
+for local addressing. 
+Select the correct answer if the underlined text does not make the statement correct. Select 
+'No change is needed" if the underlined text makes the statement correct. 
+ 
+A. HTTP 
+B. FTP  
+C. SNMP  
+D. No change is needed  
+ 
+Answer: D 
+ 
+QUESTION 135 
+You are home for vacation, and a family member wants your help to purchase and install network cable for a 
+home office. 
+The cable needs to support at least 300 Mbps. 
+What is the least expensive option that meets this requirement? 
+ 
+A. Cat3  
+B. CAT5  
+C. Cat5e  
+D. Cat6  
+ 
+Answer: C 
+ 
+QUESTION 136 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+WEP wireless encryption is the most susceptible to interception and decryption. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed'' if the underlined text makes the statement correct 
+ 
+A. WPA-AES  
+B. WPA2  
+C. WPA-PSK  
+D. No change is needed  
+ 
+Answer: D 
+ 
+QUESTION 137 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+=== PAGE 113 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       54 
+ 
+ 
+ 
+Answer:  
+ 
+ 
+QUESTION 138 
+What is an example of a network device that associates a network address with a port? 
+ 
+A. Switch  
+B. Router  
+C. Hub  
+D. DSL modem  
+ 
+Answer: C 
+ 
+QUESTION 139 
+Which wireless communication problem is caused by electromagnetic waves? 
+ 
+A. Fading  
+B. Attenuation  
+C. Interference  
+=== PAGE 114 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       55 
+ 
+D. Diffraction  
+ 
+Answer: C 
+ 
+QUESTION 140 
+An Action Center alert recommends that you enable Windows Firewall. 
+After enabling the firewall, you can no longer access websites. 
+Which two TCP ports should you add exceptions for on the firewall? (Choose two.) 
+ 
+A. Port 21  
+B. Port 23  
+C. Port 25  
+D. Port 80  
+E. Port 443  
+ 
+Answer: D,E 
+ 
+QUESTION 141 
+What are two advantages of using star topology rather than ring topology in a computer lab workgroup? 
+(Choose two.) 
+ 
+A. Failure of a central connectivity device does not bring down the entire network.  
+B. A central connection point allows for flexibility and scalability.  
+C. Data travels on redundant paths, so one cable cannot stop its transmission.  
+D. A cable problem within the group affects two nodes, at most.  
+ 
+Answer: B,D 
+ 
+QUESTION 142 
+What are three characteristics of Ethernet network topology? (Choose three.) 
+ 
+A. It uses tokens to avoid collisions on the network.  
+B. It can use coaxial, twisted pair, and fiber optic media.  
+C. It comprises the largest share of the networks in place today.  
+D. It is a non-switching protocol.  
+E. It can negotiate different transmission speeds.  
+ 
+Answer: A,B,D 
+ 
+QUESTION 143 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+Plain old telephone service (POTS), most ISDN lines, and switched T1 lines are all examples of Message 
+Switching. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed'' if the underlined text makes the statement correct. 
+ 
+A. Circuit Switching  
+B. Packet Switching  
+=== PAGE 115 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       56 
+ 
+C. FDDI Switching  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 144 
+For each of the following statements, select Yes if the statement is true. Otherwise, select 
+No. Each correct selection is worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 145 
+You are an intern for Contoso Ltd. Your supervisor asks you to configure the security zones for three new PCs 
+so that they are able to connect to two web servers. 
+The servers connect to the three new PCs as shown in the following image: 
+=== PAGE 116 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       57 
+ 
+ 
+ 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 117 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       58 
+ 
+ 
+  
+ 
+QUESTION 146 
+Your home computer is having problems accessing the Internet. 
+You suspect that your Internet router's DHCP service is not functioning, so you check your computer's IP 
+address. 
+Which address indicates that your router's DHCP service is NOT functioning? 
+ 
+A. 169.254.1.15  
+B. 172.16.1.15  
+C. 192.168.1.15  
+D. 10.19.1.15  
+ 
+Answer: B 
+ 
+QUESTION 147 
+Which of these is a public address space? 
+ 
+A. 192.168.0.0/16  
+B. 197.16.0.0/12  
+C. 10.0.0.0/8  
+D. 172.16.0.0/12  
+ 
+Answer: D 
+ 
+QUESTION 148 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+In a wireless network that requires an SSL certificate, WEP handles the SSL certificate. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. 802.1X  
+B. WPA2-PSK  
+C. WPA-PSK  
+D. No change is needed  
+ 
+Answer: A 
+=== PAGE 118 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       59 
+ 
+ 
+QUESTION 149 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+To set lower security settings in Internet Explorer for an extranet site, add the site's URL to the Local Intranet 
+zone. 
+Select the correct answer if the underlined text does not make the statement correct. Select 
+'No change is needed" if the underlined text makes the statement correct. 
+ 
+A. Internet  
+B. Trusted Sites  
+C. Extranet Sites  
+D. No change is needed  
+ 
+Answer: B 
+ 
+QUESTION 150 
+You are helping a friend set up a public-facing web server for a home office. 
+Your friend wants to protect the internal network from intrusion. 
+What should you do? 
+ 
+A. Set the web server in a perimeter network.  
+B. Set the web server to block access on ports 80 and 443.  
+C. Configure the firewall to block access on ports 80 and 443.  
+D. Set the IP address of the web server to be within the LAN.  
+ 
+Answer: A 
+ 
+QUESTION 151 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 119 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       60 
+ 
+ 
+ 
+QUESTION 152 
+What are two characteristics of the CSMA/CD access method? (Choose two.) 
+ 
+A. It checks to see if a collision has been detected.  
+B. It does a round robin search for requests to transmit from all nodes on the network.  
+C. It signals its intent to transmit on the network.  
+D. It waits until the transmission medium is idle.  
+ 
+Answer: B,C 
+ 
+QUESTION 153 
+What are two characteristics of a mesh network topology? (Choose two.) 
+ 
+A. It is fault tolerant because of redundant connections.  
+B. Every node connects to every other node on the network.  
+C. It works best for networks with a large number of nodes.  
+D. It requires less cabling than either a star or ring topology.  
+ 
+Answer: A,C 
+ 
+QUESTION 154 
+Which protocol is responsible for automatically assigning IP addresses? 
+ 
+A. HTTP  
+B. DHCP  
+C. DNS  
+D. WINS  
+ 
+Answer: A 
+ 
+QUESTION 155 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+According to the OSI model, encryption takes place on the transport layer. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+=== PAGE 120 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       61 
+ 
+ 
+A. Presentation  
+B. Network  
+C. Application  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 156 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 157 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+IPSec policies for two machines on a LAN can be modified by using the IPSec policy snap-in on Windows 7. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+=== PAGE 121 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       62 
+ 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Windows Firewall with Advanced Security snap-in  
+B. LAN adapter properties  
+C. Remote Access snap-in  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 158 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+An Address Resolution Protocol (ARP) table is used to associate IP addresses with host names. 
+Select the correct answer if the underlined text does not make the statement correct. Select 
+'No change is needed" if the underlined text makes the statement correct. 
+ 
+A. MAC addresses  
+B. HomeGroup membership  
+C. Preferred routers  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 159 
+Which network device interconnects computers in a workgroup, is able to be remotely configured, and provides 
+the best throughput? 
+ 
+A. Unmanaged switch  
+B. Hub  
+C. Router  
+D. Managed switch  
+ 
+Answer: A 
+ 
+QUESTION 160 
+What is the maximum cable length for a single Cat5 UTP cable run? 
+ 
+A. 285 feet/86.87 meters  
+B. 328 feet/99.97 meters  
+C. 432 feet/131.67 meters  
+D. 600 feet/182.88 meters  
+ 
+Answer: B 
+ 
+QUESTION 161 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+=== PAGE 122 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       63 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 162 
+Which of these cable types transmits data the greatest distance? 
+ 
+A. Multi-mode fiber  
+B. Single-mode fiber  
+C. Cat5e  
+D. Cat6  
+ 
+Answer: B 
+ 
+QUESTION 163 
+What is a similarity between Layer 2 and Layer 3 switches? 
+ 
+A. Both provide a high level of security to the network. 
+B. Both use logical addressing to forward transmissions.  
+C. Both forward packets onto the network.  
+D. Both allow the implementation of VLANs.  
+=== PAGE 123 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       64 
+ 
+ 
+Answer: C 
+ 
+QUESTION 164 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+Dynamic routing is fault tolerant. 
+Select the correct answer if the underlined text does not make the statement correct. Select 'No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Static routing  
+B. Default route  
+C. Least cost routing  
+D. No change is needed  
+ 
+Answer: D 
+ 
+QUESTION 165 
+You need to run four Ethernet network drops. Each drop is approximately 125 feet/46.33 meters. 
+An interference exists along the path of each drop. 
+You need to ensure that interference is reduced. 
+Which cable type should you use? 
+ 
+A. STP Cat5e  
+B. UTPCat5e  
+C. Cat3  
+D. UTPCat6  
+ 
+Answer: A 
+ 
+QUESTION 166 
+What is an example of a Layer 3 device that connects multiple computers and networks? 
+ 
+A. Packet  
+B. Repeater  
+C. Switch  
+D. Router  
+ 
+Answer: A 
+ 
+QUESTION 167 
+Which metric does Routing Information Protocol (RJP) use to determine the least costly route? 
+ 
+A. Delay  
+B. Host ID  
+C. Hop count  
+D. Interface  
+ 
+Answer: A 
+=== PAGE 124 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       65 
+ 
+ 
+QUESTION 168 
+What are two differences between switches and hubs? (Choose two.) 
+ 
+A. Switches are slower than hubs because of the extra addressing functions that switches perform.  
+B. Switches send data to all of the computers that are connected to them for efficiency.  
+C. Switches are capable of sending and receiving data at the same time.  
+D. Switches identify the intended destination of the data that they receive.  
+ 
+Answer: B,C 
+ 
+QUESTION 169 
+What is the DNS record type that specifies an alias name of another address record? 
+ 
+A. MX  
+B. CNAME  
+C. NS  
+D. SOA  
+ 
+Answer: C 
+ 
+QUESTION 170 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+Each IPv4 address consists of a MAC address and data-link laver address. 
+Select the correct answer if the underlined text does not make the statement correct. Select "No change is 
+needed" if the underlined text makes the statement correct. 
+ 
+A. Network ID and a host ID  
+B. DNS record and a default route  
+C. 64-bit binary number divided into octets  
+D. No change is needed  
+ 
+Answer: A 
+ 
+QUESTION 171 
+This question requires that you evaluate the underlined text to determine if it is correct. 
+The NTP value in a resource record indicates a length of time that other DNS servers use to determine how long 
+to cache information for a record before expiring and discarding it. 
+Select the correct answer if the underlined text does not make the statement correct. Select "No change is 
+needed'' if the underlined text makes the statement correct. 
+ 
+A. TTL  
+B. GPS  
+C. SOA RR  
+D. No change is needed  
+ 
+Answer: A 
+ 
+=== PAGE 125 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       66 
+ 
+QUESTION 172 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 173 
+You are studying for finals in the student lounge. When your laptop is connected to the 
+wireless network, access to the Internet is slow. When you plug your laptop into a wall jack, you can no longer 
+access the Internet at all. 
+You run the ipconfig /all command. The results are shown in the following image: 
+=== PAGE 126 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       67 
+ 
+ 
+ 
+Use the drop-down menus to select the answer choice that completes each statement. Each correct selection is 
+worth one point. 
+=== PAGE 127 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       68 
+ 
+ 
+ 
+Answer: 
+ 
+ 
+QUESTION 174 
+For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct 
+selection is worth one point. 
+ 
+ 
+Answer: 
+=== PAGE 128 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       69 
+ 
+ 
+ 
+QUESTION 175 
+Where in the diagram is a T3 connection possible? (To answer, select the appropriate connection in the diagram 
+in the answer area.) 
+ 
+ 
+Answer: 
+=== PAGE 129 ===
+Cisco 642-457 
+ 
+“Best Material, Great Results”. www.certkingdom.com                                                                       70 
+ 
+ 
+ 
+QUESTION 176 
+What happens when an 802.11a node broadcasts within the range of an 802.11g access point? 
+ 
+A. The access point transmits, but the node is unable to receive.  
+B. A connection occurs.  
+C. Both the node and the access point are unable to transmit.  
+D. The node transmits, but the access point is unable to receive.  
+ 
+Answer: C 
