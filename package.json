@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npx serve -l 3000 .",
     "bundle": "node bundle.js",
-    "test": "node bundle.js"
+    "build": "node bundle.js"
   },
   "keywords": [
     "networking",
