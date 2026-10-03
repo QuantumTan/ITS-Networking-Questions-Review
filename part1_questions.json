@@ -92,7 +92,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You are employed as a network administrator at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with making sure that ABC.com\u2019s network includes a server that converts\nNetBIOS names to IP addresses.\nWhich of the following actions should you take?",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with making sure that ABC.com’s network includes a server that converts\nNetBIOS names to IP addresses.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
@@ -120,12 +120,8 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You are employed as a network designer at ABC.com.\nABC.com\u2019s network is made up of two network segments, named Subnet A and Subnet B. DHCP\nclients are located on Subnet",
+    "question": "You are employed as a network designer at ABC.com.\nABC.com’s network is made up of two network segments, named Subnet A and Subnet B. DHCP clients are located on Subnet A. A DHCP server, named ABC-SR07, is located on Subnet B.\nYou need to make sure that DHCP clients are able to connect to ABC-SR07.\nWhich of the following actions should you take?",
     "options": [
-      {
-        "id": "A",
-        "text": "A DHCP server, named ABC-SR07, is located on Subnet B. You need to make sure that DHCP clients are able to connect to ABC-SR07. Which of the following actions should you take?"
-      },
       {
         "id": "A",
         "text": "You should make sure that the RRAS service is configured."
@@ -144,7 +140,7 @@
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 5 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "DHCP broadcast messages (DHCPDISCOVER) cannot cross routers. A DHCP Relay Agent (or IP helper address) must be configured on the intermediate router to forward DHCP requests between Subnet A and the DHCP server on Subnet B."
   },
   {
     "id": "Q-006",
@@ -152,7 +148,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "multi-choice",
-    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a FDDI network for ABC.com\u2019s environment.\nWhich of the following is TRUE with regards to a FDDI network? (Choose all that apply.)",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a FDDI network for ABC.com’s environment.\nWhich of the following is TRUE with regards to a FDDI network? (Choose all that apply.)",
     "options": [
       {
         "id": "A",
@@ -172,9 +168,10 @@
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "C"
     ],
-    "explanation": "Question 6 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "• A: Under ANSI/ISO FDDI standards, a single ring cannot exceed a total circumference of 100 kilometers (200 km total for dual-ring).\n• C: Each ring in an FDDI network supports a maximum of 500 connected physical stations (nodes)."
   },
   {
     "id": "Q-007",
@@ -241,7 +238,7 @@
     "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
     "domainCode": "Domain 5",
     "type": "single-choice",
-    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou have executed the NBTSTAT command with the \u2013S parameter from the command-line on\nyour workstation.\nWhich of the following describes the reason for executing this command?",
+    "question": "You are employed as an administrator at ABC.com. ABC.com’s network is TCP/IP-based.\nYou have executed the NBTSTAT command with the –S parameter from the command-line on\nyour workstation.\nWhich of the following describes the reason for executing this command?",
     "options": [
       {
         "id": "A",
@@ -269,7 +266,7 @@
     "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
     "domainCode": "Domain 5",
     "type": "single-choice",
-    "question": "You work as a technician at ABC.com. The ABC.com network consists of a single domain named\nABC.com.\nABC.com users have reported that they are experience network connectivity problems.\nYou decide to run the ping \u2013l command from the command-line.\nWhich of the following describes the purpose of using the ping -l command?",
+    "question": "You work as a technician at ABC.com. The ABC.com network consists of a single domain named\nABC.com.\nABC.com users have reported that they are experience network connectivity problems.\nYou decide to run the ping –l command from the command-line.\nWhich of the following describes the purpose of using the ping -l command?",
     "options": [
       {
         "id": "A",
@@ -297,7 +294,7 @@
     "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
     "domainCode": "Domain 2",
     "type": "single-choice",
-    "question": "You are employed as a network technician at ABC.com.\nA ABC.com customer, named Andy Reid, would like to connect his two home computers.\nYou need to solve Andy Reid\u2019s problem without the use of unnecessary hardware.\nWhich of the following actions should you take?",
+    "question": "You are employed as a network technician at ABC.com.\nA ABC.com customer, named Andy Reid, would like to connect his two home computers.\nYou need to solve Andy Reid’s problem without the use of unnecessary hardware.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
@@ -325,7 +322,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "single-choice",
-    "question": "You are employed as a technician at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nA ABC.com client, named Weyland Industries, has requested the installation of a T3 internet\nconnection for their offices.\nWhich of the following is TRUE with regards to T3 internet connections?",
+    "question": "You are employed as a technician at ABC.com. ABC.com’s network is TCP/IP-based.\nA ABC.com client, named Weyland Industries, has requested the installation of a T3 internet\nconnection for their offices.\nWhich of the following is TRUE with regards to T3 internet connections?",
     "options": [
       {
         "id": "A",
@@ -381,7 +378,7 @@
     "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
     "domainCode": "Domain 5",
     "type": "single-choice",
-    "question": "You are employed as a network technician at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with resolving an Internet name resolution problem. After pinging the DNS\nserver address of ABC.com\u2019s ISP, you find that the ISP server is down.\nYou then decide to run the ping \u2013t command from the command line.\nWhich of the following describes the purpose of this command?",
+    "question": "You are employed as a network technician at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with resolving an Internet name resolution problem. After pinging the DNS\nserver address of ABC.com’s ISP, you find that the ISP server is down.\nYou then decide to run the ping –t command from the command line.\nWhich of the following describes the purpose of this command?",
     "options": [
       {
         "id": "A",
@@ -389,7 +386,7 @@
       },
       {
         "id": "B",
-        "text": "It performs reverse name resolution on the ISP\u2019s DNS server IP address."
+        "text": "It performs reverse name resolution on the ISP’s DNS server IP address."
       },
       {
         "id": "C",
@@ -465,7 +462,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "single-choice",
-    "question": "You are employed as a network technician at ABC.com.\nABC.com is planning to replace their existing network cabling. ABC.com has requested that the\nreplacement cabling meet the following requirements:\n\u2022It must be unaffected by electromagnetic interference (EMI).\n\u2022It must be able to transmit data over vast distances.\nWhich of the following actions should you take?",
+    "question": "You are employed as a network technician at ABC.com.\nABC.com is planning to replace their existing network cabling. ABC.com has requested that the\nreplacement cabling meet the following requirements:\n•It must be unaffected by electromagnetic interference (EMI).\n•It must be able to transmit data over vast distances.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
@@ -493,7 +490,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "multi-choice",
-    "question": "You work as a senior network technician at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nABC.com has configured their network to support both IPv4 and IPv6. You are explaining the\ndifferences between IPv4 and IPv6 to a class of ABC.com\u2019s trainee technicians.\nWhich of the following statements are TRUE with regards to these differences? (Choose all that\napply.)",
+    "question": "You work as a senior network technician at ABC.com. ABC.com’s network is TCP/IP-based.\nABC.com has configured their network to support both IPv4 and IPv6. You are explaining the\ndifferences between IPv4 and IPv6 to a class of ABC.com’s trainee technicians.\nWhich of the following statements are TRUE with regards to these differences? (Choose all that\napply.)",
     "options": [
       {
         "id": "A",
@@ -524,7 +521,7 @@
     "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
     "domainCode": "Domain 2",
     "type": "multi-choice",
-    "question": "You work as a network designer at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou are designing a network that will have two subnets, named Subnet A and Subnet B,\nconnected to a router. To save cost, ABC.com wants you to make use of an existing router that\ncannot be configured to support BOOTP.\nSubnet A will host a DHCP server, while Subnet B will have a DHCP Relay Agent configured.\nWhich of the following is TRUE with regards to the DHCP Relay Agent? (Choose two.)",
+    "question": "You work as a network designer at ABC.com. ABC.com’s network is TCP/IP-based.\nYou are designing a network that will have two subnets, named Subnet A and Subnet B,\nconnected to a router. To save cost, ABC.com wants you to make use of an existing router that\ncannot be configured to support BOOTP.\nSubnet A will host a DHCP server, while Subnet B will have a DHCP Relay Agent configured.\nWhich of the following is TRUE with regards to the DHCP Relay Agent? (Choose two.)",
     "options": [
       {
         "id": "A",
@@ -536,11 +533,11 @@
       },
       {
         "id": "C",
-        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server\u2019s LAN adapter is connected, whether it is configured on the VPN server or not."
+        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server’s LAN adapter is connected, whether it is configured on the VPN server or not."
       },
       {
         "id": "D",
-        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server\u2019s LAN adapter is connected, if it is configured on the VPN server."
+        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server’s LAN adapter is connected, if it is configured on the VPN server."
       }
     ],
     "correctAnswer": [
@@ -555,7 +552,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You work as a senior network technician at ABC.com.\nYou are in the process of connecting a 1000BASE-SX gigabit Ethernet in ABC.com\u2019s office block.\nWhich of the following Statements are TRUE with regards to 1000BASE-SX?",
+    "question": "You work as a senior network technician at ABC.com.\nYou are in the process of connecting a 1000BASE-SX gigabit Ethernet in ABC.com’s office block.\nWhich of the following Statements are TRUE with regards to 1000BASE-SX?",
     "options": [
       {
         "id": "A",
@@ -751,7 +748,7 @@
     "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
     "domainCode": "Domain 2",
     "type": "multi-choice",
-    "question": "You are employed as a network technician at ABC.com.\nYou are in the process of expanding ABC.com\u2019s current LAN setup. You have been instructed to\nmake sure that the cable used is fire safe, and that it emits less toxic fumes.\nWhich of the following options should you use?",
+    "question": "You are employed as a network technician at ABC.com.\nYou are in the process of expanding ABC.com’s current LAN setup. You have been instructed to\nmake sure that the cable used is fire safe, and that it emits less toxic fumes.\nWhich of the following options should you use?",
     "options": [
       {
         "id": "A",
@@ -838,7 +835,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "single-choice",
-    "question": "You are employed as a technician at ABC.com.\nA ABC.com network user, named Mia Hamm, has reported that she is experiencing network\nissues from her Windows NT workstation.\nYou want to view the workstation\u2019s existing TCP/IP configuration.\nWhich of the following actions should you take?",
+    "question": "You are employed as a technician at ABC.com.\nA ABC.com network user, named Mia Hamm, has reported that she is experiencing network\nissues from her Windows NT workstation.\nYou want to view the workstation’s existing TCP/IP configuration.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
@@ -1009,7 +1006,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nABC.com makes use of DNS for name resolution. You are hosting a training exercise for junior\nadministrators. You are discussing AAAA DNS resource records.\nWhich of the following statements regarding AAAA resource records are TRUE?",
+    "question": "You are employed as an administrator at ABC.com. ABC.com’s network is TCP/IP-based.\nABC.com makes use of DNS for name resolution. You are hosting a training exercise for junior\nadministrators. You are discussing AAAA DNS resource records.\nWhich of the following statements regarding AAAA resource records are TRUE?",
     "options": [
       {
         "id": "A",
@@ -1037,7 +1034,7 @@
     "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
     "domainCode": "Domain 5",
     "type": "single-choice",
-    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou have executed the NETSTAT command without parameters from the command-line on your\nworkstation.\nWhich of the following describes the reason for executing this command?",
+    "question": "You are employed as an administrator at ABC.com. ABC.com’s network is TCP/IP-based.\nYou have executed the NETSTAT command without parameters from the command-line on your\nworkstation.\nWhich of the following describes the reason for executing this command?",
     "options": [
       {
         "id": "A",
@@ -1093,7 +1090,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "single-choice",
-    "question": "You work as a network designer at ABC.com.\nABC.com\u2019s network is designed to have a combination of Bus, Star and ring network topologies.\nWhich of the following describes this type of network topology?",
+    "question": "You work as a network designer at ABC.com.\nABC.com’s network is designed to have a combination of Bus, Star and ring network topologies.\nWhich of the following describes this type of network topology?",
     "options": [
       {
         "id": "A",
@@ -1125,15 +1122,15 @@
     "options": [
       {
         "id": "A",
-        "text": "To prevent computers on Mia Hamm\u2019s network from connecting to the wireless network without her knowing."
+        "text": "To prevent computers on Mia Hamm’s network from connecting to the wireless network without her knowing."
       },
       {
         "id": "B",
-        "text": "To allow Mia Hamm\u2019s friend, who lives next door, access to her network."
+        "text": "To allow Mia Hamm’s friend, who lives next door, access to her network."
       },
       {
         "id": "C",
-        "text": "To prevent wireless users in Mia Hamm\u2019s surrounding area from discovering her wireless network."
+        "text": "To prevent wireless users in Mia Hamm’s surrounding area from discovering her wireless network."
       },
       {
         "id": "D",
@@ -1169,9 +1166,10 @@
       }
     ],
     "correctAnswer": [
-      "C"
+      "B",
+      "D"
     ],
-    "explanation": "Question 41 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "• B: When the DNS server fails, host name resolution stops working, so users will not be able to connect to resources using their host names.\n• D: Network routing and IP-level communication remain functional; therefore, users can still ping resources directly using their IP addresses.\n(Note: Brain dumps erroneously listed only C; B and D are the correct answers)."
   },
   {
     "id": "Q-042",
@@ -1263,7 +1261,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "multi-choice",
-    "question": "You are employed as a network administrator at ABC.com. The ABC.com network is TCP/IPbased.\nYou have been instructed to configure Dynamic Host Configuration Protocol (DHCP) on\nABC.com\u2019s network.\nWhich of the following options are TRUE with regards to DHCP? (Choose two.)",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network is TCP/IPbased.\nYou have been instructed to configure Dynamic Host Configuration Protocol (DHCP) on\nABC.com’s network.\nWhich of the following options are TRUE with regards to DHCP? (Choose two.)",
     "options": [
       {
         "id": "A",
@@ -1283,9 +1281,10 @@
       }
     ],
     "correctAnswer": [
+      "A",
       "C"
     ],
-    "explanation": "Question 45 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "• A: DHCP options (such as option 44/46) provide configuration support for NetBIOS over TCP/IP (WINS servers and NetBT node types).\n• C: DHCP provides automated, reliable IP address configuration for clients while substantially reducing manual administrative overhead.\n(Note: Brain dumps omitted option A; A and C are the correct answers)."
   },
   {
     "id": "Q-046",
@@ -1293,15 +1292,15 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "multi-choice",
-    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external clients.\nOne of ABC.com\u2019s clients has requested an ISDN configuration.\nWhich of the following is TRUE with regards to ISDN? (Choose all that apply.)",
+    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external clients.\nOne of ABC.com’s clients has requested an ISDN configuration.\nWhich of the following is TRUE with regards to ISDN? (Choose all that apply.)",
     "options": [
       {
         "id": "A",
-        "text": "ISDN can be used over the client\u2019s existing telephone network."
+        "text": "ISDN can be used over the client’s existing telephone network."
       },
       {
         "id": "B",
-        "text": "ISDN requires an upgrade to the client\u2019s existing telephone network."
+        "text": "ISDN requires an upgrade to the client’s existing telephone network."
       },
       {
         "id": "C",
@@ -1324,23 +1323,23 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You work as an administrator at ABC.com. The ABC.com network consists of a single domain\nnamed ABC.com. All servers on the ABC.com network have Windows Server 2003 installed and\nall workstations have Windows XP Professional installed.\nYou have been instructed to implement a solution that speeds up the name resolution process.\nThe strategy should also reduce the amount of name resolution traffic on ABC.com\u2019s internet\nconnection.\nWhich of the following actions should you take?",
+    "question": "You work as an administrator at ABC.com. The ABC.com network consists of a single domain\nnamed ABC.com. All servers on the ABC.com network have Windows Server 2003 installed and\nall workstations have Windows XP Professional installed.\nYou have been instructed to implement a solution that speeds up the name resolution process.\nThe strategy should also reduce the amount of name resolution traffic on ABC.com’s internet\nconnection.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
-        "text": "You should consider installing a DNS server on ABC.com\u2019s network."
+        "text": "You should consider installing a DNS server on ABC.com’s network."
       },
       {
         "id": "B",
-        "text": "You should consider installing a WINS server on ABC.com\u2019s network."
+        "text": "You should consider installing a WINS server on ABC.com’s network."
       },
       {
         "id": "C",
-        "text": "You should consider installing a DHCP server on ABC.com\u2019s network."
+        "text": "You should consider installing a DHCP server on ABC.com’s network."
       },
       {
         "id": "D",
-        "text": "You should consider installing a RIS server on ABC.com\u2019s network."
+        "text": "You should consider installing a RIS server on ABC.com’s network."
       }
     ],
     "correctAnswer": "A",
@@ -1411,7 +1410,7 @@
     "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
     "domainCode": "Domain 1",
     "type": "single-choice",
-    "question": "You work as a network technician at ABC.com. ABC.com has a wireless network configured in the\nSales department.\nYou have received an instruction to configure a wireless network for ABC.com\u2019s Sales department.\nYou need to make sure that workstations of the Sales users are able to connect to the wireless\nnetwork.\nWhich of the following actions should you take?",
+    "question": "You work as a network technician at ABC.com. ABC.com has a wireless network configured in the\nSales department.\nYou have received an instruction to configure a wireless network for ABC.com’s Sales department.\nYou need to make sure that workstations of the Sales users are able to connect to the wireless\nnetwork.\nWhich of the following actions should you take?",
     "options": [
       {
         "id": "A",
@@ -2109,8 +2108,8 @@
         "text": "Transport"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Question 74 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "D",
+    "explanation": "The Transport Layer (Layer 4) is responsible for end-to-end reliable data transfer, flow control, and verifying that messages are delivered error-free, in sequence, and without duplication (e.g., TCP acknowledgments and retransmissions).\n(Note: Older dumps incorrectly marked C Network layer; Transport Layer D is the correct answer according to official Microsoft MTA 98-366 curriculum)."
   },
   {
     "id": "Q-075",
@@ -2554,7 +2553,7 @@
       },
       {
         "id": "D",
-        "text": "Physical - Data Link - Transport - Session - Network - Presentation \u2013 Application Correct"
+        "text": "Physical - Data Link - Transport - Session - Network - Presentation – Application Correct"
       }
     ],
     "correctAnswer": "A",
@@ -3313,8 +3312,8 @@
         "text": "Resistance"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 117 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "B",
+    "explanation": "Attenuation is the technical networking term describing the progressive loss of signal strength as an electrical or optical transmission travels through a physical cable.\n(Note: Some dumps marked A 'Degradation', but B 'Attenuation' is the official technical networking answer)."
   },
   {
     "id": "Q-118",
@@ -4085,7 +4084,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "What command do you use to test a system\u2019s IPv4 protocol stack?",
+    "question": "What command do you use to test a system’s IPv4 protocol stack?",
     "options": [
       {
         "id": "A",
@@ -4160,8 +4159,8 @@
         "text": "nslookup"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "A",
+    "explanation": "nbtstat (NetBIOS over TCP/IP Statistics) is the dedicated Windows command for displaying NetBIOS statistics, local/remote NetBIOS name tables, and the NetBIOS name cache.\n(Note: Dumps contained an error listing B netstat; A nbtstat is 100% correct)."
   },
   {
     "id": "Q-148",
@@ -4477,7 +4476,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "What command do you use to register the computer\u2019s name and IP address with the nearest DNS\nserver?",
+    "question": "What command do you use to register the computer’s name and IP address with the nearest DNS\nserver?",
     "options": [
       {
         "id": "A",
@@ -5373,7 +5372,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "What part of the network is the point where the responsibility of the administrator ends and the\ntelecommunications provider\u2019s responsibility begins?",
+    "question": "What part of the network is the point where the responsibility of the administrator ends and the\ntelecommunications provider’s responsibility begins?",
     "options": [
       {
         "id": "A",
@@ -5392,8 +5391,8 @@
         "text": "PAD interface"
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "Question 191 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "B",
+    "explanation": "The demarcation point (demarc) is the physical point at which the public telecommunications provider's network ends and the customer's on-premise private network begins.\n(Note: Dumps erroneously keyed D 'PAD interface'; B 'demarc' is the universal correct answer)."
   },
   {
     "id": "Q-192",
@@ -5905,7 +5904,7 @@
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "What type of network can you set up that is another company\u2019s internal network?",
+    "question": "What type of network can you set up that is another company’s internal network?",
     "options": [
       {
         "id": "A",
@@ -6008,8 +6007,8 @@
         "text": "443"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 213 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "C",
+    "explanation": "Layer 2 Tunneling Protocol (L2TP) uses UDP port 1701. (Port 1723 is used by PPTP).\n(Note: Dumps incorrectly keyed B 1723; C 1701 is the correct port for L2TP)."
   },
   {
     "id": "Q-214",
@@ -6344,8 +6343,8 @@
         "text": "Immediately lose connectivity to the local segment."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 225 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "C",
+    "explanation": "Because routers block broadcast traffic by default, clients on the opposite side of a router without a DHCP relay agent will be unable to obtain or renew their IP leases from the server (Option C).\n(Note: Dumps incorrectly marked A; C is the correct answer, identical to Part 2 Q78)."
   },
   {
     "id": "Q-226",
@@ -6372,8 +6371,8 @@
         "text": "WWW"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 226 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "correctAnswer": "C",
+    "explanation": "An Intranet is a private internal network accessible exclusively to members or employees of an organization.\n(Note: Dumps had an obvious typo keying A Internet; C Intranet is 100% correct)."
   },
   {
     "id": "Q-227",

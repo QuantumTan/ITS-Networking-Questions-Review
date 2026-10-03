@@ -142,12 +142,8 @@ export const QUESTION_BANKS = {
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
     "domainCode": "Domain 3",
     "type": "single-choice",
-    "question": "You are employed as a network designer at ABC.com.\nABC.com\u2019s network is made up of two network segments, named Subnet A and Subnet B. DHCP\nclients are located on Subnet",
+    "question": "You are employed as a network designer at ABC.com.\nABC.com\u2019s network is made up of two network segments, named Subnet A and Subnet B. DHCP clients are located on Subnet A. A DHCP server, named ABC-SR07, is located on Subnet B.\nYou need to make sure that DHCP clients are able to connect to ABC-SR07.\nWhich of the following actions should you take?",
     "options": [
-      {
-        "id": "A",
-        "text": "A DHCP server, named ABC-SR07, is located on Subnet B. You need to make sure that DHCP clients are able to connect to ABC-SR07. Which of the following actions should you take?"
-      },
       {
         "id": "A",
         "text": "You should make sure that the RRAS service is configured."
@@ -166,7 +162,7 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 5 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "DHCP broadcast messages (DHCPDISCOVER) cannot cross routers. A DHCP Relay Agent (or IP helper address) must be configured on the intermediate router to forward DHCP requests between Subnet A and the DHCP server on Subnet B.",
     "bank": "part1"
   },
   {
@@ -195,9 +191,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "C"
     ],
-    "explanation": "Question 6 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 A: Under ANSI/ISO FDDI standards, a single ring cannot exceed a total circumference of 100 kilometers (200 km total for dual-ring).\n\u2022 C: Each ring in an FDDI network supports a maximum of 500 connected physical stations (nodes).",
     "bank": "part1"
   },
   {
@@ -1227,9 +1224,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "C"
+      "B",
+      "D"
     ],
-    "explanation": "Question 41 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 B: When the DNS server fails, host name resolution stops working, so users will not be able to connect to resources using their host names.\n\u2022 D: Network routing and IP-level communication remain functional; therefore, users can still ping resources directly using their IP addresses.\n(Note: Brain dumps erroneously listed only C; B and D are the correct answers).",
     "bank": "part1"
   },
   {
@@ -1345,9 +1343,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
+      "A",
       "C"
     ],
-    "explanation": "Question 45 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 A: DHCP options (such as option 44/46) provide configuration support for NetBIOS over TCP/IP (WINS servers and NetBT node types).\n\u2022 C: DHCP provides automated, reliable IP address configuration for clients while substantially reducing manual administrative overhead.\n(Note: Brain dumps omitted option A; A and C are the correct answers).",
     "bank": "part1"
   },
   {
@@ -2200,8 +2199,8 @@ export const QUESTION_BANKS = {
         "text": "Transport"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Question 74 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "D",
+    "explanation": "The Transport Layer (Layer 4) is responsible for end-to-end reliable data transfer, flow control, and verifying that messages are delivered error-free, in sequence, and without duplication (e.g., TCP acknowledgments and retransmissions).\n(Note: Older dumps incorrectly marked C Network layer; Transport Layer D is the correct answer according to official Microsoft MTA 98-366 curriculum).",
     "bank": "part1"
   },
   {
@@ -3447,8 +3446,8 @@ export const QUESTION_BANKS = {
         "text": "Resistance"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 117 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "Attenuation is the technical networking term describing the progressive loss of signal strength as an electrical or optical transmission travels through a physical cable.\n(Note: Some dumps marked A 'Degradation', but B 'Attenuation' is the official technical networking answer).",
     "bank": "part1"
   },
   {
@@ -4324,8 +4323,8 @@ export const QUESTION_BANKS = {
         "text": "nslookup"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "A",
+    "explanation": "nbtstat (NetBIOS over TCP/IP Statistics) is the dedicated Windows command for displaying NetBIOS statistics, local/remote NetBIOS name tables, and the NetBIOS name cache.\n(Note: Dumps contained an error listing B netstat; A nbtstat is 100% correct).",
     "bank": "part1"
   },
   {
@@ -5600,8 +5599,8 @@ export const QUESTION_BANKS = {
         "text": "PAD interface"
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "Question 191 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "The demarcation point (demarc) is the physical point at which the public telecommunications provider's network ends and the customer's on-premise private network begins.\n(Note: Dumps erroneously keyed D 'PAD interface'; B 'demarc' is the universal correct answer).",
     "bank": "part1"
   },
   {
@@ -6238,8 +6237,8 @@ export const QUESTION_BANKS = {
         "text": "443"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 213 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "C",
+    "explanation": "Layer 2 Tunneling Protocol (L2TP) uses UDP port 1701. (Port 1723 is used by PPTP).\n(Note: Dumps incorrectly keyed B 1723; C 1701 is the correct port for L2TP).",
     "bank": "part1"
   },
   {
@@ -6586,8 +6585,8 @@ export const QUESTION_BANKS = {
         "text": "Immediately lose connectivity to the local segment."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 225 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "C",
+    "explanation": "Because routers block broadcast traffic by default, clients on the opposite side of a router without a DHCP relay agent will be unable to obtain or renew their IP leases from the server (Option C).\n(Note: Dumps incorrectly marked A; C is the correct answer, identical to Part 2 Q78).",
     "bank": "part1"
   },
   {
@@ -6615,8 +6614,8 @@ export const QUESTION_BANKS = {
         "text": "WWW"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 226 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "C",
+    "explanation": "An Intranet is a private internal network accessible exclusively to members or employees of an organization.\n(Note: Dumps had an obvious typo keying A Internet; C Intranet is 100% correct).",
     "bank": "part1"
   },
   {
@@ -9468,8 +9467,8 @@ export const QUESTION_BANKS = {
         "text": "Multimode fiber cable"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 87 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "100BaseTX (Fast Ethernet) operates at 100 Mbps over two pairs of wires and strictly requires Category 5 (Cat5) or higher UTP cabling. Cat3 is limited to 10 Mbps (or 100BaseT4 which requires 4 pairs).\n(Note: Dumps incorrectly marked A; B Category 5 UTP is the correct answer).",
     "bank": "part2",
     "pdfNumber": 87
   },
@@ -9498,10 +9497,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "C",
+      "D"
     ],
-    "explanation": "Question 88 evaluates knowledge of 3. Protocols & Services. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "Internet Key Exchange (IKE) is the IPsec protocol responsible for: (1) Negotiating security parameters and cryptographic algorithms to use (C), and (2) Exchanging public key material / Diffie-Hellman keys (D).\n(Note: Dumps erroneously printed A, B; C and D are the true IKE functions).",
     "bank": "part2",
     "pdfNumber": 88
   },
@@ -9731,8 +9730,8 @@ export const QUESTION_BANKS = {
         "text": "SOA"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 94 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "D",
+    "explanation": "The SOA (Start of Authority) resource record specifies authoritative information for a DNS zone, including the primary name server, domain administrator contact, and serial number.\n(Note: Dumps incorrectly marked B MX; D SOA is 100% correct).",
     "bank": "part2",
     "pdfNumber": 94
   },
@@ -9881,8 +9880,8 @@ export const QUESTION_BANKS = {
         "text": "ASCII"
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "Question 98 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "C",
+    "explanation": "UDP (User Datagram Protocol) and TCP are the primary Transport Layer (Layer 4) protocols in the TCP/IP suite.\n(Note: Dumps had an error marking D ASCII; C UDP is the correct answer).",
     "bank": "part2",
     "pdfNumber": 98
   },
@@ -10215,10 +10214,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "B",
+      "D"
     ],
-    "explanation": "Question 106 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "A perimeter network (DMZ) isolates public/external services from private corporate data. The public-facing Web server (B) and the guest customer Wi-Fi network (D) must be placed in the perimeter network to protect internal point-of-sale terminals, file servers, and printers.\n(Note: Dumps incorrectly marked A, B; placing a private network printer in the DMZ is a critical security vulnerability).",
     "bank": "part2",
     "pdfNumber": 106
   },
@@ -10343,10 +10342,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "C",
+      "D"
     ],
-    "explanation": "Question 109 evaluates knowledge of 2. Network Hardware. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 C: Fiber optic cables support splicing (both fusion splicing and mechanical splicing).\n\u2022 D: Optical fibers require specialized polishing (e.g., PC, UPC, APC) for end connectors to ensure proper light transmission.\n(Note: Fiber does NOT conduct electricity; dumps that marked A are physically inaccurate).",
     "bank": "part2",
     "pdfNumber": 109
   },
@@ -10757,10 +10756,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "B",
-      "E"
+      "C",
+      "D"
     ],
-    "explanation": "Question 120 evaluates knowledge of 1. Network Infrastructures. Option B, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "To function as a node on a Local Area Network, a device must possess physical network connectivity via a Network Interface Card (NIC - Option C) and a logical host address (IP address - Option D).\n(Note: Dumps incorrectly marked B, E; C and D are the correct answers).",
     "bank": "part2",
     "pdfNumber": 120
   },
@@ -11254,10 +11253,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "B",
+      "D"
     ],
-    "explanation": "Question 133 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "IPsec provides two primary security protections: Data Integrity (B) to verify packets are not modified in transit, and Data Confidentiality (D) through encryption.\n(Note: Dumps erroneously marked A, B; IPsec does not provide data compression).",
     "bank": "part2",
     "pdfNumber": 133
   },
@@ -11407,8 +11406,8 @@ export const QUESTION_BANKS = {
         "text": "DSL modem"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Question 138 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "A Router operates at Layer 3 and associates network layer (IP) addresses/subnets with specific physical or virtual router interfaces/ports. (Hubs are passive Layer 1 devices with no address awareness).\n(Note: Dumps incorrectly marked C Hub; B Router is the correct answer).",
     "bank": "part2",
     "pdfNumber": 138
   },
@@ -11538,11 +11537,11 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "A",
       "B",
-      "D"
+      "C",
+      "E"
     ],
-    "explanation": "Question 142 evaluates knowledge of 1. Network Infrastructures. Option A, B, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 B: Ethernet supports coaxial cable (10Base2/5), twisted pair (10/100/1000Base-T), and fiber optic media (100Base-FX, 1000Base-SX).\n\u2022 C: Ethernet is the dominant LAN standard comprising the largest share of modern networks.\n\u2022 E: Ethernet interfaces support auto-negotiation to dynamically agree on speed and duplex.\n(Note: Ethernet uses CSMA/CD, NOT tokens; dumps that marked A are confusing Token Ring with Ethernet).",
     "bank": "part2",
     "pdfNumber": 142
   },
@@ -11692,8 +11691,8 @@ export const QUESTION_BANKS = {
         "text": "10.19.1.15"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Question 146 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "A",
+    "explanation": "169.254.1.15 is an Automatic Private IP Addressing (APIPA) address in the 169.254.0.1\u2013169.254.255.254 range, indicating that the computer was unable to contact a DHCP server.\n(Note: Dumps listed 'Answer: B' due to option order confusion; Option A 169.254.1.15 is the correct APIPA address).",
     "bank": "part2",
     "pdfNumber": 146
   },
@@ -11721,8 +11720,8 @@ export const QUESTION_BANKS = {
         "text": "172.16.0.0/12"
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "197.16.0.0/12 is a public routable IP address block. The private address ranges (RFC 1918) are 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.\n(Note: Dumps incorrectly marked D 172.16.0.0/12 which is private; B 197.16.0.0/12 is the only public address space listed).",
     "bank": "part2",
     "pdfNumber": 147
   },
@@ -11873,10 +11872,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "B",
-      "C"
+      "A",
+      "D"
     ],
-    "explanation": "Question 152 evaluates knowledge of 3. Protocols & Services. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection):\n\u2022 D: Carrier Sense: Waits until the transmission medium is idle before transmitting.\n\u2022 A: Collision Detection: Monitors the wire during transmission to detect if a collision occurred.\n(Note: Dumps erroneously marked B, C; A and D define CSMA/CD).",
     "bank": "part2",
     "pdfNumber": 152
   },
@@ -11906,9 +11905,9 @@ export const QUESTION_BANKS = {
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "Question 153 evaluates knowledge of 1. Network Infrastructures. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 A: Mesh networks are highly fault tolerant due to redundant interconnected links.\n\u2022 B: In a full mesh network, every node connects directly to every other node.\n(Note: Mesh is impractical for large networks due to n(n-1)/2 cabling growth; A and B are the correct answers).",
     "bank": "part2",
     "pdfNumber": 153
   },
@@ -11936,8 +11935,8 @@ export const QUESTION_BANKS = {
         "text": "WINS"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 154 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS settings to network clients.\n(Note: Dumps had an obvious typo marking A HTTP; B DHCP is 100% correct).",
     "bank": "part2",
     "pdfNumber": 154
   },
@@ -12087,8 +12086,8 @@ export const QUESTION_BANKS = {
         "text": "Managed switch"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 159 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "D",
+    "explanation": "A Managed Switch allows network administrators to configure settings (such as VLANs, port security, QoS, and SNMP monitoring) remotely via SSH, Telnet, or a web interface.\n(Note: Dumps incorrectly marked A Unmanaged switch; D Managed switch is the correct answer).",
     "bank": "part2",
     "pdfNumber": 159
   },
@@ -12296,8 +12295,8 @@ export const QUESTION_BANKS = {
         "text": "Router"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 166 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "D",
+    "explanation": "A Router is a Layer 3 (Network Layer) hardware device that forwards data packets between different IP networks and subnets.\n(Note: Dumps absurdly marked A 'Packet' as a device; D Router is the correct answer).",
     "bank": "part2",
     "pdfNumber": 166
   },
@@ -12325,8 +12324,8 @@ export const QUESTION_BANKS = {
         "text": "Interface"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Question 167 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "C",
+    "explanation": "RIP (Routing Information Protocol) uses Hop Count as its sole routing metric, with a maximum of 15 hops (16 represents an unreachable network).\n(Note: Dumps incorrectly marked A Delay; C Hop count is the correct answer).",
     "bank": "part2",
     "pdfNumber": 167
   },
@@ -12355,10 +12354,10 @@ export const QUESTION_BANKS = {
       }
     ],
     "correctAnswer": [
-      "B",
-      "C"
+      "C",
+      "D"
     ],
-    "explanation": "Question 168 evaluates knowledge of 2. Network Hardware. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "explanation": "\u2022 C: Switches support full-duplex transmission (sending and receiving simultaneously), whereas hubs operate in half-duplex.\n\u2022 D: Switches inspect destination MAC addresses and forward frames only to the designated port, whereas hubs blindly broadcast to all ports.\n(Note: Dumps marked B, C; B is false because hubs broadcast to all computers, not switches).",
     "bank": "part2",
     "pdfNumber": 168
   },
@@ -12386,8 +12385,8 @@ export const QUESTION_BANKS = {
         "text": "SOA"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Question 169 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "correctAnswer": "B",
+    "explanation": "A CNAME (Canonical Name) record creates an alias for an existing 'A' record (e.g., mapping www.example.com to example.com).\n(Note: Dumps incorrectly marked C NS; B CNAME is the correct alias record).",
     "bank": "part2",
     "pdfNumber": 169
   },
