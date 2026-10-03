@@ -48,9 +48,21 @@
           &#128065; Technical Exhibit
         </button>
         
+        <!-- PDF Section / Question Bank Switcher -->
+        <select class="cbt-btn-tool" id="bankSelect" style="cursor: pointer; outline: none; background: #0284c7; color: #fff; font-weight: bold;" title="Switch between PDF Part 1 (Q1-234: ABC.com) and Part 2 (Q1-176: Exhibits & Screenshots)">
+          <option value="part1" style="color:#000;">PDF Part 1: Q1–234 (Pages 2–59: ABC.com Scenarios)</option>
+          <option value="part2" style="color:#000;">PDF Part 2: Q1–176 (Pages 60–129: Exhibits & Screenshots)</option>
+        </select>
+
+        <!-- Direct Question Number Jump -->
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <input type="number" id="jumpInput" min="1" max="234" placeholder="Q#" style="width: 48px; padding: 2px 4px; border: 1px solid var(--pv-border); border-radius: 4px; font-size: 12px; font-weight: 600; text-align: center; background: #fff; color: #000;" title="Type question number and press Enter" />
+          <button class="cbt-btn-tool" id="btnJump" style="padding: 2px 8px; font-size: 11px;" title="Jump to specified question number">Go</button>
+        </div>
+
         <!-- Objective / Question Filter -->
         <select class="cbt-btn-tool" id="filterSelect" style="cursor: pointer; outline: none; background: rgba(255,255,255,0.12); color: #fff;" title="Filter questions by domain or interaction type">
-          <option value="all" style="color:#000;">All Questions (176 Questions)</option>
+          <option value="all" style="color:#000;">All Questions in this Section</option>
           <option value="domain-1" style="color:#000;">Domain 1: Network Infrastructures</option>
           <option value="domain-2" style="color:#000;">Domain 2: Network Hardware</option>
           <option value="domain-3" style="color:#000;">Domain 3: Protocols & Services</option>

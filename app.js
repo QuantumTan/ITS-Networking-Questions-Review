@@ -3,14 +3,16 @@
  * Main Application Orchestrator, State Machine, Timer, and Event Handlers
  */
 
-import { QUESTIONS, DOMAINS } from './questions.js';
+import { QUESTIONS, QUESTION_BANKS, DOMAINS } from './questions.js';
 import { renderExhibitWithTabs } from './exhibits.js';
 import { DragDropEngine } from './components/DragDropEngine.js';
 import { EvaluationEngine } from './components/EvaluationEngine.js';
 
 export class ExamEngine {
   constructor() {
-    this.allQuestions = Array.isArray(QUESTIONS) ? QUESTIONS : [];
+    this.banks = (typeof QUESTION_BANKS !== 'undefined' && QUESTION_BANKS) ? QUESTION_BANKS : { part1: QUESTIONS, part2: QUESTIONS };
+    this.currentBankKey = localStorage.getItem('its_active_bank') || 'part1';
+    this.allQuestions = this.banks[this.currentBankKey] || this.banks.part1 || QUESTIONS;
     this.activeFilter = 'all';
     this.activeQuestions = [...this.allQuestions];
 
@@ -50,7 +52,8 @@ export class ExamEngine {
 
   loadStateFromStorage() {
     try {
-      const saved = localStorage.getItem('its_networking_exam_state_v2');
+      const storageKey = `its_networking_exam_state_v2_${this.currentBankKey}`;
+      const saved = localStorage.getItem(storageKey);
       if (saved) {
         const parsed = JSON.parse(saved);
         this.state.mode = parsed.mode || 'instant';
@@ -61,6 +64,11 @@ export class ExamEngine {
         this.state.theme = parsed.theme || 'light';
         this.state.fontSize = parsed.fontSize || 'normal';
         this.state.timerSeconds = typeof parsed.timerSeconds === 'number' ? parsed.timerSeconds : 0;
+      } else {
+        this.state.currentIndex = 0;
+        this.state.userAnswers = {};
+        this.state.reviewFlags = new Set();
+        this.state.evaluatedItems = {};
       }
     } catch (e) {
       console.warn("Storage access failed, using memory state", e);
@@ -73,6 +81,7 @@ export class ExamEngine {
 
   saveStateToStorage() {
     try {
+      const storageKey = `its_networking_exam_state_v2_${this.currentBankKey}`;
       const payload = {
         mode: this.state.mode,
         currentIndex: this.state.currentIndex,
@@ -83,18 +92,19 @@ export class ExamEngine {
         fontSize: this.state.fontSize,
         timerSeconds: this.state.timerSeconds
       };
-      localStorage.setItem('its_networking_exam_state_v2', JSON.stringify(payload));
+      localStorage.setItem(storageKey, JSON.stringify(payload));
     } catch (e) {
       console.warn("Could not save to localStorage", e);
     }
   }
 
   resetAllState() {
-    if (!confirm("Are you sure you want to reset all answers, bookmarks, and score progress?")) {
+    if (!confirm("Are you sure you want to reset all answers, bookmarks, and score progress for this question bank?")) {
       return;
     }
     try {
-      localStorage.removeItem('its_networking_exam_state_v2');
+      const storageKey = `its_networking_exam_state_v2_${this.currentBankKey}`;
+      localStorage.removeItem(storageKey);
     } catch (e) {}
 
     this.state.userAnswers = {};
@@ -194,6 +204,9 @@ export class ExamEngine {
       btnThemeToggle: document.getElementById('btnThemeToggle'),
       btnResetExam: document.getElementById('btnResetExam'),
       filterSelect: document.getElementById('filterSelect'),
+      bankSelect: document.getElementById('bankSelect'),
+      jumpInput: document.getElementById('jumpInput'),
+      btnJump: document.getElementById('btnJump'),
 
       // Footer Navigation Buttons
       btnPrev: document.getElementById('btnPrev'),
@@ -226,6 +239,23 @@ export class ExamEngine {
     this.dom.btnExhibitToggle.addEventListener('click', () => this.toggleExhibitPane());
     this.dom.btnModeToggle.addEventListener('click', () => this.toggleExamMode());
     this.dom.btnResetExam.addEventListener('click', () => this.resetAllState());
+
+    if (this.dom.bankSelect) {
+      this.dom.bankSelect.value = this.currentBankKey;
+      this.dom.bankSelect.addEventListener('change', (e) => {
+        this.switchQuestionBank(e.target.value);
+      });
+    }
+
+    if (this.dom.btnJump) {
+      this.dom.btnJump.addEventListener('click', () => this.jumpToQuestionNumber());
+    }
+
+    if (this.dom.jumpInput) {
+      this.dom.jumpInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') this.jumpToQuestionNumber();
+      });
+    }
 
     if (this.dom.filterSelect) {
       this.dom.filterSelect.addEventListener('change', (e) => {
@@ -266,6 +296,45 @@ export class ExamEngine {
         this.handleKeyboardOptionSelect(map[e.key.toLowerCase()]);
       }
     });
+  }
+
+  switchQuestionBank(bankKey) {
+    if (!this.banks || !this.banks[bankKey]) return;
+    this.saveStateToStorage();
+    this.currentBankKey = bankKey;
+    localStorage.setItem('its_active_bank', bankKey);
+    this.allQuestions = this.banks[bankKey];
+    this.activeFilter = 'all';
+    if (this.dom.filterSelect) this.dom.filterSelect.value = 'all';
+    this.activeQuestions = [...this.allQuestions];
+    this.loadStateFromStorage();
+    if (this.dom.bankSelect) this.dom.bankSelect.value = bankKey;
+    if (this.dom.jumpInput) {
+      this.dom.jumpInput.max = this.allQuestions.length;
+      this.dom.jumpInput.value = '';
+    }
+    this.renderQuestion();
+  }
+
+  jumpToQuestionNumber() {
+    if (!this.dom.jumpInput) return;
+    const val = parseInt(this.dom.jumpInput.value, 10);
+    if (isNaN(val)) return;
+
+    const idx = this.activeQuestions.findIndex(q => (q.pdfNumber === val));
+    if (idx !== -1) {
+      this.state.currentIndex = idx;
+      this.saveStateToStorage();
+      this.renderQuestion();
+      this.dom.jumpInput.value = '';
+    } else if (val >= 1 && val <= this.activeQuestions.length) {
+      this.state.currentIndex = val - 1;
+      this.saveStateToStorage();
+      this.renderQuestion();
+      this.dom.jumpInput.value = '';
+    } else {
+      alert(`Question #${val} is not available in the current selection.`);
+    }
   }
 
   applyQuestionFilter(filterKey) {
@@ -309,7 +378,8 @@ export class ExamEngine {
     }
 
     const totalQ = this.activeQuestions.length;
-    this.dom.questionIndicator.textContent = `Question ${this.state.currentIndex + 1} of ${totalQ}`;
+    const qNum = q.pdfNumber || (this.state.currentIndex + 1);
+    this.dom.questionIndicator.textContent = `PDF Question ${qNum} of ${totalQ}`;
     this.dom.questionDomainBadge.textContent = q.domain || "Networking Fundamentals";
     this.dom.questionTypeBadge.textContent = (q.type || 'single-choice').toUpperCase().replace(/-/g, ' ');
 

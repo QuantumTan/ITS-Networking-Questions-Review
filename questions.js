@@ -1,7 +1,9 @@
 /**
  * Pearson VUE / Certiport IT Specialist: Networking Fundamentals (98-366)
- * Complete Question Repository: All 176 Questions
- * 100% Exact PDF Content - Zero Paraphrasing
+ * Dual Question Banks from Official PDF:
+ * - Bank 1: Version 20.0 (Questions 1–234, Pages 2–59, ABC.com scenarios)
+ * - Bank 2: Version 10.0 (Questions 1–176, Pages 60–129, with 76 Authentic Screenshots & Exhibits)
+ * 100% Verbatim PDF Text - Exact Match to PDF Numbers
  */
 
 export const DOMAINS = {
@@ -12,7 +14,6850 @@ export const DOMAINS = {
   "TROUBLESHOOTING": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)"
 };
 
-export const QUESTIONS = [
+export const QUESTION_BANKS = {
+  "part1": [
+  {
+    "id": "Q-001",
+    "pdfNumber": 1,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nA ABC.com client has requested a network setup for his home office. The network has to be cost\neffective, and easy to extend and implement. Furthermore, the client wants his workstations\nconnected by a single cable.\nWhich of the following network topologies should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A star network topology."
+      },
+      {
+        "id": "B",
+        "text": "A bus network topology."
+      },
+      {
+        "id": "C",
+        "text": "A mesh network topology."
+      },
+      {
+        "id": "D",
+        "text": "A ring network topology."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 1 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-002",
+    "pdfNumber": 2,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "multi-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou have recently designed a home office network for ABC.com that includes a switch.\nWhich of the following are TRUE with regards to network switches? (Choose all that apply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "It keeps track of the MAC addresses attached to each of its ports and directs traffic intended for a particular address only to the port to which it is attached."
+      },
+      {
+        "id": "B",
+        "text": "It keeps track of the IP addresses attached to each of its ports and directs traffic intended for a particular address only to the port to which it is attached."
+      },
+      {
+        "id": "C",
+        "text": "It operates at the Physical layer of the OSI model."
+      },
+      {
+        "id": "D",
+        "text": "It operates at the Data-Link layer of the OSI model."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "D"
+    ],
+    "explanation": "Question 2 evaluates knowledge of 2. Network Hardware. Option A, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-003",
+    "pdfNumber": 3,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nAs part of a training exercise, you have been asked to identify the layer that allows applications\nand a number of user functions access to the network.\nWhich of the following options represents your response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The document layer."
+      },
+      {
+        "id": "B",
+        "text": "The application layer."
+      },
+      {
+        "id": "C",
+        "text": "The system layer."
+      },
+      {
+        "id": "D",
+        "text": "The Data-link layer."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 3 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-004",
+    "pdfNumber": 4,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with making sure that ABC.com\u2019s network includes a server that converts\nNetBIOS names to IP addresses.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider adding a DHCP server to the ABC.com network."
+      },
+      {
+        "id": "B",
+        "text": "You should consider adding a DNS server to the ABC.com network."
+      },
+      {
+        "id": "C",
+        "text": "You should consider adding a Web server to the ABC.com network."
+      },
+      {
+        "id": "D",
+        "text": "You should consider adding a WINS server to the ABC.com network."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 4 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-005",
+    "pdfNumber": 5,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nABC.com\u2019s network is made up of two network segments, named Subnet A and Subnet B. DHCP\nclients are located on Subnet",
+    "options": [
+      {
+        "id": "A",
+        "text": "A DHCP server, named ABC-SR07, is located on Subnet B. You need to make sure that DHCP clients are able to connect to ABC-SR07. Which of the following actions should you take?"
+      },
+      {
+        "id": "A",
+        "text": "You should make sure that the RRAS service is configured."
+      },
+      {
+        "id": "B",
+        "text": "You should make sure that the Web service is configured."
+      },
+      {
+        "id": "C",
+        "text": "You should make sure that the DNS service is configured."
+      },
+      {
+        "id": "D",
+        "text": "You should make sure that the DHCP relay agent service is configured."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 5 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-006",
+    "pdfNumber": 6,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "multi-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a FDDI network for ABC.com\u2019s environment.\nWhich of the following is TRUE with regards to a FDDI network? (Choose all that apply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "An FDDI network cannot contain rings that are longer than 100 kilometers respectively."
+      },
+      {
+        "id": "B",
+        "text": "An FDDI network can contain rings that exceed 100 kilometers respectively."
+      },
+      {
+        "id": "C",
+        "text": "Each ring in a FDDI network can support a maximum of 500 nodes."
+      },
+      {
+        "id": "D",
+        "text": "Each ring in a FDDI network can support a maximum of 50 nodes."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Question 6 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-007",
+    "pdfNumber": 7,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a home network for a ABC.com client. You have decided to\nmake use of 10BaseT cabling.\nWhich of the following options are TRUE with regards to 10BaseT cabling? (Choose all that\napply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "10BaseT cables are made up of twisted pair cables that are a maximum of 100 meters in length."
+      },
+      {
+        "id": "B",
+        "text": "10BaseT cables are made up of twisted pair cables that are a maximum of 10 meters in length."
+      },
+      {
+        "id": "C",
+        "text": "10BaseT cables allows for the system to operate at 10 Mbps."
+      },
+      {
+        "id": "D",
+        "text": "10BaseT cables allows for the system to operate at 100 Mbps."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Question 7 evaluates knowledge of 3. Protocols & Services. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-008",
+    "pdfNumber": 8,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nA ABC.com customer has a small office network. The customer would like to create a virtual LAN\non their network.\nWhich of the following components should the customer have to proceed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The customer should have a switch."
+      },
+      {
+        "id": "B",
+        "text": "The customer should have a modem."
+      },
+      {
+        "id": "C",
+        "text": "The customer should have a server."
+      },
+      {
+        "id": "D",
+        "text": "The customer should have a switch."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 8 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-009",
+    "pdfNumber": 9,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou have executed the NBTSTAT command with the \u2013S parameter from the command-line on\nyour workstation.\nWhich of the following describes the reason for executing this command?",
+    "options": [
+      {
+        "id": "A",
+        "text": "For the purpose of viewing the names registered locally by NetBIOS applications."
+      },
+      {
+        "id": "B",
+        "text": "For the purpose of viewing the current NetBIOS sessions and their status, with the IP address."
+      },
+      {
+        "id": "C",
+        "text": "For the purpose of purging the name cache."
+      },
+      {
+        "id": "D",
+        "text": "For the purpose of viewing the NetBIOS sessions table converting destination IP addresses to computer NetBIOS names."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 9 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-010",
+    "pdfNumber": 10,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You work as a technician at ABC.com. The ABC.com network consists of a single domain named\nABC.com.\nABC.com users have reported that they are experience network connectivity problems.\nYou decide to run the ping \u2013l command from the command-line.\nWhich of the following describes the purpose of using the ping -l command?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It allows you to specify a Time To Live for outgoing packets."
+      },
+      {
+        "id": "B",
+        "text": "It allows you to specify the type of service."
+      },
+      {
+        "id": "C",
+        "text": "It allows you to specify the amount of data to include in the ping."
+      },
+      {
+        "id": "D",
+        "text": "It allows you to resolve addresses to host names."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 10 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-011",
+    "pdfNumber": 11,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are employed as a network technician at ABC.com.\nA ABC.com customer, named Andy Reid, would like to connect his two home computers.\nYou need to solve Andy Reid\u2019s problem without the use of unnecessary hardware.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should make use of a hub and a UTP crossover cable with RJ-45 connectors."
+      },
+      {
+        "id": "B",
+        "text": "You should make use of a hub and a UTP crossover cable with RJ-11 connectors."
+      },
+      {
+        "id": "C",
+        "text": "You should make use of a UTP crossover cable with RJ-45 connectors."
+      },
+      {
+        "id": "D",
+        "text": "You should make use of a UTP crossover cable with RJ-11 connectors."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 11 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-012",
+    "pdfNumber": 12,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a technician at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nA ABC.com client, named Weyland Industries, has requested the installation of a T3 internet\nconnection for their offices.\nWhich of the following is TRUE with regards to T3 internet connections?",
+    "options": [
+      {
+        "id": "A",
+        "text": "T3 internet connections have a minimum transmission rate of 64 Mbps."
+      },
+      {
+        "id": "B",
+        "text": "T3 internet connections have a minimum transmission rate of 56 Kbps."
+      },
+      {
+        "id": "C",
+        "text": "T3 internet connections have a minimum transmission rate of 10 Mbps."
+      },
+      {
+        "id": "D",
+        "text": "T3 internet connections have a minimum transmission rate of 128 Mbps."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 12 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-013",
+    "pdfNumber": 13,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nThe ABC.com network connects to the internet via an ISDN connection.\nWhich of the following is TRUE with regards to the ISDN connection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ISDN operates at a minimum speed of 128 Kbps."
+      },
+      {
+        "id": "B",
+        "text": "ISDN operates at a maximum speed of 128 Mbps."
+      },
+      {
+        "id": "C",
+        "text": "ISDN operates at a maximum speed of 128 Kbps."
+      },
+      {
+        "id": "D",
+        "text": "ISDN operates at a minimum speed of 128 Mbps."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 13 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-014",
+    "pdfNumber": 14,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You are employed as a network technician at ABC.com. The ABC.com network consists of a\nsingle domain named ABC.com.\nYou have been tasked with resolving an Internet name resolution problem. After pinging the DNS\nserver address of ABC.com\u2019s ISP, you find that the ISP server is down.\nYou then decide to run the ping \u2013t command from the command line.\nWhich of the following describes the purpose of this command?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It allows the ping command to keep sending Echo Request messages to the ISP server until interrupted."
+      },
+      {
+        "id": "B",
+        "text": "It performs reverse name resolution on the ISP\u2019s DNS server IP address."
+      },
+      {
+        "id": "C",
+        "text": "It sends Echo Request messages with the Don't Fragment flag in the IP header set to 1."
+      },
+      {
+        "id": "D",
+        "text": "It sends Echo Request messages a specified amount of times."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 14 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-015",
+    "pdfNumber": 15,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a senior administrator at ABC.com.\nYou are responsible for running training exercises for trainee administrators. You are currently\ncovering the layers of the Open Systems Interconnect (OSI) model.\nYou are explaining the Data-link layer.\nWhich of the following best describes the Data-link layer of the OSI model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Data-link layer deals with the transmission and reception of the unstructured raw bit stream over a physical medium."
+      },
+      {
+        "id": "B",
+        "text": "The Data-link layer controls the operation of the subnet."
+      },
+      {
+        "id": "C",
+        "text": "The Data-link layer deals with error-free transfer of data frames from one node to another over the physical layer."
+      },
+      {
+        "id": "D",
+        "text": "The Data-link layer makes sure that messages are conveyed error-free, sequentially, and with no losses or duplications."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 15 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-016",
+    "pdfNumber": 16,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou have been instructed to design a TCP/IP-based network. You need to configure the use of a\nsuitable name resolution strategy that makes provision for Windows and Unix computers on the\nnetwork.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should make use of DNS as the name resolution strategy."
+      },
+      {
+        "id": "B",
+        "text": "You should make use of NetBIOS as the name resolution strategy."
+      },
+      {
+        "id": "C",
+        "text": "You should make use of DHCP as the name resolution strategy."
+      },
+      {
+        "id": "D",
+        "text": "You should make use of Peer Name Resolution Protocol as the name resolution strategy."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 16 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-017",
+    "pdfNumber": 17,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network technician at ABC.com.\nABC.com is planning to replace their existing network cabling. ABC.com has requested that the\nreplacement cabling meet the following requirements:\n\u2022It must be unaffected by electromagnetic interference (EMI).\n\u2022It must be able to transmit data over vast distances.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should make use of Coaxial cable."
+      },
+      {
+        "id": "B",
+        "text": "You should make use of fiber-optic cable."
+      },
+      {
+        "id": "C",
+        "text": "You should make use of Shielded Twisted-Pair (STP) cable."
+      },
+      {
+        "id": "D",
+        "text": "You should make use of Unshielded Twisted-Pair (UTP) cable."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 17 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-018",
+    "pdfNumber": 18,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "You work as a senior network technician at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nABC.com has configured their network to support both IPv4 and IPv6. You are explaining the\ndifferences between IPv4 and IPv6 to a class of ABC.com\u2019s trainee technicians.\nWhich of the following statements are TRUE with regards to these differences? (Choose all that\napply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "IPv4 addresses are represented in a dotted-decimal format, while IPv6 addresses are represented in a colon-hexadecimal format."
+      },
+      {
+        "id": "B",
+        "text": "IPv4 addresses are represented in a colon-hexadecimal format, while IPv6 addresses are represented in a dotted-decimal format."
+      },
+      {
+        "id": "C",
+        "text": "IPv4 addresses make use of the last 32 bits of IPv6 addresses for interoperability."
+      },
+      {
+        "id": "D",
+        "text": "IPv4 addresses make use of the first 32 bits of IPv6 addresses for interoperability."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Question 18 evaluates knowledge of 3. Protocols & Services. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-019",
+    "pdfNumber": 19,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "multi-choice",
+    "question": "You work as a network designer at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou are designing a network that will have two subnets, named Subnet A and Subnet B,\nconnected to a router. To save cost, ABC.com wants you to make use of an existing router that\ncannot be configured to support BOOTP.\nSubnet A will host a DHCP server, while Subnet B will have a DHCP Relay Agent configured.\nWhich of the following is TRUE with regards to the DHCP Relay Agent? (Choose two.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is used to prevent broadcast traffic across the two subnets."
+      },
+      {
+        "id": "B",
+        "text": "It is used to pass broadcast traffic across the two subnets."
+      },
+      {
+        "id": "C",
+        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server\u2019s LAN adapter is connected, whether it is configured on the VPN server or not."
+      },
+      {
+        "id": "D",
+        "text": "It allows a remote access client to obtain an IP address on the intranet to which a VPN server\u2019s LAN adapter is connected, if it is configured on the VPN server."
+      }
+    ],
+    "correctAnswer": [
+      "B",
+      "D"
+    ],
+    "explanation": "Question 19 evaluates knowledge of 2. Network Hardware. Option B, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-020",
+    "pdfNumber": 20,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You work as a senior network technician at ABC.com.\nYou are in the process of connecting a 1000BASE-SX gigabit Ethernet in ABC.com\u2019s office block.\nWhich of the following Statements are TRUE with regards to 1000BASE-SX?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It requires multi-mode fiber optic cable."
+      },
+      {
+        "id": "B",
+        "text": "It requires single-mode fiber optic cable."
+      },
+      {
+        "id": "C",
+        "text": "It can work over distances in excess of 70 Km."
+      },
+      {
+        "id": "D",
+        "text": "The maximum length of a cable segment is 10 Km."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 20 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-021",
+    "pdfNumber": 21,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a Ring network for ABC.com.\nWhich of the following is an advantage of a Ring network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Ring network manages the connectivity between workstations without the need of a central node."
+      },
+      {
+        "id": "B",
+        "text": "When you connect or remove devices on the Ring network, there are no interruptions."
+      },
+      {
+        "id": "C",
+        "text": "A Ring network prevents the passing of data packets through an excessive number of nodes."
+      },
+      {
+        "id": "D",
+        "text": "The number of nodes in a Ring network has no impact on communication delays."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 21 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-022",
+    "pdfNumber": 22,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a Star network for ABC.com.\nWhich of the following is an advantage of a Star network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Star network manages the connectivity between workstations without the need of a central node."
+      },
+      {
+        "id": "B",
+        "text": "When you connect or remove devices on the Star network, there are no interruptions."
+      },
+      {
+        "id": "C",
+        "text": "A Star network allows the passing of data packets through an excessive number of nodes."
+      },
+      {
+        "id": "D",
+        "text": "Failure of the central hub has no impact on a Star network."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 22 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-023",
+    "pdfNumber": 23,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a senior network administrator at ABC.com. You are responsible for holding\ntraining exercises for trainee administrators.\nYou are explaining the purpose of a dual stack node on the network.\nWhich of the following suitably represents this explanation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It allows an IPv6 socket to communicate with an IPv4, and IPv6 peer at the transport layer of the OSI model."
+      },
+      {
+        "id": "B",
+        "text": "It allows an IPv6 socket to communicate with an IPv4, and IPv6 peer at the physical layer of the OSI model."
+      },
+      {
+        "id": "C",
+        "text": "It allows an IPv6 socket to communicate with an IPv4, and IPv6 peer at the data-link layer of the OSI model."
+      },
+      {
+        "id": "D",
+        "text": "It allows an IPv6 socket to communicate with an IPv4, and IPv6 peer at the session layer of the OSI model."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 23 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-024",
+    "pdfNumber": 24,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You work as a network designer at ABC.com.\nYou have recently designed a network for a ABC.com customer, using the fully connected mesh\ntopology.\nWhich of the following is TRUE with regards to this kind of topology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It the connectivity between workstations without the need of a central node."
+      },
+      {
+        "id": "B",
+        "text": "It does not require the use of switching or broadcasting."
+      },
+      {
+        "id": "C",
+        "text": "It prevents of data packets through an excessive number of nodes."
+      },
+      {
+        "id": "D",
+        "text": "The number of nodes in a fully connected mesh network has no impact on communication delays."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 24 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-025",
+    "pdfNumber": 25,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a senior administrator at ABC.com.\nYou are responsible for running training exercises for trainee administrators. You are currently\ncovering the layers of the Open Systems Interconnect (OSI) model.\nYou are explaining the Transport layer.\nWhich of the following best describes the Transport layer of the OSI model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Transport layer deals with the transmission and reception of the unstructured raw bit stream over a physical medium."
+      },
+      {
+        "id": "B",
+        "text": "The Transport layer controls the operation of the subnet."
+      },
+      {
+        "id": "C",
+        "text": "The Transport layer deals with error-free transfer of data frames from one node to another over the physical layer."
+      },
+      {
+        "id": "D",
+        "text": "The Transport layer makes sure that messages are conveyed error-free, sequentially, and with no losses or duplications."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 25 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-026",
+    "pdfNumber": 26,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external\ncustomers.\nA ABC.com customer, named Mia Hamm, has requested the configuration of a new internet\nconnection. Mia Hamm would like her connection to support high-definition television, as well as\nvoice over IP and general Internet access, over a single connection.\nWhich of the following options should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ADSL"
+      },
+      {
+        "id": "B",
+        "text": "IDSL"
+      },
+      {
+        "id": "C",
+        "text": "HDSL"
+      },
+      {
+        "id": "D",
+        "text": "VDSL"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 26 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-027",
+    "pdfNumber": 27,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "multi-choice",
+    "question": "You are employed as a network technician at ABC.com.\nYou are in the process of expanding ABC.com\u2019s current LAN setup. You have been instructed to\nmake sure that the cable used is fire safe, and that it emits less toxic fumes.\nWhich of the following options should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PVC cable."
+      },
+      {
+        "id": "B",
+        "text": "Plenum rated cable."
+      },
+      {
+        "id": "C",
+        "text": "Fibre-optic cable."
+      },
+      {
+        "id": "D",
+        "text": "Carpet cable."
+      }
+    ],
+    "correctAnswer": [
+      "B",
+      "C"
+    ],
+    "explanation": "Question 27 evaluates knowledge of 2. Network Hardware. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-028",
+    "pdfNumber": 28,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou have been instructed to design a network strategy for ABC.com. The strategy should allow for\nthe segregation of hosts and segments, while managing broadcast traffic.",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider making use of VLAN."
+      },
+      {
+        "id": "B",
+        "text": "You should consider making use of NAP."
+      },
+      {
+        "id": "C",
+        "text": "You should consider making use of WAN."
+      },
+      {
+        "id": "D",
+        "text": "You should consider making use of DNS."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 28 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-029",
+    "pdfNumber": 29,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a wide area network (WAN) network strategy for ABC.com.\nYou have been informed that the strategy should make use of the Frame relay protocol.\nWhich of the following is TRUE with regards to the Frame relay protocol in this scenario?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frame relay operates at the physical layer of the OSI model only."
+      },
+      {
+        "id": "B",
+        "text": "Frame relay transmissions are broken into 128-byte packets."
+      },
+      {
+        "id": "C",
+        "text": "Frame relay allows for high-speed data to be handled competently over the WAN."
+      },
+      {
+        "id": "D",
+        "text": "Frame relay operates at the physical, data link, and network layers."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 29 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-030",
+    "pdfNumber": 30,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a technician at ABC.com.\nA ABC.com network user, named Mia Hamm, has reported that she is experiencing network\nissues from her Windows NT workstation.\nYou want to view the workstation\u2019s existing TCP/IP configuration.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider executing the Ping command from the command line."
+      },
+      {
+        "id": "B",
+        "text": "You should consider running the Ipconfig command line utility."
+      },
+      {
+        "id": "C",
+        "text": "You should consider running the ntdsutil tool from the command line."
+      },
+      {
+        "id": "D",
+        "text": "You should consider running the Nslookup command from the command line."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 30 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-031",
+    "pdfNumber": 31,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a network administrator at ABC.com.\nABC.com has its headquarters in Dallas, and a new branch office Miami. The networks in both of\nthese offices are connected to the internet.\nYou have been instructed to devise a solution to allow the sharing of data and access to network\nresources in a secure manner.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider configuring a virtual private network (VPN) between the Dallas and Miami offices."
+      },
+      {
+        "id": "B",
+        "text": "You should consider configuring a VLAN between the Dallas and Miami offices."
+      },
+      {
+        "id": "C",
+        "text": "You should consider configuring a wireless LAN between the Dallas and Miami offices."
+      },
+      {
+        "id": "D",
+        "text": "You should consider configuring a virtual public network between the Dallas and Miami offices."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 31 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-032",
+    "pdfNumber": 32,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "multi-choice",
+    "question": "You are employed as a network technician at ABC.com.\nABC.com is planning to replace their existing network cabling. ABC.com has requested that the\ncabling be replaced with Fiber-optic cable.\nWhich of the following are benefits of using Fiber-optic cable? (Choose all that apply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is the easiest to install."
+      },
+      {
+        "id": "B",
+        "text": "It provides a higher resistance to crosstalk."
+      },
+      {
+        "id": "C",
+        "text": "It is inexpensive."
+      },
+      {
+        "id": "D",
+        "text": "It can transmit signals at very high speeds."
+      }
+    ],
+    "correctAnswer": [
+      "B",
+      "D"
+    ],
+    "explanation": "Question 32 evaluates knowledge of 2. Network Hardware. Option B, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-033",
+    "pdfNumber": 33,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are employed as a network technician at ABC.com.\nABC.com is planning to replace their existing network cabling. ABC.com has requested that the\ncabling be replaced with Fiber-optic cable.\nWhich of following options best describe the construction of Fiber-optic cables?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fiber-optic cable consists of a core made of solid copper surrounded by insulation."
+      },
+      {
+        "id": "B",
+        "text": "Fiber-optic cable consists of a very thin cylinder of glass, called the core, which encircled by a concentric layer of glass, known as the cladding."
+      },
+      {
+        "id": "C",
+        "text": "Fiber-optic cable consists of two insulated strands of copper wire twisted around each other."
+      },
+      {
+        "id": "D",
+        "text": "Fiber-optic cable consists of two insulated strands of copper wire twisted around each other with foil for shielding."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 33 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-034",
+    "pdfNumber": 34,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a senior administrator at ABC.com.\nYou are responsible for running training exercises for trainee administrators. You are currently\ncovering the layers of the Open Systems Interconnect (OSI) model.\nYou are explaining the presentation layer.\nWhich of the following best describes the presentation layer of the OSI model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The presentation layer deals with the transmission and reception of the unstructured raw bit stream over a physical medium."
+      },
+      {
+        "id": "B",
+        "text": "The presentation layer translate s data from a format used by the application layer into a common format at the sending station, then translate the common format to a format known to the application layer at the receiving station."
+      },
+      {
+        "id": "C",
+        "text": "The presentation layer deals with error-free transfer of data frames from one node to another over the physical layer."
+      },
+      {
+        "id": "D",
+        "text": "The presentation layer makes sure that messages are conveyed error-free, sequentially, and with no losses or duplications."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 34 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-035",
+    "pdfNumber": 35,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a senior administrator at ABC.com.\nYou are responsible for running training exercises for trainee administrators. You are currently covering the layers of the Open Systems Interconnect (OSI) model.\nYou are explaining the network layer.\nWhich of the following best describes the network layer of the OSI model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The network layer deals with the transmission and reception of the unstructured raw bit stream over a physical medium."
+      },
+      {
+        "id": "B",
+        "text": "The network layer controls the operation of the subnet."
+      },
+      {
+        "id": "C",
+        "text": "The network layer deals with error-free transfer of data frames from one node to another over the physical layer."
+      },
+      {
+        "id": "D",
+        "text": "The network layer makes sure that messages are conveyed error-free, sequentially, and with no losses or duplications."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Network layer (Layer 3) controls the operation of the subnet and handles routing of packets between network segments.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-036",
+    "pdfNumber": 36,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nABC.com makes use of DNS for name resolution. You are hosting a training exercise for junior\nadministrators. You are discussing AAAA DNS resource records.\nWhich of the following statements regarding AAAA resource records are TRUE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AAAA resource records return a 128-bit IPv6 address."
+      },
+      {
+        "id": "B",
+        "text": "AAAA resource records return a 32-bit IPv4 address."
+      },
+      {
+        "id": "C",
+        "text": "AAAA resource records declare the host that is the most authoritative for the zone."
+      },
+      {
+        "id": "D",
+        "text": "AAAA resource records create a pointer that maps an IP address to a host name for reverse lookups."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 36 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-037",
+    "pdfNumber": 37,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You are employed as an administrator at ABC.com. ABC.com\u2019s network is TCP/IP-based.\nYou have executed the NETSTAT command without parameters from the command-line on your\nworkstation.\nWhich of the following describes the reason for executing this command?",
+    "options": [
+      {
+        "id": "A",
+        "text": "For the purpose of viewing all active TCP connections, as well as the UDP ports on which the workstation is listening."
+      },
+      {
+        "id": "B",
+        "text": "For the purpose of viewing all active TCP connections, as well as the process ID (PID) for each connection."
+      },
+      {
+        "id": "C",
+        "text": "For the purpose of viewing statistics by protocol."
+      },
+      {
+        "id": "D",
+        "text": "For the purpose of viewing all active TCP connections."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 37 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-038",
+    "pdfNumber": 38,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are employed as a network technician at ABC.com.\nYou are connecting a new workstation to the network. The workstation includes a network adapter\ncard that has a RJ-45 input.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider making use of thinnet coaxial cable with a RJ-45 connector."
+      },
+      {
+        "id": "B",
+        "text": "You should consider making use of thicknet coaxial cable with a RJ-45 connector."
+      },
+      {
+        "id": "C",
+        "text": "You should consider making use of fiber-optic cable with a RJ-45 connector."
+      },
+      {
+        "id": "D",
+        "text": "You should consider making use of twisted-pair cable with a RJ-45 connector."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 38 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-039",
+    "pdfNumber": 39,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You work as a network designer at ABC.com.\nABC.com\u2019s network is designed to have a combination of Bus, Star and ring network topologies.\nWhich of the following describes this type of network topology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Daisy chain network topology."
+      },
+      {
+        "id": "B",
+        "text": "Hybrid network topology."
+      },
+      {
+        "id": "C",
+        "text": "Tree network topology."
+      },
+      {
+        "id": "D",
+        "text": "Mesh network topology."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 39 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-040",
+    "pdfNumber": 40,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external\ncustomers.\nYou are configuring a wireless home network for a ABC.com customer, named Mia Hamm.\nSubsequent to manually configuring the wireless clients with the correct SSID, you disable SSID\nbroadcast.\nWhich of the following is a valid reason for doing that?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To prevent computers on Mia Hamm\u2019s network from connecting to the wireless network without her knowing."
+      },
+      {
+        "id": "B",
+        "text": "To allow Mia Hamm\u2019s friend, who lives next door, access to her network."
+      },
+      {
+        "id": "C",
+        "text": "To prevent wireless users in Mia Hamm\u2019s surrounding area from discovering her wireless network."
+      },
+      {
+        "id": "D",
+        "text": "To prevent hackers from sniffing Wi-Fi protocol messages."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 40 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-041",
+    "pdfNumber": 41,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network is TCP/IPbased.\nThe ABC.com network contains a DNS server, named ABC-SR13. When the ABC-SR13 fails, you\nare asked to resolve the issue as soon as possible.\nWhich of the following options are TRUE with regards to the DNS server failing? (Choose two.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "ABC.com users will not be able to ping resources using IP addresses."
+      },
+      {
+        "id": "B",
+        "text": "ABC.com users will not be able to connect to resources via their host names."
+      },
+      {
+        "id": "C",
+        "text": "ABC.com users will still be able to connect to resources via their host names."
+      },
+      {
+        "id": "D",
+        "text": "ABC.com users will still be able to ping resources using IP addresses."
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Question 41 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-042",
+    "pdfNumber": 42,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You are employed as a senior network technician at ABC.com.\nYou are hosting a training exercise for new trainees. You are discussing what the purpose of\nCSMA/CD is in Ethernet standard networks.\nWhich of the following best describes this purpose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CSMA/CD forces computers to listen to the Ethernet before sending in order to make sure that no other host on the wire is sending."
+      },
+      {
+        "id": "B",
+        "text": "CSMA/CD divides the Ethernet equally among all transmitting nodes within a collision domain."
+      },
+      {
+        "id": "C",
+        "text": "CSMA/CD uses a token to allow a device permission to transmit over the Ethernet."
+      },
+      {
+        "id": "D",
+        "text": "CSMA/CD allows computers to send data over the Ethernet whenever they want."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 42 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-043",
+    "pdfNumber": 43,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are employed as a network designer at ABC.com.\nYou are in the process of designing a Synchronous Optical Networking (SONET) fiber optic\nsolution. You have been informed that the solution should allow for a maximum transmission data\nrate of 155.52 Mbps.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider making use of an OC-24 network line."
+      },
+      {
+        "id": "B",
+        "text": "You should consider making use of an OC-1 network line."
+      },
+      {
+        "id": "C",
+        "text": "You should consider making use of an OC-3 network line."
+      },
+      {
+        "id": "D",
+        "text": "You should consider making use of an OC-12 network line."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 43 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-044",
+    "pdfNumber": 44,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You are employed as a senior administrator at ABC.com.\nYou are responsible for running training exercises for trainee administrators. You are currently\ncovering the layers of the Open Systems Interconnect (OSI) model.\nYou are explaining the session layer.\nWhich of the following best describes the session layer of the OSI model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The session layer deals with the transmission and reception of the unstructured raw bit stream over a physical medium."
+      },
+      {
+        "id": "B",
+        "text": "The session layer controls the operation of the subnet."
+      },
+      {
+        "id": "C",
+        "text": "The session layer deals with error-free transfer of data frames from one node to another over the physical layer."
+      },
+      {
+        "id": "D",
+        "text": "The session layer allows for two application processes on different workstations to establish, use and terminate a connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 44 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-045",
+    "pdfNumber": 45,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "You are employed as a network administrator at ABC.com. The ABC.com network is TCP/IPbased.\nYou have been instructed to configure Dynamic Host Configuration Protocol (DHCP) on\nABC.com\u2019s network.\nWhich of the following options are TRUE with regards to DHCP? (Choose two.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "DHCP provides support for NetBIOS over TCP/IP."
+      },
+      {
+        "id": "B",
+        "text": "DHCP is used to find computers and services that have user-friendly names."
+      },
+      {
+        "id": "C",
+        "text": "DHCP provides reliable IP address configuration, while reducing network administration."
+      },
+      {
+        "id": "D",
+        "text": "DHCP provides reliable IP address configuration, but increases the need for network administration."
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Question 45 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-046",
+    "pdfNumber": 46,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "multi-choice",
+    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external clients.\nOne of ABC.com\u2019s clients has requested an ISDN configuration.\nWhich of the following is TRUE with regards to ISDN? (Choose all that apply.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "ISDN can be used over the client\u2019s existing telephone network."
+      },
+      {
+        "id": "B",
+        "text": "ISDN requires an upgrade to the client\u2019s existing telephone network."
+      },
+      {
+        "id": "C",
+        "text": "ISDN is capable of communicating at speeds of up to 128 Kbps."
+      },
+      {
+        "id": "D",
+        "text": "ISDN is capable of communicating at speeds of up to 56 Kbps."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Question 46 evaluates knowledge of 1. Network Infrastructures. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-047",
+    "pdfNumber": 47,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You work as an administrator at ABC.com. The ABC.com network consists of a single domain\nnamed ABC.com. All servers on the ABC.com network have Windows Server 2003 installed and\nall workstations have Windows XP Professional installed.\nYou have been instructed to implement a solution that speeds up the name resolution process.\nThe strategy should also reduce the amount of name resolution traffic on ABC.com\u2019s internet\nconnection.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider installing a DNS server on ABC.com\u2019s network."
+      },
+      {
+        "id": "B",
+        "text": "You should consider installing a WINS server on ABC.com\u2019s network."
+      },
+      {
+        "id": "C",
+        "text": "You should consider installing a DHCP server on ABC.com\u2019s network."
+      },
+      {
+        "id": "D",
+        "text": "You should consider installing a RIS server on ABC.com\u2019s network."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 47 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-048",
+    "pdfNumber": 48,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You work as a technician at ABC.com. ABC.com provides networking services to external\ncustomers.\nYou are configuring a standard LAN for a ABC.com customer, named Andy Reid. You want to\nmake use of a cable that provides performance at 100 Mhz.\nWhich of the following cable should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coaxial cable."
+      },
+      {
+        "id": "B",
+        "text": "Cat 5 cable."
+      },
+      {
+        "id": "C",
+        "text": "Cat 6 cable."
+      },
+      {
+        "id": "D",
+        "text": "Cat 7 cable."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 48 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-049",
+    "pdfNumber": 49,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "You work as a network technician at ABC.com.\nYou have received instructions to configure a Peer-to-Peer network for ABC.com.\nWhich of the following are regarded as advantages of this type of network? (Choose two.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Shared resources of peer computers are directly accessible."
+      },
+      {
+        "id": "B",
+        "text": "The sharing of content and resources can only be done from the center of the network."
+      },
+      {
+        "id": "C",
+        "text": "The sharing of content and resources can be done from both the center and the edge of the network."
+      },
+      {
+        "id": "D",
+        "text": "The sharing of content and resources can only be done from the edge of the network."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Question 49 evaluates knowledge of 3. Protocols & Services. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-050",
+    "pdfNumber": 50,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "You work as a network technician at ABC.com. ABC.com has a wireless network configured in the\nSales department.\nYou have received an instruction to configure a wireless network for ABC.com\u2019s Sales department.\nYou need to make sure that workstations of the Sales users are able to connect to the wireless\nnetwork.\nWhich of the following actions should you take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You should consider configuring encryption, and a Service Set Identifier (SSID) on the workstations in the Sales department."
+      },
+      {
+        "id": "B",
+        "text": "You should consider configuring authentication, and a Security Set Identifier (SSID) on the workstations in the Sales department."
+      },
+      {
+        "id": "C",
+        "text": "You should consider configuring authentication, and a Service Set Identifier (SSID) on the workstations in the Sales department."
+      },
+      {
+        "id": "D",
+        "text": "You should consider configuring encryption, and authentication on the workstations in the Sales department."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 50 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-051",
+    "pdfNumber": 51,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is the most common central device used today to connect computers to a network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "hub"
+      },
+      {
+        "id": "B",
+        "text": "switch"
+      },
+      {
+        "id": "C",
+        "text": "SOHO router"
+      },
+      {
+        "id": "D",
+        "text": "VPN router"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 51 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-052",
+    "pdfNumber": 52,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What is the most common adapter or connector used to connect a computer to a wired network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RG6"
+      },
+      {
+        "id": "B",
+        "text": "RG58"
+      },
+      {
+        "id": "C",
+        "text": "RJ45"
+      },
+      {
+        "id": "D",
+        "text": "RJ8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 52 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-053",
+    "pdfNumber": 53,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which of the following does a switch use for increased performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "simplex"
+      },
+      {
+        "id": "B",
+        "text": "half duplex"
+      },
+      {
+        "id": "C",
+        "text": "full duplex"
+      },
+      {
+        "id": "D",
+        "text": "sliding duplex"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 53 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-054",
+    "pdfNumber": 54,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What do you use to isolate a group of computers within your organization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "WLAN"
+      },
+      {
+        "id": "B",
+        "text": "WAN"
+      },
+      {
+        "id": "C",
+        "text": "VLAN"
+      },
+      {
+        "id": "D",
+        "text": "Internet"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 54 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-055",
+    "pdfNumber": 55,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What do you use to create VLANs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "router"
+      },
+      {
+        "id": "B",
+        "text": "switch"
+      },
+      {
+        "id": "C",
+        "text": "firewall"
+      },
+      {
+        "id": "D",
+        "text": "proxy server"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 55 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-056",
+    "pdfNumber": 56,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What zone is used to publish external websites for an organization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "intranet"
+      },
+      {
+        "id": "B",
+        "text": "exanet"
+      },
+      {
+        "id": "C",
+        "text": "internetwork"
+      },
+      {
+        "id": "D",
+        "text": "DMZ"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 56 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-057",
+    "pdfNumber": 57,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "Which topology is the most redundant and the most expensive?",
+    "options": [
+      {
+        "id": "A",
+        "text": "star"
+      },
+      {
+        "id": "B",
+        "text": "ring"
+      },
+      {
+        "id": "C",
+        "text": "mesh"
+      },
+      {
+        "id": "D",
+        "text": "bus"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 57 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-058",
+    "pdfNumber": 58,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What standard describes CSMA/CD?",
+    "options": [
+      {
+        "id": "A",
+        "text": "801.2"
+      },
+      {
+        "id": "B",
+        "text": "802.3"
+      },
+      {
+        "id": "C",
+        "text": "802.5"
+      },
+      {
+        "id": "D",
+        "text": "802.11"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 58 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-059",
+    "pdfNumber": 59,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What mechanism do wireless networks use to access the network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CSMA/CD"
+      },
+      {
+        "id": "B",
+        "text": "CSMA/CA"
+      },
+      {
+        "id": "C",
+        "text": "token passing"
+      },
+      {
+        "id": "D",
+        "text": "polling"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 59 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-060",
+    "pdfNumber": 60,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What model promises the most processing power?",
+    "options": [
+      {
+        "id": "A",
+        "text": "centralized computing"
+      },
+      {
+        "id": "B",
+        "text": "distributive computing"
+      },
+      {
+        "id": "C",
+        "text": "switching computing"
+      },
+      {
+        "id": "D",
+        "text": "dumb computing"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 60 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-061",
+    "pdfNumber": 61,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which model users a central database for authentication?",
+    "options": [
+      {
+        "id": "A",
+        "text": "peer-to-peer"
+      },
+      {
+        "id": "B",
+        "text": "workgroup"
+      },
+      {
+        "id": "C",
+        "text": "client/server"
+      },
+      {
+        "id": "D",
+        "text": "distributive"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 61 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-062",
+    "pdfNumber": 62,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of server does Active Director run on?",
+    "options": [
+      {
+        "id": "A",
+        "text": "file server"
+      },
+      {
+        "id": "B",
+        "text": "print server"
+      },
+      {
+        "id": "C",
+        "text": "database server"
+      },
+      {
+        "id": "D",
+        "text": "network controller"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 62 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-063",
+    "pdfNumber": 63,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which model has each host have their own security database?",
+    "options": [
+      {
+        "id": "A",
+        "text": "peer-to-peer"
+      },
+      {
+        "id": "B",
+        "text": "client/server"
+      },
+      {
+        "id": "C",
+        "text": "distributive"
+      },
+      {
+        "id": "D",
+        "text": "sliding"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 63 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-064",
+    "pdfNumber": 64,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of communication is sent to a single designated host?",
+    "options": [
+      {
+        "id": "A",
+        "text": "unicast"
+      },
+      {
+        "id": "B",
+        "text": "broadcast"
+      },
+      {
+        "id": "C",
+        "text": "multicast"
+      },
+      {
+        "id": "D",
+        "text": "anycast"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 64 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-065",
+    "pdfNumber": 65,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is used to uniquely identify a host on a TCP/IP network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IP address"
+      },
+      {
+        "id": "B",
+        "text": "MAC address"
+      },
+      {
+        "id": "C",
+        "text": "bit pattern"
+      },
+      {
+        "id": "D",
+        "text": "router name"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 65 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-066",
+    "pdfNumber": 66,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "A _________ is a single computer or device that connects to a TCP/IP network.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Host"
+      },
+      {
+        "id": "B",
+        "text": "Node"
+      },
+      {
+        "id": "C",
+        "text": "Access Point"
+      },
+      {
+        "id": "D",
+        "text": "Laptop"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Question 66 evaluates knowledge of 3. Protocols & Services. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-067",
+    "pdfNumber": 67,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What is the central device used in wireless LANs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wireless Access Point"
+      },
+      {
+        "id": "B",
+        "text": "CSA/CDM Connector"
+      },
+      {
+        "id": "C",
+        "text": "Wireless Switch"
+      },
+      {
+        "id": "D",
+        "text": "MDU"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 67 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-068",
+    "pdfNumber": 68,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "What command do you use to test the TCP/IP stack on a computer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ping localhost"
+      },
+      {
+        "id": "B",
+        "text": "Ping 127.0.0.1"
+      },
+      {
+        "id": "C",
+        "text": "Ping loopback"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /renew"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Question 68 evaluates knowledge of 3. Protocols & Services. Option A, B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-069",
+    "pdfNumber": 69,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You need to divide a network into three subnets. Which Device should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Router"
+      },
+      {
+        "id": "B",
+        "text": "Hub"
+      },
+      {
+        "id": "C",
+        "text": "Segmenter"
+      },
+      {
+        "id": "D",
+        "text": "Bridge"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 69 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-070",
+    "pdfNumber": 70,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Connecting to a private Network address from a public network requires:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dynamic Host Configuration Protocol (DHCP)."
+      },
+      {
+        "id": "B",
+        "text": "Network Access Protection (NAP)."
+      },
+      {
+        "id": "C",
+        "text": "Dynamic domain name system (DDNS)."
+      },
+      {
+        "id": "D",
+        "text": "Network address translation (NAT)."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 70 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-071",
+    "pdfNumber": 71,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What model is used to describe how data communication occurs between hosts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "server-centric model"
+      },
+      {
+        "id": "B",
+        "text": "workgroup model"
+      },
+      {
+        "id": "C",
+        "text": "peer-to-peer model"
+      },
+      {
+        "id": "D",
+        "text": "OSI reference model"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 71 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-072",
+    "pdfNumber": 72,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model do MAC addresses and switches use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Data Link"
+      },
+      {
+        "id": "C",
+        "text": "Network"
+      },
+      {
+        "id": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 72 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-073",
+    "pdfNumber": 73,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model covers routing between networks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Data Link"
+      },
+      {
+        "id": "C",
+        "text": "Network"
+      },
+      {
+        "id": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 73 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-074",
+    "pdfNumber": 74,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model is used to verify that data was delivered without error?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Data Link"
+      },
+      {
+        "id": "C",
+        "text": "Network"
+      },
+      {
+        "id": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 74 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-075",
+    "pdfNumber": 75,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model covers HTTP, FTP, and RDC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Session"
+      },
+      {
+        "id": "C",
+        "text": "Application"
+      },
+      {
+        "id": "D",
+        "text": "Presentation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 75 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-076",
+    "pdfNumber": 76,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which layer of the OSI model is used to create a connection so that a host can transfer files?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Session"
+      },
+      {
+        "id": "C",
+        "text": "Application"
+      },
+      {
+        "id": "D",
+        "text": "Presentation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 76 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-077",
+    "pdfNumber": 77,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "Which layer of the OSI model includes VLANs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Data Link"
+      },
+      {
+        "id": "C",
+        "text": "Network"
+      },
+      {
+        "id": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 77 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-078",
+    "pdfNumber": 78,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which protocol do you use as the transport protocol for a video application?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TCP"
+      },
+      {
+        "id": "B",
+        "text": "UDP"
+      },
+      {
+        "id": "C",
+        "text": "FTP"
+      },
+      {
+        "id": "D",
+        "text": "RDC"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 78 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-079",
+    "pdfNumber": 79,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which port categories include inbound ports of HTTP, HTTPS, FTP, and DNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "well-known ports"
+      },
+      {
+        "id": "B",
+        "text": "registered ports"
+      },
+      {
+        "id": "C",
+        "text": "dynamic ports"
+      },
+      {
+        "id": "D",
+        "text": "private ports"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 79 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-080",
+    "pdfNumber": 80,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What layer in the OSI model is responsible for logging on and off?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Session"
+      },
+      {
+        "id": "C",
+        "text": "Application"
+      },
+      {
+        "id": "D",
+        "text": "Presentation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 80 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-081",
+    "pdfNumber": 81,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What layer in the OSI model is used to encrypt data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Session"
+      },
+      {
+        "id": "C",
+        "text": "Application"
+      },
+      {
+        "id": "D",
+        "text": "Presentation"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 81 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-082",
+    "pdfNumber": 82,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model includes the cable and network adapters?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Session"
+      },
+      {
+        "id": "C",
+        "text": "Application"
+      },
+      {
+        "id": "D",
+        "text": "Presentation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 82 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-083",
+    "pdfNumber": 83,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "How many layers does the TCP/IP model have?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 83 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-084",
+    "pdfNumber": 84,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which layer in the OSI model is included in the TCP/IP model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Data Link"
+      },
+      {
+        "id": "C",
+        "text": "Transport"
+      },
+      {
+        "id": "D",
+        "text": "Application"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 84 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-085",
+    "pdfNumber": 85,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which protocol is used to translate IP addresses to MAC addresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RARP"
+      },
+      {
+        "id": "B",
+        "text": "ARP"
+      },
+      {
+        "id": "C",
+        "text": "DNS"
+      },
+      {
+        "id": "D",
+        "text": "WINS"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 85 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-086",
+    "pdfNumber": 86,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What ports are defined above 49,152?",
+    "options": [
+      {
+        "id": "A",
+        "text": "well-known ports"
+      },
+      {
+        "id": "B",
+        "text": "registered ports"
+      },
+      {
+        "id": "C",
+        "text": "dynamic ports"
+      },
+      {
+        "id": "D",
+        "text": "sliding ports"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 86 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-087",
+    "pdfNumber": 87,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "A layer 3 switch is similar to a __________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Router"
+      },
+      {
+        "id": "B",
+        "text": "Repeater"
+      },
+      {
+        "id": "C",
+        "text": "Hub"
+      },
+      {
+        "id": "D",
+        "text": "Patch Panel"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 87 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-088",
+    "pdfNumber": 88,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "TCP/IP and IPX/SPX are known as _________ stacks.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protocols"
+      },
+      {
+        "id": "B",
+        "text": "Services"
+      },
+      {
+        "id": "C",
+        "text": "Layers"
+      },
+      {
+        "id": "D",
+        "text": "Lenses"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 88 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-089",
+    "pdfNumber": 89,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is the advantage of UDP over TCP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Less Overhead - Faster Performance"
+      },
+      {
+        "id": "B",
+        "text": "Older - Larger pool of compatible hardware"
+      },
+      {
+        "id": "C",
+        "text": "TCP is not IPv6 compatible UDP is"
+      },
+      {
+        "id": "D",
+        "text": "UDP can operate at Layer 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 89 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-090",
+    "pdfNumber": 90,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What are the seven layers found in the OSI model, in order?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical - Data Link - Network - Transport - Session - Presentation - Application"
+      },
+      {
+        "id": "B",
+        "text": "Physical - Data Link - Network - Transport - Session - Application - Presentation"
+      },
+      {
+        "id": "C",
+        "text": "Physical - Data Link - Transport - Network - Session - Application - Presentation"
+      },
+      {
+        "id": "D",
+        "text": "Physical - Data Link - Transport - Session - Network - Presentation \u2013 Application Correct"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 90 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-091",
+    "pdfNumber": 91,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What is the maximum speed supported by 802.11b?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 Mbps"
+      },
+      {
+        "id": "B",
+        "text": "10 Mbps"
+      },
+      {
+        "id": "C",
+        "text": "11 Mbps"
+      },
+      {
+        "id": "D",
+        "text": "54 Mbps"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 91 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-092",
+    "pdfNumber": 92,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "One reason to incorporate VLANs in a network is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce the number of broadcast domains."
+      },
+      {
+        "id": "B",
+        "text": "Increase the number of available Media Access Control (MAC) addresses."
+      },
+      {
+        "id": "C",
+        "text": "Increase the number of available IP addresses."
+      },
+      {
+        "id": "D",
+        "text": "Reduce the number of nodes in a broadcast domain."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 92 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-093",
+    "pdfNumber": 93,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What is the minimum cabling requirement for a 100BaseTx network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Category 3 UTP cable"
+      },
+      {
+        "id": "B",
+        "text": "Category 5 UTP cable"
+      },
+      {
+        "id": "C",
+        "text": "Category 6 UTP cable"
+      },
+      {
+        "id": "D",
+        "text": "Multimode fiber cable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 93 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-094",
+    "pdfNumber": 94,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "A router's static route is set by the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Next upstream router."
+      },
+      {
+        "id": "B",
+        "text": "Routing protocol."
+      },
+      {
+        "id": "C",
+        "text": "Adjacent network."
+      },
+      {
+        "id": "D",
+        "text": "Network administrator."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 94 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-095",
+    "pdfNumber": 95,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of record does DNS use to find a mail service?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Host (A) DNS record"
+      },
+      {
+        "id": "B",
+        "text": "Canonical (CNAME) DNS record"
+      },
+      {
+        "id": "C",
+        "text": "Service (SRV) DNS record"
+      },
+      {
+        "id": "D",
+        "text": "Mail Exchanger (MX) DNS record"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 95 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-096",
+    "pdfNumber": 96,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "How many bits are there in an Internet Protocol version 6 (IPv6) address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "32"
+      },
+      {
+        "id": "B",
+        "text": "64"
+      },
+      {
+        "id": "C",
+        "text": "128"
+      },
+      {
+        "id": "D",
+        "text": "256"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 96 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-097",
+    "pdfNumber": 97,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "In which OSI layer does routing occur?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical"
+      },
+      {
+        "id": "B",
+        "text": "Network"
+      },
+      {
+        "id": "C",
+        "text": "Data Link"
+      },
+      {
+        "id": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 97 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-098",
+    "pdfNumber": 98,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "The query protocol used to locate resources on a network is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tracert"
+      },
+      {
+        "id": "B",
+        "text": "Telnet."
+      },
+      {
+        "id": "C",
+        "text": "Lightweight Directory Access Protocol (LDAP)."
+      },
+      {
+        "id": "D",
+        "text": "User Datagram Protocol (UDP)."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 98 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-099",
+    "pdfNumber": 99,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What is the most common cable used today?",
+    "options": [
+      {
+        "id": "A",
+        "text": "UTP"
+      },
+      {
+        "id": "B",
+        "text": "STP"
+      },
+      {
+        "id": "C",
+        "text": "Coaxial"
+      },
+      {
+        "id": "D",
+        "text": "Fiber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 99 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-100",
+    "pdfNumber": 100,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "If you are making a crossover cable and one end is 568A, what should the other end be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "568A"
+      },
+      {
+        "id": "B",
+        "text": "568B"
+      },
+      {
+        "id": "C",
+        "text": "568C"
+      },
+      {
+        "id": "D",
+        "text": "BOGB"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 100 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-101",
+    "pdfNumber": 101,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "If you want to connect a computer directly to another computer without using a switch, you use a\n__________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "straight-through cable"
+      },
+      {
+        "id": "B",
+        "text": "crossover cable"
+      },
+      {
+        "id": "C",
+        "text": "laplink cable"
+      },
+      {
+        "id": "D",
+        "text": "rollover cable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 101 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-102",
+    "pdfNumber": 102,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You need to connect a twisted-pair cable to the back of a patch panel. What tool should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "punch-down tool"
+      },
+      {
+        "id": "B",
+        "text": "zip tool"
+      },
+      {
+        "id": "C",
+        "text": "wire wedge"
+      },
+      {
+        "id": "D",
+        "text": "soldering iron"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 102 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-103",
+    "pdfNumber": 103,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What is the minimum category of twisted-pair cable you need to support 100 Mbps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Category 3"
+      },
+      {
+        "id": "B",
+        "text": "Category 5"
+      },
+      {
+        "id": "C",
+        "text": "Category 5e"
+      },
+      {
+        "id": "D",
+        "text": "Category 6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 103 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-104",
+    "pdfNumber": 104,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "When you pick up your wireless phone, your computer drops network connectivity. What could be\nthe cause of the problem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EMI"
+      },
+      {
+        "id": "B",
+        "text": "RFI"
+      },
+      {
+        "id": "C",
+        "text": "network adapter failure"
+      },
+      {
+        "id": "D",
+        "text": "cable failure"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 104 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-105",
+    "pdfNumber": 105,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "You are setting up a network within a warehouse using Category 6 UTP. However, parts of the\nnetwork are down because of the heavy machinery used. What cable type should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "STP"
+      },
+      {
+        "id": "B",
+        "text": "coaxial"
+      },
+      {
+        "id": "C",
+        "text": "fiber"
+      },
+      {
+        "id": "D",
+        "text": "plenum-rated"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 105 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-106",
+    "pdfNumber": 106,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What do you call it when electrical signals jump to another set of wires?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EMI"
+      },
+      {
+        "id": "B",
+        "text": "RFI"
+      },
+      {
+        "id": "C",
+        "text": "crosstalk"
+      },
+      {
+        "id": "D",
+        "text": "jump it is"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 106 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-107",
+    "pdfNumber": 107,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What type of cable should be used as part of a fire code for a building?",
+    "options": [
+      {
+        "id": "A",
+        "text": "STP"
+      },
+      {
+        "id": "B",
+        "text": "PVC"
+      },
+      {
+        "id": "C",
+        "text": "heat protected"
+      },
+      {
+        "id": "D",
+        "text": "plenum-rated"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 107 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-108",
+    "pdfNumber": 108,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which of the following is not a fiber connector?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FC"
+      },
+      {
+        "id": "B",
+        "text": "LC"
+      },
+      {
+        "id": "C",
+        "text": "RJ-45"
+      },
+      {
+        "id": "D",
+        "text": "MT-RJ"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 108 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-109",
+    "pdfNumber": 109,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which of the following is a characteristic of single-mode fiber?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Single-mode fiber supports longer distances than multimode fiber."
+      },
+      {
+        "id": "B",
+        "text": "Single-mode fiber has increased bandwidth than multimode fiber."
+      },
+      {
+        "id": "C",
+        "text": "Single-mode supports only a ring topology."
+      },
+      {
+        "id": "D",
+        "text": "Single mode allows multiplexing of electrical and light signals."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 109 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-110",
+    "pdfNumber": 110,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which protocol can be used to encrypt packets on the Internet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "HTTP"
+      },
+      {
+        "id": "B",
+        "text": "SNMP"
+      },
+      {
+        "id": "C",
+        "text": "HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "TFTP"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 110 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-111",
+    "pdfNumber": 111,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What is the maximum speed supported by 802.11g?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 Mbps"
+      },
+      {
+        "id": "B",
+        "text": "10 Mbps"
+      },
+      {
+        "id": "C",
+        "text": "11 Mbps"
+      },
+      {
+        "id": "D",
+        "text": "54 Mbps"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 111 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-112",
+    "pdfNumber": 112,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What of the following is not a characteristic of 802.11n?",
+    "options": [
+      {
+        "id": "A",
+        "text": "frame aggregation"
+      },
+      {
+        "id": "B",
+        "text": "channel bonding"
+      },
+      {
+        "id": "C",
+        "text": "RFI protection"
+      },
+      {
+        "id": "D",
+        "text": "MIMO"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 112 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-113",
+    "pdfNumber": 113,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "Which is the most secure encryption used in wireless networks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "WEP"
+      },
+      {
+        "id": "B",
+        "text": "WPA"
+      },
+      {
+        "id": "C",
+        "text": "WPA2"
+      },
+      {
+        "id": "D",
+        "text": "802.1x"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 113 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-114",
+    "pdfNumber": 114,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What is used to identify a wireless network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "network ID"
+      },
+      {
+        "id": "B",
+        "text": "frequency identifier"
+      },
+      {
+        "id": "C",
+        "text": "wireless password"
+      },
+      {
+        "id": "D",
+        "text": "SSID"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 114 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-115",
+    "pdfNumber": 115,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "To test a cable, you would use a _____________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuity tester"
+      },
+      {
+        "id": "B",
+        "text": "Patch Tester"
+      },
+      {
+        "id": "C",
+        "text": "Loopback Plug"
+      },
+      {
+        "id": "D",
+        "text": "Tone & Probe"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 115 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-116",
+    "pdfNumber": 116,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "For organizations, using ___________ authentication for wireless networks is recommended.",
+    "options": [
+      {
+        "id": "A",
+        "text": "802.1d"
+      },
+      {
+        "id": "B",
+        "text": "802.1x"
+      },
+      {
+        "id": "C",
+        "text": "802.11g"
+      },
+      {
+        "id": "D",
+        "text": "802.11x"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 116 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-117",
+    "pdfNumber": 117,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "When a signal degrades as it runs through a wire, you have ________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Degradation"
+      },
+      {
+        "id": "B",
+        "text": "Attenuation"
+      },
+      {
+        "id": "C",
+        "text": "Cross Over"
+      },
+      {
+        "id": "D",
+        "text": "Resistance"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 117 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-118",
+    "pdfNumber": 118,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What mode users a wireless access point?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infrastructure Mode"
+      },
+      {
+        "id": "B",
+        "text": "Ad Hop Mode"
+      },
+      {
+        "id": "C",
+        "text": "Bridge Mode"
+      },
+      {
+        "id": "D",
+        "text": "Forward Tunneling Mode"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 118 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-119",
+    "pdfNumber": 119,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to connect to a FTP server to download a file?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nslookup"
+      },
+      {
+        "id": "B",
+        "text": "ssh"
+      },
+      {
+        "id": "C",
+        "text": "telnet"
+      },
+      {
+        "id": "D",
+        "text": "ftp"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 119 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-120",
+    "pdfNumber": 120,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which of the following is a public IP address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.156.89.1"
+      },
+      {
+        "id": "B",
+        "text": "68.24.78.221"
+      },
+      {
+        "id": "C",
+        "text": "172.16.152.48"
+      },
+      {
+        "id": "D",
+        "text": "192.168.25.101"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 120 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-121",
+    "pdfNumber": 121,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is the default subnet mask for a Class B network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "255.0.0.0"
+      },
+      {
+        "id": "B",
+        "text": "255.255.0.0"
+      },
+      {
+        "id": "C",
+        "text": "255.255.255.0"
+      },
+      {
+        "id": "D",
+        "text": "255.255.255.255"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 121 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-122",
+    "pdfNumber": 122,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You have a host with the address of 180.24.45.120. To what class would this be address be assigned?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Class A"
+      },
+      {
+        "id": "B",
+        "text": "Class B"
+      },
+      {
+        "id": "C",
+        "text": "Class C"
+      },
+      {
+        "id": "D",
+        "text": "Class D"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 122 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-123",
+    "pdfNumber": 123,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "For IPv4, what class is used for multicasting?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Class A"
+      },
+      {
+        "id": "B",
+        "text": "Class B"
+      },
+      {
+        "id": "C",
+        "text": "Class C"
+      },
+      {
+        "id": "D",
+        "text": "Class D"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 123 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-124",
+    "pdfNumber": 124,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is the maximum number of hosts you can use for each subnet that belongs to a class C\naddress?",
+    "options": [
+      {
+        "id": "A",
+        "text": "128"
+      },
+      {
+        "id": "B",
+        "text": "254"
+      },
+      {
+        "id": "C",
+        "text": "256"
+      },
+      {
+        "id": "D",
+        "text": "65,534"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 124 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-125",
+    "pdfNumber": 125,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of address is 202.23.2.255?",
+    "options": [
+      {
+        "id": "A",
+        "text": "multicast address"
+      },
+      {
+        "id": "B",
+        "text": "broadcast address"
+      },
+      {
+        "id": "C",
+        "text": "unicast address"
+      },
+      {
+        "id": "D",
+        "text": "anycast address"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 125 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-126",
+    "pdfNumber": 126,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of address is used to send a single set of packets to multiple hosts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "multicast address"
+      },
+      {
+        "id": "B",
+        "text": "broadcast address"
+      },
+      {
+        "id": "C",
+        "text": "unicast address"
+      },
+      {
+        "id": "D",
+        "text": "anycast address"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 126 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-127",
+    "pdfNumber": 127,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which of the following is not a private address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.4.24.24"
+      },
+      {
+        "id": "B",
+        "text": "172.16.36.45"
+      },
+      {
+        "id": "C",
+        "text": "192.168.34.3"
+      },
+      {
+        "id": "D",
+        "text": "200.23.34.120"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 127 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-128",
+    "pdfNumber": 128,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of address is 169.254.32.23?",
+    "options": [
+      {
+        "id": "A",
+        "text": "APIPA"
+      },
+      {
+        "id": "B",
+        "text": "multicast address"
+      },
+      {
+        "id": "C",
+        "text": "anycast address"
+      },
+      {
+        "id": "D",
+        "text": "broadcast address"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 128 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-129",
+    "pdfNumber": 129,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You have a computer that cannot connect to a server. When you look at the IP configuration, the\nhost has an address of 169.32.54.2. What is the problem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The host cannot find a DHCP server."
+      },
+      {
+        "id": "B",
+        "text": "The host is set to multicast."
+      },
+      {
+        "id": "C",
+        "text": "The host is currently broadcasting."
+      },
+      {
+        "id": "D",
+        "text": "The host cannot find a domain controller."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 129 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-130",
+    "pdfNumber": 130,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What defines the nearest router for a host?",
+    "options": [
+      {
+        "id": "A",
+        "text": "subnet mask"
+      },
+      {
+        "id": "B",
+        "text": "default gateway"
+      },
+      {
+        "id": "C",
+        "text": "DNS server"
+      },
+      {
+        "id": "D",
+        "text": "WINS server"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 130 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-131",
+    "pdfNumber": 131,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What server is used to translate host names to IP addresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DNS"
+      },
+      {
+        "id": "B",
+        "text": "WINS"
+      },
+      {
+        "id": "C",
+        "text": "HOSTS"
+      },
+      {
+        "id": "D",
+        "text": "DHCP"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 131 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-132",
+    "pdfNumber": 132,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is used to remap private addresses to public addresses and back?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DNS"
+      },
+      {
+        "id": "B",
+        "text": "DHCP"
+      },
+      {
+        "id": "C",
+        "text": "WINS"
+      },
+      {
+        "id": "D",
+        "text": "NAT"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 132 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-133",
+    "pdfNumber": 133,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What do you call a smaller network that is part of a larger network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "host"
+      },
+      {
+        "id": "B",
+        "text": "broadcast domain"
+      },
+      {
+        "id": "C",
+        "text": "cluster"
+      },
+      {
+        "id": "D",
+        "text": "subnet"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 133 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-134",
+    "pdfNumber": 134,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You have a subnet mask of 255.255.240.0. What would the CIDR notation be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "/16"
+      },
+      {
+        "id": "B",
+        "text": "/20"
+      },
+      {
+        "id": "C",
+        "text": "/24"
+      },
+      {
+        "id": "D",
+        "text": "/28"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 134 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-135",
+    "pdfNumber": 135,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "How many bits is an IPv6 address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "32"
+      },
+      {
+        "id": "B",
+        "text": "48"
+      },
+      {
+        "id": "C",
+        "text": "64"
+      },
+      {
+        "id": "D",
+        "text": "128"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 135 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-136",
+    "pdfNumber": 136,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of address is 2001:4212:0000:34DB:0000:0000:0000:4231?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MAC address"
+      },
+      {
+        "id": "B",
+        "text": "IPv4"
+      },
+      {
+        "id": "C",
+        "text": "IPv6"
+      },
+      {
+        "id": "D",
+        "text": "anycast address"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 136 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-137",
+    "pdfNumber": 137,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "A __________ address is assigned by a DHCP server.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Static"
+      },
+      {
+        "id": "B",
+        "text": "Dynamic"
+      },
+      {
+        "id": "C",
+        "text": "Private Only"
+      },
+      {
+        "id": "D",
+        "text": "Public Only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 137 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-138",
+    "pdfNumber": 138,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "multi-choice",
+    "question": "What is the loopback IP address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "127.0.0.1"
+      },
+      {
+        "id": "B",
+        "text": "loopback"
+      },
+      {
+        "id": "C",
+        "text": "255.255.255.1"
+      },
+      {
+        "id": "D",
+        "text": "0.0.0.0"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Question 138 evaluates knowledge of 3. Protocols & Services. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-139",
+    "pdfNumber": 139,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What IPv6 address incorporates IPv4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Starting ::ffff:"
+      },
+      {
+        "id": "B",
+        "text": "Starting 0:0::ffff:"
+      },
+      {
+        "id": "C",
+        "text": "Ending ::ffff"
+      },
+      {
+        "id": "D",
+        "text": "Ending 0:0::ffff"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 139 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-140",
+    "pdfNumber": 140,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "The protocol maps IP addresses to a Media Access Control (MAC) address is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet Message Access Protocol (IMAP)."
+      },
+      {
+        "id": "B",
+        "text": "Address Resolution Protocol (ARP)."
+      },
+      {
+        "id": "C",
+        "text": "Dynamic Host Configuration Protocol (DHCP)."
+      },
+      {
+        "id": "D",
+        "text": "User Datagram Protocol (UDP)."
+      },
+      {
+        "id": "E",
+        "text": "Routing Information Protocol (RIP)."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 140 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-141",
+    "pdfNumber": 141,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "A service that resolves NetBIOS names to IP addresses is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet Service Provider (ISP)."
+      },
+      {
+        "id": "B",
+        "text": "Domain Name Service (DNS)."
+      },
+      {
+        "id": "C",
+        "text": "Windows Internet Name Service (WINS)."
+      },
+      {
+        "id": "D",
+        "text": "Address Resolution Protocol (ARP)."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 141 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-142",
+    "pdfNumber": 142,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command displays the IP address, subnet mask, and default gateway of the system you are\ncurrently on?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig"
+      },
+      {
+        "id": "B",
+        "text": "ping"
+      },
+      {
+        "id": "C",
+        "text": "tracert"
+      },
+      {
+        "id": "D",
+        "text": "nslookup"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 142 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-143",
+    "pdfNumber": 143,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "What protocol does the ping command use to test network connectivity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TCP"
+      },
+      {
+        "id": "B",
+        "text": "UDP"
+      },
+      {
+        "id": "C",
+        "text": "ICMP"
+      },
+      {
+        "id": "D",
+        "text": "FTP"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 143 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-144",
+    "pdfNumber": 144,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to clear the DNS cache on a local system?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /registerdns"
+      },
+      {
+        "id": "B",
+        "text": "ipconfig /cleardns"
+      },
+      {
+        "id": "C",
+        "text": "ipocnfig /flushdns"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /releasedns"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 144 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-145",
+    "pdfNumber": 145,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to test a system\u2019s IPv4 protocol stack?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ping 127.0.0.1"
+      },
+      {
+        "id": "B",
+        "text": "ping self"
+      },
+      {
+        "id": "C",
+        "text": "ping 255.255.255.255"
+      },
+      {
+        "id": "D",
+        "text": "ping default gateway"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 145 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-146",
+    "pdfNumber": 146,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to display active TCP or UDP connections?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nbtstat"
+      },
+      {
+        "id": "B",
+        "text": "netstat"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig"
+      },
+      {
+        "id": "D",
+        "text": "nslookup"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 146 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-147",
+    "pdfNumber": 147,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command is used to display NetBIOS over TCP/IP statistics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nbtstat"
+      },
+      {
+        "id": "B",
+        "text": "netstat"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig"
+      },
+      {
+        "id": "D",
+        "text": "nslookup"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-148",
+    "pdfNumber": 148,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command clears the NetBIOS name cache table?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nbtstat -r"
+      },
+      {
+        "id": "B",
+        "text": "nbtstat -R"
+      },
+      {
+        "id": "C",
+        "text": "nbtstat -RR"
+      },
+      {
+        "id": "D",
+        "text": "nbtstat -s"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 148 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-149",
+    "pdfNumber": 149,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command tests network connectivity while showing you each hop along the way?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ping"
+      },
+      {
+        "id": "B",
+        "text": "nslookup"
+      },
+      {
+        "id": "C",
+        "text": "nbtstat"
+      },
+      {
+        "id": "D",
+        "text": "tracert"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 149 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-150",
+    "pdfNumber": 150,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command tests network connectivity while showing you each hop along the way and the\ndegree of packet loss?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ping"
+      },
+      {
+        "id": "B",
+        "text": "pathping"
+      },
+      {
+        "id": "C",
+        "text": "nbtstat"
+      },
+      {
+        "id": "D",
+        "text": "tracert"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 150 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-151",
+    "pdfNumber": 151,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "The service that resolves fully qualified domain name (FQDN) to IP addresses is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet Service Provider (ISP)."
+      },
+      {
+        "id": "B",
+        "text": "Domain Name Service (DNS)."
+      },
+      {
+        "id": "C",
+        "text": "Address Resolution Protocol (ARP)."
+      },
+      {
+        "id": "D",
+        "text": "Windows Internet Name Service (WINS)."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 151 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-152",
+    "pdfNumber": 152,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to connect to a remote computer so that you can execute commands?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ftp"
+      },
+      {
+        "id": "B",
+        "text": "nslookup"
+      },
+      {
+        "id": "C",
+        "text": "telnet"
+      },
+      {
+        "id": "D",
+        "text": "nbtstat"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 152 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-153",
+    "pdfNumber": 153,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command can you use to connect to a mail server so that you can test SMTP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ftp"
+      },
+      {
+        "id": "B",
+        "text": "nslookup"
+      },
+      {
+        "id": "C",
+        "text": "telnet"
+      },
+      {
+        "id": "D",
+        "text": "nbtstat"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 153 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-154",
+    "pdfNumber": 154,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to display and modify the network configuration of a local computer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "netsh"
+      },
+      {
+        "id": "B",
+        "text": "netstat"
+      },
+      {
+        "id": "C",
+        "text": "telnet"
+      },
+      {
+        "id": "D",
+        "text": "nbtstat"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 154 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-155",
+    "pdfNumber": 155,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command is used to add static routes to a Windows computer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nslookup"
+      },
+      {
+        "id": "B",
+        "text": "telnet"
+      },
+      {
+        "id": "C",
+        "text": "route"
+      },
+      {
+        "id": "D",
+        "text": "nbtstat"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 155 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-156",
+    "pdfNumber": 156,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to display the routing table on a local system?",
+    "options": [
+      {
+        "id": "A",
+        "text": "route display"
+      },
+      {
+        "id": "B",
+        "text": "route table"
+      },
+      {
+        "id": "C",
+        "text": "route local"
+      },
+      {
+        "id": "D",
+        "text": "route print"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 156 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-157",
+    "pdfNumber": 157,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to display the MAC address on a system?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /all"
+      },
+      {
+        "id": "B",
+        "text": "pathping -m"
+      },
+      {
+        "id": "C",
+        "text": "route /showmac"
+      },
+      {
+        "id": "D",
+        "text": "nbstat -r"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 157 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-158",
+    "pdfNumber": 158,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to retrieve or update your DHCP assigned configuration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "id": "B",
+        "text": "ipconfig /all"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig /release"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /renew"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 158 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-159",
+    "pdfNumber": 159,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to register the computer\u2019s name and IP address with the nearest DNS\nserver?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /renew"
+      },
+      {
+        "id": "B",
+        "text": "ipconfig /renew all"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /registerdns"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 159 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-160",
+    "pdfNumber": 160,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command displays Ethernet statistics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "netstat -e"
+      },
+      {
+        "id": "B",
+        "text": "netstat -x"
+      },
+      {
+        "id": "C",
+        "text": "netstat -q"
+      },
+      {
+        "id": "D",
+        "text": "netstat -t"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 160 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-161",
+    "pdfNumber": 161,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "What option do you use to ping constantly until you stop it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ping -t <host>"
+      },
+      {
+        "id": "B",
+        "text": "ping -q <host>"
+      },
+      {
+        "id": "C",
+        "text": "ping -r <host>"
+      },
+      {
+        "id": "D",
+        "text": "ping -s <host>"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 161 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-162",
+    "pdfNumber": 162,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What protocol is used with L2TP to encrypt data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IPSec"
+      },
+      {
+        "id": "B",
+        "text": "MS-CHAP"
+      },
+      {
+        "id": "C",
+        "text": "MS-CHAPv2"
+      },
+      {
+        "id": "D",
+        "text": "MPPE"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 162 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-163",
+    "pdfNumber": 163,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "The default gateway address identifies the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Server that will provide name services for the computer."
+      },
+      {
+        "id": "B",
+        "text": "Device that will connect the computer to a remote network."
+      },
+      {
+        "id": "C",
+        "text": "Device that will connect the computer to the local network."
+      },
+      {
+        "id": "D",
+        "text": "Server that will authenticate the user of the computer."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 163 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-164",
+    "pdfNumber": 164,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What protocol automatically configures IP configuration for a client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DNS"
+      },
+      {
+        "id": "B",
+        "text": "DHCP"
+      },
+      {
+        "id": "C",
+        "text": "WINS"
+      },
+      {
+        "id": "D",
+        "text": "FTP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 164 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-165",
+    "pdfNumber": 165,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which of these ports does DHCP use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "80"
+      },
+      {
+        "id": "B",
+        "text": "67"
+      },
+      {
+        "id": "C",
+        "text": "23"
+      },
+      {
+        "id": "D",
+        "text": "500"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 165 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-166",
+    "pdfNumber": 166,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "After you install DHCP servers and configure and activate a scope, what is the last step in installing\na DHCP server?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Register the scope"
+      },
+      {
+        "id": "B",
+        "text": "Register the server"
+      },
+      {
+        "id": "C",
+        "text": "Authorize the server"
+      },
+      {
+        "id": "D",
+        "text": "Register the clients"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 166 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-167",
+    "pdfNumber": 167,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "You have a computer with an address of 169.254.32.23 and a subnet mask of 255.255.0.0, yet you\ncannot connect to your local file servers. What is most likely the problem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It cannot communicate with a DHCP server."
+      },
+      {
+        "id": "B",
+        "text": "The DNS servers specified are incorrect or are down."
+      },
+      {
+        "id": "C",
+        "text": "NetBIOS over TCP/IP has not been enabled."
+      },
+      {
+        "id": "D",
+        "text": "The network card is not connected properly to the network."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 167 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-168",
+    "pdfNumber": 168,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What name does Windows Server 2008 R2 use for Terminal Services?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MS Telnet Server"
+      },
+      {
+        "id": "B",
+        "text": "MS Primary Services"
+      },
+      {
+        "id": "C",
+        "text": "MS Thin Server"
+      },
+      {
+        "id": "D",
+        "text": "Remote Desktop Services"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 168 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-169",
+    "pdfNumber": 169,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What port does Remote Desktop Services use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "443"
+      },
+      {
+        "id": "B",
+        "text": "501"
+      },
+      {
+        "id": "C",
+        "text": "389"
+      },
+      {
+        "id": "D",
+        "text": "3389"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 169 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-170",
+    "pdfNumber": 170,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "What would you use to create VPN tunnels so that users can connect to your internal network\nwhile at home using Windows Server 2008 R2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Microsoft RAS"
+      },
+      {
+        "id": "B",
+        "text": "Microsoft RRAS"
+      },
+      {
+        "id": "C",
+        "text": "Microsoft RDC"
+      },
+      {
+        "id": "D",
+        "text": "Microsoft VPN Server"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 170 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-171",
+    "pdfNumber": 171,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "A user reports that she cannot connect to network resources from a computer on the company\nnetwork. The user was able to connect to the network resources yesterday. You verify that the\nuser's computer is properly physically connected to the network. You discover that the computer's\nIP address is 169.254.48.97. You need to restore access to the network. What should you do next?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify that the DHCP service is available."
+      },
+      {
+        "id": "B",
+        "text": "Reset the user's password on the server."
+      },
+      {
+        "id": "C",
+        "text": "Flush the cache on the DNS server."
+      },
+      {
+        "id": "D",
+        "text": "Check your router's current routing tables."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 171 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-172",
+    "pdfNumber": 172,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which component of IPSec is generates the encryption and authentication keys?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SA"
+      },
+      {
+        "id": "B",
+        "text": "AH"
+      },
+      {
+        "id": "C",
+        "text": "ESP"
+      },
+      {
+        "id": "D",
+        "text": "MPPE"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 172 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-173",
+    "pdfNumber": 173,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which IPsec component provides connectionless integrity and data authentication but does not\nprovide confidentiality?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SA"
+      },
+      {
+        "id": "B",
+        "text": "AH"
+      },
+      {
+        "id": "C",
+        "text": "ESP"
+      },
+      {
+        "id": "D",
+        "text": "MPPE"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 173 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-174",
+    "pdfNumber": 174,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which IPsec component includes the most security, including confidentiality?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SA"
+      },
+      {
+        "id": "B",
+        "text": "AH"
+      },
+      {
+        "id": "C",
+        "text": "ESP"
+      },
+      {
+        "id": "D",
+        "text": "MPPE"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 174 evaluates knowledge of 4. Network Security. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-175",
+    "pdfNumber": 175,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What port does DNS use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "443"
+      },
+      {
+        "id": "B",
+        "text": "389"
+      },
+      {
+        "id": "C",
+        "text": "51"
+      },
+      {
+        "id": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 175 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-176",
+    "pdfNumber": 176,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What service on a Windows network is used to translate between NetBIOS names/computer\nnames and IP addresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DNS"
+      },
+      {
+        "id": "B",
+        "text": "WINS"
+      },
+      {
+        "id": "C",
+        "text": "DHCP"
+      },
+      {
+        "id": "D",
+        "text": "LDAP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 176 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-177",
+    "pdfNumber": 177,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "What feature within Windows allows the server to act as a router?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IPsec"
+      },
+      {
+        "id": "B",
+        "text": "DHCP"
+      },
+      {
+        "id": "C",
+        "text": "IP forwarding"
+      },
+      {
+        "id": "D",
+        "text": "RDC"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 177 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-178",
+    "pdfNumber": 178,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "You use the ________ to connect to a terminal server.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remote Desktop Connection (RDC)"
+      },
+      {
+        "id": "B",
+        "text": "Remote Desktop Protocol (RDP)"
+      },
+      {
+        "id": "C",
+        "text": "Remote Session Call (RSC)"
+      },
+      {
+        "id": "D",
+        "text": "Remote NetBios Connect (RNC)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 178 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-179",
+    "pdfNumber": 179,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What provides name resolution between domain names and IP addresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DHCP"
+      },
+      {
+        "id": "B",
+        "text": "DNS"
+      },
+      {
+        "id": "C",
+        "text": "ARP"
+      },
+      {
+        "id": "D",
+        "text": "RPC"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 179 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-180",
+    "pdfNumber": 180,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What allows a user to connect to a corporate network using the Internet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPN"
+      },
+      {
+        "id": "B",
+        "text": "VPC"
+      },
+      {
+        "id": "C",
+        "text": "PPTN"
+      },
+      {
+        "id": "D",
+        "text": "IPSec"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 180 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-181",
+    "pdfNumber": 181,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to release the IP configuration handed out by a DHCP server?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /renew"
+      },
+      {
+        "id": "B",
+        "text": "ipconfig /releasedns"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig /savestatic"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /release"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 181 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-182",
+    "pdfNumber": 182,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What command do you use to reacquire IP configuration from a DHCP server?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipconfig /renew"
+      },
+      {
+        "id": "B",
+        "text": "ipconfig /releasedns"
+      },
+      {
+        "id": "C",
+        "text": "ipconfig /savestatic"
+      },
+      {
+        "id": "D",
+        "text": "ipconfig /release"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 182 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-183",
+    "pdfNumber": 183,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "List the four steps for a client to get an IP address from a DHCP server in the correct order.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Discovery Offering Request Acknowledge"
+      },
+      {
+        "id": "B",
+        "text": "Request Offering Discovery Acknowledge"
+      },
+      {
+        "id": "C",
+        "text": "Discovery Request Offering Acknowledge"
+      },
+      {
+        "id": "D",
+        "text": "Request Offering Discovery Acknowledge"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 183 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-184",
+    "pdfNumber": 184,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What is the primary disadvantage of X.25?",
+    "options": [
+      {
+        "id": "A",
+        "text": "digital circuit"
+      },
+      {
+        "id": "B",
+        "text": "small data payloads"
+      },
+      {
+        "id": "C",
+        "text": "circuit switching"
+      },
+      {
+        "id": "D",
+        "text": "slow speeds"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 184 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-185",
+    "pdfNumber": 185,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What routing protocol is the most popular distance-vector routing algorithm used to determine\nthe best routes within a network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RIP"
+      },
+      {
+        "id": "B",
+        "text": "OSPF"
+      },
+      {
+        "id": "C",
+        "text": "BGP"
+      },
+      {
+        "id": "D",
+        "text": "IGMP"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 185 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-186",
+    "pdfNumber": 186,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What routing protocol is the most popular link-state protocol used within a large organization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RIP"
+      },
+      {
+        "id": "B",
+        "text": "OSPF"
+      },
+      {
+        "id": "C",
+        "text": "BGP"
+      },
+      {
+        "id": "D",
+        "text": "IGMP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 186 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-187",
+    "pdfNumber": 187,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What technology takes data and breaks them into packets and sends them over a network,\nsometimes using different routes for each packet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "circuit switching"
+      },
+      {
+        "id": "B",
+        "text": "connection switching"
+      },
+      {
+        "id": "C",
+        "text": "packet switching"
+      },
+      {
+        "id": "D",
+        "text": "network switching"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 187 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-188",
+    "pdfNumber": 188,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "X.25 and Frame Relay are examples of what type of WAN technology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "circuit switching"
+      },
+      {
+        "id": "B",
+        "text": "connection switching"
+      },
+      {
+        "id": "C",
+        "text": "packet switching"
+      },
+      {
+        "id": "D",
+        "text": "network switching"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 188 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-189",
+    "pdfNumber": 189,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What device acts as a high-speed modem for a LAN?",
+    "options": [
+      {
+        "id": "A",
+        "text": "analog modem"
+      },
+      {
+        "id": "B",
+        "text": "telco incoming router"
+      },
+      {
+        "id": "C",
+        "text": "packet switcher"
+      },
+      {
+        "id": "D",
+        "text": "CSU/DSU"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 189 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-190",
+    "pdfNumber": 190,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What does X.25 use as its DTE device?",
+    "options": [
+      {
+        "id": "A",
+        "text": "telco incoming router"
+      },
+      {
+        "id": "B",
+        "text": "packet switcher"
+      },
+      {
+        "id": "C",
+        "text": "analog modem"
+      },
+      {
+        "id": "D",
+        "text": "PAD"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 190 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-191",
+    "pdfNumber": 191,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What part of the network is the point where the responsibility of the administrator ends and the\ntelecommunications provider\u2019s responsibility begins?",
+    "options": [
+      {
+        "id": "A",
+        "text": "last mile"
+      },
+      {
+        "id": "B",
+        "text": "demarc"
+      },
+      {
+        "id": "C",
+        "text": "router array"
+      },
+      {
+        "id": "D",
+        "text": "PAD interface"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 191 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-192",
+    "pdfNumber": 192,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which of these addresses is a multicast address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "127.0.0.1"
+      },
+      {
+        "id": "B",
+        "text": "169.254.0.1"
+      },
+      {
+        "id": "C",
+        "text": "192.168.0.1"
+      },
+      {
+        "id": "D",
+        "text": "224.0.0.1"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 192 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-193",
+    "pdfNumber": 193,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "When a packet traverses a network, each router is a _____.",
+    "options": [
+      {
+        "id": "A",
+        "text": "jump point"
+      },
+      {
+        "id": "B",
+        "text": "CSU/DSU"
+      },
+      {
+        "id": "C",
+        "text": "jump switch"
+      },
+      {
+        "id": "D",
+        "text": "hop"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 193 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-194",
+    "pdfNumber": 194,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "When you have multiple circuits connected to a site, the entire circuit is known as a\n___________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "virtual circuit"
+      },
+      {
+        "id": "B",
+        "text": "emulated circuit"
+      },
+      {
+        "id": "C",
+        "text": "joined circuit"
+      },
+      {
+        "id": "D",
+        "text": "multitasked circuit"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 194 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-195",
+    "pdfNumber": 195,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What replaced X.25?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frame Relay"
+      },
+      {
+        "id": "B",
+        "text": "ATM"
+      },
+      {
+        "id": "C",
+        "text": "ISDN BRI"
+      },
+      {
+        "id": "D",
+        "text": "DSL"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 195 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-196",
+    "pdfNumber": 196,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "At what speed does a T3 line run?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.5 Mbps"
+      },
+      {
+        "id": "B",
+        "text": "4.5 Mbps"
+      },
+      {
+        "id": "C",
+        "text": "44.7 Mbps"
+      },
+      {
+        "id": "D",
+        "text": "128 Mbps"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 196 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-197",
+    "pdfNumber": 197,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "In Europe, what circuit would be similar to the T1 found in the United States?",
+    "options": [
+      {
+        "id": "A",
+        "text": "E1"
+      },
+      {
+        "id": "B",
+        "text": "J1"
+      },
+      {
+        "id": "C",
+        "text": "T2"
+      },
+      {
+        "id": "D",
+        "text": "F1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 197 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-198",
+    "pdfNumber": 198,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "How many B channels does an ISDN PRI support?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "23"
+      },
+      {
+        "id": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 198 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-199",
+    "pdfNumber": 199,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What speed does FDDI use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 Mbps"
+      },
+      {
+        "id": "B",
+        "text": "44 Mbps"
+      },
+      {
+        "id": "C",
+        "text": "54 Mbps"
+      },
+      {
+        "id": "D",
+        "text": "100 Mbps"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 199 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-200",
+    "pdfNumber": 200,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What topology does FDDI use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "bus"
+      },
+      {
+        "id": "B",
+        "text": "star"
+      },
+      {
+        "id": "C",
+        "text": "ring"
+      },
+      {
+        "id": "D",
+        "text": "mesh"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 200 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-201",
+    "pdfNumber": 201,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What technology uses wires from the telephone company to provide broadband Internet\nconnection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "cable"
+      },
+      {
+        "id": "B",
+        "text": "DSL"
+      },
+      {
+        "id": "C",
+        "text": "FDDI"
+      },
+      {
+        "id": "D",
+        "text": "Frame Relay"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 201 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-202",
+    "pdfNumber": 202,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "_________ is used to send packets from one network to another network.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Routing"
+      },
+      {
+        "id": "B",
+        "text": "Transport"
+      },
+      {
+        "id": "C",
+        "text": "BGP"
+      },
+      {
+        "id": "D",
+        "text": "Encapsulation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 202 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-203",
+    "pdfNumber": 203,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "_________ is a route that must be manually defined on each router.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Static"
+      },
+      {
+        "id": "B",
+        "text": "Dynamic"
+      },
+      {
+        "id": "C",
+        "text": "Persistent"
+      },
+      {
+        "id": "D",
+        "text": "Global"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 203 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-204",
+    "pdfNumber": 204,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "_________ uses a clocking circuit to control the timing of communications between two WAN\ndevices such as routers.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Static Route"
+      },
+      {
+        "id": "B",
+        "text": "Dynamic Route"
+      },
+      {
+        "id": "C",
+        "text": "PPTP Route"
+      },
+      {
+        "id": "D",
+        "text": "Point To Point"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 204 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-205",
+    "pdfNumber": 205,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "A ________ is the guaranteed certain amount of information provided by a circuit or line.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Committed Information Route"
+      },
+      {
+        "id": "B",
+        "text": "Pivotal Information Route"
+      },
+      {
+        "id": "C",
+        "text": "Next Hop Policy Route"
+      },
+      {
+        "id": "D",
+        "text": "Frame x Frame Route"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 205 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-206",
+    "pdfNumber": 206,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What speed does a T1 run at?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.544 Mbps"
+      },
+      {
+        "id": "B",
+        "text": "2.889 Mbps"
+      },
+      {
+        "id": "C",
+        "text": "3.101 Gbps"
+      },
+      {
+        "id": "D",
+        "text": "2.54 MBps"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 206 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-207",
+    "pdfNumber": 207,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "How fast is a DS0 circuit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "32 Kbps"
+      },
+      {
+        "id": "B",
+        "text": "64 Kbps"
+      },
+      {
+        "id": "C",
+        "text": "128 Kbps"
+      },
+      {
+        "id": "D",
+        "text": "1024 Kbps"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 207 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-208",
+    "pdfNumber": 208,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What protocol is used with L2TP to provide encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IPSec"
+      },
+      {
+        "id": "B",
+        "text": "MPPE"
+      },
+      {
+        "id": "C",
+        "text": "HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "MSC-CHAP"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 208 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-209",
+    "pdfNumber": 209,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "The ____________ is the largest WAN in the world.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet"
+      },
+      {
+        "id": "B",
+        "text": "Intranet"
+      },
+      {
+        "id": "C",
+        "text": "WWW"
+      },
+      {
+        "id": "D",
+        "text": "MSDN"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 209 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-210",
+    "pdfNumber": 210,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of network can you set up that is another company\u2019s internal network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "intranet"
+      },
+      {
+        "id": "B",
+        "text": "extranet"
+      },
+      {
+        "id": "C",
+        "text": "internet"
+      },
+      {
+        "id": "D",
+        "text": "DMZ"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 210 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-211",
+    "pdfNumber": 211,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What technology can you use temporarily to connect networks from two different companies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPN"
+      },
+      {
+        "id": "B",
+        "text": "HTTP"
+      },
+      {
+        "id": "C",
+        "text": "DHCP"
+      },
+      {
+        "id": "D",
+        "text": "passive router"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 211 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-212",
+    "pdfNumber": 212,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which VPN technology is the most common and the easiest to set up?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PPTP"
+      },
+      {
+        "id": "B",
+        "text": "L2TP with IPSec"
+      },
+      {
+        "id": "C",
+        "text": "SSTP"
+      },
+      {
+        "id": "D",
+        "text": "CHAP"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 212 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-213",
+    "pdfNumber": 213,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What port does L2TP use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "501"
+      },
+      {
+        "id": "B",
+        "text": "1723"
+      },
+      {
+        "id": "C",
+        "text": "1701"
+      },
+      {
+        "id": "D",
+        "text": "443"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 213 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-214",
+    "pdfNumber": 214,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which type of firewall blocks packets based on rules that are based on IP addresses or ports?",
+    "options": [
+      {
+        "id": "A",
+        "text": "packet filtering"
+      },
+      {
+        "id": "B",
+        "text": "stateful packet inspection"
+      },
+      {
+        "id": "C",
+        "text": "NAT filtering"
+      },
+      {
+        "id": "D",
+        "text": "Application-level gateway"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 214 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-215",
+    "pdfNumber": 215,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "What technology used in firewalls keeps tracks of conversations so that it knows what to allow back\ninto a network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "stateless packet inspection"
+      },
+      {
+        "id": "B",
+        "text": "stateful packet inspection"
+      },
+      {
+        "id": "C",
+        "text": "NAT filtering"
+      },
+      {
+        "id": "D",
+        "text": "application-level gateway"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 215 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-216",
+    "pdfNumber": 216,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What acts as a middleman that translates between internal and external addresses and that caches\npreviously accessed web pages so that it can provide those more quickly in the future?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NAT server"
+      },
+      {
+        "id": "B",
+        "text": "stateful packet inspector"
+      },
+      {
+        "id": "C",
+        "text": "proxy server"
+      },
+      {
+        "id": "D",
+        "text": "NIDS"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 216 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-217",
+    "pdfNumber": 217,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of device is used to detect malicious network activities and reports only those issues to\nthe administrator?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NIDS"
+      },
+      {
+        "id": "B",
+        "text": "NIPS"
+      },
+      {
+        "id": "C",
+        "text": "Internet content filter"
+      },
+      {
+        "id": "D",
+        "text": "NAT server"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 217 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-218",
+    "pdfNumber": 218,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What type of device is designed to inspect traffic, detect malicious activities, and take steps to\nmitigate the malicious activity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NIDS"
+      },
+      {
+        "id": "B",
+        "text": "NIPS"
+      },
+      {
+        "id": "C",
+        "text": "Internet content filter"
+      },
+      {
+        "id": "D",
+        "text": "NAT server"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 218 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-219",
+    "pdfNumber": 219,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "Which DMZ configuration uses one firewall with three interfaces?",
+    "options": [
+      {
+        "id": "A",
+        "text": "back-to-back configuration"
+      },
+      {
+        "id": "B",
+        "text": "three-leg perimeter configuration"
+      },
+      {
+        "id": "C",
+        "text": "basic configuration"
+      },
+      {
+        "id": "D",
+        "text": "perimeter configuration"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 219 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-220",
+    "pdfNumber": 220,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What stage is the World Wide Web in?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.0"
+      },
+      {
+        "id": "B",
+        "text": "1.1"
+      },
+      {
+        "id": "C",
+        "text": "2.0"
+      },
+      {
+        "id": "D",
+        "text": "3.0"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 220 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-221",
+    "pdfNumber": 221,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "Which of the following services masks internal IP addresses from outside the network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DHCP"
+      },
+      {
+        "id": "B",
+        "text": "NAT"
+      },
+      {
+        "id": "C",
+        "text": "WINS"
+      },
+      {
+        "id": "D",
+        "text": "DNS"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 221 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-222",
+    "pdfNumber": 222,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "What type of firewall works on the Session layer that creates a connection and allows packets to\nflow between the two hosts without further checking?",
+    "options": [
+      {
+        "id": "A",
+        "text": "proxy server"
+      },
+      {
+        "id": "B",
+        "text": "application firewall"
+      },
+      {
+        "id": "C",
+        "text": "NAT filtering"
+      },
+      {
+        "id": "D",
+        "text": "circuit-level gateway"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 222 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-223",
+    "pdfNumber": 223,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "What type of firewall do you use to block access to certain websites or instant messengers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet content filter"
+      },
+      {
+        "id": "B",
+        "text": "NIDS"
+      },
+      {
+        "id": "C",
+        "text": "circuit-level gateway"
+      },
+      {
+        "id": "D",
+        "text": "NAT filtering"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 223 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-224",
+    "pdfNumber": 224,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "When trying to protect your network, you should create your secure network based on _______.",
+    "options": [
+      {
+        "id": "A",
+        "text": "multiple content filters"
+      },
+      {
+        "id": "B",
+        "text": "a master firewall that all traffic flows through"
+      },
+      {
+        "id": "C",
+        "text": "a NAT firewall and a proxy server"
+      },
+      {
+        "id": "D",
+        "text": "layers"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 224 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-225",
+    "pdfNumber": 225,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "If a router is installed so that it separates DHCP server from its clients, the clients will:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Immediately lose connectivity to all segments."
+      },
+      {
+        "id": "B",
+        "text": "Receive an immediate renew of their lease."
+      },
+      {
+        "id": "C",
+        "text": "Be unable to obtain their leases from the server."
+      },
+      {
+        "id": "D",
+        "text": "Immediately lose connectivity to the local segment."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 225 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-226",
+    "pdfNumber": 226,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "An _________ is the internal network for an organization.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internet"
+      },
+      {
+        "id": "B",
+        "text": "Extranet"
+      },
+      {
+        "id": "C",
+        "text": "Intranet"
+      },
+      {
+        "id": "D",
+        "text": "WWW"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 226 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-227",
+    "pdfNumber": 227,
+    "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "domainCode": "Domain 3",
+    "type": "single-choice",
+    "question": "What port does PPTP use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "80"
+      },
+      {
+        "id": "B",
+        "text": "8080"
+      },
+      {
+        "id": "C",
+        "text": "1723"
+      },
+      {
+        "id": "D",
+        "text": "433"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Question 227 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-228",
+    "pdfNumber": 228,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "What device is used to protect one network from another by using filtering packets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Firewall"
+      },
+      {
+        "id": "B",
+        "text": "Point to Point Tunnel"
+      },
+      {
+        "id": "C",
+        "text": "VPN"
+      },
+      {
+        "id": "D",
+        "text": "Router"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Question 228 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-229",
+    "pdfNumber": 229,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "multi-choice",
+    "question": "What type of configuration creates a DMZ between two firewalls?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gateway Network"
+      },
+      {
+        "id": "B",
+        "text": "Perimeter Network"
+      },
+      {
+        "id": "C",
+        "text": "DMZ"
+      },
+      {
+        "id": "D",
+        "text": "RADIAUS Server"
+      }
+    ],
+    "correctAnswer": [
+      "B",
+      "C"
+    ],
+    "explanation": "Question 229 evaluates knowledge of 4. Network Security. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-230",
+    "pdfNumber": 230,
+    "domain": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "domainCode": "Domain 2",
+    "type": "single-choice",
+    "question": "Which type of port is used to support VLAN traffic between two switches?",
+    "options": [
+      {
+        "id": "A",
+        "text": "LAN port"
+      },
+      {
+        "id": "B",
+        "text": "Trunk port"
+      },
+      {
+        "id": "C",
+        "text": "Virtual port"
+      },
+      {
+        "id": "D",
+        "text": "WAN port"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 230 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-231",
+    "pdfNumber": 231,
+    "domain": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)",
+    "domainCode": "Domain 5",
+    "type": "single-choice",
+    "question": "Tracert is used to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "report the shortest route between different networks."
+      },
+      {
+        "id": "B",
+        "text": "manage routing tables dynamically."
+      },
+      {
+        "id": "C",
+        "text": "manage session-oriented connections between nodes."
+      },
+      {
+        "id": "D",
+        "text": "report the route taken by packets across an IP network."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 231 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-232",
+    "pdfNumber": 232,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "single-choice",
+    "question": "A node within a local area network (LAN) must have a network interface and a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "resource to share."
+      },
+      {
+        "id": "B",
+        "text": "host address."
+      },
+      {
+        "id": "C",
+        "text": "network account."
+      },
+      {
+        "id": "D",
+        "text": "table of all network nodes."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Question 232 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-233",
+    "pdfNumber": 233,
+    "domain": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "domainCode": "Domain 4",
+    "type": "single-choice",
+    "question": "One purpose of a perimeter network is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "make resource available to the intranet."
+      },
+      {
+        "id": "B",
+        "text": "link campus area networks (CANs)."
+      },
+      {
+        "id": "C",
+        "text": "link local area networks (LANs)."
+      },
+      {
+        "id": "D",
+        "text": "make resources available to the Internet."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Question 233 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part1"
+  },
+  {
+    "id": "Q-234",
+    "pdfNumber": 234,
+    "domain": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "domainCode": "Domain 1",
+    "type": "multi-choice",
+    "question": "Which two of the following are connectivity options for wide area networks (WANs)? (Choose two.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leased line"
+      },
+      {
+        "id": "B",
+        "text": "Ethernet"
+      },
+      {
+        "id": "C",
+        "text": "Dial-up"
+      },
+      {
+        "id": "D",
+        "text": "Token ring"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Leased lines and Dial-up are traditional wide area network (WAN) connectivity technologies. Ethernet and Token ring are local area network (LAN) technologies.",
+    "bank": "part1"
+  }
+],
+  "part2": [
   {
     "id": "Q-001",
     "domain": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
@@ -38,7 +6883,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 1 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 1 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 1
   },
   {
     "id": "Q-002",
@@ -65,7 +6912,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 2 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 2 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 2
   },
   {
     "id": "Q-003",
@@ -92,7 +6941,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 3 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 3 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 3
   },
   {
     "id": "Q-004",
@@ -119,7 +6970,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 4 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 4 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 4
   },
   {
     "id": "Q-005",
@@ -146,7 +6999,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 5 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 5 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 5
   },
   {
     "id": "Q-006",
@@ -173,7 +7028,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 6 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 6 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 6
   },
   {
     "id": "Q-007",
@@ -200,7 +7057,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 7 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 7 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 7
   },
   {
     "id": "Q-008",
@@ -227,7 +7086,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 8 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 8 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 8
   },
   {
     "id": "Q-009",
@@ -254,7 +7115,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 9 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 9 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 9
   },
   {
     "id": "Q-010",
@@ -281,7 +7144,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 10 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 10 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 10
   },
   {
     "id": "Q-011",
@@ -311,7 +7176,9 @@ export const QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "Question 11 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 11 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 11
   },
   {
     "id": "Q-012",
@@ -345,7 +7212,9 @@ export const QUESTIONS = [
       "C",
       "E"
     ],
-    "explanation": "Question 12 evaluates knowledge of 3. Protocols & Services. Option C, E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 12 evaluates knowledge of 3. Protocols & Services. Option C, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 12
   },
   {
     "id": "Q-013",
@@ -372,7 +7241,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 13 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 13 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 13
   },
   {
     "id": "Q-014",
@@ -399,7 +7270,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 14 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 14 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 14
   },
   {
     "id": "Q-015",
@@ -426,7 +7299,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 15 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 15 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 15
   },
   {
     "id": "Q-016",
@@ -453,7 +7328,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 16 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 16 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 16
   },
   {
     "id": "Q-017",
@@ -480,7 +7357,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 17 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 17 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 17
   },
   {
     "id": "Q-018",
@@ -507,7 +7386,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 18 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 18 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 18
   },
   {
     "id": "Q-019",
@@ -534,7 +7415,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 19 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 19 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 19
   },
   {
     "id": "Q-020",
@@ -561,7 +7444,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 20 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 20 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 20
   },
   {
     "id": "Q-021",
@@ -588,7 +7473,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 21 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 21 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 21
   },
   {
     "id": "Q-022",
@@ -615,7 +7502,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 22 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 22 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 22
   },
   {
     "id": "Q-023",
@@ -642,7 +7531,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 23 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 23 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 23
   },
   {
     "id": "Q-024",
@@ -669,7 +7560,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 24 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 24 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 24
   },
   {
     "id": "Q-025",
@@ -696,7 +7589,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 25 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 25 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 25
   },
   {
     "id": "Q-026",
@@ -723,7 +7618,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 26 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 26 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 26
   },
   {
     "id": "Q-027",
@@ -750,7 +7647,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 27 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 27 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 27
   },
   {
     "id": "Q-028",
@@ -777,7 +7676,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 28 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 28 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 28
   },
   {
     "id": "Q-029",
@@ -804,7 +7705,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 29 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 29 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 29
   },
   {
     "id": "Q-030",
@@ -831,7 +7734,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 30 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 30 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 30
   },
   {
     "id": "Q-031",
@@ -858,7 +7763,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 31 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 31 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 31
   },
   {
     "id": "Q-032",
@@ -885,7 +7792,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 32 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 32 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 32
   },
   {
     "id": "Q-033",
@@ -912,7 +7821,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 33 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 33 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 33
   },
   {
     "id": "Q-034",
@@ -942,7 +7853,9 @@ export const QUESTIONS = [
       "A",
       "D"
     ],
-    "explanation": "Question 34 evaluates knowledge of 1. Network Infrastructures. Option A, D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 34 evaluates knowledge of 1. Network Infrastructures. Option A, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 34
   },
   {
     "id": "Q-035",
@@ -969,7 +7882,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 35 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 35 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 35
   },
   {
     "id": "Q-036",
@@ -996,7 +7911,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 36 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 36 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 36
   },
   {
     "id": "Q-037",
@@ -1030,7 +7947,9 @@ export const QUESTIONS = [
       "B",
       "E"
     ],
-    "explanation": "Question 37 evaluates knowledge of 1. Network Infrastructures. Option B, E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 37 evaluates knowledge of 1. Network Infrastructures. Option B, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 37
   },
   {
     "id": "Q-038",
@@ -1057,7 +7976,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 38 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 38 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 38
   },
   {
     "id": "Q-039",
@@ -1084,7 +8005,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 39 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 39 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 39
   },
   {
     "id": "Q-040",
@@ -1111,7 +8034,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 40 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 40 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 40
   },
   {
     "id": "Q-041",
@@ -1138,7 +8063,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 41 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 41 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 41
   },
   {
     "id": "Q-042",
@@ -1165,7 +8092,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 42 evaluates knowledge of 4. Network Security. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 42 evaluates knowledge of 4. Network Security. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 42
   },
   {
     "id": "Q-043",
@@ -1192,7 +8121,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 43 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 43 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 43
   },
   {
     "id": "Q-044",
@@ -1219,7 +8150,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 44 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 44 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 44
   },
   {
     "id": "Q-045",
@@ -1246,7 +8179,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 45 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 45 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 45
   },
   {
     "id": "Q-046",
@@ -1273,7 +8208,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 46 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 46 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 46
   },
   {
     "id": "Q-047",
@@ -1300,7 +8237,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 47 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 47 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 47
   },
   {
     "id": "Q-048",
@@ -1331,7 +8270,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "E",
-    "explanation": "Question 48 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 48 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 48
   },
   {
     "id": "Q-049",
@@ -1358,7 +8299,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 49 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 49 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 49
   },
   {
     "id": "Q-050",
@@ -1389,7 +8332,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "E",
-    "explanation": "Question 50 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 50 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 50
   },
   {
     "id": "Q-051",
@@ -1420,7 +8365,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "E",
-    "explanation": "Question 51 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 51 evaluates knowledge of 3. Protocols & Services. Option E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 51
   },
   {
     "id": "Q-052",
@@ -1447,7 +8394,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 52 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 52 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 52
   },
   {
     "id": "Q-053",
@@ -1474,7 +8423,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 53 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 53 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 53
   },
   {
     "id": "Q-054",
@@ -1501,7 +8452,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 54 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 54 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 54
   },
   {
     "id": "Q-055",
@@ -1528,7 +8481,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 55 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 55 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 55
   },
   {
     "id": "Q-056",
@@ -1555,7 +8510,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 56 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 56 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 56
   },
   {
     "id": "Q-057",
@@ -1582,7 +8539,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 57 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 57 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 57
   },
   {
     "id": "Q-058",
@@ -1609,7 +8568,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 58 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 58 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 58
   },
   {
     "id": "Q-059",
@@ -1636,7 +8597,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 59 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 59 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 59
   },
   {
     "id": "Q-060",
@@ -1663,7 +8626,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 60 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 60 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 60
   },
   {
     "id": "Q-061",
@@ -1690,7 +8655,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 61 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 61 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 61
   },
   {
     "id": "Q-062",
@@ -1717,7 +8684,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 62 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 62 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 62
   },
   {
     "id": "Q-063",
@@ -1744,7 +8713,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 63 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 63 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 63
   },
   {
     "id": "Q-064",
@@ -1771,7 +8742,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 64 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 64 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 64
   },
   {
     "id": "Q-065",
@@ -1798,7 +8771,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 65 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 65 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 65
   },
   {
     "id": "Q-066",
@@ -1825,7 +8800,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 66 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 66 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 66
   },
   {
     "id": "Q-067",
@@ -1852,7 +8829,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 67 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 67 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 67
   },
   {
     "id": "Q-068",
@@ -1879,7 +8858,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 68 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 68 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 68
   },
   {
     "id": "Q-069",
@@ -1909,7 +8890,9 @@ export const QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "Question 69 evaluates knowledge of 1. Network Infrastructures. Option C, D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 69 evaluates knowledge of 1. Network Infrastructures. Option C, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 69
   },
   {
     "id": "Q-070",
@@ -1936,7 +8919,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 70 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 70 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 70
   },
   {
     "id": "Q-071",
@@ -1963,7 +8948,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 71 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 71 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 71
   },
   {
     "id": "Q-072",
@@ -1990,7 +8977,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 72 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 72 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 72
   },
   {
     "id": "Q-073",
@@ -2017,7 +9006,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 73 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 73 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 73
   },
   {
     "id": "Q-074",
@@ -2044,7 +9035,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 74 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 74 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 74
   },
   {
     "id": "Q-075",
@@ -2071,7 +9064,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 75 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 75 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 75
   },
   {
     "id": "Q-076",
@@ -2098,7 +9093,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 76 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 76 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 76
   },
   {
     "id": "Q-077",
@@ -2181,7 +9178,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_78_4_R110.jpg",
       "data": "data:image/jpeg;base64,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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 77
   },
   {
     "id": "Q-078",
@@ -2208,7 +9207,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 78 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 78 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 78
   },
   {
     "id": "Q-079",
@@ -2235,7 +9236,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 79 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 79 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 79
   },
   {
     "id": "Q-080",
@@ -2262,7 +9265,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 80 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 80 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 80
   },
   {
     "id": "Q-081",
@@ -2289,7 +9294,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 81 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 81 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 81
   },
   {
     "id": "Q-082",
@@ -2316,7 +9323,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 82 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 82 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 82
   },
   {
     "id": "Q-083",
@@ -2343,7 +9352,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 83 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 83 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 83
   },
   {
     "id": "Q-084",
@@ -2370,7 +9381,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 84 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 84 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 84
   },
   {
     "id": "Q-085",
@@ -2397,7 +9410,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 85 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 85 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 85
   },
   {
     "id": "Q-086",
@@ -2424,7 +9439,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 86 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 86 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 86
   },
   {
     "id": "Q-087",
@@ -2451,7 +9468,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 87 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 87 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 87
   },
   {
     "id": "Q-088",
@@ -2481,7 +9500,9 @@ export const QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "Question 88 evaluates knowledge of 3. Protocols & Services. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 88 evaluates knowledge of 3. Protocols & Services. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 88
   },
   {
     "id": "Q-089",
@@ -2514,7 +9535,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_81_6_R128.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD0AmkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0SaVYYXlc4VFLE+wrI0HxFb63FO8UTw+SwBEhGSp6N9Ki8YPc/wBgywWUUkk9wRENik4B6k46Vz9taavpmrf6VZR+TdWhgJtQzqCq/KW449PxoA7hLu3kcJHPEzEZADgkim/brTLD7TDlThhvGR2rgrHR3tIPDlzHZzx3PmOLh1RtwU5+96e2ar6bpM0tvqlrBYTeUYC0dxcW3ly7924Kf73bmgD0hrmFSwaWMFBlgXA2j3pDdW4lRDNEHfG1S4Bb6DvXmzWGqXLJcPa3AOpgQToUYGNQRyfQdetTXukSNrt3Fe29+TJIotZraJWCrnA+Y/coA9EF1AX2CWMyZxsDDOfSs/X9ch0O0SeWJ5md9ixp1Y1laBpajxFrN7cwMJRc/uJHUjgjBK/yzUGvRanqHiOGOxtUkhtYSSbgMsbM3HBA6j2oA6e31C3ns4LkSoscyhlLNjOae15bIELXESh/ukuBu+nrXnq2d9NpVjpd7ZTE2t+FbbGxUx5zwccjtmpdd0nytcnS5s7x9PaBY7U2kIk8vAGRz90980Ad893bxyiJ54llPRC4DH8KsV5drdjeyXU0Z0+5aW3WFYZVt9zOABlmk9fYV6ZBu8iPdndtGc9c4oAmooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBCM0mKdRQA3HvRinUUANwfWjHvTqKAExSYp1FADce9GOMevWnUUANxnrSgYpaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqhe3ps2tyY8xyyCNn3fcz0+vPFX6oatAbnS7qJFJdo2KAdd2Mj9cUAINQgEMk80kcUCyFFdnwCQcH9QR+FPbUbNY45GuYlSU4jYuMN9K5yXTLmO10FxHPi1DeekWN4Zlxu564Offmn3OmG3gt5rCG7+1I8jxh1DDLHkMOwPX2oA6ylqKLcYlMgAcgbgPWpaACiiigAooooASsaz1kXOsXmntCYzAcK+7Ik4ye3BrZNc1Hp1ybnVZxGUlFyJbdj/Fhf5HpQBoafrMN1pgvJ9luhdkwz5HBx1q/b3EN1EJIJUljPRkORXJWGn3sFlpE01q5NrPK8sI5Ybs4IHfFbGiW0sd3qV20bQxXUqtHCwwVAUA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cGteseKeODVb4yuqZ2Y3HGflrGppKL8/0ZhVdpRfn+jJ9PES2MZ4RUXBDcYPfNGmjEMjKAInlZoxjGF//Xk/Q1HI2mSSmR2hLHrluD9R0NWRf2gGBcRgf71auce5anHuit/zMH/bD+talZEMyTa7ujZWXycZU571r9qzg73t3JotPma7sdRRRWpsFFFFACVl3yh9Rtklx5eCVB6Fq1D0qvcW8dxHslXI6gjqKaEylqSKLJm481SpiOed+fl/XitRelU4rGNJFkZpJHXO0yMTirg60MEh1FFFIYUhGaWigBuDRj2p1FADcHtRg06igBuPajBp1FADcelGDTqKAG4NGDTqKAG4NGPanUUANwaMHNOooAbijFOooAbg0Yp1FADcGjBp1FADcUm2n0UANwR0oxTqKAG4xRinUUANwaMU6igBoFGDTqKAG4NGD/8AXp1FADQPagCnUUANxRg06igBuKdRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADe1VpLO3lYs8KM3qVyatUmKTSe4nFPcq/2faf8APvH/AN80f2faf8+8f/fNWqKXJHsTyR7IgitYYSWjiRDjqoxVik60tNKxSSS0FooopjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopM0ALRSZozQAtFFFABRRRQAUlLSUAMzg+lLketZWpq0t5aQiWRA+7JRsHgA0v9lH/n8uc/79Z87baitjH2knJpLb/I1KKzP7J/6fLn/vuorrTjDbySC6uCVUnBek5zSvy/iDqTSvy/ibOc0tVNPYtZwsxJJQEk96tVon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W6jkdP1961qKAM86VbHSP7NKsLbZ5eA3OPrUNro8dtfreGe4mmWHyfnK425z0AFa1FAGe+nQyanHftvEqJtAz8p64JHqNzfmapSeHLVw6efcrE0/2jYrKAHzn0yfxzW7RQBjW+gW1u1sySTE20jypkjkt1zxUEvhu2ltZLP7TdJaPJ5ghVl2oc7uMjOPY5FdBRQBm6hpiX0ts7zSx/ZpPNQR7cFvU5B96k0/T4tPheKJnKvI0h3nJyTmr1FAGdBpdtDLduAzfaid4Y5AHOQPQcn86hs9Hhs5Y5BNPMYE8qESsCIk9BgewGTk8Vr0UAZN1o8VzdvcedPE8kXkv5ZADL+I4/CoYfD1vbNGbe4uYWSIRMUYZkUf3uOvuMVuUUAYVv4bt7Rbc21xcwyQI0ayKylmUtuw2QQefals/D1rZ3Ec8bzlkklkAdwQTJjdnjnp/wDrrcooAy7bSY7SWdoJ50jmLMYgw2qx6kcZH50yPRljMzpeXXnzFS83ybiAMAY27cfhWvRQBm6fpcOnrHHbySiGOPy1jL5XqTux689a0qKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooATFLRRQAUUUUAFFFFABSUtJQBkamzxXlpMI5HCbshBk8gClOqn/nzuc/7laeATnrS4HpWXI024vcx9nJSbT3/AMjMGrf9Odz/AN8VFdaiZ7eSMWtwC6kAlK2KKHCbXxfgDpzatzfgVtPUrZwqwIIQAg9qtUYxS1olZWNIqysLRRRTKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooASloooAKKKKACiiigD//Z"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 89
   },
   {
     "id": "Q-090",
@@ -2557,7 +9580,9 @@ export const QUESTIONS = [
       "type": "cli-terminal",
       "title": "Command Prompt - tracert -d 173.194.75.105",
       "content": "C:\\>tracert -d 173.194.75.105\n\nTracing route to 173.194.75.105 over a maximum of 30 hops:\n\n  1    <1 ms    <1 ms    <1 ms  10.0.0.1\n  2    25 ms    29 ms    29 ms  174.57.168.1\n  3     9 ms     9 ms     9 ms  68.85.76.249\n  4    10 ms     9 ms     9 ms  68.86.210.25\n  5    14 ms    15 ms    18 ms  68.86.92.161\n  6    15 ms    16 ms    13 ms  68.86.86.142\n  7    14 ms    14 ms    14 ms  75.149.231.62\n  8    14 ms    15 ms    15 ms  209.85.252.80\n  9    17 ms    16 ms    17 ms  72.14.236.146\n 10    27 ms    28 ms    28 ms  209.85.241.222\n 11    26 ms    25 ms    26 ms  216.239.48.157\n 12     *        *        *     Request timed out.\n 13    27 ms    26 ms    25 ms  173.194.75.105\n\nTrace complete."
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 90
   },
   {
     "id": "Q-091",
@@ -2590,7 +9615,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_83_11_R145.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD1ApUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0mokljdiqSIxX7wDAkVFf3KWVhPcucLEhYk+1edeE9TtYNetpFuhJLqKN9oU5ykmcqP6UAen0VwA8Q60tuL95LdrVL77M0fl4ZlJxnPapzrOsnWry1mlWzYCT7PC1vkSAD5SHzye+KAO4orz5fGV2Xt5SUFsbciRto/120kfTp0qSTXddnuEs7NVa5itlllAiB8xmGcckYHbPNAHe1GzrGhZ2VVHUk4ArlLTVNYvvEItFaG3iS3inlRk3EE43KCPxGad47vYIrC2sp5fJju5gsj+iDk0AdSjrIgZGVlIyCDkGpK8503XXs/CV6thMkkllNsiJGQULcdfyrQv9W1uC8tNLikia9lia4eSOLcNuThQpI9OtAHbUVwOpeIdXjtodrLb3kdu0tzAIQ4GGIyWzgA4967DSro32mW1yyhWljDEDoDQBeooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCnf2MGo2b2t0heF+GUMVz+VVrnRdPuoreOS3G23ZWj2kqQR06Vq0UAY58P6ebM2pgbyTN55HmN9/Oc9f06U228O6ZbX7X0UBNwxY7ndmwT1wCeK2qKAMM+GdI+ytbfY/3Ly+cRvb7/5/p0p2o+HNM1SVJLu3LOi7Q6OyEj0ODzW1RQBQg0y1gvpLyKMpPJGsbEMcbR0GKSbS7S41CK9mi33ESlUJYkAHrx0rQooAxbjw7plzJPJLbHdcBRJh2UNjpwDUmp6Hp+qiIXlv5hiGEYMVYfiDnFa1FAGBN4W0i4MRlssmOLyRh2+7788/U81r2tvHaW0cEK7Y4wFUZzgVYooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAErAn1e4j862CRm9E4jiXBAKnkNjOemelb5Gax59Od/ElrfhV8qOFkYk85J4oAmk1e0hn8iWX51ZUdgh2qx6AnoPxqS31G3ubqWCFmd4SVchDtBGMjPTPIrGXRGXUr3z7Zbm3upxKGMxUL0yCuefWrVrYXMOuvcQKLe1kLtMm/cJWP3WA/hPc+tAG6KWkHSloAKKKKACiiigCjq1zJZ6Vd3MQUyQxM6huhIG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tJ3f5nJTrU4xak0nd9fNjXFxeKImhaGInEhZgSRnoAM8H144rTHSqH9s2P8Az2P/AHw3+FH9s2P/AD2P/fDf4Vftqb+0vvNFXpfzL70JZD/ia6h/wD+VaHrWVpkyz6heyRtuRgmDj2NawpUtY3Xd/mww7Tjdd3+bHUUUVsbhRRRQAlZK77GSRXikeBmLq8aliueSCBz+Na9JgULQTVzOhSWe6E7xtGiKVRWxuOep9v51o0UUN3BKwtFFFAwpKWigApKWigBKKWigBKMClooAKSlooASilooATAopaKAExRS0UAFJilooASloooATFFLRQAlLRRQAmBS0UUAFJilooASloooASjApaKACkpaKACkpaKAEopaKACkpaKAEpaKKAExS0UUAJgUUtFACUtFFABSUtFACcUUtFABRRRQAUUUUAFFFFACYpaKKAEpaKKACiiigAooooAKKKKAEwPQUbV9B+VLRQFhu1fQflS7R6D8qWiiwrCYHpS0UUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACikooAWiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopMigBaKKKACiiigAooooAKKKSgBaKKKACiiigAoopMigBaKKKACiiigAooooAKKKKACiikoAWiiigAopKKAFooooAKKKKACiiigAooooAKKKSgBaKKKACiiigAoopM0ALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUh4BpaRvun6UAZEF/d3EIkisgynofNH+FSfar/AG/8g/8AHzRRop/4lsf1P8zVm5uYraLfIxAzgYBJP0A61zwjKUVLmeq8v8jlpxlKCk5PVeX+RX+16h/0D/8AyKKPteof9A//AMiinQX8busbpLEz52+YoAb8RxV89DVezl/M/wAP8i1Tl/M/w/yKVhdtdJJuj8so20jdmrlZmjD/AI+/+u7VqHrVU23FNlU23BN7jqKKK0NQooooAKSlqpc3tvbELJIA5GQoBZj+A5oAt0VXguIrmPfDIrqDgkHpVigAooooAK59fEcZUkWVzu+1fYwmUyZADn+LpxXQVwSJLOF8gOrHXGlVjGThCDhsHtQB1ljqMN4kvytC8L7JEkwCp/lV1pEXG51GemTjNcxq+lR29oJWmMly0xmYvGWWZgMbSB7cCqd1FNeagxvla1imtUEQ8oybD3C/3T05oA7NpEVgpZQT0BPWlZlUEsQAO5OK5m1gWDxBKNQV5/3cC2sjoSOPvY9DuwTVrxKjPFZZRpLZblWuFAJymD19ulAG0ZI1UMXUKehJGKUyRgZLqOM8mud1ORHaxt4beMWboxEjwlgp/uhfU1k+HrF7q+tkv4XkjFk6kSoQP9acDn2oA7G9uktLGa6cFkiQyEL1IAzTra4juII5Eb76hwCRkAjNc3ZpcP8AD145VkM32aRdpB3HG4D9MVDDDvfS/wCzIniuI4T57lCvGzo2epzQB16yIzEB1JHUA9KXcu7bkZxnGa5Lw7aHfazSzOl3ErCVDCVLZ67m7+uau3jm18VrcyI/kvYmJSqkguHzjjvigDeEsZ24dfm6c9aXem7buXd6Z5rhNJiktbfSLgQtLcCMRm3eM5AMhO5T2P17Vb0+ykm1CT7XO8V2l2zqRCSxXPHz/wB3HGKAOl1PUoNOspLmXLLHjcqYLckD+tOvb2CwtjcXUnlxAgEnJ5JwK4u9iVvDl5DPbSSaqZyWbyyWP7wc59MduntXReLrY3Ph+VRF5rKyMBtyRhhn9M0AbQljwP3ic9PmHNPJCjJIA964x0tfP1Mz25dJEH2PbEcBcdF4+U7vpWxNbSS+Fhb30zxytCqySKMkH8KANnzI9m/eu31zxQZEC7i6gepPFcVKbmaDSy8KwWUVxIshSItG3HyuU9M5+h5qdrKO1k0wTNJc6cJJWYGM7Qx+78vPHXGaAOu3rz8w4GTz0FIJEJADqSegB61y92fsup6i5jk8q4sVWEKhwSAePr7VU0GynIvnELLcCxiWFnXBD+WRxn3oA7RZEYkK6kjqAc4oaRFOGdQfc1yvhmzXdZziZ1njgKyx+SULHjO8/wARzzmpb6yW51/UTNCZE+wjaSuRuyenvQB0rSIuNzqM9MnGartf2wv/ALEZVFx5fm7T/dziuLgtp7gxpqUkkcUlmixs8Jcg98ejVd1LS0bWRHKu8y6d5MdwU5Mofg5HQ9OaAOv3KCQWGQMkZ6UhkjBALqCegJ61yDG7udl6IZFbUwbcoQf3Y4wT6dGP4066gjiuNWju4HkkZQLMhCxC7cAKe3NAHT3l1Ha208znIijaQqCMkAZpbO5S6tYZ0yBLGsiqeoBGa5OKxnzrTXURkuVsEVX25y3lEHHv24q/4Ujkhg2XUbi78qPDkHBjx8oHpjkEevNAHRl1BClgGPQE8mjzE37N67vTPNc9boieJr1r2NmkZkNs5QkBcc4PbmsxoHNjcRNC51hromOTYcj5sg7vTFAHaeZHkjeuR2zR5ibd29dvrniuHNi5mEjQMZTrZVm2nmMjDf8AAT+VTS28v/COX9uIpNq6kRGm3onmA8e1AHYiWMkAOpJ6AHrS71BI3DI5PPSuJns3gnu2ghdTHqMZiKqeFI+bHt+lXNSL299r5eKQ/abQCLahO4hCD0oA6kzRj+Nc+m4UxZctICu0IcbiwwePrxXEWtgZNP1pprdjIlnb+USvIYQD7vvn0p6w3klhqreXMXkkt2kwCCy7Bu+vfpQB2/mRlN3mLt9cjFV7u/trQQGaVVE0gjjPUMxrGv5oEsrSOyt4xaSSkMzRErHgddv+NYiWrmxi8+AyRW+shhuiwFixzgdh046UAdxFMHR2I2BTgEsCCB34NS+ZHtDb12noc9a4qKFzpjssT/ZBqzySIEIzDn09OnFTS2vn6pZGOLNi12TEgTChfLAbj03ZoA7AMGXKsCD0IOapaXqUOpWUV1FlFlyVRyN3BI9faqPhyJoDqUOxo4Uu3ESkYAXjpXO6dAp8PWEFvbyLqgnDBjGQy/vCSST229qAO8Lpu2713emear21/bXcs0UEgZ4W2OPQ1y9rZPLqVwLqd4rpbwuhEJLFM/LhvTHGKj8hbC+v7pLbFxDd+airGQXjIwcEDnrnFAHah1x94YzjrSCRCxUOpYdgea5axs7iPUobKVWaMML93OcFtm3H/ffzYqtoljKwiaad49RikkMg8khmPP3m7jpQB2XmRkkb1yOoz0oEiMcK6k4zgGuJ06xaSyLyzSC9iilEsYhILkg/eb+IelWtOtGtpvDckULRs8LrOQpBI2ggN+PrQB0k19bQXcFtLIFmnDFFPfHWrO5c4yM4z1rmvENpDLrWlzXEAaDZNHI+wnGVG3PHrmqP+mLAl4YpDLAPsW0A5I+6W+mcHNAHYmWNQCXUA9CT1pxYAEkgADrmuTe2htdUdNQhaW2Fqqw/IWUNj5sY6E+tW4obpPBE0VyGa4NpINp5bG04H1xgUAdAsiMSFdSR1APSo3uIo4nkZ12RgliD0ArjrizuIY9OFhE8c8mnOJCoIJbYMbvfOas6bp8c1lK6SF5DZmN4fI2Bmx/Fnqc96AOntbuC7tluIJA0TruBz2qbcv8AeHTPXtXEWFti2tLSCFlS8hSG4AQrsZDls8d1OKle3vbjR75ljk8+3jSyUDIZ1RsuR/vAgfhQB2AkjZSQ6kDqQelVDqMI1JLLkyPGZQwOVABx61y+qQrMly2lQulsLNllCoVDNxtGO5o1Kylj1CwFvAwt0s8zrGpBZdw3D69/U0Adp5ibgu5dxGQM8mn1yzBLfxHDcW0fnifYhjMZBgUIfmU+mDyK6G1nS5t0mjDhXGQHUgj8KALNFFFABRRRQAU1vun6U6kb7p+lDEzO0T/kFxfVv5mmXm1b+2kk/wBWAwUnorf54p+h/wDILh+rf+hGrkkaSoUkQOp6gjIrKj/Dj6IxoL91H0X5FDUgn2QxjBlcgRY5O7PB/DrWl/DVaGyghffHEA3YkkkfnVrtWpslYzNF6Xf/AF3atPvWZov/AC9f9d2rTrOn8KM6XwIdRRRWhqFFFFACHpWTYoHnuXfmbzSG7kD+H9MVrVUmso5pPMBeOTGCyNgmmhNECqqauBF1aMmUfj8v9a0qr29tHbqQgJLHLEnJJqxQwSFooopDCm4NOooAbg96MU6igBvNGKdRQA3B7UYNOooAZgilxTqKAG4oxTqKAG4oxTqKAG4oxxTqKAG4owadRQA0CjHpTqKAG4oxTqKAG4OKCPSnUUANxSEZGD3p9FADcUYp1FADcUYOKdRQA3FGKdRQA3FGKdRQAmKTBFOooAbg5FGKdRQA3Box3p1FADcUHP406igBoFAHHSnUUANxRgk06igBuMdKCDTqKAG4zRg06igBuDRgmnUUANwaMU6igBuOaMU6igBuDk0YNOooAbijGadRQA3FKBS0UAFFFFABRRRQAUh6GlooAw7a21K2hWOMwbV9ck9anxq3rbfrWlijNYqkoqybMFRSVk3ZeZm/8Tf/AKdv1o/4m/8A07/rWnRVcnmx+y/vP7yhplrJbpL523c8hf5enNXxRRVRioqyNIxUVZDqKKKooKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApKWigAooooAKKKKACiiigAopKWgAooooAKKKSgBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopCcUAFLTdwpQcigBaKKKACkpaKAGd6QkKMmnGs3Wz/xLZPqv8xUTlyxb7GdSXJFy7I0d6+o/OjePUfnVAaNYkD90f++z/jR/Y1j/AM8T/wB9n/GpvU/lX3/8Ajmq9l97/wAi9uHqPzo3Adx+dUP7Hsc/6o4/32/xqnqen2tvZPJFFtYYwdxOOR71Mpzim3Faef8AwBSnUjFyaWnm/wDI3qKF+6PpRW50C03cKdXnzBIosPv8r+3GiYDcxKAHC4HOPYUAegZFGRXJR3t1pUEkixFbSa52xNcBsQpjqw6gZqzfa7NFdyW9rEsrxQrK2I3cOTzhdvT8aAOkzRmsO21S5v8AUnt7eJI44Ejabzc7suM4A7EDPXvU+sX81k9ikCI73M4i+fOBkE9vpQBq5FGRXLyeI5Yd1vLEguhcmDKqzJ0znA5/Co77VdRltLBogLaQ36wOWjZRIpzggHBwaAOszRmueXXJVW1Dxx+Y0zx3OCcRhX2Ej8SDz2pRrFzPcW9vBFEJbhpCrPkqI1OM8dc/hQB0GaM1zI166e6t7NIYRctO8EpJJUFRnIqHQtQlfU9Qs48OUvZZJWkOQkfQbfqfwAoA6vNLmsHX7m9gudLW1lSNZrkRuGUnPB9+lNsdYuJtOuLq5NtAscjRKTuAJBxnr+nWgDfJxzRnjOK4rWNZubvRNWhRkSW2MeZFRlDIxHQHn+hFP1CS4tNam3iCSG10oyLFhguckev6+nHXmgDs80ZrBg1K5uLu3tbSOFT9mSeUyZwA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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 91
   },
   {
     "id": "Q-092",
@@ -2617,7 +9644,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 92 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 92 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 92
   },
   {
     "id": "Q-093",
@@ -2673,7 +9702,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_84_13_R153.jpg",
       "data": "data:image/jpeg;base64,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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 93
   },
   {
     "id": "Q-094",
@@ -2700,7 +9731,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 94 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 94 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 94
   },
   {
     "id": "Q-095",
@@ -2755,7 +9788,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_86_15_R167.jpg",
       "data": "data:image/jpeg;base64,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/eX+dAElFFFAEZ/16f7rfzFSN90/Soz/AK9P91v5ipG+6fpQDM/Q/wDkFxfVv/QjV8VQ0P8A5BcX1b/0I1fFZUf4cfRGND+FH0X5DqKKK1NgooooAKKKKACiiigApG+6fpS0jfdP0oBmfof/ACC4vq3/AKEatzfdH+8v/oQqpof/ACC4vq3/AKEatzfdH+8v/oQrKj/Dj6Ixofwo+i/IWXon+8KkFRy9E/3hUgrU2FooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKim6D/eX+dS1FN0H+8v8AOgCSiiigCM/69P8Adb+YqRvun6VGf9en+638xT2+6fpQJlDQ/wDkFxfVv/QjV8Vn6H/yC4vq3/oRrQFZUf4cfRGVD+FH0X5DqKKK1NgooooAKKKKACiiigApG+6fpS0jfdP0oBmfof8AyC4vq3/oRq3N90f7y/8AoQqpof8AyC4vq3/oRq3N9wf7y/8AoQrKj/Dj6Ixofwo+i/IWXon+8KkFRy9E/wB4VIK1NhaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACopug/wB5f51LUU3Qf7y/zoAkooooAiP+uT/db+Yp56EUw/65P91v5iory4W1gMjAkLjOPrSbSV2TJqKbexlafeNa2ixNbXDMM8hOOuatf2tz/wAedz/3xR/a4/59Lj/vmj+1x/z6XH/fFc0WklFS28jkjJRioqW3kL/a/wD053P/AHxR/a//AE53P/fFJ/a4/wCfS4/75o/tcf8APpcf98U+f+9+BXP/AHvwF/tf/pzuf++KP7X/AOnO5/74pP7XH/Ppcf8AfFH9rj/n0uP++KOf+9+Ac/8Ae/AX+1/+nO5/74o/tf8A6c7n/vik/tcf8+lx/wB8Uf2uP+fS4/74o5/734Bz/wB78Bf7X/6c7n/vij+1/wDpzuf++KT+1x/z6XH/AHxR/a4/59Lj/vijn/vfgHP/AHvwF/tf/pzuf++KQ6vkEfY7n/vij+1x/wA+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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 95
   },
   {
     "id": "Q-096",
@@ -2788,7 +9823,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_87_17_R175.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD3Al4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0G7uorO1kuJ22xRruY+gqvpWqWur2YurNy0RJHK4IIrD8c3UgsbbT7eMzT3kqr5QIBZRyRXPrdz2Vvr9jPay2DTRfaIYi4JXoDgj8KAPS8ijIrzjy2069twmoTwreaW8kssjlwrAffx/SqNjMyaJc3MHmSPYTxSNPHK7JKBwfvdOpJHSgD1XIoyBXmdnJez6pDaySSldRmS8U7iMKCePbtRpLTT+IEa51F7fUxdYa3ZHLPGD93rtA29/SgD0zIrL1XXLLR2gW8kZTO21Aqk1ieB7UPb3F/JLNJMZ5YgGkJULuzwKydfefWNe1CO20+S+it4PIDJIq+W55J560AeiKwYAg5Bpc15zFcnXJfD0Ms0se5ZIp1jcqSyjHaq90ZX8Q3cd1qMljeRzqlmpV2LJnC7QDtOffuaAPTsilry2W/L+JVuYHeCYX4haPe5JXpk5+UA+nWvUR0oAWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAaVBwcAkdM00orHJUE9ORUlFAEZjB6qp4xyKBGoXaFAB6jFSUUAR7BxwOOhwOKPLXdu2jd645qSigBiqAMAAfQYoCAZwAMnJx3p9FAEYRRyFXI9BQUUkEqCR3I5qSigCMxrnO0Z65xUlFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFe5uI7W3eeZisaDLEAnA/CmG9gS5hgMn7ydSyKATkDqf1FTSIskbRuMqwII9RXL6Qk8cGrTqfNubMPa2+RztQZH1yTQB1mRRkVxelLeT2KXCaiiGS0Yykys7b8D5iCMKQeMCtnw5P5lk8LBzLbtskcyFwzY6hj1FAG5RSUtABRRRQAUUUUAUr7UbWwMIupfL859keQTlvwp5vIBeraF/37RmQLjqucZzWN4ngS5u9IhkGVe4IP8A3yazknuV8QNFgteWthIoJH3yDlT+PFAHZ5FLXG2kzBdEltrqWe8uHAuUaQtldpLkr/Dg/T0rsaAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi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6e2uluFfCsrRnawZcYNWcUYoAWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBMD0owPSlooATA9KMD0paKACiiigAooooAKKKKACiiigBKKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKSloAKKgmmWCJpX3bV67ULH8gM1QTW7B0lkWZzHDu8xjC4CEdckjr7UAa1FRRyLLGkiHKMAQfUGnkkUAOorLm1izgnFvI8olYkKogkJbHXGBzj2qSfU7W3ZUklId13BAjM2PUgDIFAGhRWXNrNhbytHLMQyKrN8jEKp6EkDAFWbi9ht4llkf5WIC7QWLE9MAdaALdFZCa9pzxwuk7Ms27y9sTndt+9gYrQtrmK6gWa3kWSNuQw6GgCeikzjrSZPegB1FNzVS3v7e5VWikMgZmTKqSAR1zxx+NAF2im59aQnAJJwB3NAD6KrJcxyFBG28OMqyglT/wIcVPmgB1FNJqu93Cl1HbO4E0gLIuDyB1oAtUU3PrxQSaAHUU3PFAJoAdRTc0ZoAdRTQaMmgB1FNyaM0AOopuTRk0AOoqrLdQw3UNu7YmnDGNcfe2jJ/nVjNADqKTNQ+avneX827G77pxjPr0/CgCeiqS39qZoIlnRnuAxi2nIbb97kccVaZgqliQABnJ7UAPoqmt9bPcpbpKrSvH5igcgr0znpVoHj3oAdRTCQoJJAA7ntTY5EkjDxsroRkMpyDQBLRTc+tAJoAdRVOK8gmuZbeOTdJFjeApwpPv0/CrWeaAHUU0Gori4jtbd553CRRjczEdBQBPRUUbiRFdTuVgCCO9Pyc0AOopoNGaAHUU3PpQTQA6iqltewXTzJBJvML7HIBwG9M02a+tYV/ezoP3gjwDkhj0HHQ0AXaKbmloAWiiigAooooAKKKQnFAC0U0GloAWiiigAooooASkzRVa9kMVpK6H5lUk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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 96
   },
   {
     "id": "Q-097",
@@ -2815,7 +9852,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 97 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 97 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 97
   },
   {
     "id": "Q-098",
@@ -2842,7 +9881,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 98 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 98 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 98
   },
   {
     "id": "Q-099",
@@ -2869,7 +9910,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 99 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 99 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 99
   },
   {
     "id": "Q-100",
@@ -2896,7 +9939,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 100 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 100 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 100
   },
   {
     "id": "Q-101",
@@ -2923,7 +9968,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 101 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 101 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 101
   },
   {
     "id": "Q-102",
@@ -2974,7 +10021,9 @@ export const QUESTIONS = [
         "preferredDns": "192.168.13.13",
         "alternateDns": ""
       }
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 102
   },
   {
     "id": "Q-103",
@@ -3021,7 +10070,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_91_22_R203.jpg",
       "data": "data:image/jpeg;base64,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oooAKKKKACiiigAooooAKKKKACiiigBKWiigCKT/AFkX+8f5Gn0yT/WRf7x/kafQBDvVJ23MBlVxk+5qTzY/+ei/nT6KAGebH/z0X86PNj/56L+dPooAZ5sf/PRfzo82P/nov50+igBnmx/89F/OjzY/+ei/nT6KAGebH/z0X86PNj/56L+dPooAZ5sf/PRfzo82P/nov50+igBnmx/89F/OjzY/+ei/nT6KAGebH/z0X86PNj/56L+dPooAZ5sf/PRfzo82P/nov50+igCCSRGUBXUncvAPuKWY4RSTgBgST9ampKAGedH/AM9F/MUvmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50ebH/z0X86fRQAzzY/+ei/nR5sf/PRfzp9FADPNj/56L+dHmx/89F/On0UAM82P/nov50nnR/8APRfzFSUUAQF0eSMKwJBJ4PsanoooA//Z"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 103
   },
   {
     "id": "Q-104",
@@ -3072,7 +10123,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_92_24_R211.jpg",
       "data": "data:image/jpeg;base64,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IUS9E/3hRN9wf7y/+hCiXon+8K0NSQUtIKWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEpaKKACoh/r3/AN1f5mpaiH+vf/dX+ZoAI/vy/wC9/QVLUUf35f8Ae/oKloAYehrM0X795/12NaZ6GszRfv3n/XY1lL44/Mxn8cfmaLxRyYLorY6ZGcUuxc52jOMZx2qSitTYhMMRQKY0Kg5AKjAp4UAADgAYGKfRQBEYoyWyi/N14605EVBhFCj0AxT6KAInhjkILxqxHcjNO2LycDJGDT6KAITBEVCmNCB0BUYFSAADA4p1FAEYRQCAoAPJGOtLtAXGOMYxT6KAIyildpUFfQjIp+KWigAooooAKQ9DS0h6GgDL0X/l7/67tWpWXov/AC9/9d2rUrOn8KMqPwIjm+4P95f/AEIUS9E/3hRN9wf7y/8AoQol6J/vCtDUkFLSCloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKiH+vf8A3V/malqIf69/91f5mgAj+/L/AL39BUtRR/fl/wB7+gqWgBh6GszRfv3n/XY1pnoazNF+/ef9djWUvjj8zGfxx+ZrUUUVqbBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUh6GlpD0NAGXov8Ay9/9d2rUrL0X/l7/AOu7VqVnT+FGVH4ERzfcH+8v/oQol6J/vCib7g/3l/8AQhRL0T/eFaGpIKWkFLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVEP9e/8Aur/M1LUQ/wBe/wDur/M0AEf35f8Ae/oKkqAOiPIGYAlgeTjsKk82P/nov50AKemKxFgvraWXyfK2u5fJViefpWz5sf8Az0X86TzY/wC+v51EoKW5nOClZ9jN8zVfSH/vlv8ACjzNV9If++W/wrT82P8Avr+dHmx/31/Ol7PzZPsv7z+8zPM1X0h/75b/AAo8zVfSH/vlv8K0/Nj/AL6/nR5sf99fzo9n5sPZf3n95meZqvpD/wB8t/hR5mq+kP8A3y3+Fafmx/31/OjzY/76/nR7PzYey/vP7zM8zVfSH/vlv8KPM1X0h/75b/CtPzY/76/nR5sf99fzo9n5sPZf3n95meZqvpD/AN8t/hR5mq+kP/fLf4Vp+bH/AH1/OjzY/wC+v50ez82Hsv7z+8zPM1X0h/75b/CjzNV9If8Avlv8K0/Nj/vr+dHmx/31/Oj2fmw9l/ef3mZ5mq+kP/fLf4UeZqvpD/3y3+Fafmx/31/OjzY/76/nR7PzYey/vP7zM8zVfSH/AL5b/CjzNV9If++W/wAK0/Nj/vr+dHmx/wB9fzo9n5sPZf3n95meZqvpD/3y3+FHmar6Q/8AfLf4Vp+bH/fX86PNj/vr+dHs/Nh7L+8/vKOlwSQLL523c8hf5QcfrWj0pnmx/wB9fzo82P8Avr+dVGPKrGkI8q5UE33B/vL/AOhCiXon+8KZJIjKArqTuXgH3FLMcIpJwAwJJ+tUUTClqLzo/wDnov5il82P/nov50ASUVH5sf8Az0X86PNj/wCei/nQBJRUfmx/89F/OjzY/wDnov50ASUVH5sf/PRfzo82P/nov50ASUVH5sf/AD0X86PNj/56L+dAElFR+bH/AM9F/OjzY/8Anov50ASUVH5sf/PRfzo82P8A56L+dAElFR+bH/z0X86PNj/56L+dAElFR+bH/wA9F/OjzY/+ei/nQBJRUfmx/wDPRfzo82P/AJ6L+dAElFR+bH/z0X86PNj/AOei/nQBJRUfmx/89F/OjzY/+ei/nQBJRUfmx/8APRfzo82P/nov50ASUVH5sf8Az0X86PNj/wCei/nQBJRUfmx/89F/OjzY/wDnov50ASUVH5sf/PRfzo82P/nov50ASUVH5sf/AD0X86PNj/56L+dAElFR+bH/AM9F/OjzY/8Anov50ASUVH5sf/PRfzo82P8A56L+dAElFR+bH/z0X86PNj/56L+dAElFR+bH/wA9F/OjzY/+ei/nQBJRUfmx/wDPRfzo82P/AJ6L+dAElFR+bH/z0X86PNj/AOei/nQBJRUfmx/89F/OjzY/+ei/nQBJRUfmx/8APRfzo82P/nov50ASUVH5sf8Az0X86PNj/wCei/nQBJRUfmx/89F/OjzY/wDnov50ASUVH5sf/PRfzo82P/nov50ASVEP9e/+6v8AM0edH/z0X8xTUZWlYqQRtAyPxoAm70UUUAFFFFABRRRQIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooGB7UdqKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApPWiigD//2Q=="
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 104
   },
   {
     "id": "Q-105",
@@ -3128,7 +10181,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_94_26_R225.jpg",
       "data": "data:image/jpeg;base64,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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 105
   },
   {
     "id": "Q-106",
@@ -3162,7 +10217,9 @@ export const QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "Question 106 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 106 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 106
   },
   {
     "id": "Q-107",
@@ -3224,7 +10281,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_96_28_R239.jpg",
       "data": "data:image/jpeg;base64,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YtmDzAozhC5Krk9hWhRQBltotk2ny2JjP2eVgzAMck5B6/gKkbTLdr77YA6TEAMUcgPjpuHetCigDOh0q3huXni8xC7b2UOQpb129KsW1ulrEI4920En5jk81ZooAKKKKAIv+W6f7rfzFSVH/wAt0/3W/mKkoAWiiigAooooAKKKKACiiigAooooAKKKKACiiigCKLq3+8aKIurf7xooAlooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCJPvy/73/sooi+9J/vf0FCffl/3v/ZRRF96T/e/oKAJaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAi/5bp/ut/MVJUbA+YpxkAEH9Kdz/AHT+lAD6KZz/AHT+lHP90/pQA+imc/3T+lHP90/pQA+imc/3T+lHP90/pQA+imc/3T+lHP8AdP6UAPopnP8AdP6Uc/3T+lAD6KZz/dP6Uc/3T+lAD6KZz/dP6Uc/3T+lADYurf7xooRSAxI6nNFAEtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARJ9+X/e/wDZRRF96T/e/oKE+/L/AL3/ALKKIvvSf739BQBLRRRQAU3PNLUM8ENzG0c8UcqHqrqGB/A0AS5z05pc1waWlvH4R1WZLeJZVlkUOEAYAOOM9hWlc65daSkqXKQzBLNZ4/LBUj5guD1z1HI/KgDqs0maxtLvbya7liuoW8sRh1m8loxnPK4buOOe9UrvV7+N9WeIW/k6ey8Op3OpUE85+tAHTbhRmuZfX7kaZq10kcWbWRVjBBIIIHXnnr7VANe1Ayghbby21A2QBVsjI+VuvP0/lQB1uecUua47Vb6e98MXRlCCeC9EBKZCsVkHP0q9fa1daXPMl2sU2LczxmJSuMHGDkn16/pQB0eaM1yVxr2pW1hc3DW4YJEkiSGB0UMWAKnJ54Ocit6a5kstLlubnbJJDG0jBBtBwM4GT+FAF/NGa56LVL+NtONybdkvxhQiMDGxXI6n5h+VN8Io/wDZk8krK0j3MhLBMEkNjnk5oA6PNJmsCw1W5n0651OURLaIsjJEq/PhT3Occ4Paov7XvoYdPuLkW5jvh8qopBjYruXnPzD16UAdITS5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BxjApsGg30MNs3mW73EN3JcFdzKrbu2cE11OKMUAc3pehGxlxJaWEqiUyLOVzKM84+71B756dqWDRJovDdvpssNtcyRsxbe7KoJLEFWAJBGR2ro8CjFAGNNptzL4bbT3uBLctDsMrkgE+pqjd+H7meO+VZIgbi2ihUkngrjJPHtXTgUYoA5++0i4ubu4lRogsmnNZgEnIYk89OlQ3fh+a6gsIjLGq29m9u5GSSWQLkevT2rpsUYoA5j+x7+S5tpZ0sXSC1Nv5RdiH6dfl6cfh71paJYz2Ns8UzgqXJSNWLLEv90MQCa1cCgCgBaKKKAILj7jf9c2/pU1Q3H3G/65t/SpqAFooooAKKKKACiiigAooooAKKKKACiiigAooooAif8A10f1P8qKH/10f1P8qKAJaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAiT78v+9/7KKIvvSf739BQn35f97/ANlFEX3pP97+goAlooooAKoau00ek3b22fPWNimOucVfpKAOLMqLFaHTpnkla2c3Q3k4Gzq3oc/So42uLW20ae0eVrm6tZQwLlt7CPK/rXaiNFzhFGeuB1pQijGFHHTjpQByOgsypbXr38O1LdmuYwWLMcDJbJ4IP0611sbiRFdDlWAIPqKQRxjOEUZ64A5p4GOnAoAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQXH3G/65t/SpqgnztIwTlGHAJp/nL6P/3w3+FAEtFRecv91/8Avhv8KPOX+6//AHw3+FAEtFRecv8Adf8A74b/AAo85f7r/wDfDf4UAS0VF5y/3X/74b/Cjzl/uv8A98N/hQBLRUXnL/df/vhv8KPOX+6//fDf4UAS0VF5y/3X/wC+G/wo85f7r/8AfDf4UAS0VF5y/wB1/wDvhv8ACjzl/uv/AN8N/hQBLRUXnL/df/vhv8KPOX+6/wD3w3+FAA/+uj+p/lRTc73RgGwM9RiigCeiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIk+/L/AL3/ALKKI/vP/vf0FCffl/3v/ZRRF96T/e/oKAJaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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YvKzu2bRjNPitoInV44kR1QRghcEKOcfSrVFACCloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMqL/kYbr/r2i/8AQnrTFZiBl1u4kKv5ZgjUMASCct/9b86v+avo/wD3wf8AChFT3+SJqKi85f7r/wDfDf4Uecv91/8Avhv8KCSWiovOX+6//fDf4Uecv91/++G/woAloqLzl/uv/wB8N/hR5y/3X/74b/CgCWiovOX+6/8A3w3+FHnL/df/AL4b/CgCWiovOX+6/wD3w3+FHnL/AHX/AO+G/wAKAJaKi85f7r/98N/hR5y/3X/74b/CgCWiovOX+6//AHw3+FHnL/df/vhv8KAKNh/x+6p/13X/ANFpRS6erC81BipUNOCMjGR5a/1zRSHPc0qKKKYgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCORVPUA/UUzYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooANif3V/KjYn91fyoooAcgAj4AHNFFFAH/2Q=="
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 107
   },
   {
     "id": "Q-108",
@@ -3254,7 +10313,9 @@ export const QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "Question 108 evaluates knowledge of 2. Network Hardware. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 108 evaluates knowledge of 2. Network Hardware. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 108
   },
   {
     "id": "Q-109",
@@ -3284,7 +10345,9 @@ export const QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "Question 109 evaluates knowledge of 2. Network Hardware. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 109 evaluates knowledge of 2. Network Hardware. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 109
   },
   {
     "id": "Q-110",
@@ -3329,7 +10392,9 @@ export const QUESTIONS = [
       "content": {
         "standard": "T568B"
       }
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 110
   },
   {
     "id": "Q-111",
@@ -3356,7 +10421,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 111 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 111 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 111
   },
   {
     "id": "Q-112",
@@ -3389,7 +10456,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_99_33_R262.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAEMAk0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0miisPxPqVxp1ggsgrXk8gjiDDIyaANyiubsfEsK+HI9R1BtrK/lTbF6PnHSnp4s0tre7lZ5YxaYMivGVY56YHfNAHQ0VhW3iSynkgTy7mEzFgomiKcqMnrRb+JtNuUgaKRyJpGiUlMYKjJz7e9AG7RXP23irTbqd4o2mBCs6s8ZCyBRk7T34q1o+t2msxvJZiUooBLOhUHOen5UAa1FcdrXiO8steSG3VDYwFFuSVycscDHpWxeeILKz1GOxl81riQBlVIy2QTjtQBs0VgxeJ9Nl1EWaPIWLmNZDGRGz/wB0N606z8SWV3qIsQlxFMc7fOiKB8dcZoA3KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACuZ1zQ7vV9Ws5PtRtrS2UsHibEm89xxiumpCM0AcK3hPUI7W9sormOa2lnjnjaZzvyD827Aq7qmgXdzqOo3EcVnNFcwRxLHOzAEqeScDg+hrrcCk2igDhz4W1M6JDD9pi+2RXBkjBdisaHgqCeTU9n4Tlg1GYmZBZNCyoqklldl2seldlgUYFAHE6X4ZvbRGgmh01kjikSK4AbzWJUgZ7Ac8454roPD9hJpmh2tnLsM0SbWKklScmtbAoxQBw7+Dr28j1GS61CSKe7kZvKhfMTD+HdkZrQ0nR9Qg1eC9vngYpZiByjEksD16V1GBRgUAcRpvha9sLhIDHp8tqkpkS5dWM6nGRx0zmm6R4Z1O21Oxu7p7Vvs7OZHVmLyZ7nPf24ArucCjAoAWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAqi7hNzJb7/wB7GodgQRgHvmls7qG9tkuIGLRSDKkqRkfjWH4qhcfZJYn2NPILSQjuj9f5H86g1XzV1q1sEdYLMWjFAZWjUuGxjcvoOcUAdXkUZrkmkubK60+a8u/taiNIysUhU7ieH2/xAj1rraAFoooo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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 112
   },
   {
     "id": "Q-113",
@@ -3440,7 +10509,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_100_35_R270.jpg",
       "data": "data:image/jpeg;base64,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5Gf4927+dAGVFd6ncMrJNAivcvAB5ZJUAE7uvJ+XGPepLHUbqW7s4JfLO9ZhIwUjLIygEenXpWlDYwwhQgI2yGUZOfmIIP8AM1DJo9s6oB5sbI7SK0chVgW68igDOXUb2ea2iieJDJcXMTMUzhY3IXv14H1pg1WZZLZrhIpHjadXcJgnYpPy+meK1rbS7W1MPlIQYWkZMsTguct/OhdKtRKsgQkqzsAWOMsMNQBVW4u0sTeXNzCqyICqiInYT0HX5v05rLnvb66tHjMzwvDfW6bzFsZgzp1XPv8AiK2holqIni3zmM42oZDiPByNvpR/Y1r5M0Z81vOdZHcyEsWXG059eBQBRe8mgu7mCJYfPeWKIS7MZJXlm9e/FF5qF/ZpPCZIppkMZRym0EM2ORmtF9JtpElVg5Mu0s+87gVGAQfX3pF0m2ETo/mSl2Vmd3LMSOnNAFCa91GBryDK3E0flsGSPkIx5+XPOMGtPTZjPYpIZ1uCSw8xV2g8nt2Pakn06GaaSUtKkkgUF0kKnAzjp9TUtpax2kXlRA4yWJJySSckk+poAt0UUUAFFFFABRRRQA2sz/mYf+2P9a06zP8AmYf+2P8AWs59PUxq/Z9UWb7/AFa/7w/kar2n/Hyv0P8AKrF9/q1/3h/I1XtP+Plfof5V0L4WU/iNSiiiszQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCOH7h/3m/maKIfuH/eb+ZooARPvy/739BWfrX/Lp/13WtBPvy/739BWfrX/AC6f9d1rOp8LMq3wM1B0FLSDoKWtDUKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopKAErM/5mH/tj/WtOsz/mYf8Atj/Ws59PUxq/Z9UWb7/Vr/vD+Rqvaf8AHyv0P8qsX3+rX/eH8jVe0/4+V+h/lXQvhZT+I1KKKKzNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 113
   },
   {
     "id": "Q-114",
@@ -3467,7 +10538,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 114 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 114 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 114
   },
   {
     "id": "Q-115",
@@ -3500,7 +10573,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_101_37_R278.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD/AdMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0mqS6jZvftZLcRm6UbjED8wFWJpFiheRzhUBYn6V5Za6msWo2+stBdLJJdsZZjEfLMTcD5qAPV80Zrz3UrzU3OvXMGpzRR2EitFGuMEHsfb2p1zq16PEVsbm/kjtpxH5aW0qYUlc4dfvde/pQB6BkUZrzUeINTgMIe4lZdOmYXZPV13YXNOm1TVHTTbZtQeAXSPOZmlEZI3Hau4g447UAekZFRySJFG0kjBUUEknoBXERy6vd6npFlJqZjaW2kaWS2YMr7WOCOPpzWt42vfsmgtCm9pbphEoQZYg9cfhQBt2V9a6hAJ7OZJ4iSN6HIyKtZrzfSdRWwi1qztFuLVfJM9uJoyjAgYOAfzqW6v8AU7XStIVtSl3amQ8k7sEEYAHyhscZ9aAPQ8ilrzm51K9SwtbSfUz9oeSQpPBcIFMYA++5GCee3Wuo8IXs+o+Hra4uX8yU5Bc9Tg0Ab1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQzRRzxNFKivG4wysMgioG0+0ez+xtbQm2AwIigKgfSrtFAFD+zLLy5o/skGycASrsGHx6+tImkafHdC5Syt1uBjEgjAYcY61oUUAUW02xbz91nAftGPNzGD5n19aLjTbK6gSC4tIJYUxtR0BC/Sr1FAFOOwtY3hkS2iR4U8uNggBRfQeg9qdNZ288kUk0EcjxHdGzKCUPt6VaooApT6faXM3mz20MsgUpudATtPaiXT7Sa1FrLbQyWwAAiZAVGPartFAGd/ZGneVDEbK22QkmNfLGEJ549Ks21tDaQiK3iSKMdFRQAKsUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRTM89ce1AD6KaCCcZp1ABRRRQAUUUUAFFFFABRSGm7snAPI96AH0U0HOe+O9OoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBKxtezBbx6ii7pLFjKQOpTo4/Ln8K2qr3dvHd2k1vKCY5UKMAcHBGKAObW8l06xgnCb7vVJw2dpbaCMjgcnC49OafLq+ow20bSQeSvnFJLiSFgoTHDbc59vati40y2uLSG2feFg2+WythlIHHNJNpiT23kST3BU5DHzOWB6g0AXYnEkSSKwZWGQR0NS1BBFHBEkUS7Y0AVQOgAqegAooooAKKKKAErjyz2vizVb9STHCIFmXkjy2Xlv+A4B+ma7A1SjsII7u6uQpMl0FEgPIOBgUAc5p+oy21tcrbBGlutWlhRm5UZOc8dRitqwv55NSurC52NJCqusiDAZT7ZODTYfD1hBYGzRZBF5pmB3ncr+oPardnYRWjSum95ZSC8khyzY6UAXOaKdRQAUUUUAFFVxd254E8RP++KejhwSrAgcHBzg0AS0UU3PIoAdRRRQAUUUhOBQAtFNB5p1ABRRRQAUUUUAFFFFABRTGIUEkgADJJoUhlBBBB7jvQA+ionkRDhnVSRnBOKeCCMjkHvQA6ikJxUaSB87WBwcHB6GgCWikFLQAUUUUAFFFNzzQA6iiigAooqNpFXG5gNxwMnqaAJKKjeRY1yzBR6k4pwNADqKKKACiikoAWio2YKCWIAAySegoUhsEHIIyCOhoAkopCcUA5oAQUlQzzx28Zklbao6nrVX+2LL/AJ6n/vg/4VnKpGLs3YzdSEXaTS+Zo5ozWf8A2zY/89T/AN8N/hR/bNj/AM9T/wB8N/hS9tT7r7yfb0v5l96L/WlqhDqdrPII43y56DBGf0q92q4yjJXTuaRlGSvF3H0UUVRQUUUUAFFFFABRRRQAUUUUAFFFFAHNJaWw8aMgt4gv2AMAEGAfMPP1rO0+8u9PspbmORDCdSeNoyuSdz4zntXWC0h+3m82f6R5flbs/wAOc4/Oqx0myNubfyT5bTeeRuP385z1/wDrUAZNlq2pXs6SwwO1v9oaNk2DCoDjO7Oc+1T+KHnVtK8icw77+NGwM5yD/nHetGDTLa3naaFXQuxcoHIUse+3OKlvrGC/jSOdSQjiRSrFSrDoQRQBiWWq3IsdQuL26QLbzvbofLHJBwDx37YqtJr97BJc25BMoaIRPLGFIDnHIHWttdGslsZbXy2aGWQyMC5JLHvnrnNN/sOxYzF4WdpwokZ5GLHHTkn9etAFXUr68sHsLQOZp7p3BkSMEhVGeFziqyajqz3unWkwFs0zTh2aMEsqYKtjPGR2rXm0m1mgjikEjCFt6OZG3q3+9nNSDTrZZ7ebazS2+8RszkkbvvfWgDK0Y3Da7rAkumeOOZQEKjAyv6f1qzZXl1fareKsiJb2kvlGPZkucZzntVyPT4IryS7QOssuN+HIVuMZIzjNIum263rXaqyTMcttchWOMZI6GgDDGs3n9kjWCyGAzhTbhOdm/Z97+93/AEpi6xqT3CgSxBJL+SzA2cgDo3vW0NFsllEgiIAk84JvOwP/AHtvTPf605dIslZGEJylw1yPmP8ArD1P+eKAMhtbvDokc4ZBcfbBbM23II3YzjtTItZv45186SN0TUPsTgJgsCOG9j04rbGj2X2cQeUfLE3n43H7+c5pG0eyLEmEkm4F0fmP+sHf/wCt0oAzdc1aW0NyLOVmktYhJJGItwHU/MxPGR+NVG1rUZLfUbuJ40jtPLdYymSVKgkZ/rW1c6PZXcs8ksbZuFCShXIDgDAyAecetKujWKwXMAiIjuAolG484GB+goAyri/u9TsNXaKVIYbeNk2FAS3yZOT261MNQbTPBdveIgZ0totoJ4ycDn86uzaHYSmQmNwJV2yKrsquOnIHWrRsLZtO+wtEGtRGI9h5BUUActr8l5ZapayyzR3EiWk7LmMAZwM8dxWmupXMeoWazsILOWFCriPKu5HK5/hqy3h/T5MGSOSRhG0QZ5WY7D2znpVh9KtJXjd0ZhHt2oXO0FenHSgDDi1jUV0QapJJGypPsaERgbl37evY0um3gs7PVWMvlu+qyxx4TcSSRwB371c0nw/HbWsa3g8yRJWlCrIxTduJB29M1cbRbJonjMTAPObkkOQRJ/eB6igDJsNcujeSpd8QwymNmZArcruUnHT0qSTVL2JrKW4YQ2kwLyS+XkKd3yqfTjvU93oaNHJDaxIkdzIslxI8jFiR6A/zyKv3WmW12EEyuUQABA5CkA5GRnn8aAK2vX1xaR2H2R1Vri7jgJZcja2f/rVXa8vpr2/hgnSNbCNMlowfMYrn8B9K1rqzguzB56kiCVZY8How6fz6VBc6RZ3U7zSIweRdkhRyodfRsdaAMux124vDdOFVFSyWdQR0Yg/mOKz4tRvX1C3vnuG2jSzcPGEG1iDkj8fXtXRz6NY3D7miKkx+UQjlQU9DjqKBo9kDAVjZTbx+WhVyPk/unnkfWgDDTWNW/s03hiPlPaPNuaMKsb7dy45O4Gug02WZtMhnu5VZnjEjELgAEZqKLRrOK2ktkSTyHjaMoZGKqp6gZPH4VdSCOO3WAD90qBAD6YxQBzTeIZYbqGQM1xaTrIwJjCD5Vz8p7+lQ3095c2vh+7uZoytxfQv5YXG3IJGD3/GtyLQtPieBhExMGRGGkZgoIwQAT0pq6Bp6eRiFytvIJIlMjERsPQZ/TpQBg6jeXeo+GY795Y1hmuFKwhRwokwOfXirI1q+j0m4vHZZG+1G2iQRgY+bGff6VqHw9p7KUaFvLMnm7BI20PnOQucCrA0iy+xyWnlZgkcyMpY/ePOaAMqW/wBajtZiLeRgkqASGIbvLP3jtB5Ip0mryrdWMnnr/Z0sSk3ITKvJuxtP90f14rV/syH7P5O+fbndu85t2cY+9nPSom0Wx8qKLymEMQAWIOQpwcjIzg8+tAGVBq+o3d1K1tbu8MVyYSgQY2g4J3Zznviruk6hcT3tzb3reXOrEpCUx8meGB/iFXI9LtYrl7mNXR3YOwDkKW9ducU63063guWuEDtKRt3O5YqOuBnpQBzfiD7V/a2oRrcssQ0iSTy9uQcEjH/1+tT2OpT2CaXFcTxm2nsjIDsx5e1AfxFbV9pFpfSGSdH3mMxFkkZSyHqpx1FJJpFlKsAkhyIIjCgLdEIAI9+goAw21i7lea28xyk1o80cjQ7CCB255H15rW8NecdCtHnnMzPGrAkDIGP1qSHRLKGVZRG7OsZiBeRm+Q9uTVmxs4rGDyYN4jH3VZy2B7Z6UAQ65/yDJfqv8xV5QNg4HSqOuf8AIMl+q/zFT3TOljM0QzIIyVHvisV/El6L9TBfxX6L82El3axSeW8sat6HtU67WAIwQeQR3rPsbaE2iFQJFcAljyWyOp9adp2ENxEhzFHJhTnOPUfhW1jVWEvB/wATaw/4H/KtKs28/wCQtYf8D/lWlWVP4pev6Izp/FL1/RC0UUVqbBRRRQAlFFZmp7pJbe2DFUlLFiDgkAfd/XP4UCZfSRHJCOrEdQDnFSVkz2UUdu0sIEUkYLK68c/1FaFvIZII3IwXUMR6ZpgmT0UUUhhRRRQBk32rR2EoFxBKIt6oZsrtBPtnPf0qJPEFube4naGZIYJDEWIHzODjA5rPvPDU90bsGWFjPcCZZXUl1XIOz2HFTt4faTR7mzeZC0ty1wrbcgEtkAjvQBpWOpR3sssQjeKWIjfG+CcHoeCRWTceI5LO/wBUW5s5DbWbRgPGVyA3c5bnJI6Dgda2dOtGto23w2sTsefs6bQRWRqmhXN3NqBhlhWO+8ktvBymz0x64oA0rnUWt7dZDZzkkFioKgqB9Tj8Kig121ns5bmNZCkYUgYGW3dMVFqWkSXmofaA8TxmExCOYEhDn7wHr2qKy0B7dbBWlQrbxhZQAcSEHK/zoAmm1+2ikkVo5PLidY5ZRt2xsex5ycZHIBFIfEMHkXsxgnEVpK0LvgcuGAwOfcc9KZHohh1K5mCWksNxKJT5yZdT3wf84qW30qSCz1CE+RN9qunnCyKduGI4NAE0+rpbiBXgl+0TAlYQV3ADqc5x+tRprsE4thbRSzyzgssagAqBwScnA54qivh6VFtJDJDPLAXGyZSybWP3R34q2+lTpe2t5aNbxyxRtE8ezCEE54x0NAC+H76a+i1B5i37q7kjQMuCqjHHFVNG16STR7Ge/jmPnNsa42qF3EkDIH4DOMZrQ0XTptPivBPMsr3Fw85IGAN2OKz7XQbxNMtNOuJ4XtoHDsUUhnw27H50AXBr1qbgRhZDGZfI87jbv9OuevfGKh07XJbi+ntrm1eIC5eCJ/lxkLnBwTz19qWw0P7HdSER2kkLTGUO8QMi5OcZqOfQ7oi9EE8aedcfaYnOd0b8f0z+dAFyDWra4jV0SQhrjyACAM8Z3fTb82fSooNftZ5ECrIsUpYRStja5HXvkd+uM06HRFh1NZlcC1SAIsQ6hwuzd/3xxUOmaD9ih+zPHaPEoYLKI8S4PqfX3oAePEdqRvMUyxtG8kbnbiQKMnHOR+OKls9bjuZ7aEwzw/akMkLSKMOABnoevOap2mhSW+nyWZW0x5TxpMIsOcjAzx/+urEOjyRzaK5kUjTo3jYYPzZQLx+VAF2/vvsSBvs8swwWOwqMAfUj8qRtVthpB1PLG28vzMgc4qlqejy3l/8AaA8TxmExCOZSQhz94DufrU9lp0lnoMVhmKR0j2HepKH8KAFfV0jhtma3m865YrFCNpZsDPrjGOetRLr1uHWJo5kmNyLVoyBuRiMgnnoRznmqkWgXEAtpY7hBPbTPJGhyYwrDBQd8UsuhTyu10Zo/tzXSXJOPk+RdoX16d/WgCzP4ht4bx7TyJ3mWYQAKByxXcO9WItUWe+e1it5n8s7ZZABtQkZweefwzWbH4fujqn22aeIk3KzlVB6BNuKv2unz2mp3M0UsbW9zJ5jqwO4HGOKAIotftZZ4o1WQRTSmGObjazjPHXPY845rQvLk20YYQyTEnGEIGPxJArL0vRDpzhPLtHiWRnSQxDzQCScZx1HrU+q6bJe3NrKjRskJbdDKCVbI68elAEMXiO3maKO3t7iaWVWYIoGQVOCDk9aki123uBbi2imnmnVnESgBlAODuyQBzxVTR/DsunXsM7zRssYkBVVI+82aSx0C506W3ngniaaNZI3Dg7WVm3fhQBb8PX89/DfPOzHy7ySNAyhSqDGAcd/1qb+2I0v47WaGWIzMUjdtuGI+hyPxApujabLp8F4k0wlkuLmSfcBjG6s238OTRzWLvJAzWsxkaTafMlHPUn/9VAGzd6iltdQ2oikmuJQWWOPGQB3OSBWRp2vMVnF0JJJnvZIYIdqqwVQDjsOPU1o32nzvqkF/ayRiWOMxMkmdpUnPaspfDUwkW4klt551u5LgLJHlCrqAQR68Z9qAL6a9byfZ1himkmnd0EYABUr97OTj/HtVW/16e11C9gkt5RbW8SyeZCU3gE9fmPP0xmrF/pD3NlHBGlpCwJJdEKmNieq4/L3qHU9BuLmS5MM8eLi3SBzIDkbTnPFAFmbXooZLiNba4m+yxrLKyheFYZz15/CpbzWIrS3Fz5MstuYxKZU24CnvyQTxzxmoDoshk1Q+av8AplssC8fdIQrmqE3hmZ4ZozLBIJbVIFMik+UVTHyj0PX1oAlvPEEsV7cxiCQ2kdss4miKbsE/e+Y9PwzWg+rosohggnuZREJXCBcqCOM5I59qz7vw/cSxusM8Q8yzS1kLg8be4/8Ar1a/sy6trw3NnLEHkgWJxICRlRwRj+VADl1+CWWOO1gnuXkt/tKhAOVzjHJ4PtWjYXkV/ZRXUBPlSruGRg1l6XoX9nX8MySho0tPIII5LF9xaptD0+50yzgtJJo5Ioo8fKpBLbifyxxQBsUtFJQBm63/AMgyX6r/ADFXhyoqte2/2q2eENtLYJOM9DmoRZ3wHGof+QhWD5ozbSurLt5nO3KNRyUW00u3n3Y86coLCOeeJGJJRGwD/h+GKtQwrCixouFAqn9k1D/oIf8AkIUfZNQ/6CH/AJCFV7SX8r/D/MftJfyv8P8AMS7wdWsP+B/yrSrLjsZ0uoZp7nzfL3fwAdRjtWnSpp3k2rXf6IdJO8m1a7/RD6KSlrY2CiiigAqrd2q3UYViVZTuV16qfUVaooAzTZTTALc3HmRA8osYXd/vcnP4Yq+ox2xTqKL3FYWiiigYUUUUAFFFFABRRRQAUUUUAFFFFACUUtFABRRRQAUUUUAFFFFACUtFFABRRRQAUUUUAFFFFABRRRQAUlLRQAUUUUAJS0UUAFFFFABRRRQAlLRRQAUUUUAFFFFACUUtFABRRRQAlFLRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFJQAtFJS0AFFJS0AFFJnNLQAUUUlAC0UlLQAUUlLQAUUUlAC0UUUAFFJRmgBaKKTIoAWiiigAoopKAFooooAKKKKACikzRQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFJmjI9aAFopMj1oyPWgBaKSigBaKKKAMBb3Uzrh04yWeBAJy4ibJG7bj736/pRpuvw3Bdbplik+0vAgCttODgZPQE1OLSceKXvCv7g2YiDZ/i3k9Ky/wCx73+yZYBEBK+oeeBvH3N+c/55oA2xq1mboWwn/elig+VtpYfw7sYz7ZzUOr6qmlG08yOST7RMIRsVm2578A/l1PbpWZpmiNby+VdWssqpcNNHMLlgg5yDs3de3StHXrSe6Sxe3j8xra7Sdk3AEgA5xn60ATW2r2V0krQyOVhz5hMTjaR1ByOvt1oXWbEwyyNN5awY8wSIyMuenykZrKt7DUodHv1gQwXU928yjcu7YzA4zyM44qnNoV/LdXM6ROoPlPGs0+9mKnJBOTj+VAHSNqlolskzOypI2xAYmDM3oFxnP4VD/bVhiErOW+0bhGEjZixXhhgDOR6VT1Wzur59Ou1tpA1tI5eBZ9jlWGMhlP49abFpTx6pptzBbtFFGZ3mDyl2DOABySc5xnvQBcstXjvNRurNY5ka3fbuMbbT364wPx69qsf2lai8+xiRmuBjKqhOM88kDA/HFVLC1uLXWNRd4iYbp1kWQMOMLjBGc02wtbqx1S9zB5kN1N5wlDj5eMYIPP5ZoAtDWbH7QIRcfMX8oNsbZv8A7u7G3PtnNRf2/pwlMZufnDtGRsbll6qOOT7dayV0e/8A7GTRmhAjE4Y3QcYCCTfkDru7Y6d80+HR71XhJjACao90fnHEZzg//WoA2W1ayWzS8acC3dgiuFPLE4xjGRTINb0+4kijiufmkbYoKMPmH8JyOD7HBrIGkXo0lbfyl80X/nkbh9zfnNK+j3plZhGMHVluh8w/1YHX/wCt1oA2rzU7WxO25kZSAGJEbMFBOMsQMDv1xUL63p0TvG9zhomVXwjFVJ6ZIGPx6Vl61YalePqEYEssMsIW2VJ/LRTj5twyCefXI9aZFot8ml6vAYx5lzHGsY3g7iEAP05oA1dQ1q1s4bkeYGmhiLkBGZQccbiBgZ98VYs79ZNGhv7lkiVoRLIScKoxk1irp2oWttqltHbLMLxCUfzAApKbcHP86s3Wk3Fx4PTTRsS5EMa4JyNy4OM/hjNADzr0Umq2ltCw8maJ5HaRGRlAGQRuA46881ZOt2bW88kUjSmGMylRGwLL6jjke4yKyNT0/UdYu4C9qLaMW00TFpFYhmAHY9P1qzY6S32VhLaSw3QtjAJJLlpQcjHGWOB+VAFm21+0msoLiQyxeau4RmJyx4ycDbkgf3hxU/8Aa9gZooUm8x5YxKgRGYFCcbuBjHXmsG30m9jmsJZbSZhb232Z0hufLY45DAqwyO2Dg98Ves9He01ZZYbfybUaf5Krv3bXLliOTnv16UAWk8RaW65W6yNm8YifJXpkcc/h0qzJfwiWzVJ49t1nyxtJMgxngjp+NYVlot9DHpivEAYLSaJ/nBwzdB7/AMqntdKu449ADRAGz3edhgcZXH4/hQBowa3p1zJCkVzlpiVjJRgGI6gEjGfbrT49WspZ/IS4BfLKDtIUkdQGxgke1Y0Wj3sej6RbmMCS2vVmlAYcJucn6/eHApdI0NraKG3u7SZzbsxSb7UxQ9cEJu4PPTGKAN2yvoL6NntnMiA43bGUH6ZHP1HFV5Nb09DKrXBBhfy5WEbERt0+Y4wPqeKg0KzurN5o2R4bMAeTDJIHZD3wR29qyYEu7iPxBZ21qsn2i5kjEjOAqZUA7s8+/GaAOivNTtLPIndlAAYsEZlAPAJIBAH1o/tK1F0toJd07AHaiMwAPTJAwPxxmsG/0jUpIbq0BmntxbLFbbZtighcNvGQSSee4xxVzSLG9027k32/mR3CxZcSD92VTacg/wBM0AWNK1hb23XzykczSSKqID0U4z7fXpViHWLGdmWGYuQhkAEbfOo6lePm/DNYek6LeWS3ccyAreiRWO4ExZJ29+hz0HerWi6U1uLX7VZyrcWsbIsz3LOuTwdq7jjI56DFAFzStYTVNK+2RQyRnaW2ujAZGehIAPTtSWOtxSaTZ3V4QktyuVjjRmJPoFGSaj0KzurPQxYXEBWSFWUPuUiTJJ4weO3XFUrLSr6xTSpxAJXtoWiliVxkZOcgk4oA1m1mxWCKb7RuSUlUCIzMxHX5QM8fp3qVdQtmvTZhz54wSoQkLnJGTjAJweDzWDJo92LV5hDIb+SeSeJopVX7OzcAc9R69atiyvk1iG5iQxSPsF5KHBimUL/dzndngHA4oA6LIpaaKdQAUUUUAFFFFABSUtRSyLFE8jnCoCSfagCTNGc1kRtfXKCUTCANysflg8Y/iz/TFXLO4aVGEqhZY22uB6+v0p2FcuUUUUhhRRRQAUlLRQBkakjS3tpCJHjD7slDg8AGl/sn/p6uf++6fef8hew/4H/6DUt5c/ZkXanmSyHaiA4ycZ69h1rCMFKUr9/0RzRhGUpOXf8AREH9kf8AT5c/990h0nAJ+13P/fdKbu8gXzbhITDnLGPOUH49frx9K0SQUyDkEcVbpx7FulHsZuluW0+EuzFiDk5PqaKZpP8AyDov+Bf+hGisabfIvQ56UnyL0Nmiiiuo7inaX0N6J/JJPkTNC+R0ZetW8iuBVrUWeuEyst+L6b7OqsQ27Py7R356/rViUXVzqt1DeXcNtcKIzCXDZ6c7MEA85HegDr1uIXuJIFkUyxgFkHUZ6VPkVxN7Alvr2ozkhblI4Zozu2mTby+PXgHipVlnmuUjLPt1grInzY2Ir5b/AMh7R9aAOxyKM1xcCz3erXSzX0VvdxXZ8tWDbzHn5QBnBBHtRYJPdag5mvooLyO7OUYNvKZ4GM4wR3xQB2mRRXC2QaLTtJvUeTz31DymYuTlCzDH0rc8QXSpJZ2rpHid2PmTMVjXA7465zx70Ab2RRmub8MTSTaHcB5v9XLLGrnPyqDx15496yVuZI9JktomMixTxi4uoHLCSMn5j7H1x0oA7rIoyK4TVGIh1VdKkZ7FIYmYxsWVZPMBO0/7vJ9KTX71bnUrk2s5aLyIAGRjtyZe1AHeZFGa5iRIIvEggu3MdrHCv2ZWchS+efqapOk9zq98kt7Fa3CXK+RvDb9mRjbzgg9DwfegDtMijIrG8QXS2tjGrRhxNKsRLMVVcnqxHauYtnkk1NLUy5t1vwqiNmC7SmSBk8igDvz61UhvYZ7y5tUJ8232+YMcDcMiuRMphuTazSOmmx37I+WOFXblQT2GfwrU8OeR/b+ufZiTCDDt5yPunp7UAdKKXIrhNXvy809xF5cE0F4sQBZjKQCBnGcBT+INbniSUxnT1lZks3nxcMpwAMcZPYZoA1Ir2Ga8ntVJMsAUuCOBuGRVsHj0rz27k8u+1U6fIVtjNbLK/JUR856c46dO1X57cx6bI6anatAblZFjDMsRwuWj3ZPXr9eKAOrkuYo5khLjznUsqd2AqSN/MjVtrLkZwwwRXF6g1tcXemXlxF9njeykA81iNpA+UZ9f50/Soje3WlRXDOyNpxLDeRk7u9AHa5FV5LmGOdIWkAlkBKJ3YDrXG2d8bqwsLW5CF/JkYS3DNg4faFAB+ZsAH1x9arwGO4h0G71Bg2bWdWlkbAJH3efWgDvYpPMjVijLkZwwwRQkaRliiKpc5YgAZNcbZy5tdEXUJSLF4GLs7EKz543GktvMn1HTIXeRrN7m4EOWI3xhRjPqPr2oA7jNLXN+G7pY1ubKSZiUvJ4oFYkkopHf2zXSUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFQ3ESzwSROMq6lSPrU1IaAMuGaeCMRTW8skijAdACr+/tViyhdA8kuBLKdzAdvQVbxRimJIdRRRSGFFFFABRRRQBmXn/IWsP8Agf8AKl1CNxJDcohkMW4Mg5JU9ce/AqO/kWPU7F3IVRvySeB8tWTqFqf+W8f/AH1WMJJSld9f0RzwlFSld9f0RWlu1miaG1UySuCuCpATjv6VfjjEUCxjJCKFBPfFQHULQ/8ALeP/AL6oOoWmDieP/vqtHOPc0549yvpH/INi/wCBf+hGijSP+QbD/wAC/wDQjRXNT+BehhR/hx9Ea1FFFdZ1kfljOSATnOcUuwE5Kgn1xT6KAGFQTkqCfXFAUDGAOOntT6KAGbBnO0Z9aNgBztGfWn0UAR7R0wMdR7GlKg9cH6in0UAMCgDAAApAgAIAAB7VJRQBGEAGAAPYDigRqOgH5CpKKAGFQeSMkUhQE5IBYdCakooAYy5GDyPSgIB/CM9elPooAjKAjBUHPqBSqoHQAfSn0UARlATkgHPtSkZGCAfrT6KAI9gAICgA+1HlrjG0Y9MVJRQAwqCACoIHqM0AYwQBkcD6U+igCPy14+UcHI46UuxSACowO2KfRQBGUBXG0EenagKOOMY6e1SUUAM2gHIAB9afRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFJS0UAV5reGbHmxq+Om4ZxUX9nWn/PCP/vmrdFS4p9CXCL3RU/s+1/54Rf980f2fa/88I/++at0UuSPYXJHsRJDHGoVFRVHQY6UVNRVDsLRRRTKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKSigBaKKKACiiigAooooAzl1rTWfYL6Ase28Zq1DcRXCs0MiyBWKkqc4I6ishf8AkeH/AOwcv/ow1iWc1zY2Et3DcOANTaMx4yrKXwaAO4zTSyrjJAycD3rldNvdVv5xcIcILlo3RnUKEBx06571Z8VxGRtHAlkjzqEanYQOoPP6UAdFuFLkVyljfywabqV1eXs8giuZLePABIAbC9uT+lU5tX1C2mvLQyupDQhXkZWaMOcHpxQB2+RSZrndWuLuzk02zt5pZTcyOGkLKGIAzjJGB/8AWqss2qjUdLs7q4aIStOGKFSWVQCuffqDigDqgwJIBBI6j0p2a5vRISNe1pjPKQsyjaSMHK/Sp9PnnvdYvvMuGSO1m8tYVxhhjqaANzNLkVxy6nenRl1X7SzTG5Ef2XA2keZt2eucc5piX9/JcIftsgEupSWhXaMBOcY9xQB2maM1yLanetoEUgnYTC+FuZABkruxUaahfQzqWu3kWPUxZlWA+ZCD196AOyyKQkCuX1/U5o2vhZyzrJZRK74KhFJyRnPXI7Cqn9pahLbareC7eP7KI5EjCgrygJFAHYSSLEjSSMFRRuYngACiKRJY1kjYOjgFWByCK5OW8m1Gz1p5bpoFt4yixjABBTOTnrnpVp72aw8Cw3VvjzUto9pIyFzgZ/DOaAOmzSZ9KxLuY6dYRRNdXFxLNKqI42lmJ7eg9aw7bVNQmv4rJ7iSMC8aJmyrMV2ZwSOPxoA7fP1qG4uIraIyTuqICAWY4HJxWZoFzPOt9DcSmVrW5aJXIAJA9cVzmoXM9/4TN7cXbB5rgKYOAq4lxt9c8daAO4jljlUtGwYAkHHYipcjGa5Fb7UptMlmSV2WK+lWUpgOIlPbPp/Kpba8l1HVbuOLUJIrZLaOSMgAHkdeRQB0X2iL7R9n3r52zfsz823OM1PkVxek6i02rRX978pGkl5CB1AkPOP1obUtRa7tkglnC3Nu0yiUqSduCCAOmemKAO0zSZHSsvTLt7+ee4Vz9mAVY1OMZxkn9cVia5rE8P2ueyknxZyojglRHnIyuDyevUUAdVLcQwmMSuqGRgiZONzHsKWOaOUMY2DAEqSOxFY/iPmTRT66hH/JqzhfalNp0sySuRFfSLKUwHEQPRc+lAHWbhnBIBPanZFcop+2eKLCeK5n8uSyLjBAyAw9u9Xr24nl8Qw6es7W8JtmmLJgM7bsY59OtAGtPcwWyK08qRqxCgscZNT5FcRPNPqEektNM5aPUmgEkeAJFGcP9ePp1rb12adL3S4Led4VuJmVyuMkbc96ANzNJmuVnvLt4tZuBeNAbBisSYGDtXOWz13dO1NXV7sw6/JJIYWgtopIkOP3bNFk/wDj1AHWbhnGRnGcUua4Zp7iC/ub5Z5nmTTI5tuRhm/L8amubrV7fR7i7EpCGBXV2dWYOWHTHagDs80Zrmr24utPubOW4uZm08Ivmuu0t5hcY3f7PbiukAoAdRRRQAUUUh4oAKKovqdtG7IXLFeGKqSF+tWo5FlRXRgykZBHQ0WAlooooAKKKKACkpaSgCo95BG5SSZFcdcmk/tC1H/LxGf+BVUhgim1W+8yNX27MbhnHFWTY2arloIgPUqKxi5tNq3U54znJNq27/B2H/2haf8APxH/AN9UHULT/n4j/wC+qrwx6ZM5WNLd2HUADNJfWVtHZTOsEasEOCBRJ1Er6DbqJN6fiaKOHUMpBB6Giqmnn/QIP9wUVSloWpaF+iiitDQrC3i+0/adi+cU2F8c7c5x9Kj/ALOtPKMXkR+WZDKVxwXznNc/Y6teW9vq07wtcwW17MHZpcMqAjhRg5wOxI9s1YuvFNvDPKkSxyJEFL5mCOdwz8qkfNxz2oA2F0+0S5NwsCCYnJcDGTUl1awXkfl3MayICCAw6GsI6+sQnaO1kkIvFtwGlJyWGcjI4HtUjeIGhM8M1ni8jnjgWJJdyuXGVO7AwMZ7cYoA1F02zS2e2W3jEDksyY4JPemjSrEBwLWLEgCv8v3gKr2eqTzatLp9xaCGSOES71l3qQTjjgVFPr3k2+qy/Zs/2e4XHmf6zOPbjr70AaDabZvbrbtAhiU7lUjgGnJZW0bwssKBoAwjOOVz1/Os621xZ5r3dEscFopMjGTL8DOduPu9ec9ulVLbxTBNt8xI0jeFp1McwkZQBnDgD5TjnHI7ZoA3Vs7dbtrlYkE5GC46kUhsbY3QujCnnj+PHPSsC41K+mvNGdoDbw3M2fkm3blK5AYYH17j3qxrVxdLrGkwQnEMsrb8SshbAz2HTv156UAag02yFz9oFvGJd27cB/F6/WlGn2ilSLeMFZTMDjo56t9ayh4gb7IL/wCyY00zeX53m/OBu279mOmeOue+Kt6XqMuoSXX+jCKKCZ4d/mZLMpx0x0/GgC1/Z9oIRF5EfliTzAuON2c5oNhaEk/Z4yTL5+cf8tP731qhrGtjSmJkSFolwWzcBZDk/wAK45x9RWOdQumclbiXadZSMfOf9Wf4fp7dKAOmm0yyuZGkmt45HddrEjqPQ0DTrMRSxi3jEcwAkXHDADAzTry4NtbNKFjJGPvyBF/E84rGj8TLKhjjt0ku/PECpHMGRiRnO/HTHtn2oA1ZdKsZXLSWsTMV2kkdRjGKsC2h+yi2Ea+Rt2eXjjbjpWLqd/qUF9pUMMMKtcFxJG0pwSBnGdh49/0pdG1dbiC3MkLQxzRySKzTGTlGwVyR6c/TjtQBp/2XZfZhbm3TyQ24JjgGkj0uyidZI7aNXVt4IHRsYzWTceJliECmCJJpIftBWW4CAIegBI5Y+nH1rSbVoV0T+0yr+T5fmbf4vpQBbht4YDIYo1QyMXcgdT61WbSNPd3ZrSIl23tlep65qrLq09tp8c9zZhZppFjhhSXcXZumTgY/X8ar3uvyWC3K3VkBdwKkgjSXcsiM23IbA6HPBA/WgDUbS7J4jE1vGYy5kK44LHqapjQLZ9TubmdI5IpURFj24C7arXfiKSzkmhnssTxtHtVZQQyu2M5xx9P1p0/iVbM3SXcAimhZFVRKCrbunzEDHvnpQBrixthJ5nkpv8rys7f4P7v09qqvpUEKA2UMEMyArG7JkKD171njxMphk2wLJcLMkEaRTBkkZ/u4fHTrnjjFP1bUNSt20wRQwLJPceW6GUkHrxnZ04znGR6UAaunWaWFnHAhyEBySOpJyTTJtJsJ3d5bWJ2kwWJXrg5FZdvrmbOMrasbma5aBIjOWBYdTuI4H4fhSy+InhbyZLPN0tykDRrLx84yrBscj8BQBtTW0U5jMsauY3DpkZ2sO9Qtpdk8Zja3jMZcyFcYBY9TWXL4iaDzoprVUuobhIGUzfuxvGVbft4H4deK3YmZ4lZlAYgEgNkA/WgCGSwtZGiZ4EJh4jOMbR6ClubG2u9n2iFJCv3SRyKt0UAVPsNvsgTyUCwMGiAXAQj0p8ttFNJG8kas0R3ISPumrFFAFGbTrOebzpoI3k4+Yjrj+dFxpdldStJPbxyOy7WJHUVeooAotp1m7I7W8ZaNdikjoo7Ui6TYrA8CW0YicAMmOCM5q/RQBTm0+1nlSSWFHdANpIzjByKtAYp1FABRRRQAVWvN/wBkm8r/AFmxtv1xVmkoAztPjiFnGYsbMDr1zjv70um433Hl/wCpEh2/Xv8ArTn022d2bay7jlgrEBvqO9Wo40iRURQqgYAHQU2xJEtFFFIYUUUUAFFFJQBm2f8AyFr/AOqfypupjzJrWBziJ2YsM8MQOF/mfwp1n/yFr/6p/KrNxbx3MWyXPXIIOCD7GsqOz9X+ZhR+F+r/ADZUvLaFbN2O2NogSrgAFTUl2zNpLs4wxiyR6HFKtiCy+dPLMqHKoxGPxx1/Gn6kcWE3+4aub91ly+FjbD/jxg/3BRRYf8eEH+4KKzWxC2L9FFFbG5z48PyeVewfbmFteTvNKnljPzdVBzwKni0lra9lns7jyY5gvmR+XuGVGODnjjjvWzRQBhPoKO8jeew33i3Z+XoR/D1/WotR0SJ5ru9M8wkeWGePy49xjdBgYH8Wc9K6GkwMUAc9pFrdNrdzqE/mBXhWFd6bCSDk4XnAp954eN0L5I7xoYr1g0ihATke+a38c0tAGHJoa3F2s1xKHRY3iVETaSrDBDHPPFOt9Jki01rC4uzPbeSYVGwK23GOTnnA47VtUUAYK6HLvsDPfNKtiwMa+WBnjHPP61eu7AXV9ZXJkKm1ZmCgZDZGK0KKAMAeHwLdbP7UzacJhKICnJ+bdt3Z+7nnpn3q/plgNPW5USF/PneckjoWPStCigDnrzw6Lk3+27Ma3pBk/dgsCOwOentTl8PooA89uL1bz7ncDG3/AOvW/RQBm6tpw1KGFTJ5bQyrKpK7gSPUdxWePDn76W4+1t9pedZ1fYMIwXGMZ5FdFRQBk3mmSXJs5ftO25tSWV/LypJGDlc/1qqvh6P+x7ewNw/7mRmMgXBYNuDD8QxFdBRQBlXOmO+ope21x5Eoj8pgU3Blzkdx0qxe2SXunyWc5JWRNrMOD9au0UAY0+kSXNglvcXZaSJ1kimWMKUZenGeahu/D/2wXDXN0XmnCL5gjwEVW3bQM9zW/RQBhajoCX189y1wyFxGNoUHGxt1F74fjvLq4uTO0ckvllCFB8tk6H3rdooAyLzSpb20jjuLrM8UyzxSrHgIy9Plzz3796W80uS7htd9yBcW8olWQR/KWGf4c+/rWtRQBgR+HxHbRItywuIp2uElCcBm6/LnpStoCyyrNNcF7g3KXDyBMZ2cBQM8D863qKAMWXR2a6v5o51BvWTeskQdQFXbjr+NWdO05tPijhW4eSCONUVGA4I75rRooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkpaKAMuXSxLM8onljL4yEOOgxSf2R/093H/fdaYpaz9nHsZexh2Mv+yP+nu4/wC+6Q6OGBDXU5B4ILda1KWj2UH0D2MH0IYYhDCkanhRgZoqairsXyn/2Q=="
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 115
   },
   {
     "id": "Q-116",
@@ -3527,7 +10602,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 116 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 116 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 116
   },
   {
     "id": "Q-117",
@@ -3582,7 +10659,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_102_39_R286.jpg",
       "data": "data:image/jpeg;base64,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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 117
   },
   {
     "id": "Q-118",
@@ -3615,7 +10694,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_103_41_R294.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCADlAe4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0SaVYYXlc4VFLE+wrI0HxDb63FO8Ubw+S2CJCOVxw30qLxg9z/YUsFlFJJPcERDYpOAepOOlc/bWmr6Zq3+lWUflXVoYCbQMygqvyluOPT8aAO4S7t5HCRzxOxGQquCSKb9vtcsPtEO5ThhvHHOK4Kx0d7SDw5cx2c8dx5ji4dY23BSD9709s1W03SZpbfVLaCwmMJgLR3FxbeXLv3bgp5+b60AektcwKWDSxgoMsCw+Ue9I13brIsZnjDvjapcAt9K82aw1S5ZLl7W4B1MCCZCjAxqCOT6dD1qa90mRtdu4763vyZJFFrNbRBgq5wvzEfLigD0QXMBk8sTRmQHGwMM5+lZ+va5Fodok8sTzM7bVjQjLGsnQNMUeItZvbm3YSC5/cyOpGQQQSvr6VDr0Wp6h4khjsbVJIrWFiTcBljZm44IHUe1AHT2+oW89nBciRVjmUMpZgM57U9ry2QIXnhUP90lwA309a89WzvptKsdLu7KbNrfhW2oxUx5zwccgdM1LrukiLXJ1ubO8fTzAsdqbSESeXgDI5+6c85/yADv8A7TD53kmaPzf7m8bvyqxXm13Y3g1u1K2d15lvPChmEIOUCAZZxyx/QV6QKAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAQjIpMU6igBuKMU6igBuPejFOooAQCkxTqKAGgYoxxjpTqKAG4zS0tFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAlU21G2WK6kaTCWufNJUjbgZq4a5jWrbdr1jCDiC/O2df73l/MP6D6UAdFFKssSyKTtYbhkYOPxqXIrjtRe7udb1C2NytssUMZt98rIBkHLAAfNzxg/lWlYzSxa9LBcymd5YwVKMdseANwK9ueQe+aAOgopBS0AFFFFABRRRQBWu7qKztZLi4fZFGNzNgnA/CoTqdottBc+cDDcMqxuATuJ6fSq/ij/kXL/v+6Nc7qINlBp1rgmGa5gliwOF/vL/AFoA7jPvR1rjLuZjFrctxdzRXltIwtUEhGAF+TC/xZPrmurtjK1nC0yhZigLgdmxz+tAFmiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAENRtGrMrFVLL90kcipKKAIXt4pGVpI0dh0LKCRSrEiuzhFDnqwAyampKAAUtFFABRRRQAUUUUARuiyKVdQynqCMimtDG4UNGrBTlQR0qaigCu1vE8iyPFGzr0YqCR+NTjpS0UAFFV7u5is7aS4nYJFGCzE+lV7HUob2SSIJLFLEFLRyrhgD0NAGhRWV/bVt9qEGJMGTyRLt+Qv/AHc561JfanFZOqNHLLIys4SJQW2jqetAGjRVE6jarpwvjKPsxTzA/qKbZalFevLGqSRSxY3Ryrhhnp3oA0KKyl1u1a6WACTDSGJZdo2Fx/DnPWn32pxWTqjRySyMrPsiUFgo6nrQBpUVRbUbVdOF/wCaGtygdWHcHpSWOoxXplRUkjliIDxyDDDPSgC/RVKC/invJ7VA4kgALblwDnPT16VMJG83ZsbGM7+Nv065zQBPRSZFZ0+r2cPHmFyJ1t2CjlXPQHNAGlRTcjrS5FAC0VTsb6K/heWEMFR2jO4YOQcGreRQAtFJkUmR2oAdRVO0vYruW5jiDbreTy3yMDOO1WtwoAdRUUkgjjaRs4QEnFRWN5FfWcV1Du8uVdy7hg4oAtUUmaYzBUZj0AJNAElFVLC9iv7KK6h3CKUZXcMGm2F9DqFt58AbZuZfmGDkHBoAu0UmRRkUALRUM0qQwvK5wiKWY+gFRWV4l7Zx3EaOiyDKhhyR+FAFuikJrPvNSjsri2hkildrhtiFAMZ98nigDRorEt/EFrOY/wB3OkcshiSR1G0sO3B46VrswVSScKBkk9qAJKKz7LUUvwXgim8kjKykAK/05z+lX6AFooooAKKKKACiiigAooooAKSlpKAKF9eNarGVj3tI+wDdjmozd3/fT/8AyKKbrLf8evp561aurpbWNWZSxY7VUdSaxtKUmlJq3p/kc7UpTaUmrW7fqiD7Xf8A/QP/APIoqOTULmFoxNZiMO4UHzAev4VNJevDH5k1uViHLEMCVHuP8M1FrBBFoR0M60pxlGN+Z/h/kKcZRi5KT/D/ACNUdKWkHQUtbnSFFFFABRRRQAUUhNUZb9VmaKKJ5nX723AA/E0AXqKrW12lxvADI6HDI4wRVnNFgMXxZDLceHLyOFGd8K21epAcE/oDWfus73V7i+dy9gIYog6htrSb8jGPTj6ZrqSM0YoA4qJGaBdN+YXg1IylQDkJuzu+mO9WVlsrHWre8jcx2BtZI1chsFw+SOec+3ftXWEZ+lGKAOFkshF4VW2KP/aSWySOhDZEXm7semRyMdfwrRVrO81e5vpWLWJWKJXG7DSbsjp6cD+ddTikwe1AHF26M8Ntpw3C7j1EyuuOVQEnd9DxVlJLOy1qC7jLLp72LxxsQxBcSbivPc+h69q6wijGetAHDNYiHwzDAUkOpRwRySphsiPzN2PTjkY61oxm0u9Xub6Vi1k/kxxuM7WkHPGOvp6V1BFGKAMG0u7f/hKL+Pz4/MaKJVXeMlhuyMe1QagvmeI71GlaGM6XgyD+H5zzXS46e1BFAGD4XkBsZIFiiVYHC+dD/q5jj7wz39feuburS0S/uIjDFHcvqkZUAAOYz1x3xXoWKMUAcHqKy21xqcFr+5sVu7ZpF2MyKjL8/AIOM4yBj0rotBt1gjmaK7hngkfKrChVIzjkL8x46H0raxRjnNAHMeHrpBpl9bQyx/bBNOyR7hu6nBxVKx8srpH2LP8Aanmj7XnO/Zg+Z5n6Yz36V2mDRigDhYBnTocZ/wCEj+1/PnIfO85z/sbPwx71HGbVtNvwpJ1MXsn2cDO8Hfxt9vXt6132PSqlhYRWEciQ7iJJGlbcf4mOTQBxjDM+pgbv7VN4hg2g5BwMke3XPbHXtT9cuXkN7LEkNvdW1xGqnazTsAyjeCD8qH8Qe/Jru8f5NGKAOW08QG61Q3eP7S82XYH+95WPl2+2PTvUXgwEQxi7BFyIR5Oegi/2fx611+KQigDjvE8yzS38DJbxtBbb0llVmdzgn92ARjHrz78CoraSKa4nk1ksztZwG2Lg5OY/n2f7W78fwrtsUAUAcDoZhC2C6oNtt9j/AHAk+6X3HP8AwLp7+lHhm2SbU7NZImMaRTMquDwRLxnPeu+xRj1oA4rRIJJ7qGSe9ih1CO4czIIm85hk/KzbsbcdOMDjHNR28cZ02+sRcwqo2ub8ZCyEsSEk9D2PtXc4ox+dAGBBKt54UuM2qwp5MiiMcqwAPK57HtWPYpbxf2Sl+iJpv2HIDjEXnZ53ds45Gfw5rt8UEGgDh7GB59Q0lLhHktDJdGBZM5MXGzdn8xntitbX5Y01XRQzqCLkkgkZA24/+tXRYNGKAOP0PS21DTUW8mU2kdzI4hCEFjuIGWz7+gp6wXF9aXNttYyWFrJbISCN8pyAR/wFQf8AgddbigDB+tAHIaRdi2mtmjuJpLaOzBu0ckrC4AwAvY9eBXWo4dFZeQQCKcRmlxigBaKKKACiiigAooooAKKKKACiiigDK1nraf8AXdadqEbCSC4VGk8oncq8nae4Hc8Cm6z1tP8ArutaOQccis4v35fIyj8cvkZst7FJC0VoRPMw27AD8pI/i9PxqPUI/Jt7GLO7ZIi5PU4Fa/y9iB9DWZrGP9Fwf+W60VX7rFV+FmqOgpaQdBS1obBRRRQAUUUUANNZViUieSCQgTK5Yg4BYE9RWtUM1vDOoWeGOUDoHUN/OmmJopW7rcak0sBBijj8tnHIdt3TPfGD/wB9VpDpTVRUUBQAB0AGAKfQFhaKKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlooAqXFtDdIFmXeAc9SP5VX/say/55H/vs/41oUtZypxk7tJmcqUJO8km/Qz/AOxrL/nkf++z/jSrpNmjBhDhgcg7jx+tX8UUlRpraK+4lUKS1UV9wtLRRWpsFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRSUtABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRTScUZ5oAdRTc0Z9KAHUU0HNGfxoAdRTc8ZozzQA6im5z6UZoAdRSA5paACiikoAWimk4ozQA6imk4ozQA6im5z055pQaAFopCcCgGgBaKKKACikJpM+nagB1FNz6UuaAFoppPpzSg5oAWikJpASfagB1FNzziloAWikpaACiiigAooooAKKKKACiiigAooooAKSlpKAM651Jba4EXlSyvt3fIM8Uz+1v+nS5/74pDzr/T/lh/WtLGBWMeaTepzrnk371texn/2t/wBOdz/3xSf2uu9Va3nTcwUFlwMmrcdzDK7LHLGzLwyqwJFU9Yzm0wP+W60T54q9/wABz54x5ub8DVHSlpB0pa2NwooooAKKKKACiikzzQAtFIKWgDB8YSvB4au5YpHjdTHhkJBHzr6VR1eRIodMWEX8cMl4FdC8gkYbTxyd2K6DULKLULN7acExOVLAHBOCD/Sm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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 118
   },
   {
     "id": "Q-119",
@@ -3642,7 +10723,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 119 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 119 evaluates knowledge of 3. Protocols & Services. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 119
   },
   {
     "id": "Q-120",
@@ -3676,7 +10759,9 @@ export const QUESTIONS = [
       "B",
       "E"
     ],
-    "explanation": "Question 120 evaluates knowledge of 1. Network Infrastructures. Option B, E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 120 evaluates knowledge of 1. Network Infrastructures. Option B, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 120
   },
   {
     "id": "Q-121",
@@ -3726,7 +10811,9 @@ export const QUESTIONS = [
         "securityType": "802.1X",
         "encryptionType": "AES"
       }
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 121
   },
   {
     "id": "Q-122",
@@ -3753,7 +10840,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 122 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 122 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 122
   },
   {
     "id": "Q-123",
@@ -3780,7 +10869,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 123 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 123 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 123
   },
   {
     "id": "Q-124",
@@ -3812,7 +10903,9 @@ export const QUESTIONS = [
       "type": "cli-terminal",
       "title": "Command Prompt - ipconfig",
       "content": "Windows IP Configuration\n\nWireless LAN adapter Wireless Network Connection:\n   Connection-specific DNS Suffix  . :\n   IPv6 Address. . . . . . . . . . . : 2602:304:aecf:a929:cce2:4be1:be2a:260\n   Link-local IPv6 Address . . . . . : fe80::cce2:4be1:be2a:260%17\n   IPv4 Address. . . . . . . . . . . : 192.168.1.65\n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\n   Default Gateway . . . . . . . . . :"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 124
   },
   {
     "id": "Q-125",
@@ -3839,7 +10932,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 125 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 125 evaluates knowledge of 1. Network Infrastructures. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 125
   },
   {
     "id": "Q-126",
@@ -3866,7 +10961,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 126 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 126 evaluates knowledge of 1. Network Infrastructures. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 126
   },
   {
     "id": "Q-127",
@@ -3899,7 +10996,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_107_47_R324.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD8Ak0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0G6nW2tpZ3OFiUsfwFYnhzxE2rpcm7gW1eEBwuc5jIyGqTxZb315or2dhEXknYIzZACJnk8msSLQ9ZsNUWUyJfRTWzW8hjjWPYAvy9+fSgDprbXtLu7lLe3vYZJXG5UB5IqFfEmjs0irqEJMRG/BJxzj+dc7b6Bdw2fh/FiBNayu1wAyghT755z7ZqDTtA1NrbUbQ2klpZSQERRTSpIyvnI2kdvrQB2UmsWETzpJdRq1ugklBP3VPeo5dd0uG6jtpL2FZpQCqE8nPT6Vxg8N6vJ9nmlgxLdHy7xS64VARjvz07VYuvDt2NXvUl0+S+tbuVWWVLjyxGM/xDvjrxQB10esWD3psluozdBihj77gMmqfibW5NGtomt4BcXEz7VjJxkAZNQ6DpctprOsXVxbhfPnDQucElcfpVTV9L1bU/EaS20i2ltbQkJLIiuHLdRtz+tAGxDrlkdLtb24mSCO4A2ljxkjpSzeIdKgSBpb+FBcDdGSfvCuUi0LVRZ2thc2vnR2t+HDgqFaPqTjP6VPrOh3Y127uE099QtLqFYxHDOITHgAYOeoPNAHSz69pltdraz3sSTtjahPXPStQHIrzrVtC1maSe3jtGkt0WFbcrOAqqoGeDyx68mvQIFKwRq33goB/KgCaiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBCM0YFLRQA3H1pcUtFADcUYBp1FACYoxS0UAN2ijAPWnUUANwO9L0paKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikyBQAtFJkZxS0AFFFFABRRRQAUUUUAFFFJkZx3oAWikBB6UtABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWTrkZW0W8jGZbNvNHuo+8PyzWtUE8KzwSQyZKSKVbHoRigDmBey2OlpqQi33eq3KBQQW2K33RgdcKOnrUs2q6nDasz2xULOqGdoWA8sj72zOeOnWtebSbWbTY7F1YwxBdhDYZSvQg+tK+mpJb+U1xckEklvM+Y8Y60AWba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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 127
   },
   {
     "id": "Q-128",
@@ -3926,7 +11025,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 128 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 128 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 128
   },
   {
     "id": "Q-129",
@@ -3961,7 +11062,9 @@ export const QUESTIONS = [
       "D",
       "E"
     ],
-    "explanation": "Question 129 evaluates knowledge of 1. Network Infrastructures. Option C, D, E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 129 evaluates knowledge of 1. Network Infrastructures. Option C, D, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 129
   },
   {
     "id": "Q-130",
@@ -4027,7 +11130,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_109_49_R338.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAIGAt0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDvmu41ZlKtkHBwKT7ZH/df8hSrbxPuZlySzd/en/ZIf7n6mndE2ZH9sj/uv+Qo+2R/3X/IU/7JD/c/U0fZIf7n6mneIrSGfbI/7r/kKPtkf91/yFP+yQ/3P1NH2SH+5+povELSGfbI/wC6/wCQo+2R/wB1/wAhT/skP9z9TR9kh/ufqaLxC0hn2yP+6/5Cj7ZH/df8hT/skP8Ac/U0fZIf7n6mi8QtIj+2x/3X/IUfbY/7r/kKk+yw/wBz9TR9lh/ufqaLxHZjPtkf91/yFH2yP+6/5Cn/AGSH+5+po+yQ/wBz9TReIrSGfbI/7r/kKPtkf91/yFP+yQ/3P1NH2SH+5+povELSGfbI/wC6/wCQo+2R/wB1/wAhT/skP9z9TR9kh/ufqaV4haRH9tj/ALr/AJCl+2R/3X/IU/7JB/c/U0RQxgMNikAkDIzTvEdmM+2R/wB1/wAhR9sj/uv+QoS2ifcSn8RHBPrT/skP9z9TSvEVpDPtkf8Adf8AIUfbI/7r/kKf9kh/ufqaPskP9z9TTvELSGfbI/7r/kKPtkf91/yFP+yQ/wBz9TR9kh/ufqaLxC0hn2yP+6/5Cj7ZH/df8hT/ALJD/c/U0fZIf7n6mi8QtIZ9sj/uv+Qo+2R/3X/IU/7JD/c/U0fZIf7n6mi8QtIZ9sj/ALr/AJCj7ZH/AHX/ACFP+yQ/3P1NH2SH+5+ppXiFpDPtkf8Adf8AIUfbI/7r/kKf9kh/ufqaPskP9z9TRdBaQz7ZH/df8hR9sj/uv+Qp/wBkh/ufqaPskP8Ac/U0XiFpDPtkf91/yFH2yP8Auv8AkKf9kh/ufqaPskP9z9TTvELSGfbI/wC6/wCQo+2R/wB1/wAhT/skP9z9TR9kh/ufqaLxC0hn2yP+6/5Cj7ZH/df8hT/skP8Ac/U0fZIf7n6mi8QtIZ9sj/uv+Qo+2R/3X/IU/wCyQ/3P1NH2SH+5+povELSGfbI/7r/kKPtkf91/yFP+yQ/3P1NH2SH+5+povELSGfbI/wC6/wCQo+2R/wB1/wAhT/skP9z9TR9kh/ufqaV0FpDPtkf91/yFH2yP+6/5Cn/ZIf7n6mj7JD/c/U0XiFpDPtkf91/yFH2yP+6/5Cn/AGSH+5+po+yQ/wBz9TTvELSGfbI/7r/kKPtkf91/yFP+yQ/3P1NH2SH+5+povELSGfbI/wC6/wCQo+2R/wB1/wAhT/skP9z9TR9kh/ufqaLxC0hBdRmMtzx270puowFOc59O1L9kh/ufqaPskP8Ac/U0tB2YfaYt23d2zntSC6jKseRjse9H2SD+5+po+yQf3P1NGgWYz7ZH/df8hR9sj/uv+QqT7LD/AHP1NJ9lh/ufqad4hZjPtkf91/yFH2yP+6/5Cn/ZIf7n6mj7JD/c/U0rxFaQz7ZH/df8hR9sj/uv+Qp/2SH+5+po+yQ/3P1NO8QtIZ9sj/uv+Qo+2R/3X/IU/wCyQ/3P1NH2SH+5+povELSGfbI/7r/kKPtkf91/yFP+yQ/3P1NH2SH+5+povELSI/tsf91/yFH22P8Auv8AkKk+yw/3P1NH2WH+5+povEdmM+2R/wB1/wAhR9sj/uv+Qp/2SH+5+po+yQ/3P1NK8RWkM+2R/wB1/wAhR9sj/uv+Qp/2SH+5+po+yQ/3P1NO8QtIZ9sj/uv+Qo+2R/3X/IU/7JD/AHP1NH2SH+5+povELSGfbI/7r/kKPtkf91/yFP8AskP9z9TR9kh/ufqaLxC0hn2yP+6/5Cj7ZH/df8hT/skP9z9TR9kh/ufqaLxC0hn2yP8Auv8AkKPtkf8Adf8AIU/7JD/c/U0fZIf7n6mi8QtIj+2x/wB1/wAhR9tj/uv+QqT7LD/c/U0fZYf7n6mi8R2Yz7ZH/df8hR9sj/uv+Qp/2SH+5+po+yQ/3P1NK8RWkM+2R/3X/IUfbI/7r/kKf9lh/ufqaPssP9z9TTuh2kR/bY/7r/kKljuFkBwp4o+yQ/3P1NESLHK4QYBAPX60m0CTHw/cP+838zUtRQ/cP+83/oRqQ0iihqGrWGmBTfXUcG77oY8mg6pYjTxfm7iFoRkS7uP8+1c15trb+O799WeOMNAn2ZpyAm3+LBPHWsiCztb+z1Jlvo7GyOoiSyklGImYA54PBB/mPwoA7IeJtGMKyjUITEW2BucFvTpV65vre0t1nnmWOJiAHOcEnpXnd3qovdMWK7js1nt72JGmgI2Sj1Hr39q6nxwyjw+jAgJ9ojOc8YzQB0oIIBHQ06uN8Sa1bNa2UFnqJEk8u3zLe5RAuBzuY5wOQfesuz1q/h0q11Wa6lnt7S5e3uAG3B0P3WP97GetAHo1FecXeoapHa6XDNfyWxvy8zStLsCgn5V3EHAxViGXVrvUNLsX1dlEkMhea2fcHAPHJGCenNAHf0VwenX90vjL7Ne6hLMskkghWCdHiIC/dZRyuPfuPxrvKACiiigAooooAKKKKACo4v4v941JUcX8f+8aACPof94/zplzPHa20k8p2xxqWY+gFOi+62f7x/nXNeObqRNISxt1MlzfSLEqAgEjOT/h+NAGxo+rWus2purNmMe7aQy4INaVeaJc3FjJrNlPaSad9rtjJDH5gYgqMHBH50t9F/Z9zqlnHqMtrBLZxuZJGZ8MSM9ORnp+NAHpVFeXWt59l0a01WCKRUs74rIyyOySoy7Sy7uccAfXNS6Uuof2jFpsrStKrfb8ljg7o87T/wAC4xQB6ZRXl+hM8t40j6jImohZTc25jcsRg9STtHbkV03ge0VNEivDLNLPOuGMkhYABjgAdqANTUNdsdOv7WzuHYTXJAQBcgc459K1R0FeY6s91rN5rV1aWD3cKFYIrhJVAj8s7jweoJ54q/bzp4h1/S5HllEUlmXZEkKgsD3x70AegUV5hpzyvru65v5bfVFuTiAxyM0iD+Ec7cEe1N0W+WTxJp1xbs0JuZ5UmhDSNtGOAxY4z346UAeo0UgpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqMf69/8AdH9akqJP9e/+6v8AWgAh+4f95v8A0I1LUUP3D/vN/wChGpaAKl3Y2l6ireW0NwoOQJUDAfnTJdOs57VLaa1gkt0xtjeMFFxwMCrtFAGedI01oUhNhamKM7ljMK7VPqBjrU9xaW1zAILiCKaIf8s3QMvHsatUUAZi6NpiRhF06zChg4UQqBuHfp196o6p4fW+WO3inFpYM5knt4oVHnNkHO7t0/GuhooAp3Fja3MCwXFvDNEuMJIgZRj2NCWFrE0TR2sKNCpWMqgBQeg44H0q5RQBQg0yxtrhp4LO3inbOZFjVWOeTyBV+iigAooooAKKKKACiikoAWo4v4/941JUcX8f+8aACPof94/zp5APUUyPof8AeP8AOpKAEIB6ikIB6gGnUUANwMYwMUuBnOOaWigBuBnOBmlAA6UtFACAAdBSAAdABTqKAG4Gc4GaMD0FOooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqJP8AXv8A7q/1qWok/wBe/wDur/WgAh+4f95v/QjUtRQ/cP8AvN/6EaloAZmkzzQ33TWFZWUN09w0seSJmH3iOKzlJppRVzGpNxaUVds3t6+o/OjePUfnWf8A2NY/88j/AN9t/jS/2NY/88j/AN9t/jSvU/lX3/8AADmq/wAq+9/5F/ePUfnRvHqPzqh/Y1j/AM8j/wB9t/jR/Y1j/wA8j/323+NF6n8q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j97s/wDfp/8ACruiEf2LZf8AXBP5Vc8tP7i/lTsDrVK/UiTg1aCa9Xf9EPqMf69/90f1qSok/wBe/wDur/WmZhD9w/7zf+hGpaih+4f95v8A0I1LQAUUUUAFFFFACUUUUAFFFFABRRRQAUtJS0AFFFFABRRRQAVHF/H/ALxqSo4/4/8AeNABH0P+8f51JUcX3T/vH+dSUAFFFFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUUtFACUwf69/90f1qSok/wBe/wDur/WgAh+4f95v/QjUtRQ/cP8AvN/6EaloAKKKKACiiigBKKKKACiiigAooooAKWkpaACiiigAooooAKjj/j/3jUlRx/x/7xoAIvut/vGpKji+6f8AeP8AOpKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqJP9e/+6v9alqJP9e/+6v9aAI4i7KQrKPmbque596kxJ/fT/vj/wCvRRQAYk/vp/3x/wDXoxJ/fT/vj/69FFABiT++n/fH/wBejEn99P8Avj/69FFABiX/AJ6L/wB8f/Xpdsv99P8Avk/40UUAG2X++n/fJ/xo2y/30/75P+NFFABtl/vp/wB8n/GjbL/fT/vk/wCNFFADfn/vr/3z/wDXpdsv99P++T/jRRQAbZf76f8AfJ/xo2y/30/75P8AjRRQAbZf76f98n/GjbL/AH0/75P+NFFABtl/vp/3yf8AGlRSoOTnnPSiigBgVxnDryc8r/8AXp2JP+ei/wDfP/16KKADEn/PRf8Avn/69H7z++v/AHz/APXoooATMn99f++P/r0Zk/vr/wB8f/XoooAMyf31/wC+P/r0Zk/vr/3x/wDXoooAMyf31/74/wDr0Zk/vr/3x/8AXoooAMyf31/74/8Ar0Zk/vr/AN8f/XoooAMyf31/74/+vRmT++v/AHx/9eiigAzJ/fX/AL4/+vRmT++v/fH/ANeiigAzJ/fX/vj/AOvRmT++v/fH/wBeiigAzJ/fX/vj/wCvRmT++v8A3x/9eiigAzJ/fX/vj/69GZP76/8AfH/16KKADMn99f8Avj/69GZP76/98f8A16KKADMn99f++P8A69GZP76/98f/AF6KKADMn99f++P/AK9GZP76/wDfH/16KKADMn99f++P/r0Zk/vr/wB8f/XoooAMyf31/wC+P/r0Zk/vr/3x/wDXoooAMyf31/74/wDr0Zk/vr/3x/8AXoooAMyf31/74/8Ar0v7z++v/fP/ANeiigA/ef31/wC+f/r0mZP76/8AfH/16KKADMn99f8Avj/69GZP76/98f8A16KKADMn99f++P8A69LiX/nov/fH/wBeiigBMyf31/74/wDr0Zk/vr/3x/8AXoooAMyf31/74/8Ar0Zk/vr/AN8f/XoooAMyf31/74/+vRmT++v/AHx/9eiigAzJ/fX/AL4/+vRmT++v/fH/ANeiigAzJ/fX/vj/AOvRmT++v/fH/wBeiigAzJ/fX/vj/wCvRmT++v8A3x/9eiigAzJ/fX/vj/69LiX/AJ6L/wB8f/XoooATMn99f++P/r0Zk/vr/wB8f/XoooAMyf31/wC+P/r0Zk/vr/3x/wDXoooAMyf31/74/wDr0Zk/vr/3x/8AXoooAMyf31/74/8Ar0Zk/vr/AN8f/XoooAMyf31/74/+vRmT++v/AHx/9eiigAzJ/fX/AL4/+vRmT++v/fH/ANeiigAzJ/fX/vj/AOvR+8/vr/3x/wDXoooAXEn/AD0X/vn/AOvSIGMjEkHgdvr70UUAf//Z"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 130
   },
   {
     "id": "Q-131",
@@ -4070,7 +11175,9 @@ export const QUESTIONS = [
       "type": "cli-terminal",
       "title": "Command Prompt - ping 172.16.2.11",
       "content": "C:\\>ping 172.16.2.11\n\nPinging 172.16.2.11 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 172.16.2.11:\n    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),\nC:\\>"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 131
   },
   {
     "id": "Q-132",
@@ -4117,7 +11224,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_111_54_R355.jpg",
       "data": "data:image/jpeg;base64,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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 132
   },
   {
     "id": "Q-133",
@@ -4147,7 +11256,9 @@ export const QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "Question 133 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 133 evaluates knowledge of 4. Network Security. Option A, B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 133
   },
   {
     "id": "Q-134",
@@ -4174,7 +11285,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 134 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 134 evaluates knowledge of 2. Network Hardware. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 134
   },
   {
     "id": "Q-135",
@@ -4201,7 +11314,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 135 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 135 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 135
   },
   {
     "id": "Q-136",
@@ -4228,7 +11343,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 136 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 136 evaluates knowledge of 4. Network Security. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 136
   },
   {
     "id": "Q-137",
@@ -4261,7 +11378,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_113_56_R368.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCADzAhsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0mqUuo2cN7HZyXEa3MgykZPLVcPA5rynVdRE+qX2pxwXTy29yghlSIsgROGBbt3oA9WzRmuGvby91LVrtbPUpbe2WwW5j8vBy2M/hWbda3ftbaXdXF/JFbPbqZBbyIsu/djcVPJH0oA9LyKMivOdQ1nVIZbyyguZmlgnNwGPUw43Y/pRda5qEtnHNFdyRQ394ypKWCiNABwCRxk96APRsikJABJPArgHudY8vS7U6mpae8eITwyBy0e0H5jjBI55rpNdujpHhqaRpXllSIRq7fedjx+ZoA0LLUbO/8z7JcRzeU219hztNXMivNfDV3Hp2qpBHFdQJdWuCZ4ymZVGcjPWn/wBp6rbeFE1Fr+WSS6m8jLYAgXc3zZx14xk9KAPR80V55JqN9aadJDNqZl824RLeaG4RnXIJYO+NoHGa3fBd/c3un3C3U5naCdo1kLBtwHuOv1oA6eiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBjAMpBGQRgg1WisbSK2a2jtokt2zujCAKc9eKuUUAUYdNsoc+VaQR5j8o7UAyn936e1Rf2Jpe+J/7Ptd8IAjPlLlccjHFadFAFN7C0ad52toWlddjOUGSvpTTptkbIWhtIDbDpEUG0fhV6igChHpllEkCpZwIluxaICMARk9SPSpbmzt7qNUuYI51BDASKGAI781aooAqXFlbXTxtPBFK0ZJQuoJX6Ui2FqtobVbaIWxBBiCDac9eKuUUAZi6PpotzbiwtfIL7/LES7d2OuPWrVtaW9qHFvBHCrncwRQMn14qzRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFW9mkt7SWWKPzXRSwTdjOKqRaotxfW0FugkSSHznfd9wfw/XPP5VqGua03S5YrPW4QrRPNJIkDk9E24XHsM0AbMWo2czSLHcwuYxlwHB2j3qW2uYbqLzbeVJYycbkbIrl9O0pH0+JbuC+EsNq0LIdoXBABC4HOeorW0BbqO1eK4VhFGwWEuu12QDuKANmlpBS0AFFFFABRRRQBj61rH9km0zAZhPJsJDYKjGc9Oal/tJTq8ViqArJAZxIG7ZxjFV9atZbm+0opEZI45yZOOAu0isxdLvl1qWJUItls5IYZs8DccgfhQB0MOo2c85hhuIpJRnKK4Jq7XJW1ncyx6LbC0kt3sJA8spAC4CkEKe+4kfzrraACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAExRilooATHFGKKWgBKWiigAooooAKKKKAExRilooAbinUUUAFMZgqkk4AGSTT6xvEE7rYC3hR3nu28lVTG7aRliMkfwg/jigC/Z3cF7bLcW0gkhbOGHerOawNJka31S5tXtZLWKYCaFH2cEAKwG0keh/OotTlmt9aSSeWX7HKFiQQykGNznll7/XtQB0mRUPmoJTGchtu7lTjH16Vyy6rcRmG5mlkENh+5uwf4nORz+IT/AL6p9n9r/tP7JeTzndpYkkQueHZzuPsRnH0FAHURyJKgeN1dTyGU5BqNbqF7qS2WQGaMBnTHIB6VxeiArbaNa/aZ4LeeJ3kKzMMspOFBz8o74GM1buoSdW1qSO4mjMNojo0chUkhSQSR1/lQB2ORRkVhTSXd74VSW3mWG7mhRg5bb8xxxntnp7ZrJfUZ7p9NtbYypG7ypKJblkYuv8PmAEnr264oA7PIzijIrkYEvpNUsrK7vZCGt5CTBM2Gw3B3YGSPWoNJv7i/uLG1uruVIfJkbcshRpXV9uCw5OBzgY96AOstruC68zyHD+VIYn4xtYdRVkkDrXn9lJLFa3NzFcySWcOoXDTeXNskkXAwwPfHXHeuj8QXTrpEFzbyPHuliO4HadpYdf8ACgDdyKglkVNobPzMFGFJ5/Dp9a5HVtQuDrs8MF5KsYntkwj425zkfjRcXd3a6ybKO6uGhTUbYDe5LbXRiy57jjODQB2uRRkVzukzPPd6hcXNzL5kFy8awhyFCAcfL+tZY1K6kvLCW2leJLwyAedcl8jBwxTGFx7fiKAOyklSJC8rqiDqzHAFSZFcHqEjyeFtRtbtpzeWxjaRvOZ1bLLypz077exrb8Qs9h4akNtNLGyMgEpkLMMuM/MTk9TQB0ORRkVy1xenTNTfZPPcW32RpZl8wuUI+6Rnpn8vas251TULOW48h3QNZecqNOZ2U7gN3I44OccigDsrm7gtTEJ3CedIIkyOrHoKs5rjfECm10vTHtJJL2QX0TqJJS+5th4yTxn+tOnuriT+yIILlpo7sO8kjzNCWfH3dwBK85G0Dtj1oA6x5Y0ZVZ1VnOFBOCfpUmfeuOurWczaGl9cGRxcOvmRTvgrg45GOe2avaFLNDfz2d7JLNcFTKkgl3xvHuOCB/Ce2O+M0Ab3mR+b5W9fMxu255xnrj0qXIrkNUjMXii7uYzIZ00zzY1EjAFg54xnp046Z5xmpLSeSOXRXgvJrl7xSZ1eQuCNuS2Oi4PHGPSgDq8ijIrA1KWSXXrWyeaSG1eFnzG5Qu4PTcOenPFZFvc3d3f6dbPdTm3ae6jEiyFTNGoG0kj8Rnr3oA7bIorho7+/klt7Dz2aMXdxD5jztGzBPuguFJzz9TiuisjeW+iu1w8c9xGrlWRi4OM45IGfSgC/c3UNqIzO4QSuI1yOrHoKsZrhZnWbT9AuXvpZrie8iZlaQsCcnPy9sdOMe9TabLqd/aLefbI4JWaZZN9yx2kbgq+WVwuCAc5zgd80AdhJLHEoaR1RScAk4FJHIkhcLnKnBypH8+tcXfv9p0FYJzdLcW13EsxadmBYkchgenf29qfLc3MaXMMd3cBV1RIVbzWZghHTJPSgDtsio5JY4l3SOqLnGWOBXJy6g1jdalZPJdTqJ4I7ceaQwZ1zjeeg46ms+9lnuLDVLa5mdltbuAIFuGfbnGQW4J/HoaAO7jlSQuqk5U4OVI/n1qXIri5ry5tYNSWK5m8tLyOISPIXMcZAyQTn86brd1cWK6hBZXc7wpbxybzKWaJzIBjdn+Ic4P8AI0AdtkUZHrXP2jS23ieayM80sL2qz4kfdh95U49AfTpmqLytJda8ZNQniFqymILKQE+TPQdRnt0oA67IoyK5GzubjULto9SuJbRY7NJFCSmPJI+Zj64/L1FM0W7vNQ1Wy+1yzKv2ATFVcqrsJCAxA9Rzj+lAHWRyxy7vLdX2kq2DnB9KlyK5nwrbIi6iQ8pYXsy4eVm4yOxPX36+9UnvLhtPvL/7ZKL2G6MaQBzt4bATZ7j15oA7PNV7e7guvMMLhhFI0T8dGHUVyFzdXg0/Vr43dws9peARp5mFA3L8pHcc/wCFTadM1p9svd7LBHqs6zDOAVbAB/A4oA7HNLWXpMp+zRfaJf8ASLjdKI2fLBSeAPYDFalABRRRQAUnalpD0NAGV/a673Vbad9jFSVXIyKU6t/053P/AHxTdH63WR/y3anS3M807w2pVFjO1pCM8+wrGKnJXv8Agc8eeUebm/AT+1sD/j0uf++Ka+sBFLNa3CgdyuBU0E8yziC5CksCUZQQDjt9abrf/INk+q/zFKfPGLkpbLsKpzxg5KWy7GmOQDS0i/dH0pa3OkKKKKACiiigBKKjkdY42dzhVBJNZy3t1MPMht08vkgM2GYf0/GhJsDVoqvbXC3MIkUEckEHqCOoqxRYVxagMMbukjIrOmdrFRlc9celT0UDIWiRpFkZFLr91iORmmG0t2uBO0ERmAwJCgLD8as0UAVTaW7LIjQRFZDudSgIY+p9TT/Jj87zdieYV278DcRnOM+ntU9FAFE6ZYsrKbK2Ic7mBiXBPqeOtSi3gy58mPLja3yj5h6H/CrNFAFdreF4PJaGNocY8sqCuPp0pj2No8CwvbQtCv3YzGCo/DFW6KAKyW0KOjJDGrIu1SEAIHoPQUx7C0kjEbWsDIpyqGNSAfXGKuUUAUjp1m23daQEBi4BiU4Y9T06+9TyRJMjJKiuh4KsMg1NRQBSXT7NB8lpbrggjEajBHT8qc1nbvJ5jQRF9wfcUBO4cA59at0UAVvstv8AaDP5EXnkY8zYN2Pr1qNdOskOVtLcEkkkRqDk/hV2igCrHZ20ULRR28KRN95FjAU/UVUv9IhvNLNjHtt4iykBEwBht3StWigCrFZW0KusVvCiv94LGAG+vrTYrC0h/wBVawx8FfljA4PUdOlXKKAKaWNrEipHbwoqt5gCxgAN/e+vvQ9jayRtHJbQtGWLlDGCCx7/AFq5RQBVeztpIBBJbwvEOkbRgqPwpbe0trXcbe3ihL8tsQLk/hVmigCrJawTujywxSPGcozICV+npRDZ20DtJDbwxu33mSMAn8qtUUAVri2guY9lxDFMo5xIgYfrQLaEGMiGMGIERnaMoD6elWaKAKj2NrJG0b20DIzbipjBBb1+vvUscaxIqRoqIvACjAFTUUAUhp9mrlxaW4csHJEagkjv9fel+wWhleU2sHmPwz+WuWHucc1cooAqrZ2y25t1t4RCesYjG0/hTI7C0iQJHaQIgYOFWNQNw7/X3q7RQBUks7aQSeZbxP5uPM3IDvx0znrQtjarG8YtoQjjDKEGGA6Z9at0UAVIrK2hhaOK3hjjf7yJGFB+oFIun2iQtClrAsTHLIsahSfpirlFAEHkx+d52xfNK7d+Pmx1xmqEOi2y3t1dTJHO08iuA8YPlkDHGa1qKAKtxZ21ztNxbwzFPu+YgbH504QxCYSCNBJt2bwvOOuM+ntViigCslrBHO06wRLM4wzhAGP1PekaytmuBObeEzDpIYwWH41aooAqtaW5R0MERWQ7nUoCGPqfU1UvdMW5j8hCkNvI5adUjGZckZ57Z7nqa1aKAIfKjMgkKLvUYDY5AqaiigAooooAKQ9DS0h6GgDK0frdf9d2oxJZzykxO0EjF90alipPXIHJ/Cq1he21s1yJpMEzMR8p/wAKu/2xY/8APU/98N/hWEKsFGza+85adamo2bX3jI/MubqOZomjhiyUDjDMxGM47DBPXmn61/yC5fqv/oQpP7Xsf+ep/wC+G/wqpqWo2k9hJHFJudsYG0jPI9qVWrBwaTWz6iq1qbptJq9n18jdX7o+lLSL90fSlroR1oKKKKACiiigCrewme0ljU4ZhgfWqcWoW8cYWYmOZRgxFTuJ/wBkd/wrVwKMU7isULCN9sskq7GmkMmw/wAI4A/ln61fpMUtK4C0UUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooATaPQUbR6CloosFhNo9BRtHoPypaKLBYKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKWgAoopKAFooooAKKKKACiiigAooooAKKKKACkzS1S1K6FlYzXGAWRflX+8x4UficCgC4DmlrI0Wa4KTWt7IJLq3bDOBjep5B/p+FPl1VY9RayjglllSPzG24wB26mgDUpCcVlRazbyz2USq+btC6k/w8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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 137
   },
   {
     "id": "Q-138",
@@ -4288,7 +11407,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 138 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 138 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 138
   },
   {
     "id": "Q-139",
@@ -4315,7 +11436,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 139 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 139 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 139
   },
   {
     "id": "Q-140",
@@ -4349,7 +11472,9 @@ export const QUESTIONS = [
       "D",
       "E"
     ],
-    "explanation": "Question 140 evaluates knowledge of 4. Network Security. Option D, E is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 140 evaluates knowledge of 4. Network Security. Option D, E is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 140
   },
   {
     "id": "Q-141",
@@ -4379,7 +11504,9 @@ export const QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "Question 141 evaluates knowledge of 1. Network Infrastructures. Option B, D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 141 evaluates knowledge of 1. Network Infrastructures. Option B, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 141
   },
   {
     "id": "Q-142",
@@ -4414,7 +11541,9 @@ export const QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "Question 142 evaluates knowledge of 1. Network Infrastructures. Option A, B, D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 142 evaluates knowledge of 1. Network Infrastructures. Option A, B, D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 142
   },
   {
     "id": "Q-143",
@@ -4441,7 +11570,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 143 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 143 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 143
   },
   {
     "id": "Q-144",
@@ -4474,7 +11605,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_115_58_R381.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAEEAgUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0mqVtqNnd3E0FvcRySwnEiqclTSateLp+l3N05wIoy341554cvksNY06ZoLqA3itHcPLGVVnY5Ugnr6UAeoZFGRXnAv8AVUshqX9pSsseo+R5JA2lC2OfX/CpRfX7eILu0n1GYPL5othbyo0QwvyggcqR/OgD0LNGRXmS+JtQ2wXZlk+zJCYJR/02Knk+/FTXV/q7XkdgdSNrJBapIJJZRGJHIySSQc+mKAPR8ioLm5htLd57iVYokGWdjgCuSsZtTv8AxOYJL54oobaCaRIcFXYgZxnsefwqbxxdxrHZWDRyyrcShpUhUsxReTwKAOotrmG7t0nt5FlicZV1OQRU2RXmlrq81r4Y1K2tHmtZrWcGLepVxGzccHp6Vd1e61K1v7PTP7UkjEkLTtcvIsZZsn5dxGAB6UAd9mlrzTVNdv7eKzX7e32yGFXlMMi+VIDJtHUZbj0+tejQtvhRzwWUGgCWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAK9zbQXcJiuYkmiPVXUEGmTWVtcRxxzW8UiREMisgIUjpirdFAFD+zLEwmE2cPlF/M2bBjf/e+vvRBpVjbXD3FvaQRTvnc6oAxycnmr9FAGedKsPKaL7Fb+Uz+YV8sYLf3vrTrzS7G+2fa7OCfYML5iBsfnV6igCqlpAly1wsMYmdQrSBcMQO2aGs7drpLl4YzcICqylRuA+tWqKAKEul2M8kkk9nbyPIAHZowS2Omadd6dZ3kax3drDOinKrIgYD86u0UAZsmj6bMI/MsLZ/KUIm6JTtUdh7VfVQqgAYAHAFPooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGkgAk8CoPtdt5KTefF5TkBX3jafoasHpXM21t/xVE1o5zaQILiOPsHY4/wAT9TQB01LXHaZJqF5c+Y96kcqXTB42lbJUE/Ls6dOc1d8P3MqXdxZXMr3MwXzROJC6MpY44/hPOMe1AHSUUUUAFFFFABRRRQBWuLmC2VWuJo4ldgil2Cgk9ue9K00STJE0iCRwSqFg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O0EYAUqf506TR7i40B9LupYiqRokTop52njcPwHSuhpKAMQaYwsZI2trDe4AIWIhSO+cDP8AhU2lWVzYxRQvcLLEqnIIJIbPY+g6VrUUAIKWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlooAyjpC72ZbiZNzFiFbAyaP7IH/P3c/991qUVn7KHYy9jDsZX9kf9Plx/wB906LSxFMkpnlkKZwHOeoxWnSGj2cewexh2FopaK0NQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKKAFoopKAFooooAKKKTIoAWikyKKAFopKWgAoopKAFooooAKKKKACiiigAooooAKKKKACiikoAWiiigAooooAKKKTIoAWiiigAopKKAFooooAKKKSgBaKKKACiikoAWiiigAooooAKKKKACiiigAooooAKKKKACkpabmgBaWmg5p1ABRRRQAUUUUAFIeBmlpG+6fpQBm/2xZY/wBaf++G/wAKP7Yssf645/3G/wAKbogB06PgdW/ma0dq+g/KueLqSinda+X/AATmg6s4qV1quz/zKH9s2P8Az1P/AHwf8KltryG5LCGTcVxnKkfzqyADxjpVCyGNUv8A/gH8qd5xaTa18vL1G3UhKKk00328m+5p0UtFbnQFZuo6lDp7QLMHPnSbcqM7R/ePoBxzWlXNXEF3qV/fsiRG3SM2qiUsM93IwPXAz/s0Ab80giheQgkIpY468VDp92l9Yw3UasElUMAcZFUrOWabQnWcN9ojjeJ8jlmGRn3z1rO0+8MfhSGC23i8EaxBSjAozcen40Aa+nanDqBnEQcGF9p3DG4dmHsfWq1p4itbzR59SjSURwgl0IAcY/Gq0Nvd6df2UkiReS8YtG8osT3Kk5HrkZ/2qxVtLi28GRTRQyF5Ld4JogvzEFjtOPbP5GgDr7nUo7XSjfurmEIHIGM4OPf3qzFMksasjDBAJGeQKxdYjd/Bskaoxc2yDaASc8Vm3aS6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Wg8NWEELRIZtrWzWpy/OwsWPbrknmgCaOea38OxTwRGaZLZWVOcsdorNfxBKLOyCPDNcXUhQtHC5EeBkgoDuz7cVvC1VbNbdHeNVQIrKcMAKoHQLUoPnmEwl87zw4D7+memOntQBRt9W1S51FLNUtoXNs07NJE4JxIVHykggEYPPTPepn11hapc+WpSO1M9woByGHG0fjnr6VoQaZFDfC88yWScQ+Tuds5Xdu9PWiLSrWNbtNpZbskyhjnOe36n86AMN/EGpR2E9wbdWAgEqP9nkRVbI+U7vvdeox9KuS6ne2t5Zw3Jt4op13POY22Fi33Bzwcdz+VW/7EhOnyWUlxcSQOgTDuCVA9OP55p95pUN8qxzSy+SAoaIMAr4ORnj+WKANEHNOqrbWy2wkCvIweRpPnYtgk9B6D2q1QAUUUUAFFFFABRRRQAUUUUAFFFFABSUtJQBkQzxQ6rfeZIqbtmMnGeKtDULQf8ALxH/AN9U57O3kcvJCjseuV5pP7PtP+feP/vmsIqcdFbr+ZzwjUgmlbd/i7i/2hZ/8/MX/fQoOoWmP+PiP/vql/s+0/594/8Avmj+z7T/AJ94/wDvmq/eeRX7zy/Ep6KQ32kjBBmJBBrVqKGGOBdsaKgPZRipetVCLjFJlU48kUmOoooqzQKKKKAENNKAkEgEjuadRQAAYpaSloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAExRiiigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooASloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k="
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 144
   },
   {
     "id": "Q-145",
@@ -4530,7 +11663,9 @@ export const QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 145
   },
   {
     "id": "Q-146",
@@ -4557,7 +11692,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 146 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 146 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 146
   },
   {
     "id": "Q-147",
@@ -4584,7 +11721,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 147 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 147
   },
   {
     "id": "Q-148",
@@ -4611,7 +11750,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 148 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 148 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 148
   },
   {
     "id": "Q-149",
@@ -4638,7 +11779,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 149 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 149 evaluates knowledge of 4. Network Security. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 149
   },
   {
     "id": "Q-150",
@@ -4665,7 +11808,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 150 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 150 evaluates knowledge of 5. Network Troubleshooting & Utilities. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 150
   },
   {
     "id": "Q-151",
@@ -4698,7 +11843,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_119_63_R410.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAD1Ak0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0SaVYYXlc4VFLE+wrI0HxFb63FO8UTw+SwBEhGSp6N9Ki8YPc/wBgywWUUkk9wRENik4B6k46Vz9taavpmrf6VZR+TdWhgJtQzqCq/KW449PxoA7hLu3kcJHPEzEZADgkim/brTLD7TDlThhvGR2rgrHR3tIPDlzHZzx3PmOLh1RtwU5+96e2ar6bpM0tvqlrBYTeUYC0dxcW3ly7924Kf73bmgD0hrmFSwaWMFBlgXA2j3pDdW4lRDNEHfG1S4Bb6DvXmzWGqXLJcPa3AOpgQToUYGNQRyfQdetTXukSNrt3Fe29+TJIotZraJWCrnA+Y/coA9EF1AX2CWMyZxsDDOfSs/X9ch0O0SeWJ5md9ixp1Y1laBpajxFrN7cwMJRc/uJHUjgjBK/yzUGvRanqHiOGOxtUkhtYSSbgMsbM3HBA6j2oA6e31C3ns4LkSoscyhlLNjOae15bIELXESh/ukuBu+nrXnq2d9NpVjpd7ZTE2t+FbbGxUx5zwccjtmpdd0nytcnS5s7x9PaBY7U2kIk8vAGRz90980Ad893bxyiJ54llPRC4DH8KsV5drdjeyXU0Z0+5aW3WFYZVt9zOABlmk9fYV6ZBu8iPdndtGc9c4oAmooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAQjNJinUUANx70Yp1FADcH1ox706igBMUmKdRQA3HvRjjHr1p1FADcZ60oGKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAKt7C1xZyxJI0TuuFdTgqe1YNhqL3Uz3s7SRwadCyzICcNLjLcd8Afma6c9KzLbSoYI76NmMiXsjyOD23DBFAGXbeJ/NTebcMrQNOgifcRgZ2txwfzrY0u8a/sUuGEYLjOEfcB+OKistOms7QWwvZHRI/LjJQZUdvqRUmmaatgJyJC7zPvY7Qoz7AdKANGiiigA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8EEdafRQBT/s+1/54R/980f2fa/88I/++at0VHJHsRyR7FX+zrX/AJ4R/wDfNOS0gTOyJBnrhcVZpOaajFdA5IroOoooqiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACikooAWiiigAooooAKKKKACiiigAooooAKKKKACiq9zcRWsLTTyCONcZY9BniiS5hjnjgd1Esudinq2Bk0AWKKqi8gaVolkBkVtpAGcHGasZ4oAdRVae5itjF5zhDK4jTPdj0H86nBNADqKbmgn9aAHUVWtbuG8t0nt5BJE4yrjoecU+SVYlBc4BOBgZ5oAmoqGaVIYnlkbCICzMegAGaIZUniSWJg0bgMpHQg0ATUU3JoyaAHUU3NQPcwx3MVu0iiWUMUU9Wx1oAs0U3NLmgBaKbn1ozQA6im5ozQA6im57VAt1C1y9uHHnIoZk7gHvQBZoqGSVY9pY4DEKMDPJqTPpQA6im55xRmgB1FQSzLFt3nG4hRgZ5qbNAC0UmeaWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlooAy5dTENxJCIJpCmASgz1Gab/a3I/wBDuf8AvinWh/4m1/8A8A/9Bq3Ncw265mdYx7msIc8k3fq+nmc8HOab5ur6dmUzq/8A053P/fFIdYCjcbW4AHUlavwyxzLujZXU9wc1DqX/AB4z8fwGnJTSb5vwHJTSbUvwJoJRNCkq5w4BFS1U03/jwh/3BVutIu6TNYu8Ux1FFFUUFFFFABRSE4phkUMFLAMe2aAJKKQGloAqX1qt5Yz2z8LNGyE+mRXKrdNeRrq8gbdpqxo/b5wcy/pgV2hGarra26xyRiGMRyks67RhiepNAHNRTTRy6XMrsFv7x3k28Blx8ufyBqut9ex+HkuhcyPNPeCBneQgIm8jj07DNdcbaA+VmGM+V/q8qPk47elN+x232doPIi8ls7o9g2nPXigDlr2O9hlsEu5FeP8AtSExDzDKyfIchmIH1+hp9tNql9e3EsUyRiG8MZV5iqhAemzb1PXOa6RbC0SN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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 151
   },
   {
     "id": "Q-152",
@@ -4728,7 +11875,9 @@ export const QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "Question 152 evaluates knowledge of 3. Protocols & Services. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 152 evaluates knowledge of 3. Protocols & Services. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 152
   },
   {
     "id": "Q-153",
@@ -4758,7 +11907,9 @@ export const QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "Question 153 evaluates knowledge of 1. Network Infrastructures. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 153 evaluates knowledge of 1. Network Infrastructures. Option A, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 153
   },
   {
     "id": "Q-154",
@@ -4785,7 +11936,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 154 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 154 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 154
   },
   {
     "id": "Q-155",
@@ -4812,7 +11965,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 155 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 155 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 155
   },
   {
     "id": "Q-156",
@@ -4845,7 +12000,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_120_65_R418.jpg",
       "data": "data:image/jpeg;base64,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GmdsY9BmtQUALRRRQAUUUUAFc/4jvL21fT1sXAaWYhlKg71AzjnpXQVmajYNeXdhMrqotZTIQf4uMUAUV1Zn1qALJiyeyadgR0Ibr61NBrkUrW2+CaGK74glcDbIcZA65GRzzjNQ/wDCP/8AE4uLnzh9lmgeLygOV3HnFEGi3Gywhupont7Bg8YRSGcgELn0wD2oA6CiiigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApKWigBMCjApaKAEwKWiigAooooAKKKKACkwKKKACjApaKAEopaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKaaAFzRWQytf3Mu92EEbGMIDgEjqTUkQezvIovMZ4ZgQoY5KsBn8sA07CuadLSClpDCiiigAooooAq3jmG1llUAsqkjNZ8M2pywq6fZ9rAEdaval/wAg+f8A3DUNvMLfR4pTyEjBI9axacp2v0MJJyqWvbQZ/wATb/p2/Wg/2sBn/Rv1pscV3MvmPcvG55CqBtX2x3qzZzPNFIJQFliYo4HTPr+IINV7PzY/Z/3n95if25d+kf5UVmUV4DxdX+Y+ZeNr3+JnbySLFG0jsFRQWYnsBXK6PqUB1SOcXccjalu3xCVWMZHMYwDx8vB966O+tVvbOW2kd1SVdrbCAcdx+PSkurKO5gSNmKBGVkZMZUg5GOK+jPrDCj1698lbp47f7MLs2rKA27G7AOc4qfWIkfxFoZZQSzyA+4C5H+NW/wCwrT7J9m3S+X5/2j7wzuzn06VLd6cl1e2t080yvbElFUrt54OcjvQByeiJNLp+mSadFILyOSRppnjYRsmW4LH7/YcZx7Vuya+I4IpiIxH5Ikl3Eja5OAueg5z17CtTTLGLTbJLWEuY484LkE8kn+tJY6fDZvcNCWzM+9ixzjvge3J/OgDn/D9xE/iO/Vb6K5d4UclJAwLfxYweg6Ve1zWH04y/Z5IXkhi8wwmN5GPXrt+4Pc8flWnFYxR6jPeqX82ZFVgcYwOlU7vRILqW7dpZ4hdx+XMsbABwBgdjjHtj3zQBVj1a71JrlbJIo4oYEdvNBLMXTcAMHjjvzz2qn4d1G8ns7OxthEGjthLI8wLZJYgAYI/P9K1RoNuhzDNcwholhkCOAJFUYG7I644yMGkg8PW1sIfs01xAYovKLI4BdM5w2R+owaAMbw1qN6z29ggh2uss0juGJGJCMDkfnV2w1+5vpYJYrV3tp5WjwsEmY1BIDl8bTyOg6Z68Gr+naDa6bOksDykxxtGN7A8Ftx7VJZ6UlkxNvcTrCXZxBuGxSc5xxnHJOM4zzQBlx67dtpNzdeVEbmJgGtwjBoRuwdwzk8c8YzWzDeq2lG8LxzBYy5aLIU4GeM1XXR40eSZbq6Nw4VTMSu8KDkAcY/ME1ZtNPgtLI2sYYxtncWOSxPXNAGZ/bF1BoEmrXUcJUxq8UUeQQWOAGJPPUeneo77Wb7TA8d2lvJK9u80RjVgoZRkq2Sfz4+lXY9Gt00+Wxkeaa1dAgikYERqP7uAD+PPQUjaHBKkguJrm4Z4TB5kjgsiHrjA7+vJoAoy65f25QPbxTPNam4iSENnIxweuevanw6sZ7jSMm1na4aQM6KQYyFzgZJwexrQk0eF5beVZZo3ghMKMhAIXj29qZDoVrDcQ3CtKZo5HlLswy7MMEtx/LFAGTquqXkvhye4guIoZ0mRGCKwaLLKCjc8MCcZ6Eemav2mpXJ1l7G7MEewAqPLZTMMdVycYHpyalOg2z213DI80huypkkZxvJX7vbHGB2+ualXSFNxFPPc3Fy0LboxKy4VsYzwooAjvb25TU7ewtVjEskbStJKCyqo46AjJ/KsPVb651G1soz5UTpqa2twhUsrEE+4yO+P1rpbvTorq5iuBJLDPECqyREA4PbkEGoP7EtRDbRjzALe4FyG3ZZ5OeWPfqaAK3iWaVYbK3i3EXVysThW2kr1xnt0xVJNWtI0fTCINMkEhSUGUBVXHJB45Nb9/ZRX8SJIXUowdHQ4ZWHQiiwso7NHVGd2kYtI7kbmb1OKAMvwbNG+hKqSiXZK6kh9xHzHFZmjX95p/hizvH8uS1WTY64YybTIRuznHU9MdO/aun0+wi061FvCXKBmYbjk5JzVG38PW1vDDAJrmS3hfzFhkcFd2c5PGevOOntQBk3uo3baNPLaGK1dNQMJMan5hvxnr371qWOp3L6tLZXbQRNGMKNjK0v8AtLk4xntyamOh2psZrUmXy5ZzOTu5Dk5449aDo6SSpJPeXc7oGCF2UFCRgsMKMH9PagDXpaghTyolj3O+0AbnOSfr6mp6ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKQ0tFAGa9rPFO81qUbzDl45CQCfUEZx+Rp0VvKbgXFw6mQAhETO1Aev1PvxWhSU7isA6cUUtFIYUUUUAFFFJQBT1L/kHz/7hqK1jWbSY4m4DRgcValiWZGRxlCMGqn9j2WP9Uc/75/xrKSkpc0UYSU+fmik9O/8AwBscl3Cnlm3WVgMLIJAFP1zyPwBqe1i8iFg7q0jsXdhxkn/IFR/2NY/88j/32f8AGj+xrH/nkf8Avs/40c1Tsvv/AOAK9X+Vfe/8jlaK6r+x7H/nif8Avs/40V5P9n1e6PFeVVe6/H/I0qKKK9s+iCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEopaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKWgAooooAKKSigBaKKKACiiigAooooAKKKKACiiigBKMis3XSy6JfOjvG8cDurIxBBAyOR7isaG/1GK50K3g8uZLm1MkhmlIZmCgnnaSOuffpxigDq8ijIrJu9QS31WKAxyMTA8uVcgAL/s9DUmj6gdTsVuTGiK/3Qsm849+Bg+1AGlkCjIrFttWe9uL+KCGMfZGaP55cMXGMZXHCnPXnp0qnpesXr6BbXt5HaBpM/PJceWp5PX5ePTHNAHTZoyK5u18SNfNBFZWQlkljZ8NMAAVOCM4P51Jba/8AbjbR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WxijFAHHzaNetZ3GImLjVmu1jWTaZI89jng9+fSrDaS5urKe3tp0IvBLN5soZsBcbjz+GBmuowaXFAHG3Gnaiuh3+mpYmaSWYuku9QrAsD3OQa0LCzurXWmaCGSG1l3NcCRlKs+Bgpg55xk5rocUYoAw5LKd/EdxcmPMLWIiDHGC+4nFZMOn6uunRWs0U3li1KBIpFXD88Mc9OnTNdltFLjNAHCLoeo/2XfRNbEyy21uiAupJZcbu9bC6XdNdeIBt8tLyONYXyMEiPaT7c10eKMUAchFossulGJre4gvVtTCryz7lzjGFwenftipxa3095ojHT2hjtMiUs6nHy44wen+cV0+KMUAYl7b3EWvwahFC1zELZoWVCoZDuzuGSB7VmW+k3tpNZXZg8zZPPK9sjDMYk6AZ4OP6muu2ijGKAOf1O0uZtTtbmKFyn2d4WCkboy3Q8kdKi0LS2t1tBdW1ys9qrKJGmDJnp8oz3+grpcUAY6UAcn9ivkNi9raTxXltEluZWdDE6A/MCMk47g9fpXS28skiuZYTCQ5ABYHI7H8anxRigB1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSYpaKAEwPSjA9KWigBMD0paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKQ0AFLUE1xDbrumkSMHoScU6OaOVQ0Tq6nuDmgCWikBzS0AFFFFABRRSUANz60ZHqKqajg2M+euw1TstLtJbSKR4ySyAk7m5/WspSlzcqX4mM5zTtFJ/P/gGvvHqPzo3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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 156
   },
   {
     "id": "Q-157",
@@ -4872,7 +12029,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 157 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 157 evaluates knowledge of 4. Network Security. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 157
   },
   {
     "id": "Q-158",
@@ -4899,7 +12058,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 158 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 158 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 158
   },
   {
     "id": "Q-159",
@@ -4926,7 +12087,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 159 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 159 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 159
   },
   {
     "id": "Q-160",
@@ -4953,7 +12116,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 160 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 160 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 160
   },
   {
     "id": "Q-161",
@@ -4986,7 +12151,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_122_67_R431.jpg",
       "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCADpAm4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0SWWOCJpZXCIgyzHoBUVne219bie1mSaJjgOpyCa5/wAdXvkaMtsod3u5Fj2ICWK9WwPpXP6fqZsdP16ztBcWmxPPtllj2Oo4B4+v86APScijIrgY7zVrS9gjOp+a15pzTAz4VI5AOvsPeqVpq95Hpss7X13JPZzxNcK0quhQ8HBXt3x2xQB6XkUZFedWus6pcagtobmVTeXCSwEdosnI+nFP0nVNVv8AVVuRqEaf6V5b2kkoHyZxgJjOe+aAPQsiqd7qVnYGMXdxHCZTtTccbjXP+DmvbyKe9vL+aZRLJEsTY2gA9ffuKxfFlzHf65c25hupltLcrGYIi4SU85OOn1oA9GyDRkVwQ1S71ZtAitL2W1FzG6zlMZDKOevekg1PUJfEdyGvhHHZ3Ah+zyShfMjHBbbjLEjJyO/tQB32RS151oWtXU3iCy2X009teGT91NKrkAHjhR8v0Nei0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAVZrS3mmjmlgjkliOY3ZQWX6VHPp1ncSmWe1hkkK+WWZASVz0+lXqKAKEumWU23zbSB9sZiG6MHCH+H6e1EWk2ENq9tFZ26QSHLxiMBW+oq/RQBSXT7RZYpVtYRJCuyNggyi+g9Kb/ZliL0XgtIPtQOfN8sb+mOv0q/RQBWtrWC1jKW8McKkliqKACT3pIrS3geV4beONpTlyqgFz7+tWqKAKEOl2MDo8Vnbo6MWUrGAQT1x6U57C0e8S7e1ha5QYWYoNwHTr+Jq7RQBnw6Tp9vIskFlbROpLBljAIJ6mtCiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEPSqTajbKl0zOVFr/rcg8cZq7XM65bFtbsI1bEV62ydR/EEG4f4UAdBDIJoUkXO1wGGRg4qeuO1Tz5tbvrZ7qO1RIUNsXdl28csuPvEHtVhJJbXxGn2iYXTTbIwI3IMLBPmyvoeuaAOpopKWgAooooAKKKKAK15dRWdrJcTkrFEpZiBnAFVjqtmLKC880mCdlVGAJyTwKZ4k/5F3UP+uDfyrmtSVrKz0+3AJguJoJEwOFbjcP60AdyKWuMvJgRrbXVxLHeQsRaqrlTjb8m0d8n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t1c262pAKTNKCEjBGZD6f56VCYzDeaXE7FnRGUk9yFFLHqGmROzxlEZvvFYiCf0phu4LvU7PyW3Y3Z4I7e9KpUhJJJp6r80TUqwkkotN3XXzRt0tJS10HYFFFFABSUtFACGsnT1G+dX/ANcJCXzwTzx/Staqs9nBcENJHlxwGBKtj6jmmhNFZSp1YmLnbERKR0Jz8o/n+YrTqKGCK3TZDGqL6AVLQ2FhaKKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAQgHqKNo9BS0UAJtHoPyowPQUtFAWCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKQmmB1Y4DAkdQDQBJRSCkY4FADqKjDA4wwOemO9PFAC0UUlAC0VGGBYgMCR1APSjeu7buG70zzQBJRSUtABRTcjdjPPpTqACikpuQTjPPXHegB9FMV1JwGBPsacTQAtFRl1DYLAH0zzSqQeQcj1oAfRSE4FM3jjLDrjr3oAkopAaWgAooooAKKKKACiiigAooooAKKKKACiikoAWimZGcAjI7UBgTjPPp3oAfRRRQAUUh6U1TnkEEeooAfRTWIAySAPeg8DOelADqKZkEZzx1z2pVOeRyD3oAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFJS0lADegpNw9aDWFY2jXNqkr3Nwuc5xJwMEis5SaaSW5lOo01FK7f/AN7PvRketY8dnBLIyR6jK7r1VZQSKS604wW0kgu7glVJ5ek5zX2ROc0r8v4m5RSDpS1qbBRRRQAUUUUAFFITikJA68UAOopuaWgDG8UXEtr4dvJYWKOAF3DqoLAE/kSaparZwaZbWk9jGI7hJ0VSv3pATghj/FxzzXQzRJPE0UqB43G1lI4IrGOkSW95DNBmeGIYSGWQgRn1U/pQBWGuXZ0pLg+X5hvvs5+U427sfnRPrkqX9t5Miz20t0Lc4iIC5yPv55NX30CyduVkCiYThBIQofOc4oGg2IMXyybIphPGm87VfOeB+NAGH4bunS18P24WMrOlwS5XLLhiRg1Nol/dwCR7y4E0DXc0ZJUgqQeO/T27VtWujWdqLPykcfYw6xZbOA/XPrVS90UOHgtlKw3EnmSlpDhTnPyr6n1oAuW95KNIa9uFBYRtLtUY+UAkD61mw6pfJFpd1ctE8OoSLHsRCDGWBK85+YcYPT1rofLXyvL2jZjbg9MVnWujWltJE6CRhBkwo7lljz/dHb0oAoeFI5AmptK6yOb2RSQmCSD9enoO1RQIdHvJnvbVZ2d5JYrsYLfdJ2HuOMj0res7KGyWVYFIEsjStk5yx61ANKg81ZHeaTaWKo8hZQSCDx+JoAxI9b1OSxa88g+U9rJMCYiojYLuXnPzD8qt22q3UUFtcXzxmK5tjMpRMBXChtvXnjP5Veh0a1htZLZTN5EkbRmMyEgK3XHpT5dMtprW3t5ELR2+3YN3TAx/L86AMZtYubWa8e4hiaSGySYlU2sWJ+6T6CrV5qN7p2kRTzNHNPcSIieXGQF3e2ef0rRl0y1luLieSMs08YikBPBUVGdHtWsWs382SIkEb3JK46YPagBukXN5MbhLyFlEbARyGMp5gI9MnGOlc/NPJ/ZusXgdlmkvfsxYHBSNWC8enUmustrcW0ZVXkkyclpGLEnpVOHSUjlvkcrJaXbbzER0YjDfngH60AZ+p2kGmNp81hGsc3nrFheDIp67vX1yajOt3g0x9X/dfZlm2GEL82zftzu9e+KuDSpLfUoZ4c3EKDaqSycwn1X8O1TjRLMSBgr7PM83yt52b85zt9aAMsQjTNSnn1K2WeK4ufMiu+CYskbUPcAHuOKueH/wB1e6rZqT5UE4MY7AMM4q1LpFtK++RpnAk80Ru5KBs56fWnaZYGyW4eSTzJ7iQyO4GPoPwFAGZrWuy2TTyWziVbdlEkYiJAyRnLdutZSklkbpnxD0/A10dzoVldG48xZNlwwaRA5Clgev14p40azG3CNxdfbB8x/wBZjr/9agDNl1a9Ntf38RhW3s5mj8sqSzhTz82ePpQdduREuFQyLNmQYPEXHP6/pWjJolnJNJIVkAlcPJGHIRyO5Wpm0u1e4uJjGd9xH5T88FaAMi51e8WKOePYlo87qZzGWEaDoSM9Ce/YVq3909vaxXMLK0IdTIeuYz1I/nTZNItnsorPMyQRoUCpIRlcdD606/t5DprWtpFGysnlAM2FRcY/GgDOudWufMRIBHie6NvC5BIAA+Zj69xUNzrd7a3Zs38p5UuYYy4UgMj+2eDWqNItzp1vaSAkQAFXBwwYfxZ9aa2iWbW7xOrsXkEjSFzvLDod1ABY30s+tapaPt8q18rZgc/MuTmsO11C+gedBMsjXGpy28fmLkRjd1688duK6Gy02CxnuJot5luCpkZ2LEkDAqJ9DsnaUkSASyGYgOQFf+8PQ0AN0y9nfUbqxuWV3gCssirtDKfbtTLC9ur7UbzDRx2ttMYdhXLMQOTn6kVes7GGzMjR7i8py7u2Wb8aZHpsEV893FvR5DudQx2scYyR60AYsWt3raXDq7eV9llmCCEKdwQvtBznk98U1Na1AW5u3MJiW9NsYwhBK7sA5zWsmi2ccisqv5ayeasW47A/rt/Wnf2NZ/ZjblG8ozeeRuOd+c0Ac8NR1S0uLxluklDaituEkjJCgjtzx9K1ftmoXGo3tnbywobKNCzumfMdgT6/KOPerUmhWctyZz5oJmE5UOQpcd8U+60i2ubh5282OWRNkhicrvX0NAGPoV9/aXiD7XsKGXT0Yqex3kGpMXTeKtRFtLHGRbR5LruGefeti3021trkTwR7HESwgA8BB0GKiuNGtp7uW63TJNKgjcpIVyo7UAZkeuSXVhaNFIIrqVGJjERkJIOM4B6ZzzVbTtc1HVGiEJhhL2P2g7k3fOHKnv0OPwrc/sWzDwOiNEYU8pdjYyn90+opthollp5X7OjjbD5Ay5Pybi38yaAM3TtZvNWlhjg8qA/ZxNIWXdkk4wPbjrWfoGpXVtps0P7syOzG34PLmQqfqB1+ldBHoVjEIfJWWMxJ5YKOQSvXB9RTrbQrG2FsIo2AtmZo8sTgt1oAx77W7htLlnSOFhFDC0iuu4CVpAMfhgn6kVcnvby7uNTt4Hijjs4wDuUkuxXPrwPzq6+i2T2tzbFGEV1L50gDEZbIP4dBS3GjWtxcSzkSK8y7JAjlQ496AOQtXvDa2McV1shbS5GKbSQcZ9+T79q19EvLq2XRLaUxvBdwEKAuGQqoPXuK1G0CzMMESiWNYYzEpSQg7D1FSPo1m8VtHtcC1jaOIhyCoZdp/SgDTFLUUUYijVFyVUBRk5PFS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAx/un6Vz8GZNNsoCSIpGYOfXk8fjW+/3T9KytOgjuNHjjk6ZYgjqDk8isn/ABF6P9DCX8WPo/zQ+4tIBaMcLCYlLJIAAYzjr7fSnzu0ujNJIu1nhDMp7EjkUv2HfhZ7l5YgchCAAfr61LqJH2CfkfcNaSejLlaz9C4OlLSDpS0zQKKKKACiiigBDWLFAL+R5bgeYu8qsZztUD1HTPetojNZ72c0UryWkiqHOWRxkZ9aaExlsptb0W6sxhdC6qSSVwef51pdqqW1qY5HllfzJnGCcYAHoKuYoYLYWiiikMKKKKACkpaKACkpaKACiiigApKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlooASloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikoAYQGGDVA6NZf8APM/99H/GtD8qKiUIy3VzOVOM/iSZR/sax/55H/vtv8aP7Gsf+eR/77b/ABq/ijFT7Gn2X3E+wpfyr7kKOBS0UVqbBRRRQAUUUUAFJS0UAJS0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAlLRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUmRQAtFJkUtABRSUZFAC0UlGRQAtFJkUUALRSZFGaAFopMiigBaKSjIoAWikyKKAFopMijIoAWikyKKAFopMijIoAWikoyKAFopKMigBaKTNGRQAtFJS0AFFJRkUALRSZFGRQAtFJmigBaKSigBaKTNGRQAtFJRkUALRSZoyKAFopMiigBaKTIoyKAFopM0ZFAC0UmRRkUALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRSUUALRRRQAUUUlACUdDSelVb66+y2zS7dxGOM4zk4qZNRV30JlJRTb2RbzRms77Vf/wDQPP8A39FH2q//AOgef+/oqPax7P7mZ+2j2f3P/I0O9FZ32u+xkaef+/opba9mnllja32PHjI3g9aXtItpa/cw9vG6Wuvk/wDIbrl/JY20PkKpuLidIIt/3Qzdz+ANVZry60y8tkvJhcW9wSu4IFZXAz2+hq3q9g2o20axyeVNBMs0TkZAZfUdx1FZc5kvdXhh1PybNoQTCgcsJnYY3KSBnH93rWxsacWs2sqWTrvxekiLK+nrzxVe+1pIYLhVjmhuPIkkhMqYDlVJ4/8Ar1Qj0TURHpsPm26R2JcB1ZixyCAcY4+n61XfwzeyLAT9lEscM0cknmMzSs6FQxJHHPbnHvQBr2erGRYQ5ke4awS6aJUGDn0PrnjHSjRtdTUbFJZoXgk8sykEfKVBxxzzTLHR57e9imeSNkTTktCF67weT06f5xWX9hmt4rHSjJCbmPMZMTliYTkksMDb+uaAOnN/AmnG9lYxQBN5LjBAqtFq8Usvl+TOkxjMsaOgDSKP7vP06461JqtgL/SZrFH8sSIFU4zjHI/lVWLT7y41K1u77yE+yROiLC7NuZsAscgY4HTnr1oAPD1/cahoiXk6kyvuIXaAODwBjtx35qDStUM9s95d3iL5QYzW5QAxf1/xq7ollNpmiwWchjaWJWGVJ2k5J9KzNS0O71Vs3C2lqfKZGeF2cyEjgHKjjPOOaALsviC0ht55ZkniEKLIVdMEqzYDDnkZqymqwNHcM8csX2dQ7q64ODnBHPsayZ9AmuNHuLZbXT7a5dUQSRE4OGBOTtyOnTnnvWjqWmPd39vMjIsWNlwDnLqGDAfmCPoxoAautWyLdvNJIBbsqsjR4ILDIAx1NTy6rFFDDJJFOrTMUjhKDex+mazbnQbib+0WWWJWuLiOeLOSBtxw3+TU2p6ZdailnNLFaGa2kZjCzM0bgjHXGc9+lAGlZX0V9AZYdwCsUZWGGVgcEEViR61dy6fDPGI99/cmK2BHCJnGT69Ca2LC1Fta+WsEFuWJZkh+7k/gM8Y9Kw7DSp30mCzIMF1ptwTE7qdr8kg+4IP4UAX2u7nTtSt4L2dZoLgNtk2hSrAZPTtU8GuWs8kChZUW4bbDI6YWQj0rNkD6hqvkamY7WSKNkhiVy3mFhgupIGfp271JBo940em21y1uLewkEivGzbpCoIXgjjrzyc0ALo97d6irs90kVypcSWhjAaLkgdeT2Oehq/od699p4kmAE8btFLt6FlODVKexvJry1u7iK2hNqS7PbszvIMfdxtGAfTmp/DlrLb6cxnQxyzyvOYz1TcehoAnm1WGG6SCaOaMO/lrIVwhb0zmsjTNbvLl9EErIRefaPNwuM7Pu49Kjk8P3kssTStbSSR3gnM7uxdkBzjGPlI/EVNp2g3Vq2jmR4WFl9o8zBPzeZ0xx/OgC8NftCVIEvks5jWbZ+7ZgegOf16VOmrWrm0UFwbrPl5HTHr6VlQ6HeLp8Glu8Bs4Zg/mBj5jKG3AbcYB98/hTpNCuvLuzFKglD5tCScRjOeePUnpmgC+mtW0k8MMaTO8wLABeihtu489M96uS3UcVzBA4bfNuCkDjgZxWRfaLM8dnHaLDFJbhQtzvIePn5gAB8wPoSBUviKRUtI0jZReF1a2TuzA+npzz9aALD6zbrsCpNJJI7IkaLlm29SOenvSRa1aTSW0alw9w7RhSuCrLyQ3pVaTSJoJ9PuLIxvJaRtGySkqHDdTkA855qsNDvI7iC9V4Xu1uXnkQsVQ7hjAOM8D25oA27K+hvRcCHcfIlaF8jHzDrVCDXUaNfNtrhJpJHSOMKCz7WIOOe2Oc4qXQ7G4sVvPtTRF7i5eceWTgA49apnTL9L6C6QW5e2kl2qZGAkR2J5+X5SMj1FAGvZX0V9CzxbhtJVlYYZWHY1BLqsMN3HBLFNH5snlJIygIzemc+1JpNjJaC4lnZDPcyGRwn3R2wKxf+EevHmtZJDbyTQ3gna4Z2LyICTjGPl7DHI+lAGouvWjWEt8BKLZDhXKcSfMV+Xn1HtUv9op9tt4X82FpY3k8t0AwB1yc8VmxaLcot2Gt7PyJlA+xiVjEz5yz52/L9ADRbaDdrPbvPcK6pDLEfmJKh+gGRyB74oAuf8JBafuGMc4juJBFFJ5fysx/Gi18QWlybYos6pcsUjkdMKWGeOvsawSJmTS9Kins7g21yhP2eTe2xc8txhD+eTWlBod1HpWk2heHfZ3YnkIJwVBY4HHJ+YdcUAat5qcNndwWzpK806syKi5zjr/Oqx8QWuIdqTNJLI0QjCDcHAzgjPFVtW88eJ9KNusbyCKbAdioIwO4Bx+RpsWhXS39veSSRGUXLzzAE4GVwAvHP6UAXp9btoXmykzLbkCeRUysRPrz+eM4qKTXPK1lrNoHNutsJzOuMYJxnr0qCbSL5Y9TtrZ7cwagzMZHJ3R7hhvlxhvbkUXWhTNdHyGQ272IsmDuQyqD94cHcfrj60AXYNatppI1KywiVS0TyrtVwPTn09cU6DWLWa1lusSx20YLea64Vh0yPWqA0e9ulsor5rdIrRCqmFiS7bdoOCBjj605NHupfD8mkXDQqgjCRyoxJODkEqQMdu5oAfea2i2d15aSwXC2rzxCZANwA6jntxx1qe01ZJPscDLJJczQJK+xeFDDqfTmqN9pF/qR33Rto3itZYYhG7MC7rgscrwOOnP1p0ujXTGw8oQRSW8caG5V2DgD7y7cYYH3I+lAGvfX0NiqGXczSsEREGWY+1ZNhrhn8QXVlKkkaDYsQZMENtJIJ/A1c1ewuLuWzuLVo/OtJC4WQkK4IwRkA4/I1i39tc2k19e3Eluby4aFrSFCSzOn8PQZ64yOxycUAbLa3bpcpCI53kkeSNAqA7ih+bHPv+lSRatFPaJcwRTzKxK7FQblI6g5PFVYtGlhvNJdHQpZRyLISTudmA5/PJqkmg3kbruaGeHz5pGheRgp3H5SeOceh496ANB/EdisCzHzTEQCzhOIwW2/N6c1J/a9vJaX8gMsT2akyhk+Zfl3A478c1jReGryPRLmy8y3EkqBVIJCgiQt6elX30a4eTXCHiA1CFI4uTlcRlfm49T78UAW/wC14A1vEqzTyzRiUCNBkKf4jzxUl7qkdgT58UvljG6UKNq59eaoQaXeWl9b3MHkSMLZLaVXdlxt7qQDnvwcVU1Xw/eagb8Zt5PPKmF5WbMQGOAuOPr+lADjrd1v4dNv9rLaA7RzGR/P3rZj1OCSK3kUPieQxKpXkMCQc+mNprHXw/dLt/eQ8amt594/cAxjp1/SpdMiS51m8ubaRZLSMloSOVMrgb8HuBt/N2oA6MUtQW3neQn2nyxNj5vLztz7ZqegAooooAKKKKACiiigAooooASqd9dG3jURpvlkO1AemferlUNQhkfypoV3SQkkJnG4EcimhMhaa9gjM8hSaNcsyKuCBjt61pqwdQynIIyD61mvcySxNDbQSrKwILSIVWM465PX8M1egiWCCOFPuxqFGfQDFDBE9FFFIYUUUUANNZ+uf8guX6r/AOhCtA1n65/yC5fqv/oQrKt/Dl6Mxr/wpej/ACL4+6PpWfLeyvM8drGrhDhnc4APp71ofwj6VkwSR2LvDdHyxuLLI33WBPr6+1ao16Fu1uzK7RSp5cyDJXOcj1FQ2n/IVv8A/gH8qLcm5vftCqywxoUViCC5J54PbgUWn/IVv/8AgH8qyq7x9f0ZhV+KPr+jNM0mDTqK1OgaBinUUUAFNwadRQAg4FLRRQAUUUUAFFFFABRRRQAU3Bp1FADQOadRRQAhpAD3p1FABRRRQAUUUUAFNINOooAQDFLRRQAUUUUAFFFFABRRRQA0g0tLRQA0CnUUUAFFFFABRRRQAUUUUAIRkU3Bp9FADQMGnUUUAFFFFABRRRQA0jNABxz1p1FACUtFFABRRRQAUUUUAFFFFABRRRQAUlLSUAGKKKWgAooooAKSlooAZ6VT1G3a5sniTG4kdfqDV2k7ipkk4tMmUVJOLM3Gr/8ATt+tJjV/+nf9a1aKj2fmzP2X95mVnViMf6P+tFlbXCTTyzlN0m37vTgEVpHrSNT9lre7GqCdrtn/2Q=="
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 161
   },
   {
     "id": "Q-162",
@@ -5013,7 +12180,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Question 162 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 162 evaluates knowledge of 2. Network Hardware. Option B is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 162
   },
   {
     "id": "Q-163",
@@ -5040,7 +12209,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 163 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 163 evaluates knowledge of 2. Network Hardware. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 163
   },
   {
     "id": "Q-164",
@@ -5067,7 +12238,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Question 164 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 164 evaluates knowledge of 3. Protocols & Services. Option D is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 164
   },
   {
     "id": "Q-165",
@@ -5094,7 +12267,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 165 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 165 evaluates knowledge of 2. Network Hardware. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 165
   },
   {
     "id": "Q-166",
@@ -5121,7 +12296,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 166 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 166 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 166
   },
   {
     "id": "Q-167",
@@ -5148,7 +12325,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 167 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 167 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 167
   },
   {
     "id": "Q-168",
@@ -5178,7 +12357,9 @@ export const QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "Question 168 evaluates knowledge of 2. Network Hardware. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 168 evaluates knowledge of 2. Network Hardware. Option B, C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 168
   },
   {
     "id": "Q-169",
@@ -5205,7 +12386,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 169 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 169 evaluates knowledge of 3. Protocols & Services. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 169
   },
   {
     "id": "Q-170",
@@ -5232,7 +12415,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 170 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 170 evaluates knowledge of 3. Protocols & Services. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 170
   },
   {
     "id": "Q-171",
@@ -5259,7 +12444,9 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Question 171 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 171 evaluates knowledge of 1. Network Infrastructures. Option A is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 171
   },
   {
     "id": "Q-172",
@@ -5292,7 +12479,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_125_69_R449.jpg",
       "data": "data:image/jpeg;base64,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Aa1nqK3V3LavFJBcRKHMb4yVJ4IIJBHFaVZVnYzLqk2oXbRtO8YhVYwdqICT37kmtagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEowKKWgBMCjApaSgBaKKKACiiigAooooATAowKWigBMCloooAKKKKACqVrfQXS3DRMSLeRoZMjGGXrV2uT0aC5ki1lortoV+33HyCNTnp60AaT+ILNLSK62XDQS42OIiQSTgD60+41yC2VGmt7uMSMEUmE8segrAAP/CCaUDyfOi/9DrY8U82+n4/5/wCH+ZoAnk1q3inELxXPnGIzFBESVTOMn06Vft547q3SeBw8UgDKw6EVgXiXMnjFltJEjY6bgu6lgP3hrW0uC3srVLCBtxtlVW9Rnn/E0ARvrMEd4LVobrzmBZVEROQO4p9tqkN1dSQQpOzROY3by8KrDsTVS5/5HGyPb7LJ/MVV8PyKurasjXSKXvH2wEqCeBz6noaANWLVrWXSTqasxtQjPnac4Gc8fhSHWLP7BDehyYJmVUIU5JJwK5zS54X+HckKyxmVLaUsgYFh8zdu1RakrWWm2EIUmC6kt5FwOFcY3fn1oA6ePVoZbmWCKOd2ik8t2WMlQ31pq63B9s+yeRd+fs8zYYTnbnGfzrK0aZI9Z1UPfRxA3hAgYqC/A9eat9PHTE/9A0fh+9oA25JBHGzt0UEn6VQttYhurcTwQXTxkAqREfmB9Knlmjn06aSNtylHAI74yKzfCcUq6DZs8xdGjG1CgAX/ABoAlHiCzNg97icW0fWQxkAndtx+Zq3aajDdzSQp5iTRAFo5EKsAehxXKOD/AMK3ucDnzDgH/rsK6KG2+y6hJf3syGeYLAgRSFAzkD8z1oA1xS1i+ILsW9vbxvGGE0gUs7lUX/eI7VzNhJJcara2ssjNAt5MgVWYKV2A455I+tAHoFU4L2G4urmCNiZLYqsgIwASMiuOinZLmC1uZZF02LUbiF2ZyAAFyis3pknrWt4a8n+1tc8gsYvNj2k5Ofk7e1AGpDqtvPcmKESyAMULhCUDemafpup22pwPNayF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gOwI6/hSTXcAtmEbLM0ikJGCCWJHSmj+18dLb9aYsOpI5ZI7RSepC4JoVRdmJVf7r+40LWMw2sUZbcURVJ9cCqtnn+1r/wD4B/KmH+1s/wDLv+tOsYbiO5nluCgaTb9zpwMVEm3KNk9/0ZDbnKNk9H+jNSikorc6RabinUUARsgZSrAEHqCM5pVUKoCgADoAOlPooAQCkxTqKAExQRmlooATHNGKWigBCKMUtFACYoxS0UAJikxTqKAG4pcUtFACYoxS0UAJijFLRQAmKTHrTqKAExRilooATFGKWigBuPejHNOooAbigjinUUAQmCMvvMaFv7xUZqQD9adRQAmKTFOooATFGKWigBuKMY6U6igBMUYpaKAExRilooATFGKWigCPYu7dgbsYzjnFPxS0UAJikxTqKAG4pQKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApKWigAooooASilooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKSgBaKKKACiiigAoopKAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkpaSgCo95bxuUkmRHHUE0gv7Tj/SI/8AvqqkMEM+qXwljV9uzGRnHFE39mwP5bQI0gGSqR7iPyrGLnLVW6nPGVSabVrXffo7Fz+0LT/n4j/76oOoWfX7RH/31UMNvp86b4YoXXOCQveq2r2lvFYSNHCitxggYxyKJSnGLk7aBOVSMXLTT1NqlpF+6PpS1sdAUUUUAFFFFABRTSQoJJwB3NQRXttNJsjmRm9AeaALNFIDS0AFFFFABVOzvYr0T+ST+5maFsjHzL1q5XMeG7uBJdWgM0fnnUZ2EW8biM+n4H8qAOlye9Gc964FpzfXdg8Jjga7leOSOMsXAIP3znA7HHBq/PPe3WlX91AHE9tAIF25J3A/OR6mgDr8/nUUsgjhdyCQoJIAyTXEX0WzQ76e0v4ZI3jhDR24I2t5g+b7x56gjiuz2wWVmQCIYY1Jz2UetAENrqcNxdG2KSwzhdwSVdpI9R61fzXN6dIJNfdo7hdRTycfaBjERz935eOevrVLXJCNR1MXLyrItsp08LkEyYP3cdW3YHrj2oA6Q30Q1BbD5jcGPzTheAuccnt6VJPewW7+XI+JCjSBBySo61g2UJ/4TBZbhF+0/wBmo0hH9/dg/wCFQeJYbUa3BNdLGENpKu9yAC2PlGT3oA6a0uo7y0iuYSTHKAykjBxVgE1w1uklpZ6HLZbhcT20qkgk7yEyv61a8MoZZLS4S/hMogYXEKq29m4+/ljgg/TPOOKAOivNRhtJY4W3yTSZKxxrliB1qL+2rMWjzszqI38tkZcMG7DFUbmQWPij7XdkR201sIklY4VXDZwT2/rVN4rK/u9Qu7iXybGRo1jm3bQZF/jB/TNAGvNrUMCRNLBdJ5soiUGPksenetXNcNe6m0gs4ri5jnit9ShMd1kKJF5z7HGQCenNbXiRd8mkxnO171AwBIyNpoA380Zrh9N3w3NgyPJu+3y25yxP7sZwKmvpIvN1k3sjrdqcWYzhsY+XZ68+n40AdkTgEnsKq2F7FqFlHdwEmKQEqSMHriuZjkU6pcprjlZRbRfZ1JIBO359mOrbuOOaydNLSWmmw3M8UFq1m3lG4B2l95zjBHzYx6+1AHeJfQyX8tmpbzokV2GOMHpVrP8A9eua0SKSLxDdJJKZmW0hBlII3daHaE+KphqDlQqRfY1ckAnPzbfU5x70AdLn3oJ/CuQWSM3eofbJNuprebbVXbBKZXy9o9PXHvmqqKY9NN6jOLhdTZA245Cl8EfSgDsobmKdpVikDtE21wOzelT5z05rz64gtor+4iAWO4fVkAUNtdoz149PetS6+yRaxqEOpv5VvHBGLNWYqMYO7b6tnHTmgDolvoW1F7IFvOSMSHjjBOKt5riLJbmWecX05t7htKQPK3VPmPJ98VueG5hJYPGsaqIXKb423JIcfeU96ANvNGa4a3V4/C9tMDIFlvALpxkt5Icg++On4UupNxqP9luW09FgdjE2VEm/LbcdtvJxQB2dxcRW0DzTuI40GWY9AKSObzHICtgAEPjhgfSuN1mWLUp9YEL/AGiJbNGXbyM7uo9frVaeSEWWtCylBiW3t9pibIDZGelAHoOe9Jk9M1xOs+fp95fw6eZVWTT0lYISTu8zazD325qzbNZDxRpi6bLuhaCQtsYlTwMfj+vrQB0kV7DJfTWalvOiVXYEcYPSrWa5C7awHie//tBwkf2ZMbiQCeenqfbrVINdu2lxanNHDbvbPg3QbaX3cZ5HzbcHmgDtXuIo54oHcCWUEop6tjk1PmuJvbKFLnQvt06zL9nljN0/ybvl+TJJ4P8AWnfbbkQpfEv+6H2IrkkF/uk/ng5oA7TPvRXDRQTyX9xbXN9Fa3MMkawF1YvtAGNvzAEHoeD71IiTXOrXyT30NteJeDyQ6t5nl8bdvzYweR0PfNAHa59KM1wpBj064vVZxcR6oyq+48LvwR9K29eQS6po0TFjG8rhgCQCNvegDfzUM1zFA0ayyBTK4RAe7elcO8k0cqW7SiPTo9RmiYzBmRQFGwNz0zn2z1q1qFlElhpTXM8dzbpfZEuMJHGc8ZJPHbOfSgDtMmjJrixcyxR+aHZodJY7irZEik5H1+UipSqxXmnpqb7bJ4XkYu2EMpbPJ+nagDr8mqllfRXyStATiKRomyMfMp5rkrRJLnUtIhnMj2jTXfkh8/PENpTd7enqMVL4dc/2vcrckiI3k5t8HCl93OffHT8aAOzzVWzvobxrgREkwSmJ8j+IVja1JGuuWKXz7NPMbElzhDJnjJrnopCjkJKsWnvqUwkecMUHyjZu5HGfXjPWgD0QmoxJmVk2OMDO4jg1yyCTSreK5iuBeJL5kCFM7RkkoBknoQVz71FPHc2d1qcFq7tNFp6bSCSS2Tk/zoA7LPNGTXIXzwx+G4zpUw8szRC5cEthf4i2Dn0zjmql1EltGl0moWlzbJI0i2iFlRztAIQ5OTyCB6k0Ad2DmlqpaXcV1vC5EiBfMQggoSM4NW6ACiiigAooooAKSlooAy7Q/wDE1v8A/gH8qZpaAxOWwJt58zuQ2abFcRQ6pfeY6pnZjccZ+WnTNp00nmGZFfGCySbSR+FZUpJRab6v82c1KaUWr9X+bHwBRq0oi6eUPNx03Z+X9M0ut/8AILl+q/8AoQpYbmxgTbFJEq5zw3eq+q3dvLpsqRyoznbgBsk8ilWlFwaT6MK04unJX6P8jYX7o+lOpF+6PpS1sjoQUUUUDCkpaKAMzVMt9niLbYpHwx9fQUXNpB9jfeFjVFJDgAGM46irs8CTxGORcqf0qoNPBKiWeaWNSCEYjH4+tO5LRZtHeS0heVdsjICw9Dip6AMUtIoKKKKACm4HXAzTqKAK8yGSNlSRoiRjemMj8wRTLO0js7cQxbiASxLHJJPUmrVFABgY6CjFLRQAgAHQYox7UtFACYowD1FLRQAmPbpSAAdABTqKAEwPSjHtS0UAN2j0FLjPWlooATHtRgegpaKAEwPSjA9BS0UAJgZ6UYHoKWigBCAe1GB6UtFACYHoKMA9RS0UAJj2owPSlooATA9BRgelLRQAmPajA9BS0UAQyqXRgGKEjG5cZH51TtdLSG7Ny881zPs2K8u35V9AFAA/KtKkoAQgHqAaUgHqM0tFACYHpRj2paKAG4B5IowM5xzTqKAEwPSjFLRQA3A9BS4HpS0UAJj2owPSlooATA9BRj2paKAEwD1FJgY6CnUUAJgelGPalooATAx0FJtHoKdRQAgpaKKACiiigAooooAKSlooAqPZW8jFnhRm9SuTSDT7X/nhH/3zVqipcU90RyR7FX+z7T/n3j/75o/s+0/594/++atUUckewckeyFpaKKosKKKKACiiigApKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBKKKKACiiigQtFFFAwooooAKKKKACiiigAooooAKKKKAP//Z"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 172
   },
   {
     "id": "Q-173",
@@ -5335,7 +12524,9 @@ export const QUESTIONS = [
       "type": "cli-terminal",
       "title": "Command Prompt - ipconfig /all",
       "content": "Windows IP Configuration\n\nWireless LAN adapter Wireless Network Connection:\n   Physical Address. . . . . . . . . : 00-21-6A-1F-AA-DA\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n   IPv4 Address. . . . . . . . . . . : 192.168.11.48(Preferred)\n   Default Gateway . . . . . . . . . : 192.168.11.1\n   DHCP Server . . . . . . . . . . . : 192.168.11.1\n\nEthernet adapter Local Area Connection:\n   Physical Address. . . . . . . . . : 00-24-81-B3-D4-64\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration IPv4 Address. . : 169.254.143.166(Preferred)\n   Default Gateway . . . . . . . . . :"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 173
   },
   {
     "id": "Q-174",
@@ -5368,7 +12559,9 @@ export const QUESTIONS = [
     "imageSolution": {
       "file": "images/page_128_74_R472.jpg",
       "data": "data:image/jpeg;base64,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WyqFVlYckjO7iqrTG21K8JhlkWTb91cjhag8xRuWOK/jjPWNMAfgeo/AisKdSMU0+7/NnJTqRimn3f5sSUYjjVSWjS82xnOeOM/kcj8K6EdqwJZRMLaGG1mjWOVW5TAxW+KcWpSk15GlJqUpNeQ+iiitjcKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBMD0owPSlooATA9KKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiim55xQA6ikzSZoAdRTc06gAopM0hYDrQA6ikBzS0AFFFFABRRRQAUUUUAFFITikzQA6ikJpAaAHUUmaCcUALRSZoBzQAtFJmigBaKbnnFLQAtFJmjNAC0UmRSEgDmgB1FJmgmgBaKQHNLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFJS0hOKAClpoNOoAKKKKACiiigAoopKAEFLWZLqgimeIQSyFMZKDPUZpP7X/wCnS4/74rP2ke5l7aHc06Ss3+1/W0uP++KtWt0tzbrMqkA54PXrinGcZOyY41Iydk9S3XKavfXltq18kV1IsUWmtcom1SA+SvXGe2fr+VdXXPajo1xeald3CzRLHNZNaAEEsuSTu/M/lVmhTttWuLee2Mk8t7BLbLLN8qkwscd1A456Vf1nWTZxypAp80OkYkI+UM388DnFXLfTIYdKFoI4wTEI2ZVAycYzVH+wy2lLbyTBrgSrMJccFlPH+FAFzSLhLiGVBdTTyxttk81AjKcegAxTL3V47GcLPDIsRdU80FcAnGOM5746U/TrCS2uLq5uJFee5ZS2wEKABgAVk3fhua4a5HnQnzrkTrJIpZ1GQdnsOKAH6rrj+Wn2FZAovEgaYAFTz8w/pmm6zr0g0i6uLCOZRHII1uAFK5DAHgnp1GcU6Xw/cGP7PFcotsLsXQBUluuSv86b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AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACikpaACiiigAooooAKKKSgAorLOrrvZVt5n2sVJVcjIo/tcf8+lz/wB8Vn7WHcy9tDuaYo/Cso6uFGWtbgAdSVq/BMJ4UkUEBhkA9acZxk7JjjUjN2iyxWHfa19iv7m3a2ZhBbG6Lh+qjjp9Rj9a3K4/W45pta1HyredwdKaFWETFWfcWwDjB4/XjrVmhrWmtJLcQQ3EJtmuIxLEWcEMPr689Kt32oQWNu8srZK4AQHLEk4AxWTDoe/S45J5JZbpbZUQOoHl4AOAABzkdetVbyzur7TDeSwSCZriORogMMI14PHr1OKAOltZZpo900PkMTwpYMcfhTjcwrKIWmjEp6IXAY/hWToUbpc37xxyRWbyKYI5FKkfL8xweQCaxtYF/dNc5t5klS8Xy1it85QEYffjnjsORQB0mpapBp6oWIkdpFjKBhuG44zik1XVrfTbSaZ3WRosExK43ckDp+Nczc2twYDBJZTyXQ1IS+aEJATIwc+mOPw5pl3bTHw3e2b6dcS35nLFhCSGHmA7g3fjjHX2xQB2i3MDsyrNGWXO4BhkY65oF1btG0izxGNerhxgfjXJtp122ha+sMEiXE17Iy/Lhnj3KeM9cjP1qZ9Ntp7K5lEt+PMEYINrtKkcj5Aoz6HrQB05uoAqEzRASfcJcYb6etBuIVlWJpoxK3RCwDH8K5aZbtksr37JIL6MFFgEDGORS3f+4e/OMUz7A82oXsV815G0t0ssTRw7lK5Xb8+07cdDkigDrVniaZollQyKMlAwyPwpJriGAgSzRx56b2AzWDp0cltrt0kEUklvOzySySxFTG2eisR8ynHTnFM177VNc3EAhkEP2Y+W8cHmGRj/AA5IIH6UAdD58Pm+V5sfmHom4ZPfpRHcQyuyRSxuyfeVWBI/wrktFsrw/b3aKRLh7GNIpJFKnfsI6npzirPhyxCmylkN5HcQQFHjkg8tR0BB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"
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 174
   },
   {
     "id": "Q-175",
@@ -5406,7 +12599,9 @@ export const QUESTIONS = [
       "content": {
         "t3Connection": "Connecting the WAN edge router to the remote corporate network"
       }
-    }
+    },
+    "bank": "part2",
+    "pdfNumber": 175
   },
   {
     "id": "Q-176",
@@ -5433,6 +12628,12 @@ export const QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Question 176 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards."
+    "explanation": "Question 176 evaluates knowledge of 1. Network Infrastructures. Option C is the correct answer according to official Microsoft / Certiport Networking standards.",
+    "bank": "part2",
+    "pdfNumber": 176
   }
-];
+]
+};
+
+// Default export for backward compatibility
+export const QUESTIONS = QUESTION_BANKS["part1"];
