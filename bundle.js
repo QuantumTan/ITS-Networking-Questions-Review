@@ -62,4 +62,4 @@ compiledHtml = compiledHtml.replace(
 fs.writeFileSync(path.join(__dirname, 'index.html'), compiledHtml, 'utf8');
 fs.writeFileSync(path.join(__dirname, 'standalone.html'), compiledHtml, 'utf8');
 
-console.log('Successfully bundled index.html and standalone.html! (Zero-dependency portable build with all 176 questions)');
+console.log('Successfully bundled index.html and standalone.html! (Zero-dependency portable build with all 3 Question Banks: 450 total questions)');

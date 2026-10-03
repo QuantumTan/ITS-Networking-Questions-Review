@@ -10,7 +10,7 @@ import { EvaluationEngine } from './components/EvaluationEngine.js';
 
 export class ExamEngine {
   constructor() {
-    this.banks = (typeof QUESTION_BANKS !== 'undefined' && QUESTION_BANKS) ? QUESTION_BANKS : { part1: QUESTIONS, part2: QUESTIONS };
+    this.banks = (typeof QUESTION_BANKS !== 'undefined' && QUESTION_BANKS) ? QUESTION_BANKS : { part1: QUESTIONS, part2: QUESTIONS, part3: QUESTIONS };
     this.currentBankKey = localStorage.getItem('its_active_bank') || 'part1';
     this.allQuestions = this.banks[this.currentBankKey] || this.banks.part1 || QUESTIONS;
     this.activeFilter = 'all';
@@ -465,8 +465,11 @@ export class ExamEngine {
         return "Drag items from the left pool to the targets on the right, or click an item then click a target.";
       case 'dropdown-exhibit':
         return "Use the dropdown menus to complete each statement based on the accompanying exhibit.";
-      case 'matrix-yes-no':
-        return "For each statement, select Yes if the statement is true. Otherwise, select No.";
+      case 'matrix-yes-no': {
+        const col1 = (q.matrixColumns && q.matrixColumns[0]) || 'Yes';
+        const col2 = (q.matrixColumns && q.matrixColumns[1]) || 'No';
+        return `For each statement, select ${col1} if the statement is true. Otherwise, select ${col2}.`;
+      }
       default:
         return "Answer the question based on the scenario.";
     }
@@ -630,13 +633,16 @@ export class ExamEngine {
     const tableContainer = document.createElement('div');
     tableContainer.className = 'matrix-table-container';
 
+    const col1 = (q.matrixColumns && q.matrixColumns[0]) || 'Yes';
+    const col2 = (q.matrixColumns && q.matrixColumns[1]) || 'No';
+
     let html = `
       <table class="matrix-table">
         <thead>
           <tr>
             <th>Statement</th>
-            <th class="col-choice">Yes</th>
-            <th class="col-choice">No</th>
+            <th class="col-choice">${col1}</th>
+            <th class="col-choice">${col2}</th>
           </tr>
         </thead>
         <tbody>
@@ -644,20 +650,20 @@ export class ExamEngine {
 
     (q.statements || []).forEach(stmt => {
       const selectedVal = userAnswers[stmt.id];
-      const isYes = selectedVal === 'Yes';
-      const isNo = selectedVal === 'No';
+      const isCol1 = selectedVal === col1;
+      const isCol2 = selectedVal === col2;
 
       html += `
         <tr>
           <td>${stmt.text}</td>
           <td class="col-choice">
             <label class="matrix-radio-label">
-              <input type="radio" name="stmt-${stmt.id}" value="Yes" ${isYes ? 'checked' : ''} />
+              <input type="radio" name="stmt-${stmt.id}" value="${col1}" ${isCol1 ? 'checked' : ''} />
             </label>
           </td>
           <td class="col-choice">
             <label class="matrix-radio-label">
-              <input type="radio" name="stmt-${stmt.id}" value="No" ${isNo ? 'checked' : ''} />
+              <input type="radio" name="stmt-${stmt.id}" value="${col2}" ${isCol2 ? 'checked' : ''} />
             </label>
           </td>
         </tr>

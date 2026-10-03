@@ -1,0 +1,748 @@
+import json
+
+DOMAINS = {
+    "INFRASTRUCTURE": "1. Network Infrastructures (Topologies, WAN, LAN, Wireless)",
+    "HARDWARE": "2. Network Hardware (Switches, Routers, Media, Connectors)",
+    "PROTOCOLS": "3. Protocols & Services (OSI Model, IPv4, IPv6, Subnetting, TCP/UDP)",
+    "SECURITY": "4. Network Security (Firewalls, DMZ, VPN, IPSec)",
+    "TROUBLESHOOTING": "5. Network Troubleshooting & Utilities (CLI, ping, tracert, ipconfig)"
+}
+
+p3 = [
+    {
+        "id": "P3-001",
+        "pdfNumber": 1,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "drag-and-drop",
+        "question": "1. Move the appropriate address type from the list on the left to its range on the right.\nNot all address types will be used.\nNote: You will receive partial credit for each correct answer.",
+        "dragItems": [
+            {"id": "d1", "label": "Lookback addresses"},
+            {"id": "d2", "label": "Multicast addresses"},
+            {"id": "d3", "label": "Private network addresses"},
+            {"id": "d4", "label": "Public network addresses"}
+        ],
+        "dropZones": [
+            {"id": "z1", "label": "127.0.0.0 - 127.255.255.255", "correctItemId": "d1"},
+            {"id": "z2", "label": "192.168.0.0 - 192.168.255.255", "correctItemId": "d3"},
+            {"id": "z3", "label": "224.0.0.0 - 239.255.255.255", "correctItemId": "d2"}
+        ],
+        "explanation": "• 127.0.0.0 – 127.255.255.255: Reserved for IPv4 loopback (Lookback) functionality.\n• 192.168.0.0 – 192.168.255.255: Private network address block (RFC 1918 16-bit block).\n• 224.0.0.0 – 239.255.255.255: Class D reserved for Multicast addresses."
+    },
+    {
+        "id": "P3-002",
+        "pdfNumber": 2,
+        "bank": "part3",
+        "domain": DOMAINS["SECURITY"],
+        "domainCode": "Domain 4",
+        "type": "drag-and-drop",
+        "question": "2. Move each VPN term from the list on the left to its definition on right.\nNote: You will receive partial credit for each correct answer.",
+        "dragItems": [
+            {"id": "d1", "label": "SSL VPN"},
+            {"id": "d2", "label": "Layer 2 Tunneling Protocol"},
+            {"id": "d3", "label": "Site-to-Site VPN"}
+        ],
+        "dropZones": [
+            {"id": "z1", "label": "Allows a remote user to connect to a private network from anywhere on the Internet.", "correctItemId": "d1"},
+            {"id": "z2", "label": "Securely connects two portions of a private network or two private networks.", "correctItemId": "d3"},
+            {"id": "z3", "label": "Creates an unencrypted connection between two devices.", "correctItemId": "d2"}
+        ],
+        "explanation": "• SSL VPN: Allows a remote user to connect securely to corporate resources via a standard web browser.\n• Site-to-Site VPN: Securely connects two portions of a private network or two private networks over the Internet.\n• Layer 2 Tunneling Protocol (L2TP): Creates a tunnel between two points but does not encrypt data on its own (requires IPsec for encryption)."
+    },
+    {
+        "id": "P3-003",
+        "pdfNumber": 3,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "single-choice",
+        "question": "3. On a Windows computer, which utility should you use to determine if your Domain Name System (DNS) service is properly resolving fully qualified domain names (FQDNs) to IP addresses?",
+        "options": [
+            {"id": "A", "text": "ipconfig"},
+            {"id": "B", "text": "nslookup"},
+            {"id": "C", "text": "netstat"},
+            {"id": "D", "text": "nbtstat"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "nslookup is the primary Windows utility used to test and troubleshoot DNS resolution, querying name servers for FQDN-to-IP address mappings."
+    },
+    {
+        "id": "P3-004",
+        "pdfNumber": 4,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "drag-and-drop",
+        "question": "4. Move each IP address from the list on the left to its IPv4 address class on the right.\nNote: You will receive partial credit for each correct answer",
+        "dragItems": [
+            {"id": "d1", "label": "133.234.23.2"},
+            {"id": "d2", "label": "224.100.20.3"},
+            {"id": "d3", "label": "201.111.22.3"},
+            {"id": "d4", "label": "64.123.12.1"}
+        ],
+        "dropZones": [
+            {"id": "z1", "label": "Class A", "correctItemId": "d4"},
+            {"id": "z2", "label": "Class B", "correctItemId": "d1"},
+            {"id": "z3", "label": "Class C", "correctItemId": "d3"},
+            {"id": "z4", "label": "Class D", "correctItemId": "d2"}
+        ],
+        "explanation": "• Class A: 1.0.0.0 – 126.255.255.255 (64.123.12.1)\n• Class B: 128.0.0.0 – 191.255.255.255 (133.234.23.2)\n• Class C: 192.0.0.0 – 223.255.255.255 (201.111.22.3)\n• Class D: 224.0.0.0 – 239.255.255.255 (224.100.20.3 - Multicast)"
+    },
+    {
+        "id": "P3-005",
+        "pdfNumber": 5,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "5. Which media type is least susceptible to external interference, including EMI and RFI?",
+        "options": [
+            {"id": "A", "text": "fiber optic"},
+            {"id": "B", "text": "STP"},
+            {"id": "C", "text": "UTP"},
+            {"id": "D", "text": "Wireless"}
+        ],
+        "correctAnswer": "A",
+        "explanation": "Fiber optic cable uses light pulses transmitted through glass or plastic cores rather than electrical pulses over copper conductors, making it completely impervious to electromagnetic interference (EMI) and radio frequency interference (RFI)."
+    },
+    {
+        "id": "P3-006",
+        "pdfNumber": 6,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "multi-choice",
+        "question": "6. You are a network administrator at a small business. One morning at the start of business, you realize that no employees at the company can access external websites. However, all employees can access intranet sites. All computers are on the same intranet connected by a single router.\nYou need to troubleshoot the problem.\n\nWhich two actions should you complete? (Choose 2.)",
+        "options": [
+            {"id": "A", "text": "Check the router for proper physical connectivity."},
+            {"id": "B", "text": "Check that each computer has a valid IP address."},
+            {"id": "C", "text": "Connect the Internet Service Provider"},
+            {"id": "D", "text": "Check for bad network adapters on individual computers."}
+        ],
+        "correctAnswer": ["A", "C"],
+        "explanation": "Because all employees can access local intranet resources, local network adapters and IP configurations are working properly. The fault is isolated to the edge router's connection to the WAN/ISP or an ISP-level outage."
+    },
+    {
+        "id": "P3-007",
+        "pdfNumber": 7,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "multi-choice",
+        "question": "7. A computer is connected to a switch via a network patch panel using copper cable. The computer is getting lower than expected data speeds.\n\nWhich two actions should you perform to identify the issue? (Choose 2.)\nNote: You will receive partial credit for each correct selection.",
+        "options": [
+            {"id": "A", "text": "Use an optical time domain reflectometer (OTDR) to test the line."},
+            {"id": "B", "text": "Search for broken wires in your cable using a cable tester."},
+            {"id": "C", "text": "To the line from Unit A to Unit B"},
+            {"id": "D", "text": "Test the data speed of the cable."}
+        ],
+        "correctAnswer": ["B", "D"],
+        "explanation": "Using a cable tester checks the copper cable for physical faults such as broken conductors, shorts, or split pairs. Testing the data speed / performance of the cable ensures the link meets the throughput rating required. OTDR is only used for optical fiber."
+    },
+    {
+        "id": "P3-008",
+        "pdfNumber": 8,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "single-choice",
+        "question": "8. You ping a server by using the fully qualified domain name (FQDN) and do not receive a response. You then ping the same server by using its IP address and receive a response.\nwhy do you receive a response on the second attempt but on the first attempt?",
+        "options": [
+            {"id": "A", "text": "The DNS is not resolving."},
+            {"id": "B", "text": "NSLOOKUP is stopped."},
+            {"id": "C", "text": "The DHCP server is offline."},
+            {"id": "D", "text": "PING is improperly configured"}
+        ],
+        "correctAnswer": "A",
+        "explanation": "Pinging successfully by IP confirms that the network route, target host, and ICMP protocols are operating properly. Failing when using the FQDN means the DNS service failed to resolve the domain name into an IP address."
+    },
+    {
+        "id": "P3-009",
+        "pdfNumber": 9,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "multi-choice",
+        "question": "9. What are two characteristics of a mesh network topology? (Choose 2.)",
+        "options": [
+            {"id": "A", "text": "It requires less cabling than either a star or ring topology."},
+            {"id": "B", "text": "It is fault tolerant because of redundant connections."},
+            {"id": "C", "text": "It works best for networks with a large number of nodes."},
+            {"id": "D", "text": "Every node connects to every other node on the network"}
+        ],
+        "correctAnswer": ["B", "D"],
+        "explanation": "In a full mesh topology, every node connects directly to every other node, providing complete redundancy and fault tolerance at the cost of high cabling density."
+    },
+    {
+        "id": "P3-010",
+        "pdfNumber": 10,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "multi-choice",
+        "question": "10. You are a network administrator at a small business. An employee is not able to access any websites. No other employees are having this problem. All computers are on the same internet.\nYou need to troubleshoot the problem.\nWhich three actions should you complete? (Choose 3.)",
+        "options": [
+            {"id": "A", "text": "Check the DNS settings on the employee's computer."},
+            {"id": "B", "text": "Determine whether the employee's computer has a valid IP address."},
+            {"id": "C", "text": "Connect the internet Service Provider"},
+            {"id": "D", "text": "Check to see if the router is working properly."},
+            {"id": "E", "text": "Ensure that the router has a connection to the internet"}
+        ],
+        "correctAnswer": ["A", "B", "D"],
+        "explanation": "Because only one employee is affected while all other computers browse normally, the ISP and router internet connection are functional. Troubleshooting must focus on the employee's local IP address, DNS configuration, and router connectivity to that host."
+    },
+    {
+        "id": "P3-011",
+        "pdfNumber": 11,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "single-choice",
+        "question": "11. An organization needs to move its infrastructure completely off-premises.\nWhere should they locate their data center?",
+        "options": [
+            {"id": "A", "text": "A public cloud"},
+            {"id": "B", "text": "A private cloud"},
+            {"id": "C", "text": "A virtual machine"},
+            {"id": "D", "text": "A hybrid cloud"}
+        ],
+        "correctAnswer": "A",
+        "explanation": "A public cloud (such as Microsoft Azure or AWS) provides off-premises infrastructure owned and operated by a third-party cloud provider."
+    },
+    {
+        "id": "P3-012",
+        "pdfNumber": 12,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "single-choice",
+        "question": "12. You work for a small office with 15 computers. Your local ISO provides you with a single public IP address. You need to enable Internet access for all 15 computers.\nWhich routing function should you enable?",
+        "options": [
+            {"id": "A", "text": "RIP"},
+            {"id": "B", "text": "Static routing"},
+            {"id": "C", "text": "Port forwarding (PAT)"},
+            {"id": "D", "text": "NAT"}
+        ],
+        "correctAnswer": "D",
+        "explanation": "Network Address Translation (NAT) maps multiple local private IP addresses to a single publicly registered IP address for Internet access."
+    },
+    {
+        "id": "P3-013",
+        "pdfNumber": 13,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "multi-choice",
+        "question": "13. What are two characteristics of VLANS (Choose 2.)",
+        "options": [
+            {"id": "A", "text": "A VLAN can logically address packets by using IP."},
+            {"id": "B", "text": "A single switch can service only a single VLAN."},
+            {"id": "C", "text": "VLANs act as though they are on the same LAN regardless of physical location"},
+            {"id": "D", "text": "A VLAN compartmentalizes a network and isolates traffic"}
+        ],
+        "correctAnswer": ["C", "D"],
+        "explanation": "VLANs allow devices located on different physical switches to communicate as if they were on the same physical wire, while compartmentalizing traffic into distinct broadcast domains for security and performance."
+    },
+    {
+        "id": "P3-014",
+        "pdfNumber": 14,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "14. How is a router's static routing table updated?",
+        "options": [
+            {"id": "A", "text": "through direct action by the network administrator"},
+            {"id": "B", "text": "from the RIP protocol after resetting the router"},
+            {"id": "C", "text": "with updates from the physically nearest routers"},
+            {"id": "D", "text": "bt monitoring adjacent subnets"}
+        ],
+        "correctAnswer": "A",
+        "explanation": "Static routing tables do not learn routes dynamically; they are manually configured and maintained through direct administrative action."
+    },
+    {
+        "id": "P3-015",
+        "pdfNumber": 15,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "matrix-yes-no",
+        "question": "15. For each statement about wide area networks (WAN), select True or False.\nNote: You will receive partial credit for each correct selection.",
+        "matrixColumns": ["True", "False"],
+        "statements": [
+            {"id": "s1", "text": "The Internet is a wide area network (WAN)", "correctAnswer": "True"},
+            {"id": "s2", "text": "An internet is a wide area network (WAN)", "correctAnswer": "False"},
+            {"id": "s3", "text": "Companies with offices in multiple cities use a wide area network (WAN) you share data.", "correctAnswer": "True"}
+        ],
+        "explanation": "• The global Internet is a WAN.\n• A generic lowercase 'internet' refers to any interconnected group of networks (which could be local LANs).\n• Interconnecting enterprise sites across multiple cities is the core function of a WAN."
+    },
+    {
+        "id": "P3-016",
+        "pdfNumber": 16,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "single-choice",
+        "question": "16. Complete the sentence by selecting the correct option from the drop-down list.\n\nAnswer Area\nThe command-line tool used in Linux to list a host's active incoming connections is.",
+        "options": [
+            {"id": "A", "text": "Ip addr"},
+            {"id": "B", "text": "host"},
+            {"id": "C", "text": "netstat"},
+            {"id": "D", "text": "dig"}
+        ],
+        "correctAnswer": "C",
+        "explanation": "The `netstat` command lists incoming and outgoing network connections, listening ports, and socket routing states on Linux and Unix systems."
+    },
+    {
+        "id": "P3-017",
+        "pdfNumber": 17,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "17. The network connection between Building A and Building B is 550 meters and there is insertion loss on the line. Which tool should you use to test this attenuation?",
+        "options": [
+            {"id": "A", "text": "Toner"},
+            {"id": "B", "text": "Time domain reflectometer"},
+            {"id": "C", "text": "Optical time domain reflectometer"},
+            {"id": "D", "text": "Multimeter"}
+        ],
+        "correctAnswer": "C",
+        "explanation": "Because 550 meters exceeds the 100m copper limit, the connection utilizes optical fiber. An Optical Time Domain Reflectometer (OTDR) is used to test insertion loss and attenuation in fiber-optic lines."
+    },
+    {
+        "id": "P3-018",
+        "pdfNumber": 18,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "single-choice",
+        "question": "18. Complete the sentence by selecting the correct option from the drop-down list_\nAnswer Area\nOn a wireless router, an SSID is the",
+        "options": [
+            {"id": "A", "text": "default Administrator account"},
+            {"id": "B", "text": "Broadcast ID"},
+            {"id": "C", "text": "WAN encryption protocol"},
+            {"id": "D", "text": "default communication protocol"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Service Set Identifier (SSID) serves as the broadcast identifier / network name broadcast to Wi-Fi client stations."
+    },
+    {
+        "id": "P3-019",
+        "pdfNumber": 19,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "matrix-yes-no",
+        "question": "19. For each statement about hypervisors, select True or False.\nNote: You will receive partial credit for each correct selection.",
+        "matrixColumns": ["True", "False"],
+        "statements": [
+            {"id": "s1", "text": "A Type 1 hypervisor runs directly on system hardware.", "correctAnswer": "True"},
+            {"id": "s2", "text": "A Type 2 hypervisor runs directly on system hardware.", "correctAnswer": "False"},
+            {"id": "s3", "text": "A Type 1 hypervisor is also known as a hare-metal hypervisor.", "correctAnswer": "True"}
+        ],
+        "explanation": "• Type 1 (bare-metal) hypervisors run directly on the physical host hardware.\n• Type 2 hypervisors execute on top of an existing host OS (False).\n• Type 1 is also called bare-metal (noted as 'hare-metal' in the source question)."
+    },
+    {
+        "id": "P3-020",
+        "pdfNumber": 20,
+        "bank": "part3",
+        "domain": DOMAINS["SECURITY"],
+        "domainCode": "Domain 4",
+        "type": "single-choice",
+        "question": "20. What is a VPN?",
+        "options": [
+            {"id": "A", "text": "A secure private connection over a public network"},
+            {"id": "B", "text": "A virtual network within your local area network (LAN)"},
+            {"id": "C", "text": "A personal network for your use only"},
+            {"id": "D", "text": "A communication tunnel between VLANs"}
+        ],
+        "correctAnswer": "A",
+        "explanation": "A Virtual Private Network (VPN) establishes an encrypted virtual connection across a public network such as the Internet."
+    },
+    {
+        "id": "P3-021",
+        "pdfNumber": 21,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "matrix-yes-no",
+        "question": "21. For each statement about client-server networks, select True or False.\nNote: You will receive partial credit for each correct selection.",
+        "matrixColumns": ["True", "False"],
+        "statements": [
+            {"id": "s1", "text": "A client-server network has centralized administration.", "correctAnswer": "True"},
+            {"id": "s2", "text": "A client-server network requires each computer to share its resources", "correctAnswer": "False"},
+            {"id": "s3", "text": "A client-server network requires users to have a user account on every computer they need to use.", "correctAnswer": "False"}
+        ],
+        "explanation": "• Client-server architecture centralizes management and security on designated servers.\n• Sharing resources peer-to-peer is a characteristic of P2P networks, not client-server.\n• Client-server uses central authentication (such as Active Directory) where one account logs into all domain computers."
+    },
+    {
+        "id": "P3-022",
+        "pdfNumber": 22,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "dropdown-exhibit",
+        "question": "22. You are trying to access a music sharing service on the Internet. The service is located at the IP address 173.194.75.105. You are experiencing problems connecting. You run a trace route to the server and receive the output shown in the image.\nEvaluate the image and complete the statements by selecting the correct options from the drop-down lists.\n\nNote: You will receive partial credit for each correct selection.",
+        "exhibit": {
+            "type": "cli-terminal",
+            "title": "Command Prompt - tracert -d 173.194.75.105",
+            "content": "command Prompt\r\nc:\\> tracert -d 173.194.75.105\r\nracing route to 173.194.75.105 over a maximum of 30 hops\r\n1   <1 ms   <1 ms   <1 ms  10.0.0.1\r\n2   25 ms   29 ms   29 ms  174.57.168.1\r\n3    9 ms    9 ms    9 ms  68.85.76.249\r\n4   10 ms    9 ms    9 ms  68.86.210.25\r\n5   14 ms   15 ms   18 ms  68.86.92.161\r\n6   15 ms   16 ms   13 ms  68.86.86.142\r\n7   14 ms   14 ms   14 ms  75.149.231.62\r\n8   14 ms   15 ms   15 ms  209.85.252.80\r\n9   17 ms   16 ms   17 ms  72.14.236.146\r\n10  27 ms   28 ms   28 ms  209.85.241.222\r\n11  26 ms   25 ms   26 ms  216.239.48.157\r\n12   *       *       *     Request timed out.\r\n13  27 ms   26 ms   25 ms  173.194.75.105"
+        },
+        "subQuestions": [
+            {
+                "id": "sq1",
+                "prompt": "Each hop in the trace route is a",
+                "options": ["Router", "Switch", "Firewall"],
+                "correctAnswer": "Router"
+            },
+            {
+                "id": "sq2",
+                "prompt": "The trace route completed.",
+                "options": ["Successfully", "Unsuccessfully", "with an unknow status"],
+                "correctAnswer": "Successfully"
+            }
+        ],
+        "explanation": "• Each hop represents an intermediate Layer 3 Router.\n• The traceroute completed successfully because hop 13 reached destination 173.194.75.105 in 25-27 ms."
+    },
+    {
+        "id": "P3-023",
+        "pdfNumber": 23,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "23. Which type of port is used to support VLAN traffic between two switches?",
+        "options": [
+            {"id": "A", "text": "LAN port"},
+            {"id": "B", "text": "WAN port"},
+            {"id": "C", "text": "Trunk port"},
+            {"id": "D", "text": "Virtual port"}
+        ],
+        "correctAnswer": "C",
+        "explanation": "A trunk port (e.g., IEEE 802.1Q) transports frames for multiple VLANs over a single link between switches."
+    },
+    {
+        "id": "P3-024",
+        "pdfNumber": 24,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "single-choice",
+        "question": "24. When a client's DHCP-issued address expires, the client will:",
+        "options": [
+            {"id": "A", "text": "generate a new address valid to the subnet and request approval from the DHCP server."},
+            {"id": "B", "text": "disconnect from the network."},
+            {"id": "C", "text": "attempt to renew its lease on the address_"},
+            {"id": "D", "text": "continue to use the address until it is notified to stop."}
+        ],
+        "correctAnswer": "B",
+        "explanation": "When an address lease reaches 100% expiration without successful renewal, the client loses authorization to use the IP and disconnects from IP network traffic until a new lease is acquired."
+    },
+    {
+        "id": "P3-025",
+        "pdfNumber": 25,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "single-choice",
+        "question": "25. Which represents the Internet Protocol version 6 (IPv6) Loopback address?",
+        "options": [
+            {"id": "A", "text": "FF00::127"},
+            {"id": "B", "text": ":1"},
+            {"id": "C", "text": "::"},
+            {"id": "D", "text": "FE80::127"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "The IPv6 loopback address is 0:0:0:0:0:0:0:1, compressed as ::1 (printed as :1 in this exam paper)."
+    },
+    {
+        "id": "P3-026",
+        "pdfNumber": 26,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "single-choice",
+        "question": "26. Complete the sentence by selecting the correct option from the drop-down list_\n\nAnswer Area\nIPv4 multicast addresses range from",
+        "options": [
+            {"id": "A", "text": "127.0.0.0 to 127.255155.255"},
+            {"id": "B", "text": "172.16.0.0 to 172.31.255.255"},
+            {"id": "C", "text": "192.168.0.0 to 192.168.255.255"},
+            {"id": "D", "text": "224.0.0.0 to 239.255.255.255"}
+        ],
+        "correctAnswer": "D",
+        "explanation": "Class D addresses (224.0.0.0 through 239.255.255.255) are designated for multicast."
+    },
+    {
+        "id": "P3-027",
+        "pdfNumber": 27,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "single-choice",
+        "question": "27. Your home computer is having problems accessing the Internet You suspect that your Internet router's DHCP service is not functioning, so you check your computer's IP address.\nWhich address indicates that your router's DHCP service is NOT functioning?",
+        "options": [
+            {"id": "A", "text": "10.19.1.15"},
+            {"id": "B", "text": "169.254.1.15"},
+            {"id": "C", "text": "192.168.1.15"},
+            {"id": "D", "text": "172.16.1.15"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "169.254.1.15 is an APIPA address, indicating that the client failed to reach a DHCP server."
+    },
+    {
+        "id": "P3-028",
+        "pdfNumber": 28,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "dropdown-exhibit",
+        "question": "28. Complete the sentences by selecting the correct option from each drop-down list.\nNote: You will receive partial credit for each correct selection.\n\nAnswer Area",
+        "subQuestions": [
+            {
+                "id": "sq1",
+                "prompt": "A vast computer network linking smaller computer networks worldwide is",
+                "options": ["the Internet", "an intranet", "an extranet"],
+                "correctAnswer": "the Internet"
+            },
+            {
+                "id": "sq2",
+                "prompt": "A network that allows secure collaboration between a company and a supplier or partner is",
+                "options": ["the Internet", "an intranet", "an extranet"],
+                "correctAnswer": "an extranet"
+            },
+            {
+                "id": "sq3",
+                "prompt": "A private network that is accessible only to a company's employees is",
+                "options": ["the Internet", "an intranet", "an extranet"],
+                "correctAnswer": "an intranet"
+            }
+        ],
+        "explanation": "• The Internet: Worldwide global system of interconnected computer networks.\n• Extranet: Private network providing secure access to external partners/suppliers.\n• Intranet: Internal private network for company employees."
+    },
+    {
+        "id": "P3-029",
+        "pdfNumber": 29,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "multi-choice",
+        "question": "29. Your school network has multiple routers. Students in one of the dorms report that they cannot connect to the email server. You verify that the email server is operational. You suspect that the router on the subnet is causing the problem.\n\nWhich two actions should you perfume? (Choose 2.)",
+        "options": [
+            {"id": "A", "text": "Enable dynamic routing."},
+            {"id": "B", "text": "Look in the router's NAT table."},
+            {"id": "C", "text": "Enable multicast."},
+            {"id": "D", "text": "Look in the router's routing table."}
+        ],
+        "correctAnswer": ["A", "D"],
+        "explanation": "Inspecting the router's routing table verifies if it has a route to the email server. Enabling dynamic routing allows routers to automatically share and update paths across subnets."
+    },
+    {
+        "id": "P3-030",
+        "pdfNumber": 30,
+        "bank": "part3",
+        "domain": DOMAINS["SECURITY"],
+        "domainCode": "Domain 4",
+        "type": "single-choice",
+        "question": "30. Security is a concern on wireless networks due to:",
+        "options": [
+            {"id": "A", "text": "frequency modulation issues."},
+            {"id": "B", "text": "the potential for crosstalk"},
+            {"id": "C", "text": "inability to encrypt transmissions."},
+            {"id": "D", "text": "the radio broadcast access method."}
+        ],
+        "correctAnswer": "D",
+        "explanation": "Radio broadcast signals travel openly through the air and can be intercepted by unauthorized devices within reception range."
+    },
+    {
+        "id": "P3-031",
+        "pdfNumber": 31,
+        "bank": "part3",
+        "domain": DOMAINS["TROUBLESHOOTING"],
+        "domainCode": "Domain 5",
+        "type": "dropdown-exhibit",
+        "question": "31. You are studying for finals in the student lounge. When your laptop is connected to the wireless network, access to the Internet is slow When you plug your laptop into a wall jack, you can no longer access the Internet You run the ipconfig tall command. The results are shown in the image.\nEvaluate the image and complete the statements by selecting the correct option from each drop-down list.\nNote: You will receive partial credit for each correct selection.",
+        "exhibit": {
+            "type": "cli-terminal",
+            "title": "Windows IP Configuration - ipconfig /all",
+            "content": "Windows IP Configuration\r\n\r\n   Host Name . . . . . . . . . . . . : Win7Pro\r\n   Primary Dns Suffix  . . . . . . . : \r\n   Node Type . . . . . . . . . . . . : Hybrid\r\n   IP Routing Enabled. . . . . . . . : No\r\n   WINS Proxy Enabled. . . . . . . . : No\r\n   DNS Suffix Search List. . . . . . : domain.local\r\n\r\nWireless LAN adapter Wireless Network Connection:\r\n\r\n   Connection-specific DNS Suffix  . : \r\n   Description . . . . . . . . . . . : Intel(R) WiFi Link 5300 AGN\r\n   Physical Address. . . . . . . . . : 00-21-6A-1F-AA-DA\r\n   DHCP Enabled. . . . . . . . . . . : Yes\r\n   Autoconfiguration Enabled . . . . : Yes\r\n   IPv4 Address. . . . . . . . . . . : 192.168.11.48(Preferred)\r\n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\r\n   Lease Obtained. . . . . . . . . . : Friday, May 17, 2013 9:31:02 PM\r\n   Lease Expires . . . . . . . . . . : Saturday, May 18, 2013 9:31:01 PM\r\n   Default Gateway . . . . . . . . . : 192.168.11.1\r\n   DHCP Server . . . . . . . . . . . : 192.168.11.1\r\n   DNS Servers . . . . . . . . . . . : 192.168.11.1\r\n   NetBIOS over Tcpip. . . . . . . . : Enabled\r\n\r\nEthernet adapter Local Area Connection:\r\n\r\n   Connection-specific DNS Suffix  . : domain.local\r\n   Description . . . . . . . . . . . : Intel(R) 82567LM Gigabit Network Connection\r\n   Physical Address. . . . . . . . . : 00-24-81-B3-D4-64\r\n   DHCP Enabled. . . . . . . . . . . : Yes\r\n   Autoconfiguration Enabled . . . . : Yes\r\n   Autoconfiguration IPv4 Address. . : 169.254.143.166(Preferred)\r\n   Subnet Mask . . . . . . . . . . . : 255.255.0.0\r\n   Default Gateway . . . . . . . . . : \r\n   NetBIOS over Tcpip. . . . . . . . : Enabled"
+        },
+        "subQuestions": [
+            {
+                "id": "sq1",
+                "prompt": "The wireless adapter has an IP address configured.",
+                "options": ["manually.", "through DHCP.", "through APIPA."],
+                "correctAnswer": "through DHCP."
+            },
+            {
+                "id": "sq2",
+                "prompt": "The Ethernet adapter has an IP address configured.",
+                "options": ["manually.", "through DHCP.", "through APIPA."],
+                "correctAnswer": "through APIPA."
+            }
+        ],
+        "explanation": "• The wireless adapter received 192.168.11.48 from DHCP server 192.168.11.1.\n• The Ethernet adapter received no DHCP response and configured itself via APIPA with 169.254.143.166."
+    },
+    {
+        "id": "P3-032",
+        "pdfNumber": 32,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "single-choice",
+        "question": "32. One reason to incorporate VLANs in a network is to",
+        "options": [
+            {"id": "A", "text": "increase the number of available IP addresses."},
+            {"id": "B", "text": "reduce the number of broadcast domains."},
+            {"id": "C", "text": "increase the number of available Media Access Control AC) addresses."},
+            {"id": "D", "text": "reduce the number of nodes in a broadcast domain"}
+        ],
+        "correctAnswer": "D",
+        "explanation": "VLANs divide a large broadcast domain into smaller ones, thereby reducing the number of nodes in any individual broadcast domain."
+    },
+    {
+        "id": "P3-033",
+        "pdfNumber": 33,
+        "bank": "part3",
+        "domain": DOMAINS["SECURITY"],
+        "domainCode": "Domain 4",
+        "type": "single-choice",
+        "question": "33. Which of the following uses a tunneling protocol to encapsulate data for transmission?",
+        "options": [
+            {"id": "A", "text": "VLAN"},
+            {"id": "B", "text": "Internet"},
+            {"id": "C", "text": "NAT"},
+            {"id": "D", "text": "VPN"}
+        ],
+        "correctAnswer": "D",
+        "explanation": "A Virtual Private Network (VPN) uses tunneling protocols (e.g., L2TP, PPTP, IPsec) to encapsulate and transmit data safely across public networks."
+    },
+    {
+        "id": "P3-034",
+        "pdfNumber": 34,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "single-choice",
+        "question": "34. Which service uses PTR and A records?",
+        "options": [
+            {"id": "A", "text": "IDS"},
+            {"id": "B", "text": "DNS"},
+            {"id": "C", "text": "IPS"},
+            {"id": "D", "text": "NAT"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "DNS uses A records to map names to IP addresses, and PTR records for reverse lookups mapping IP addresses to hostnames."
+    },
+    {
+        "id": "P3-035",
+        "pdfNumber": 35,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "35. What is a justification for using STP instead of UTP cable to wire a network expansion?",
+        "options": [
+            {"id": "A", "text": "You are routing cables through an area with high external interference."},
+            {"id": "B", "text": "You want to minimize the costs relating to the new installation."},
+            {"id": "C", "text": "You need to reduce attenuation."},
+            {"id": "D", "text": "You need the cable to be as light and flexible as possible."}
+        ],
+        "correctAnswer": "A",
+        "explanation": "Shielded Twisted Pair (STP) provides extra protection against electromagnetic interference (EMI) and radio frequency interference (RFI) in high-interference environments."
+    },
+    {
+        "id": "P3-036",
+        "pdfNumber": 36,
+        "bank": "part3",
+        "domain": DOMAINS["INFRASTRUCTURE"],
+        "domainCode": "Domain 1",
+        "type": "single-choice",
+        "question": "36. Which physical network topology provides fault tolerant communication by providing redundant communication paths?",
+        "options": [
+            {"id": "A", "text": "Ring"},
+            {"id": "B", "text": "Mesh"},
+            {"id": "C", "text": "Bus"},
+            {"id": "D", "text": "Star"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "A mesh topology provides redundant communication pathways among devices, providing fault tolerance if a single link fails."
+    },
+    {
+        "id": "P3-037",
+        "pdfNumber": 37,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "matrix-yes-no",
+        "question": "37. For each statement about switches, select True or False.\nNote: You will receive partial credit for each correct selection.",
+        "matrixColumns": ["True", "False"],
+        "statements": [
+            {"id": "s1", "text": "A switch sends unicast frames to one destination port only.", "correctAnswer": "True"},
+            {"id": "s2", "text": "A switch floods ports if it does not know where to send a frame.", "correctAnswer": "True"},
+            {"id": "s3", "text": "A switch sends broadcast frames to the uplink port only.", "correctAnswer": "False"}
+        ],
+        "explanation": "• Unicast frames destined for known MAC addresses go solely to the destination port.\n• Unknown unicast frames are flooded out all ports except the source port.\n• Broadcast frames are forwarded out all active ports in the VLAN, not just the uplink."
+    },
+    {
+        "id": "P3-038",
+        "pdfNumber": 38,
+        "bank": "part3",
+        "domain": DOMAINS["PROTOCOLS"],
+        "domainCode": "Domain 3",
+        "type": "drag-and-drop",
+        "question": "38. Move the appropriate protocol from the list on the left to its description on the right.\nNot all protocols will be used.\nNote: You will receive partial credit for each correct answer.",
+        "dragItems": [
+            {"id": "d1", "label": "TCP"},
+            {"id": "d2", "label": "ICMP"},
+            {"id": "d3", "label": "ARP"},
+            {"id": "d4", "label": "UDP"},
+            {"id": "d5", "label": "IGMP"}
+        ],
+        "dropZones": [
+            {"id": "z1", "label": "Connectionless, message-based protocol with best-effort service", "correctItemId": "d4"},
+            {"id": "z2", "label": "Connection-oriented protocol with guaranteed service", "correctItemId": "d1"},
+            {"id": "z3", "label": "Resolves a MAC address to an IP address.", "correctItemId": "d3"}
+        ],
+        "explanation": "• UDP: Connectionless, unreliable, best-effort transport.\n• TCP: Connection-oriented transport with guaranteed delivery and flow control.\n• ARP: Resolves network layer IP addresses to MAC hardware addresses."
+    },
+    {
+        "id": "P3-039",
+        "pdfNumber": 39,
+        "bank": "part3",
+        "domain": DOMAINS["HARDWARE"],
+        "domainCode": "Domain 2",
+        "type": "single-choice",
+        "question": "39. Complete the sentence by selecting the correct option from the drop-down list.\nAnswer Area",
+        "options": [
+            {"id": "A", "text": "Static routing  Is fault tolerant."},
+            {"id": "B", "text": "Dynamic routing Is fault tolerant."},
+            {"id": "C", "text": "The default route Is fault tolerant."},
+            {"id": "D", "text": "Least cost routing Is fault tolerant."}
+        ],
+        "correctAnswer": "B",
+        "explanation": "Dynamic routing protocols dynamically recalculate routes around failed links, providing fault tolerance."
+    },
+    {
+        "id": "P3-040",
+        "pdfNumber": 40,
+        "bank": "part3",
+        "domain": DOMAINS["SECURITY"],
+        "domainCode": "Domain 4",
+        "type": "single-choice",
+        "question": "40. What is the primary purpose of a perimeter network?",
+        "options": [
+            {"id": "A", "text": "to act as a hidden location in which to deploy network clients."},
+            {"id": "B", "text": "to provide a buffer area between a private intranet and the pubic internet"},
+            {"id": "C", "text": "to act as a secure location for deploying highly sensitive network servers"},
+            {"id": "D", "text": "to monitor traffic between routed subnets in a private LAN"}
+        ],
+        "correctAnswer": "B",
+        "explanation": "A perimeter network (DMZ) provides a buffer zone between an untrusted public network (Internet) and a trusted internal corporate network."
+    }
+]
+
+with open("part3_questions.json", "w", encoding="utf-8") as f:
+    json.dump(p3, f, indent=2, ensure_ascii=False)
+
+print(f"Generated part3_questions.json with {len(p3)} formatted questions.")
